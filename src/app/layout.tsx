@@ -1,9 +1,10 @@
 import type React from "react"
 import "./globals.css"
-import { Inter } from "next/font/google"
+import { Inter, Nunito_Sans } from "next/font/google"
 import type { Metadata } from "next"
 
 const inter = Inter({ subsets: ["latin"] })
+const nunito = Nunito_Sans({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "Rednox Inc.",
@@ -17,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={nunito.className}>
         {children}
       </body>
     </html>

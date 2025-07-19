@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button"
 import SectionTitle from "@/components/ui/SectionTitle"
 import { Check, Download, Vibrate } from "lucide-react"
 import Image from "next/image"
+import Grid from "./grid"
 
 export default function HeavyDutyEngine() {
     return (
@@ -52,6 +53,8 @@ export default function HeavyDutyEngine() {
                             <p className="text-white">Trigger regen or urea-dosing only when needed, saving up to 5 % DEF.</p>
                         </div>
                     </div>
+                    {/* <Grid /> */}
+                    
                 </div>
             </div>
             <div className="container mx-auto py-20 bg-moody rounded-3xl">

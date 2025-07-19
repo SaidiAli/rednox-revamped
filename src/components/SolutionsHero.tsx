@@ -13,7 +13,7 @@ export default function SolutionHero({ title, description, image }: { title: str
                 <Button className="bg-primary text-white w-[300px]">Download spec sheet<Icon icon="lucide:download" width="24" height="24" className="text-white"/></Button>
             </div>
             <div className="relative">
-                <div className="relative aspect-[4/3] lg:aspect-[3/2]">
+                <div className="relative aspect-[4/3] lg:aspect-[3/2] h-[30rem]">
                     <Image
                         src={image}
                         alt=""

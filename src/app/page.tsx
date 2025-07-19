@@ -16,7 +16,7 @@ export default function LandingPage() {
         <HeroSection />
         <WhyCareSection />
         <SolutionsSection />
-        <CTASection />
+        {/* <CTASection /> */}
         <PressReleases />
       </main>
       <Footer />

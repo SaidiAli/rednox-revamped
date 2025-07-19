@@ -16,14 +16,14 @@ export default function SpecsTable() {
             <div className="container mx-auto">
                 <Table>
                     <TableHeader>
-                        <TableRow className="border-gray-800 hover:bg-primary/20">
+                        <TableRow className="border-gray-800">
                             <TableHead className="text-white font-medium text-left w-1/4"></TableHead>
                             <TableHead className="text-white font-medium text-center text-lg">SPECS</TableHead>
                         </TableRow>
                     </TableHeader>
                     <TableBody>
                         {features.hde.map((feature, index) => (
-                            <TableRow key={index} className="border-gray-800 hover:bg-primary/20">
+                            <TableRow key={index} className="border-gray-800">
                                 <TableCell className="text-white font-medium py-4">{feature.key}</TableCell>
                                 <TableCell className="text-center py-4">{renderCell(feature.value)}</TableCell>
                             </TableRow>

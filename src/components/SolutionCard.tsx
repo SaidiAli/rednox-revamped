@@ -10,8 +10,8 @@ export default function SolutionCard({ title, description, image, link }: { titl
             </div>
             <div className="flex flex-col justify-between h-full">
                 <div className="p-8">
-                    <h2 className="text-2xl font-bold">{title}</h2>
-                    <p className="text-muted-foreground">{description}</p>
+                    <h2 className="text-2xl font-bold mb-4">{title}</h2>
+                    <p className="text-neutral-500 text-base">{description}</p>
                 </div>
                 <a href={link} className="relative flex items-center gap-2 group-hover:bg-primary group-hover:text-white transition duration-200 p-8 rounded-b-2xl">
                     <p className="text-white">Explore Solution</p>

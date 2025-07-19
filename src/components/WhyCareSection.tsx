@@ -13,7 +13,7 @@ export default function WhyCareSection() {
                     <div>
                         <SectionTitle title="Why you should care" />
                         <p className="text-lg md:text-4xl font-bold mb-4 text-white">Save the environment</p>
-                        <p className="text-left text-base md:text-xl mt-2 text-white">NOx drives smog and acid rain; N₂O has 298× the GWP of CO₂. One ppm you
+                        <p className="text-left text-base mt-2 text-white">NOx drives smog and acid rain; N₂O has 298× the GWP of CO₂. One ppm you
                             eliminate today stops both an air-quality fine and a greenhouse-gas penalty tomorrow.</p>
                     </div>
                     <div className="flex w-full gap-4">

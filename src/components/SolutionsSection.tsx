@@ -20,7 +20,7 @@ export default function SolutionsSection() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.5 }}
-                    className="flex flex-col items-center justify-center space-y-4 text-center mb-12"
+                    className="flex flex-col items-center justify-center space-y-4 text-center mb-16"
                 >
                     <SectionTitle title="Solutions" />
                     <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-white">Precision Monitoring for Every Emission Challenge</h2>

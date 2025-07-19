@@ -28,35 +28,35 @@ export default function Navbar() {
         <header
             className={`sticky top-0 z-50 w-full backdrop-blur-lg transition-all duration-300 ${isScrolled ? "bg-background/80 shadow-sm" : "bg-transparent"}`}
         >
-            <div className="container flex h-16 items-center justify-between">
+            <div className="container flex h-20 items-center justify-between">
                 <div className="flex items-center gap-8 font-bold"> 
-                    <Link href="/" className="flex items-center gap-2">
+                    <Link href="/" className="flex items-center gap-2 bg-white rounded-2xl p-2">
                         <Image src="/logo.png" alt="" width={100} height={100} />
                     </Link>
                     <nav className="hidden md:flex gap-4">
                         <Link
                             href="#features"
-                            className="text-sm font-medium text-primaryForeground transition-colors hover:text-foreground"
+                            className="text-sm font-medium text-primaryForeground transition-colors hover:text-primary"
                         >
-                            Features
+                            Solutions
                         </Link>
                         <Link
                             href="#testimonials"
-                            className="text-sm font-medium text-primaryForeground transition-colors hover:text-foreground"
+                            className="text-sm font-medium text-primaryForeground transition-colors hover:text-primary"
                         >
-                            Testimonials
+                            Technology
                         </Link>
                         <Link
                             href="#pricing"
-                            className="text-sm font-medium text-primaryForeground transition-colors hover:text-foreground"
+                            className="text-sm font-medium text-primaryForeground transition-colors hover:text-primary"
                         >
-                            Pricing
+                            About
                         </Link>
                         <Link
                             href="#faq"
-                            className="text-sm font-medium text-primaryForeground transition-colors hover:text-foreground"
+                            className="text-sm font-medium text-primaryForeground transition-colors hover:text-primary"
                         >
-                            FAQ
+                            Contact
                         </Link>
                     </nav>
                 </div>

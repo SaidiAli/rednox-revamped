@@ -1,5 +1,6 @@
 "use client"
 
+import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import SolutionHero from "@/components/SolutionsHero";
 import SpecsTable from "@/components/SpecsTable";
@@ -52,6 +53,7 @@ export default function Gensets() {
                 <SectionTitle title="Key Specifications" />
                 <SpecsTable />
             </div>
+            <Footer />
         </div>
     )
 }

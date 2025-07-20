@@ -1,0 +1,14 @@
+{
+    "LocaleSwitcher": {
+        "label": "Sprache ändern",
+        "locale": "{locale, select, de {🇩🇪 Deutsch} en {🇺🇸 English} ja {🇯🇵 日本語} other {Unbekannt}}"
+    },
+    "Footer": {
+        "caption": "Bei RedNOx ist es unser Ziel, effektive, nachhaltige und dauerhafte Lösungen für landwirtschaftliche Herausforderungen zu entwickeln. Wir haben kostengünstige Feldsensoren für Treibhausgasemissionen aus dem Boden in landwirtschaftlichen Umgebungen entwickelt und/oder haben einen Fahrplan, um diese zu demonstrieren."
+    },
+    "HomePage": {
+        "title": "Rednox",
+        "heroHeadline": "Hochempfindliche Emissionssensoren für",
+        "heroDescription": "NOx und N₂O schneller als die Regulierungskurve senken, den Kraftstoffverbrauch drastisch reduzieren und dies mit nachvollziehbaren Daten beweisen."
+    }
+}

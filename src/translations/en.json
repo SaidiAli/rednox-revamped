@@ -1,0 +1,14 @@
+{
+    "LocaleSwitcher": {
+        "label": "Change language",
+        "locale": "{locale, select, de {🇩🇪 Deutsch} en {🇺🇸 English} ja {🇯🇵 日本語} other {Unknown}}"
+    },
+    "Footer": {
+        "caption": "At RedNOx, our goal is to develop effective, sustainable, and durable solutions to agricultural challenges. We have developed and/or on a roadmap to demonstrate low-cost, in-field sensors for greenhouse gas emissions from soil in agricultural settings."
+    },
+    "HomePage": {
+        "title": "Rednox",
+        "heroHeadline": "Leading the charge towards low to zero-emissions engines, factories and farmlands",
+        "heroDescription": "RedNOx is a startup in its initial commercial phase, and is working on an innovative sensor platform for greenhouse gases such as NO₂, N₂O and CO₂. The main objective of its platforms are to reduce emissions for various industries like hydrogen, alternative fuel, and fossil fuel as rapidly as possible. Moreover, RedNOx sensors can be useful for farmers in optimizing fertilizer usage while minimizing greenhouse gas emissions in the agricultural sector."
+    }
+}

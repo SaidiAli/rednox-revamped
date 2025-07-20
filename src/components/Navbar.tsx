@@ -4,6 +4,7 @@ import { Button } from "./ui/button";
 import { ChevronRight, Menu, Moon, Sun, X } from "lucide-react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import LocaleSwitcher from "./LocaleSwitcher";
 
 export default function Navbar() {
     const [isScrolled, setIsScrolled] = useState(false)
@@ -29,7 +30,7 @@ export default function Navbar() {
             className={`sticky top-0 z-50 w-full backdrop-blur-lg transition-all duration-300 ${isScrolled ? "bg-background/80 shadow-sm" : "bg-transparent"}`}
         >
             <div className="container flex h-20 items-center justify-between">
-                <div className="flex items-center gap-8 font-bold"> 
+                <div className="flex items-center gap-8 font-bold">
                     <Link href="/" className="flex items-center gap-2 bg-white rounded-2xl p-2">
                         <Image src="/logo.png" alt="" width={100} height={100} />
                     </Link>
@@ -61,7 +62,9 @@ export default function Navbar() {
                     </nav>
                 </div>
                 <div className="hidden md:flex gap-4 items-center">
-                    {/* Locale Selector */}
+                    <div className="hidden md:block">
+                        <LocaleSwitcher />
+                    </div>
                     <Button className="rounded-full bg-primary text-primaryForeground">
                         Schedule a pilot
                         <ChevronRight className="ml-1 size-4" />

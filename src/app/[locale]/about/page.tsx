@@ -11,11 +11,14 @@ import Image from "next/image";
 export default function Agrinox() {
     return (
         <div className="min-h-screen">
-            <div className="w-full mb-20 bg-moody">
-                <Navbar />
-                <div className="container mx-auto rounded-2xl p-32 my-8">
-                    <h1 className="text-center font-bold text-5xl max-w-2xl mx-auto">Reducing NO<sub>x</sub>, CO<sub>2</sub> and N<sub>2</sub>O Emissions now</h1>
-                    <p className="text-base max-w-lg mx-auto text-center mt-4">RedNOx is a company that creates GHG emissions sensors. It combines advanced ceramic engineering with high-precision instrumentation to make selective and sensitive NOx, CO2 and N2O measurement platform. It has started several verification programs in collaboration with top automotive and agriculture companies.</p>
+            <Navbar />
+            <div className="w-full mb-20">
+                <div className="container mx-auto p-32 my-8 z-10 bg-[url(/bg1.jpeg)] bg-cover bg-no-repeat bg-center relative rounded-2xl">
+                    <div className="absolute inset-0 top-0 left-0 w-full h-full bg-moody/50"></div>
+                    <div className="">
+                        <h1 className="text-center font-bold text-5xl max-w-2xl mx-auto text-white">Reducing NO<sub>x</sub>, CO<sub>2</sub> and N<sub>2</sub>O Emissions now</h1>
+                        <p className="text-base max-w-lg mx-auto text-center mt-4">RedNOx is a company that creates GHG emissions sensors. It combines advanced ceramic engineering with high-precision instrumentation to make selective and sensitive NOx, CO2 and N2O measurement platform. It has started several verification programs in collaboration with top automotive and agriculture companies.</p>
+                    </div>
                 </div>
             </div>
 

@@ -54,19 +54,19 @@ export default function Navbar() {
                             About
                         </Link>
                         <Link
-                            href="#pricing"
+                            href="/press-release"
                             className="text-sm font-medium text-primaryForeground transition-colors hover:text-primary"
                         >
                             Press Release
                         </Link>
                         <Link
-                            href="#pricing"
+                            href="/in-the-news"
                             className="text-sm font-medium text-primaryForeground transition-colors hover:text-primary"
                         >
                             In the news
                         </Link>
                         <Link
-                            href="#faq"
+                            href="/contact"
                             className="text-sm font-medium text-primaryForeground transition-colors hover:text-primary"
                         >
                             Contact

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { Button } from "./ui/button";
-import { ChevronRight, Menu, Moon, Sun, X } from "lucide-react";
+import { ChevronRight, Menu, X } from "lucide-react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import LocaleSwitcher from "./LocaleSwitcher";
@@ -42,16 +42,28 @@ export default function Navbar() {
                             Solutions
                         </Link>
                         <Link
-                            href="#testimonials"
+                            href="/technology"
                             className="text-sm font-medium text-primaryForeground transition-colors hover:text-primary"
                         >
                             Technology
                         </Link>
                         <Link
-                            href="#pricing"
+                            href="/about"
                             className="text-sm font-medium text-primaryForeground transition-colors hover:text-primary"
                         >
                             About
+                        </Link>
+                        <Link
+                            href="#pricing"
+                            className="text-sm font-medium text-primaryForeground transition-colors hover:text-primary"
+                        >
+                            Press Release
+                        </Link>
+                        <Link
+                            href="#pricing"
+                            className="text-sm font-medium text-primaryForeground transition-colors hover:text-primary"
+                        >
+                            In the news
                         </Link>
                         <Link
                             href="#faq"

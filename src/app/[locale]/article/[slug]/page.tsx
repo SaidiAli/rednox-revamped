@@ -7,11 +7,14 @@ import { ArrowLeft, Calendar, Clock, User, Share2, BookOpen } from "lucide-react
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { useParams } from "next/navigation"
+import { useParams, useRouter } from "next/navigation"
 import { blogPosts } from "@/lib/data"
+import Navbar from "@/components/Navbar"
+import Footer from "@/components/Footer"
 
 export default function BlogPostPage() {
     const params = useParams()
+    const router = useRouter()
 
     const currentPost = blogPosts[params.slug as keyof typeof blogPosts]
 
@@ -29,9 +32,10 @@ export default function BlogPostPage() {
     }
 
     return (
-        <div className="flex min-h-[100dvh] flex-col">
+        <main className="flex min-h-[100dvh] flex-col">
+            <Navbar />
 
-            <main className="flex-1">
+            <div className="flex-1">
                 {/* Article Header */}
                 <section className="w-full py-12 md:py-20">
                     <div className="container px-4 md:px-6">
@@ -41,17 +45,13 @@ export default function BlogPostPage() {
                             transition={{ duration: 0.5 }}
                             className="max-w-4xl mx-auto"
                         >
-                            <Link
-                                href="/blog"
+                            <div
+                                onClick={() => router.back()}
                                 className="inline-flex items-center gap-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors mb-8"
                             >
                                 <ArrowLeft className="size-4" />
-                                Back to Blog
-                            </Link>
-
-                            <Badge className="mb-4" variant="outline">
-                                {currentPost.category}
-                            </Badge>
+                                Back
+                            </div>
 
                             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-6 leading-tight">
                                 {currentPost.title}
@@ -137,7 +137,8 @@ export default function BlogPostPage() {
                         </div>
                     </div>
                 </section>
-            </main>
-        </div>
+            </div>
+            <Footer />
+        </main>
     )
 }

@@ -27,7 +27,6 @@ export default async function RootLayout({
   }
   return (
     <html lang={locale}>
-
       <body className={nunito.className}>
         <NextIntlClientProvider>
           {children}

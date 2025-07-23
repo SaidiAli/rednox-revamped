@@ -122,303 +122,96 @@ export const newsData: NewsData[] = [
     {
         id: 1,
         title: "NIFA Press Release",
-        description: "RedNOx wins NIFA grant for agricultural emissions monitoring",
+        excerpt: "RedNOx wins NIFA grant for agricultural emissions monitoring",
         date: "2025-07-22",
         link: "https://www.nifa.org/"
     },
     {
         id: 2,
         title: "NIFA Press Release",
-        description: "RedNOx wins NIFA grant for agricultural emissions monitoring",
+        excerpt: "RedNOx wins NIFA grant for agricultural emissions monitoring",
         date: "2025-07-22",
         link: "https://www.nifa.org/"
-    },
-    {
-        id: 3,
-        title: "NIFA Press Release",
-        description: "RedNOx wins NIFA grant for agricultural emissions monitoring",
-        date: "2025-07-22",
-        link: "https://www.nifa.org/"
-    },
-    {
-        id: 4,
-        title: "NIFA Press Release",
-        description: "RedNOx wins NIFA grant for agricultural emissions monitoring",
-        date: "2025-07-22",
-        link: "https://www.nifa.org/"
-    },
+    }
 ]
 
 export const pressData: PressData[] = [
     {
         id: 1,
-        title: "USDA Press Release",
-        description: "RedNOx wins USDA grant for agricultural emissions monitoring",
-        date: "2025-07-22",
-        link: "https://www.USDA.org/"
+        title: "RedNOx Awarded SBIR Phase I for its Innovative Greenhouse Gas Measurement Platform",
+        excerpt: "FREMONT, Calif., August 28, 2023 (GLOBE NEWSWIRE) -- RedNOx Inc., a trailblazer in environmental solid-state sensing technology, is delighted to announce its recent achievement in securing a Phase I Small Business Innovation Research (SBIR) award for its groundbreaking atmosphere and soil greenhouse gas measurement platform.",
+        date: "2023-08-23",
+        slug: "rednox-awarded-sbir-phase-i-for-its-innovative-greenhouse-gas-measurement-platform",
+        image: "/usda.jpg"
     },
     {
         id: 2,
-        title: "USDA Press Release",
-        description: "RedNOx wins USDA grant for agricultural emissions monitoring",
-        date: "2025-07-22",
-        link: "https://www.USDA.org/"
-    },
-    {
-        id: 3,
-        title: "USDA Press Release",
-        description: "RedNOx wins USDA grant for agricultural emissions monitoring",
-        date: "2025-07-22",
-        link: "https://www.USDA.org/"
-    },
-    {
-        id: 4,
-        title: "USDA Press Release",
-        description: "RedNOx wins USDA grant for agricultural emissions monitoring",
-        date: "2025-07-22",
-        link: "https://www.USDA.org/"
-    },
+        title: "RedNOx Awarded USDA NIFA SBIR Phase II Grant to Drive Innovation in Agricultural Emissions Reduction",
+        excerpt: "We are thrilled to announce that RedNOx has been awarded a USDA NIFA SBIR Phase II grant of $650,000 as part of a $26.8 million investment to support groundbreaking, small business-led innovations in agriculture.",
+        date: "2024-10-31",
+        slug: "rednox-awarded-usda-nifa-sbir-phase-ii-grant-to-drive-innovation-in-agricultural-emissions-reduction",
+        image: "/us.jpg"
+    }
 ]
 
 export const publicationData: PublicationData[] = [
     {
         id: 1,
         title: "NIFA Press Release",
-        description: "RedNOx wins NIFA grant for agricultural emissions monitoring",
+        excerpt: "RedNOx wins NIFA grant for agricultural emissions monitoring",
         date: "2025-07-22",
         link: "https://www.nifa.org/"
     },
     {
         id: 2,
         title: "NIFA Press Release",
-        description: "RedNOx wins NIFA grant for agricultural emissions monitoring",
-        date: "2025-07-22",
-        link: "https://www.nifa.org/"
-    },
-    {
-        id: 3,
-        title: "NIFA Press Release",
-        description: "RedNOx wins NIFA grant for agricultural emissions monitoring",
-        date: "2025-07-22",
-        link: "https://www.nifa.org/"
-    },
-    {
-        id: 4,
-        title: "NIFA Press Release",
-        description: "RedNOx wins NIFA grant for agricultural emissions monitoring",
+        excerpt: "RedNOx wins NIFA grant for agricultural emissions monitoring",
         date: "2025-07-22",
         link: "https://www.nifa.org/"
     },
 ]
 
-export const blogPosts = {
-    "maximizing-team-productivity": {
-        title: "10 Proven Strategies for Maximizing Team Productivity in Remote Work",
+export interface BlogPost {
+    title: string;
+    excerpt: string;
+    author?: string;
+    date: string;
+    image?: string;
+    readTime: string;
+    category: string;
+    content: string;
+}
+
+export const blogPosts: Record<string, BlogPost> = {
+    "rednox-awarded-sbir-phase-i-for-its-innovative-greenhouse-gas-measurement-platform": {
+        title: "RedNOx Awarded SBIR Phase I for its Innovative Greenhouse Gas Measurement Platform",
         excerpt:
-            "Discover actionable techniques to boost your team's efficiency and collaboration in a distributed work environment.",
-        author: "Sarah Johnson",
-        date: "2024-01-15",
+            "FREMONT, Calif., August 28, 2023 (GLOBE NEWSWIRE) -- RedNOx Inc., a trailblazer in environmental solid-state sensing technology, is delighted to announce its recent achievement in securing a Phase I Small Business Innovation Research (SBIR) award for its groundbreaking atmosphere and soil greenhouse gas measurement platform.",
+        date: "2023-08-23",
+        image: "/usda.jpg",
         readTime: "8 min read",
-        category: "Productivity",
-        image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1200&h=600&fit=crop",
+        category: "Press Release",
         content: `
-    <p>Remote work has fundamentally changed how teams collaborate and maintain productivity. As organizations continue to embrace distributed work models, the challenge of keeping teams engaged, efficient, and aligned has become more critical than ever.</p>
-
-    <p>In this comprehensive guide, we'll explore ten proven strategies that successful remote teams use to maximize their productivity while maintaining work-life balance and team cohesion.</p>
-
-    <h2>1. Establish Clear Communication Protocols</h2>
-    <p>Effective communication is the backbone of any successful remote team. Without the luxury of face-to-face interactions, teams must be intentional about how they communicate.</p>
-
-    <ul>
-      <li>Define which communication channels to use for different types of messages</li>
-      <li>Set expectations for response times</li>
-      <li>Implement regular check-ins and status updates</li>
-      <li>Use asynchronous communication tools effectively</li>
-    </ul>
-
-    <h2>2. Leverage Technology for Seamless Collaboration</h2>
-    <p>The right tools can make or break a remote team's productivity. Invest in platforms that facilitate real-time collaboration, project management, and knowledge sharing.</p>
-
-    <p>Popular tools include Slack for communication, Notion for documentation, Figma for design collaboration, and GitHub for code management. The key is choosing tools that integrate well together and match your team's workflow.</p>
-
-    <h2>3. Create Structured Daily Routines</h2>
-    <p>Without the natural structure of an office environment, remote workers must create their own routines. Encourage team members to:</p>
-
-    <ul>
-      <li>Start and end work at consistent times</li>
-      <li>Take regular breaks throughout the day</li>
-      <li>Designate a specific workspace</li>
-      <li>Maintain boundaries between work and personal time</li>
-    </ul>
-
-    <h2>4. Implement Effective Project Management</h2>
-    <p>Remote teams need robust project management systems to stay organized and accountable. Use methodologies like Agile or Kanban to break down work into manageable chunks and track progress transparently.</p>
-
-    <h2>5. Foster Team Culture and Connection</h2>
-    <p>Building relationships and maintaining team culture requires extra effort in remote settings. Regular virtual coffee chats, team building activities, and informal communication channels help maintain the human connection that drives collaboration.</p>
-
-    <h2>Conclusion</h2>
-    <p>Maximizing team productivity in remote work isn't just about implementing the right tools—it's about creating an environment where team members feel connected, supported, and empowered to do their best work. By following these strategies, you can build a remote team that's not just productive, but thriving.</p>
+    <p>FREMONT, Calif., August 28, 2023 (GLOBE NEWSWIRE) -- RedNOx Inc., a trailblazer in environmental solid-state sensing technology, is delighted to announce its recent achievement in securing a Phase I Small Business Innovation Research (SBIR) award for its groundbreaking atmosphere and soil greenhouse gas measurement platform.</p>
+    <p>RedNOx's unique platform measures nitrous oxide (N2O), nitrogen oxides (NOx), and carbon dioxide (CO2) emissions both in the atmosphere and the soil. For agriculturalists, farmer and energy producer, the platform simplifies the process of monitoring, reporting, and verifying these gas levels, ensuring accurate tracking of net negative carbon and NOx emissions. In the future, its integrated software will aggregate all the data and automatically generate the necessary documentation, enabling agricultural producers, factories and fuel using energy producer to easily engage in both the carbon and NOx credit markets. This advancement could boost farmers' incomes while encouraging sustainable agricultural practices.</p>
+    <p>RedNOx's CEO, Dr. Solomon Ssenyange, stated, "Receiving this award reaffirms our dedication to developing solutions that prioritize environmental sustainability and offer economic benefits to agriculture. Our sensor technology not only enhances soil health and food production but also promotes the reduction of carbon and NOx emissions."</p>
+    <p>The announcement from RedNOx comes in the wake of the USDA's official press release on the recent Phase I Awards, further details of which can be accessed here. RedNOx extends its gratitude to the USDA and the SBIR/STTR Office for recognizing and supporting initiatives that drive tech innovation in food and agriculture.</p>
+    <p>For those with inquiries concerning the award or RedNOx's ambient and soil greenhouse gas measurement platform, you're encouraged to reach out to the company directly or to the SBIR/STTR Office for broader questions regarding the program.</p>
+    <h3>About RedNOx</h3>
+    <p>Headquartered in Fremont, CA, RedNOx Inc. specializes in developing state-of-the-art sensing solutions for a variety of applications. Committed to both innovation and sustainability, RedNOx is redefining how agriculture interacts with environmental responsibilities. Learn more about their initiatives and advancements at www.rednoxinc.com and stay connected via LinkedIn.</p>
   `,
     },
-    "automation-workflows": {
-        title: "The Complete Guide to Automation Workflows for SaaS Companies",
+    "rednox-awarded-usda-nifa-sbir-phase-ii-grant-to-drive-innovation-in-agricultural-emissions-reduction": {
+        title: "RedNOx Awarded USDA NIFA SBIR Phase II Grant to Drive Innovation in Agricultural Emissions Reduction",
         excerpt:
-            "Learn how to implement automation workflows that save time, reduce errors, and scale your business operations.",
-        author: "Michael Chen",
-        date: "2024-01-12",
-        readTime: "12 min read",
-        category: "Automation",
-        image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=600&fit=crop",
+            "We are thrilled to announce that RedNOx has been awarded a USDA NIFA SBIR Phase II grant of $650,000 as part of a $26.8 million investment to support groundbreaking, small business-led innovations in agriculture.",
+        date: "2024-10-31",
+        readTime: "5 min read",
+        category: "Press Release",
+        image: "/us.jpg",
         content: `
-    <p>Automation has become a cornerstone of successful SaaS operations, enabling companies to scale efficiently while maintaining quality and reducing operational overhead. This comprehensive guide will walk you through everything you need to know about implementing automation workflows in your SaaS business.</p>
-
-    <h2>Understanding Automation in SaaS Context</h2>
-    <p>SaaS automation involves using technology to perform repetitive tasks, streamline processes, and reduce manual intervention across various business functions. From customer onboarding to billing and support, automation can transform how your company operates.</p>
-
-    <h2>Key Areas for SaaS Automation</h2>
-
-    <h3>Customer Onboarding</h3>
-    <p>Automate the customer journey from signup to first value:</p>
-    <ul>
-      <li>Welcome email sequences</li>
-      <li>Account setup and configuration</li>
-      <li>Feature introduction tours</li>
-      <li>Progress tracking and milestone celebrations</li>
-    </ul>
-
-    <h3>Customer Support</h3>
-    <p>Reduce support ticket volume and improve response times:</p>
-    <ul>
-      <li>Chatbot for common queries</li>
-      <li>Automatic ticket routing and prioritization</li>
-      <li>Knowledge base suggestions</li>
-      <li>Follow-up surveys and feedback collection</li>
-    </ul>
-
-    <h3>Marketing and Sales</h3>
-    <p>Nurture leads and convert prospects more effectively:</p>
-    <ul>
-      <li>Lead scoring and qualification</li>
-      <li>Email marketing campaigns</li>
-      <li>Social media posting and engagement</li>
-      <li>Sales pipeline management</li>
-    </ul>
-
-    <h2>Implementation Best Practices</h2>
-
-    <h3>Start Small and Scale Gradually</h3>
-    <p>Begin with simple, high-impact automations before tackling complex workflows. This approach allows you to learn and refine your processes without overwhelming your team.</p>
-
-    <h3>Map Your Current Processes</h3>
-    <p>Before automating, document your existing workflows. Identify bottlenecks, repetitive tasks, and areas where human error commonly occurs.</p>
-
-    <h3>Choose the Right Tools</h3>
-    <p>Select automation tools that integrate well with your existing tech stack. Popular options include Zapier for connecting apps, HubSpot for marketing automation, and Intercom for customer communication.</p>
-
-    <h2>Measuring Automation Success</h2>
-    <p>Track key metrics to ensure your automation efforts are delivering value:</p>
-    <ul>
-      <li>Time saved per process</li>
-      <li>Error reduction rates</li>
-      <li>Customer satisfaction scores</li>
-      <li>Employee productivity improvements</li>
-      <li>Cost savings and ROI</li>
-    </ul>
-
-    <h2>Common Pitfalls to Avoid</h2>
-    <p>Learn from common mistakes that can derail automation initiatives:</p>
-    <ul>
-      <li>Over-automating and losing the human touch</li>
-      <li>Automating broken processes without fixing them first</li>
-      <li>Neglecting to train team members on new workflows</li>
-      <li>Failing to monitor and optimize automated processes</li>
-    </ul>
-
-    <h2>The Future of SaaS Automation</h2>
-    <p>As AI and machine learning technologies advance, we can expect even more sophisticated automation capabilities. Predictive analytics, intelligent routing, and personalized customer experiences will become standard features in SaaS automation platforms.</p>
-
-    <p>By implementing thoughtful automation workflows, SaaS companies can focus more on innovation and customer value while letting technology handle routine operations. Start your automation journey today and watch your business scale more efficiently than ever before.</p>
+    <p>We are thrilled to announce that RedNOx has been awarded a USDA NIFA SBIR Phase II grant of $650,000 as part of a $26.8 million investment to support groundbreaking, small business-led innovations in agriculture. This funding will enable us to advance our N₂O and NOx sensing technologies, specifically aimed at reducing emissions of nitrous oxide and NOx from both synthetic and microbial fertilizers.</p>
+    <p>This Phase II award underscores the importance of cutting-edge research in addressing critical environmental challenges and brings our technology closer to commercialization. With USDA NIFA’s support, RedNOx will continue its mission to enhance agricultural productivity, benefit local communities, and contribute to a cleaner, healthier environment.</p>
   `,
-    },
-    "data-driven-decisions": {
-        title: "Making Data-Driven Decisions: Analytics Best Practices for Growing Teams",
-        excerpt:
-            "Transform your decision-making process with these proven analytics strategies and key performance indicators.",
-        author: "Emily Rodriguez",
-        date: "2024-01-10",
-        readTime: "6 min read",
-        category: "Analytics",
-        image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=600&fit=crop",
-        content: `
-    <p>In today's competitive business landscape, the ability to make informed, data-driven decisions can be the difference between success and failure. For growing teams, establishing robust analytics practices early on sets the foundation for scalable decision-making processes.</p>
-
-    <h2>The Foundation of Data-Driven Culture</h2>
-    <p>Building a data-driven culture starts with leadership commitment and extends throughout the organization. It requires not just the right tools and processes, but also a mindset shift toward questioning assumptions and validating hypotheses with data.</p>
-
-    <h2>Essential Metrics for Growing Teams</h2>
-
-    <h3>Customer Acquisition Metrics</h3>
-    <ul>
-      <li>Customer Acquisition Cost (CAC)</li>
-      <li>Conversion rates by channel</li>
-      <li>Time to conversion</li>
-      <li>Lead quality scores</li>
-    </ul>
-
-    <h3>Product Usage Metrics</h3>
-    <ul>
-      <li>Daily/Monthly Active Users (DAU/MAU)</li>
-      <li>Feature adoption rates</li>
-      <li>User engagement depth</li>
-      <li>Session duration and frequency</li>
-    </ul>
-
-    <h3>Financial Health Indicators</h3>
-    <ul>
-      <li>Monthly Recurring Revenue (MRR)</li>
-      <li>Customer Lifetime Value (CLV)</li>
-      <li>Churn rate and revenue churn</li>
-      <li>Gross and net revenue retention</li>
-    </ul>
-
-    <h2>Building Your Analytics Stack</h2>
-
-    <h3>Data Collection</h3>
-    <p>Start with comprehensive data collection across all customer touchpoints. Use tools like Google Analytics for web data, Mixpanel for product analytics, and customer feedback platforms for qualitative insights.</p>
-
-    <h3>Data Storage and Processing</h3>
-    <p>As your data grows, invest in proper data warehousing solutions. Cloud platforms like BigQuery, Snowflake, or Redshift can handle large volumes of data and complex queries.</p>
-
-    <h3>Visualization and Reporting</h3>
-    <p>Make data accessible to all team members through intuitive dashboards. Tools like Tableau, Looker, or even simpler solutions like Google Data Studio can help democratize data access.</p>
-
-    <h2>Best Practices for Implementation</h2>
-
-    <h3>Start with Clear Questions</h3>
-    <p>Before diving into data, define what questions you're trying to answer. This prevents analysis paralysis and ensures your efforts are focused on actionable insights.</p>
-
-    <h3>Establish Data Quality Standards</h3>
-    <p>Implement processes to ensure data accuracy and consistency. Regular audits, validation rules, and clear data governance policies are essential.</p>
-
-    <h3>Create Feedback Loops</h3>
-    <p>Establish regular review cycles where teams can assess the impact of data-driven decisions and refine their approach based on outcomes.</p>
-
-    <h2>Common Challenges and Solutions</h2>
-
-    <h3>Data Silos</h3>
-    <p>Break down departmental barriers by creating shared dashboards and encouraging cross-functional data discussions.</p>
-
-    <h3>Analysis Paralysis</h3>
-    <p>Set time limits for analysis and focus on making decisions with sufficient (not perfect) information.</p>
-
-    <h3>Lack of Context</h3>
-    <p>Always consider external factors and business context when interpreting data. Numbers alone don't tell the complete story.</p>
-
-    <h2>Moving Forward</h2>
-    <p>Building a data-driven organization is an ongoing journey, not a destination. Start with the basics, gradually expand your capabilities, and always keep the focus on using data to better serve your customers and grow your business.</p>
-
-    <p>Remember, the goal isn't to have the most sophisticated analytics setup, but to make better decisions that drive meaningful business outcomes. Start where you are, use what you have, and do what you can with the data available to you.</p>
-  `,
-    },
+    }
 }

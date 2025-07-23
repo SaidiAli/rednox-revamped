@@ -11,7 +11,7 @@ export interface TeamMember {
 export interface NewsData {
     id: number;
     title: string;
-    description: string;
+    excerpt: string;
     image?: string;
     date: string;
     link: string;
@@ -20,16 +20,16 @@ export interface NewsData {
 export interface PressData {
     id: number;
     title: string;
-    description: string;
+    excerpt: string;
     image?: string;
     date: string;
-    link: string;
+    slug: string;
 }
 
 export interface PublicationData {
     id: number;
     title: string;
-    description: string;
+    excerpt: string;
     image?: string;
     date: string;
     link: string;

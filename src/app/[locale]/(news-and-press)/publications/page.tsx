@@ -1,42 +1,9 @@
 "use client"
 
+import { publicationData } from "@/lib/data";
+import { PublicationData } from "@/lib/types";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import Image from "next/image"
-
-interface PublicationData {
-    title: string;
-    description: string;
-    image?: string;
-    date: string;
-    link: string;
-}
-
-const publicationData: PublicationData[] = [
-    {
-        title: "NIFA Press Release",
-        description: "RedNOx wins NIFA grant for agricultural emissions monitoring",
-        date: "2025-07-22",
-        link: "https://www.nifa.org/"
-    },
-    {
-        title: "NIFA Press Release",
-        description: "RedNOx wins NIFA grant for agricultural emissions monitoring",
-        date: "2025-07-22",
-        link: "https://www.nifa.org/"
-    },
-    {
-        title: "NIFA Press Release",
-        description: "RedNOx wins NIFA grant for agricultural emissions monitoring",
-        date: "2025-07-22",
-        link: "https://www.nifa.org/"
-    },
-    {
-        title: "NIFA Press Release",
-        description: "RedNOx wins NIFA grant for agricultural emissions monitoring",
-        date: "2025-07-22",
-        link: "https://www.nifa.org/"
-    },
-]
 
 export default function Publications() {
     return (

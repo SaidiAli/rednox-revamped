@@ -1,42 +1,9 @@
 "use client"
 
+import { NewsData } from "@/lib/types";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import Image from "next/image"
-
-interface NewsData {
-    title: string;
-    description: string;
-    image?: string;
-    date: string;
-    link: string;
-}
-
-const newsData: NewsData[] = [
-    {
-        title: "NIFA Press Release",
-        description: "RedNOx wins NIFA grant for agricultural emissions monitoring",
-        date: "2025-07-22",
-        link: "https://www.nifa.org/"
-    },
-    {
-        title: "NIFA Press Release",
-        description: "RedNOx wins NIFA grant for agricultural emissions monitoring",
-        date: "2025-07-22",
-        link: "https://www.nifa.org/"
-    },
-    {
-        title: "NIFA Press Release",
-        description: "RedNOx wins NIFA grant for agricultural emissions monitoring",
-        date: "2025-07-22",
-        link: "https://www.nifa.org/"
-    },
-    {
-        title: "NIFA Press Release",
-        description: "RedNOx wins NIFA grant for agricultural emissions monitoring",
-        date: "2025-07-22",
-        link: "https://www.nifa.org/"
-    },
-]
+import { newsData } from "@/lib/data";
 
 export default function News() {
     return (

@@ -77,7 +77,7 @@ export default function Navbar() {
                     <div className="hidden md:block">
                         <LocaleSwitcher />
                     </div>
-                    <Button className="rounded-full bg-primary text-primaryForeground">
+                    <Button className="rounded-full bg-gradient-to-r from-primary to-[#F24229] text-primaryForeground">
                         Schedule a pilot
                         <ChevronRight className="ml-1 size-4" />
                     </Button>

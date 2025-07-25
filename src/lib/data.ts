@@ -68,7 +68,7 @@ export const founders: TeamMember[] = [
         id: 1,
         name: "Solomon Ssenyange, PhD",
         position: "Co-Founder & CEO",
-        image: "/team/solomon_ssenyange.png",
+        image: "/team/solomon-team.png",
         alt: "solomon ssenyange founder rednox inc",
         bio: "Born in Uganda and grew up in Kenya as a war refugee. He co-founded SpiroSure, which had a $100 million exit to a multinational respiratory company in 2020.",
         email: "solomon@rednoxinc.com"
@@ -77,7 +77,7 @@ export const founders: TeamMember[] = [
         id: 2,
         name: "Prabir Dutta, PhD",
         position: "Co-Founder & Technical Advisor",
-        image: "/team/prabir.png",
+        image: "/team/dutta.jpeg",
         alt: "prabir dutta founder rednox inc",
         bio: "A world expert in sensor technology. He developed concepts for RedNOx technology in his lab at The Ohio State University.",
     },

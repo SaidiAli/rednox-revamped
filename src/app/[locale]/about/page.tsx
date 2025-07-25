@@ -1,5 +1,6 @@
 "use client"
 
+import { BackgroundBeams } from "@/components/Background-beams";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import Team from "@/components/team";
@@ -12,13 +13,19 @@ export default function Agrinox() {
     return (
         <div className="min-h-screen">
             <Navbar />
-            <div className="w-full mb-20">
-                <div className="container mx-auto p-32 my-8 z-10 bg-[url(/bg1.jpeg)] bg-cover bg-no-repeat bg-center relative rounded-2xl">
-                    <div className="absolute inset-0 top-0 left-0 w-full h-full bg-moody/50"></div>
-                    <div className="">
-                        <h1 className="text-center font-bold text-5xl max-w-2xl mx-auto text-white">Reducing NO<sub>x</sub>, CO<sub>2</sub> and N<sub>2</sub>O Emissions now</h1>
-                        <p className="text-base max-w-lg mx-auto text-center mt-4">RedNOx is a company that creates GHG emissions sensors. It combines advanced ceramic engineering with high-precision instrumentation to make selective and sensitive NOx, CO2 and N2O measurement platform. It has started several verification programs in collaboration with top automotive and agriculture companies.</p>
+
+            <div className="w-full overflow-hidden">
+                <div className="h-full py-20 w-full rounded-md bg-background relative flex flex-col items-center justify-center antialiased">
+                    <div className="max-w-7xl mx-auto p-4">
+                        <h1 className="relative z-10 text-lg md:text-4xl bg-clip-text text-white text-center font-sans font-bold">
+                            Reducing NO<sub>x</sub>, CO<sub>2</sub> and N<sub>2</sub>O Emissions now
+                        </h1>
+                        <p className="text-white max-w-lg mx-auto my-2 text-base mt-6 text-center relative z-10">
+                            RedNOx is a company that creates GHG emissions sensors. It combines advanced ceramic engineering with high-precision instrumentation to make selective and sensitive NOx, CO2 and N2O measurement platform. It has started several verification programs in collaboration with top automotive and agriculture companies.
+                        </p>
                     </div>
+
+                    <BackgroundBeams />
                 </div>
             </div>
 
@@ -50,7 +57,7 @@ export default function Agrinox() {
                 <SectionTitle title="Founders" />
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-h-[300px] h-[300px]">
                     {founders.map((member) => (
-                        <Team id={member.id} name={member.name} email={member.email} bio={member.bio} position={member.position} image={member.image} />
+                        <Team key={member.id} id={member.id} name={member.name} email={member.email} bio={member.bio} position={member.position} image={member.image} />
                     ))}
                 </div>
             </div>

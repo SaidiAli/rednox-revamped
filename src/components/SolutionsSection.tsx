@@ -13,7 +13,7 @@ export default function SolutionsSection() {
         },
     }
     return (
-        <section id="features" className="w-full py-20 md:py-32">
+        <section id="solutions" className="w-full py-20 md:py-32">
             <div className="container px-4 md:px-6">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
@@ -33,7 +33,7 @@ export default function SolutionsSection() {
                     viewport={{ once: true }}
                     className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
                 >
-                    <SolutionCard title="Heavy-Duty Engines" image="/thumbnails/1.png" link="/heavy-duty-engine" description="OEMs face the 2027 U.S. EPA & CARB 0.02 g/hp-hr NOx limit while customers demand < 1 gallon/h fuel-penalties. Current electrochemical sensors bottom out at ~50 ppm." />
+                    <SolutionCard title="Heavy-Duty Engines" image="/thumbnails/1.png" link="/heavy-duty-engines" description="OEMs face the 2027 U.S. EPA & CARB 0.02 g/hp-hr NOx limit while customers demand < 1 gallon/h fuel-penalties. Current electrochemical sensors bottom out at ~50 ppm." />
                     <SolutionCard title="Gensets & Prime Power" image="/thumbnails/2.png" link="/gensets" description="RedNOx sensors provide continuous, accurate NOx measurement for stationary engines, enabling 24/7 compliance, reducing fuel costs, and ensuring proactive maintenance through remote telemetry and self-diagnostics" />
                     <SolutionCard title="AgriNOx – Precision N₂O Monitoring" image="/thumbnails/3.png" link="/agrinox" description="AgriNOx provides real-time, in-situ N₂O measurement in soil and plume emissions, helping farmers optimize nitrogen usage, reduce greenhouse gas contributions, and generate carbon credits through continuous monitoring and analytics." />
                 </motion.div>

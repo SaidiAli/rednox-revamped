@@ -1,8 +1,10 @@
 
 import { ArrowRight } from "lucide-react";
 import Image from "next/image"
+import { useTranslations } from "next-intl";
 
 export default function SolutionCard({ title, description, image, link }: { title: string; description: string; image: string; link: string }) {
+    const t = useTranslations("HomePage")
     return (
         <div className="bg-[#1B1818] text-white rounded-3xl flex flex-col gap-4 group w-full">
             <div className="w-full h-[200px] relative rounded-t-2xl">
@@ -14,7 +16,7 @@ export default function SolutionCard({ title, description, image, link }: { titl
                     <p className="text-neutral-500 text-base">{description}</p>
                 </div>
                 <a href={link} className="relative flex items-center gap-2 group-hover:bg-primary group-hover:text-white transition duration-200 p-8 rounded-b-2xl">
-                    <p className="text-white">Explore Solution</p>
+                    <p className="text-white">{t("solutionsSection.exploreButton")}</p>
                     <ArrowRight className="ml-1 size-4 text-white" />
                     <Image src="/sensor-icon.png" alt="" width={150} height={150} className="absolute opacity-50 top-0 right-0 hidden group-hover:block translate-x-0 transition duration-500 ease-in-out" />
                 </a>

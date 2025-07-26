@@ -1,8 +1,10 @@
 import { motion } from "framer-motion";
 import SolutionCard from "./SolutionCard";
 import SectionTitle from "./ui/SectionTitle";
+import { useTranslations } from "next-intl";
 
 export default function SolutionsSection() {
+    const t = useTranslations("HomePage")
     const container = {
         hidden: { opacity: 0 },
         show: {
@@ -22,8 +24,8 @@ export default function SolutionsSection() {
                     transition={{ duration: 0.5 }}
                     className="flex flex-col items-center justify-center space-y-4 text-center mb-16"
                 >
-                    <SectionTitle title="Solutions" />
-                    <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-white">Precision Monitoring for Every Emission Challenge</h2>
+                    <SectionTitle title={t("solutionsSection.headline")} />
+                    <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-white">{t("solutionsSection.subheader")}</h2>
                 </motion.div>
 
                 <motion.div
@@ -33,9 +35,9 @@ export default function SolutionsSection() {
                     viewport={{ once: true }}
                     className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
                 >
-                    <SolutionCard title="Heavy-Duty Engines" image="/thumbnails/1.png" link="/heavy-duty-engines" description="OEMs face the 2027 U.S. EPA & CARB 0.02 g/hp-hr NOx limit while customers demand < 1 gallon/h fuel-penalties. Current electrochemical sensors bottom out at ~50 ppm." />
-                    <SolutionCard title="Gensets & Prime Power" image="/thumbnails/2.png" link="/gensets" description="RedNOx sensors provide continuous, accurate NOx measurement for stationary engines, enabling 24/7 compliance, reducing fuel costs, and ensuring proactive maintenance through remote telemetry and self-diagnostics" />
-                    <SolutionCard title="AgriNOx – Precision N₂O Monitoring" image="/thumbnails/3.png" link="/agrinox" description="AgriNOx provides real-time, in-situ N₂O measurement in soil and plume emissions, helping farmers optimize nitrogen usage, reduce greenhouse gas contributions, and generate carbon credits through continuous monitoring and analytics." />
+                    <SolutionCard title={t("solutionsSection.solutions.hde.title")} image="/thumbnails/1.png" link="/heavy-duty-engines" description={t("solutionsSection.solutions.hde.description")} />
+                    <SolutionCard title={t("solutionsSection.solutions.genset.title")} image="/thumbnails/2.png" link="/gensets" description={t("solutionsSection.solutions.genset.description")} />
+                    <SolutionCard title={t("solutionsSection.solutions.agrinox.title")} image="/thumbnails/3.png" link="/agrinox" description={t("solutionsSection.solutions.agrinox.description")} />
                 </motion.div>
             </div>
         </section>

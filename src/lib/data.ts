@@ -1,67 +1,67 @@
-import { NewsData, PressData, PublicationData, TeamMember } from "./types"
+import { NewsData, PressData, PublicationData, TeamMember, Translations } from "./types"
 
-export const features = {
+export const features = (t: Translations) => ({
     hde: [
         {
-            key: "Detection Floor",
+            key: t("keyValueGrid.metrics.detectionFloor"),
             value: "< 1 ppm-NOx"
         },
         {
-            key: "Accuracy",
+            key: t("keyValueGrid.metrics.accuracy"),
             value: "±10 % @ 1–20 ppm"
         },
         {
-            key: "T90 Response",
+            key: t("keyValueGrid.metrics.t90"),
             value: "< 2 seconds"
         },
         {
-            key: "Output",
+            key: t("keyValueGrid.metrics.output"),
             value: "CAN-J1939 / Modbus / RS-485 "
         },
         {
-            key: "Operating Temp",
+            key: t("keyValueGrid.metrics.operatingTemp"),
             value: "–40 … +700 °C "
         },
         {
-            key: "Ingress",
+            key: t("keyValueGrid.metrics.ingress"),
             value: "IP6K9K "
         },
         {
-            key: "Lifetime",
+            key: t("keyValueGrid.metrics.lifetime"),
             value: "> 5,000 h"
         }
     ],
     afgrinox: [
         {
-            key: "Detection Floor",
+            key: t("keyValueGrid.metrics.detectionFloor"),
             value: "< 100 ppb-N₂O"
         },
         {
-            key: "Accuracy",
+            key: t("keyValueGrid.metrics.accuracy"),
             value: "±5 % @ 0.1–5 ppm"
         },
         {
-            key: "T90 Response",
+            key: t("keyValueGrid.metrics.t90"),
             value: "< 3 seconds"
         },
         {
-            key: "Output",
+            key: t("keyValueGrid.metrics.output"),
             value: "LoRaWAN / BLE"
         },
         {
-            key: "Operating Temp",
+            key: t("keyValueGrid.metrics.operatingTemp"),
             value: "–10 … +60 °C"
         },
         {
-            key: "Ingress",
+            key: t("keyValueGrid.metrics.ingress"),
             value: "IP67"
         },
         {
-            key: "Lifetime",
+            key: t("keyValueGrid.metrics.lifetime"),
             value: "> 5,000 h"
         }
     ]
-}
+})
 
 export const founders: TeamMember[] = [
     {

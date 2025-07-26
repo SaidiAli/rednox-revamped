@@ -3,12 +3,190 @@
         "label": "Change language",
         "locale": "{locale, select, de {🇩🇪 Deutsch} en {🇺🇸 English} ja {🇯🇵 日本語} other {Unknown}}"
     },
+    "Navbar": {
+        "title": "Rednox",
+        "scheduleButton": "Schedule a pilot",
+        "menu": {
+            "home": "Home",
+            "solutions": {
+                "title": "Solutions",
+                "link1": {
+                    "title": "Heavy-Duty Engines",
+                    "description": "Monitor and control emissions from heavy-duty engines."
+                },
+                "link2": {
+                    "title": "Gensets & Prime Power",
+                    "description": "Monitor and control emissions from gensets and prime power."
+                },
+                "link3": {
+                    "title": "AgriNOx",
+                    "description": "Monitor and control emissions from agricultural equipment."
+                }
+            },
+            "press-release": {
+                "title": "Press Release",
+                "link1": "Press Release",
+                "link2": "In the news",
+                "link3": "Publications"
+            },
+            "contact": "Contact",
+            "technology": "Technology",
+            "about": {
+                "title": "About",
+                "link1": "About Rednox",
+                "link2": "Team",
+                "link3": "Investor"
+            }
+        }
+    },
     "Footer": {
         "caption": "At RedNOx, our goal is to develop effective, sustainable, and durable solutions to agricultural challenges. We have developed and/or on a roadmap to demonstrate low-cost, in-field sensors for greenhouse gas emissions from soil in agricultural settings."
     },
     "HomePage": {
         "title": "Rednox",
         "heroHeadline": "Ultra-Sensitive Emissions Sensors for",
-        "heroDescription": "Cut NOx & N₂O faster than the regulation curve, slash fuel burn, and prove it with traceable data"
+        "heroDescription": "Cut NOx & N₂O faster than the regulation curve, slash fuel burn, and prove it with traceable data",
+        "keyValueGrid": {
+            "hde": "RedNOx™ HDE & Genset Sensor",
+            "agrinox": "AgriNOx™ N₂O Sensor",
+            "metrics": {
+                "detectionFloor": "Detection Floor",
+                "accuracy": "Accuracy",
+                "t90": "T90 Response",
+                "output": "Output",
+                "operatingTemp": "Operating Temp",
+                "ingress": "Ingress",
+                "lifetime": "Lifetime"
+            }
+        },
+        "whyYouShouldCare": {
+            "headline": "Why you should care",
+            "subheader": "Save the environment",
+            "description": "NOx drives smog and acid rain; N₂O has 298× the GWP of CO₂. One ppm you eliminate today stops both an air-quality fine and a greenhouse-gas penalty tomorrow.",
+            "downloadButton": "Download spec sheet",
+            "scheduleButton": "Schedule a pilot"
+        },
+        "solutionsSection": {
+            "headline": "Solutions",
+            "subheader": "Precision Monitoring for Every Emission Challenge",
+            "exploreButton": "Explore Solutions",
+            "solutions": {
+                "hde": {
+                    "title": "Heavy-Duty Engines",
+                    "description": "OEMs face the 2027 U.S. EPA & CARB 0.02 g/hp-hr NOx limit while customers demand < 1 gallon/h fuel-penalties. Current electrochemical sensors bottom out at ~50 ppm."
+                },
+                "genset": {
+                    "title": "Gensets & Prime Power",
+                    "description": "RedNOx sensors provide continuous, accurate NOx measurement for stationary engines, enabling 24/7 compliance, reducing fuel costs, and ensuring proactive maintenance through remote telemetry and self-diagnostics"
+                },
+                "agrinox": {
+                    "title": "AgriNOx – Precision N₂O Monitoring",
+                    "description": "AgriNOx provides real-time, in-situ N₂O measurement in soil and plume emissions, helping farmers optimize nitrogen usage, reduce greenhouse gas contributions, and generate carbon credits through continuous monitoring and analytics."
+                }
+            }
+        },
+        "PressReleaseSection": {
+            "title": "Press Release",
+            "readMoreButton": "Read more"
+        }
+    },
+    "HeavyDutyEngines": {
+        "title": "Heavy-Duty Engines",
+        "description": "RedNOx offers advanced sensor solutions for Heavy-Duty Engines, designed to meet the rigorous demands of upcoming regulations like the 2027 U.S. EPA & CARB",
+        "downloadButton": "Download spec sheet",
+        "scheduleButton": "Schedule a pilot",
+        "problemSection": {
+            "headline": "The Problem",
+            "subheader": "OEMs face the 2027 U.S. EPA & CARB 0.02 g/hp-hr NOx limit while customers demand < 1 gallon/h fuel-penalties. Current electrochemical sensors bottom out at ~50 ppm."
+        },
+        "ourFixSection": {
+            "headline": "Our Fix",
+            "fixes": {
+                "1": {
+                    "title": "1 – 20 ppm detection with ±10 % error",
+                    "description": "This keeps you inside warranty margins."
+                },
+                "2": {
+                    "title": "Plug-and-play ECU interface.",
+                    "description": "One harness, two CAN frames per second."
+                },
+                "3": {
+                    "title": "Heater-optimised ceramic stack",
+                    "description": "That reaches temperature in < 30 s — meets cold-start FTP."
+                },
+                "4": {
+                    "title": "Cloud API & dashboard",
+                    "description": "Trigger regen or urea-dosing only when needed, saving up to 5 % DEF."
+                }
+            }
+        },
+        "useCaseFlowSection": {
+            "headline": "Use Case Flow",
+            "list": {
+                "1": "Sensor bolts into the after-treatment slip joint.",
+                "2": "Data flows via J1939 to the ECU (closed-loop) and via LTE to RedNOx Cloud.",
+                "3": "Fleet manager views per-truck NOx intensity & fuel/NH₃ trade-off curves."
+            }
+        }
+    },
+    "Gensets": {
+        "title": "Gensets & Prime Power",
+        "description": "For stationary engines, continuous compliance and operational efficiency are paramount. RedNOx offers advanced sensing solutions for Gensets & Prime Power, designed to provide accurate, real-time NOx emission data. Our sensors help avoid costly shutdowns under Tier 4 Final rules by providing detection within a <10 ppm range. With plug-and-play integration into SCADA panels via Modbus-TCP and remote telemetry for proactive self-diagnostics, RedNOx ensures your operations remain compliant and optimized, even in remote locations.",
+        "downloadButton": "Download spec sheet",
+        "list": {
+            "1": "24/7 compliance audits ",
+            "2": "Remote locations",
+            "3": "Fuel cost is > 70 % OPEX"
+        },
+        "featureHighLight": {
+            "title": "Feature Highlight",
+            "1": {
+                "title": "< 10 ppm range",
+                "description": "Avoids shutdowns under Tier 4 Final rules."
+            },
+            "2": {
+                "title": "Modbus-TCP",
+                "description": "Drops straight into most SCADA panels."
+            },
+            "3": {
+                "title": "Self-diagnostics (heater impedance, λ-drift) streamed upstream; schedule service before the light comes on.",
+                "description": ""
+            }
+        },
+        "keySpecifications": {
+            "title": "Key Specifications"
+        }
+    },
+    "AgriNOx": {
+        "title": "AgriNOx – Precision N₂O Monitoring",
+        "description": "Precision N₂O monitoring for agricultural equipment, ensuring compliance with Tier 4 Final rules and reducing fuel costs.",
+        "downloadButton": "Download spec sheet",
+        "valuePropositionSection": {
+            "title": "Value Proposition",
+            "list": {
+                "1": {
+                    "title": "Real-time in-situ N₂O ppm → kg N lost/ha algorithm.",
+                    "description": ""
+                },
+                "2": {
+                    "title": "Turns nitrogen savings into CARB LCFS or voluntary carbon credits.",
+                    "description": ""
+                },
+                "3": {
+                    "title": "Integrates with GPS-enabled spreaders",
+                    "description": "variable-rate prescriptions based on live soil plume."
+                },
+                "4": {
+                    "title": "Annual subscription (SaaS)",
+                    "description": "analytics, benchmarking, and automated credit registry filing."
+                }
+            }
+        },
+        "workflowSection": {
+            "title": "Pilot Workflow",
+            "1": "Install probe & LoRa gateway in < 30 min.",
+            "2": "Farm leverages live N₂O + weather to trim side-dress passes.",
+            "3": "Verified credit statement auto-generated at harvest."
+        }
     }
 }

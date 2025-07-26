@@ -3,12 +3,189 @@
         "label": "言語を変更",
         "locale": "{locale, select, de {🇩🇪 ドイツ語} en {🇺🇸 英語} ja {🇯🇵 日本語} other {不明}}"
     },
+    "Navbar": {
+        "title": "Rednox",
+        "scheduleButton": "パイロットプロジェクトをスケジュール",
+        "menu": {
+            "home": "ホーム",
+            "solutions": {
+                "title": "ソリューション",
+                "link1": {
+                    "title": "大型エンジン",
+                    "description": "大型エンジンからの排出物を監視および制御します。"
+                },
+                "link2": {
+                    "title": "発電機と主電源",
+                    "description": "発電機と主電源からの排出物を監視および制御します。"
+                },
+                "link3": {
+                    "title": "AgriNOx",
+                    "description": "農業機械からの排出物を監視および制御します。"
+                }
+            },
+            "press-release": {
+                "title": "プレスリリース",
+                "link1": "プレスリリース",
+                "link2": "ニュース",
+                "link3": "出版物"
+            },
+            "contact": "お問い合わせ",
+            "technology": "テクノロジー",
+            "about": {
+                "title": "会社概要",
+                "link1": "Rednoxについて",
+                "link2": "チーム",
+                "link3": "投資家"
+            }
+        }
+    },
     "Footer": {
         "caption": "RedNOxでは、農業の課題に対して効果的で持続可能かつ耐久性のあるソリューションを開発することを目標としています。当社は、農地における土壌からの温室効果ガス排出量を現場で低コストで測定できるセンサーを開発しており、またその実証に向けたロードマップも作成しています。"
     },
     "HomePage": {
         "title": "Rednox",
         "heroHeadline": "超高感度排出ガスセンサー（用途別）",
-        "heroDescription": "規制曲線よりも速くNOxおよびN₂Oを削減し、燃料消費量を大幅に削減し、追跡可能なデータでそれを証明する。"
+        "heroDescription": "規制曲線よりも速くNOxおよびN₂Oを削減し、燃料消費量を大幅に削減し、追跡可能なデータでそれを証明する。",
+        "keyValueGrid": {
+            "hde": "RedNOx™ HDE & 発電機センサー",
+            "agrinox": "AgriNOx™ N₂O センサー",
+            "metrics": {
+                "detectionFloor": "検出下限",
+                "accuracy": "精度",
+                "t90": "T90応答時間",
+                "output": "出力",
+                "operatingTemp": "動作温度",
+                "ingress": "侵入保護",
+                "lifetime": "寿命"
+            }
+        },
+        "whyYouShouldCare": {
+            "headline": "なぜ気にする必要があるのか",
+            "subheader": "環境を救う",
+            "description": "NOxはスモッグと酸性雨を引き起こし、N₂OはCO₂の298倍の地球温暖化係数を持ちます。今日排除する1ppmは、明日の大気質罰金と温室効果ガス罰金の両方を阻止します。",
+            "downloadButton": "仕様書をダウンロード",
+            "scheduleButton": "パイロットプロジェクトをスケジュール"
+        },
+        "solutionsSection": {
+            "headline": "ソリューション",
+            "subheader": "あらゆる排出課題に対応する精密モニタリング",
+            "exploreButton": "ソリューションを探る",
+            "solutions": {
+                "hde": {
+                    "title": "大型エンジン",
+                    "description": "OEMは2027年のU.S. EPAおよびCARBの0.02 g/hp-hr NOx制限に直面しており、顧客は1ガロン/時未満の燃料ペナルティを要求しています。現在の電気化学センサーは約50ppmで底打ちします。"
+                },
+                "genset": {
+                    "title": "発電機と主電源",
+                    "description": "RedNOxセンサーは、定置型エンジンのNOxを継続的かつ正確に測定し、24時間年中無休のコンプライアンスを可能にし、燃料費を削減し、遠隔測定と自己診断を通じてプロアクティブなメンテナンスを保証します。"
+                },
+                "agrinox": {
+                    "title": "AgriNOx – 精密N₂O監視",
+                    "description": "AgriNOxは、土壌およびプルーム排出物中のN₂Oをリアルタイムで現場で測定し、農家が窒素の使用を最適化し、温室効果ガスの寄与を減らし、継続的な監視と分析を通じて炭素クレジットを生成するのに役立ちます。"
+                }
+            }
+        },
+        "PressReleaseSection": {
+            "title": "プレスリリース",
+            "readMoreButton": "もっと読む"
+        }
+    },
+    "HeavyDutyEngines": {
+        "title": "大型エンジン",
+        "description": "RedNOxは、2027年の米国EPAおよびCARBのような今後の規制の厳しい要求を満たすように設計された、大型エンジン向けの高機能センサーソリューションを提供しています。",
+        "downloadButton": "仕様書をダウンロード",
+        "scheduleButton": "パイロットをスケジュール",
+        "problemSection": {
+            "headline": "問題点",
+            "subheader": "OEMは2027年の米国EPAおよびCARBの0.02 g/hp-hr NOx制限に直面しており、顧客は1ガロン/時未満の燃料ペナルティを要求しています。現在の電気化学センサーは約50 ppmで底打ちします。"
+        },
+        "ourFixSection": {
+            "headline": "私たちの解決策",
+            "fixes": {
+                "1": {
+                    "title": "1 – 20 ppm検出、誤差±10%",
+                    "description": "これにより、保証範囲内に収まります。"
+                },
+                "2": {
+                    "title": "プラグアンドプレイECUインターフェース。",
+                    "description": "1本のハーネス、毎秒2つのCANフレーム。"
+                },
+                "3": {
+                    "title": "ヒーター最適化セラミックスタック",
+                    "description": "30秒未満で温度に達し、コールドスタートFTPに適合します。"
+                },
+                "4": {
+                    "title": "クラウドAPIとダッシュボード",
+                    "description": "必要なときにのみ再生または尿素添加をトリガーし、DEFを最大5%節約します。"
+                }
+            }
+        },
+        "useCaseFlowSection": {
+            "headline": "ユースケースの流れ",
+            "list": {
+                "1": "センサーは後処理スリップジョイントにボルトで固定されます。",
+                "2": "データはJ1939経由でECU（閉ループ）に、LTE経由でRedNOx Cloudに流れます。",
+                "3": "フリートマネージャーはトラックごとのNOx強度と燃料/NH₃のトレードオフ曲線を閲覧します。"
+            }
+        }
+    },
+    "Gensets": {
+        "title": "発電機と主電源",
+        "description": "定置型エンジンにとって、継続的なコンプライアンスと運用効率は最も重要です。RedNOxは、発電機と主電源向けの高機能センシングソリューションを提供しており、正確なリアルタイムNOx排出データを提供するように設計されています。当社のセンサーは、10 ppm未満の範囲で検出を提供することにより、Tier 4 Final規則に基づく費用のかかるシャットダウンを回避するのに役立ちます。Modbus-TCPを介したSCADAパネルへのプラグアンドプレイ統合と、プロアクティブな自己診断のためのリモートテレメトリーにより、RedNOxは、遠隔地でもお客様の運用が準拠し、最適化された状態を維持することを保証します。",
+        "downloadButton": "仕様書をダウンロード",
+        "list": {
+            "1": "24時間365日のコンプライアンス監査",
+            "2": "遠隔地",
+            "3": "燃料費はOPEXの70%以上"
+        },
+        "featureHighLight": {
+            "title": "機能のハイライト",
+            "1": {
+                "title": "10 ppm未満の範囲",
+                "description": "Tier 4 Final規則に基づくシャットダウンを回避します。"
+            },
+            "2": {
+                "title": "Modbus-TCP",
+                "description": "ほとんどのSCADAパネルに直接組み込まれます。"
+            },
+            "3": {
+                "title": "自己診断（ヒーターインピーダンス、λドリフト）は上流にストリーミングされます。ライトが点灯する前にサービスをスケジュールしてください。",
+                "description": ""
+            }
+        },
+        "keySpecifications": {
+            "title": "主要仕様"
+        }
+    },
+    "AgriNOx": {
+        "title": "AgriNOx – 精密N₂O監視",
+        "description": "農業機械用の精密N₂O監視、Tier 4 Final規則への準拠を確保し、燃料費を削減します。",
+        "downloadButton": "仕様書をダウンロード",
+        "valuePropositionSection": {
+            "title": "バリュープロポジション",
+            "list": {
+                "1": {
+                    "title": "リアルタイムの現場N₂O ppm → kg N損失/haアルゴリズム。",
+                    "description": ""
+                },
+                "2": {
+                    "title": "窒素削減をCARB LCFSまたは自主的な炭素クレジットに変換します。",
+                    "description": ""
+                },
+                "3": {
+                    "title": "GPS対応スプレッダーと統合",
+                    "description": "ライブ土壌プルームに基づいた可変レート処方。"
+                },
+                "4": {
+                    "title": "年間サブスクリプション（SaaS）",
+                    "description": "分析、ベンチマーキング、自動クレジット登録ファイリング。"
+                }
+            }
+        },
+        "workflowSection": {
+            "1": "プローブとLoRaゲートウェイを30分未満でインストール。",
+            "2": "農場はライブN₂O + 気象データを利用してサイドドレストラフを調整。",
+            "3": "検証済みクレジット明細書は収穫時に自動生成されます。"
+        }
     }
 }

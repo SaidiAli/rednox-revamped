@@ -1,8 +1,10 @@
 import { Button } from "@/components/ui/button"
 import { Icon } from "@iconify/react/dist/iconify.js"
 import Image from "next/image"
+import { useTranslations } from "next-intl"
 
 export default function SolutionHero({ title, description, image }: { title: string, description: string, image: string }) {
+    const t = useTranslations("HeavyDutyEngines")
     return (
         <div className="grid grid-cols-1 md:grid-cols-2 overflow-hidden transition duration-200">
             <div className="p-4 md:p-16 flex flex-col justify-center gap-12">
@@ -10,7 +12,7 @@ export default function SolutionHero({ title, description, image }: { title: str
                     <h1 className="text-4xl font-bold text-white">{title}</h1>
                     <p className="text-left text-base md:text-md mt-2 text-white">{description}</p>
                 </div>
-                <Button className="bg-primary text-white w-[300px]">Download spec sheet<Icon icon="lucide:download" width="24" height="24" className="text-white"/></Button>
+                <Button className="bg-primary text-white w-[300px]">{t("downloadButton")}<Icon icon="lucide:download" width="24" height="24" className="text-white"/></Button>
             </div>
             <div className="relative">
                 <div className="relative aspect-[4/3] lg:aspect-[3/2] h-[30rem]">

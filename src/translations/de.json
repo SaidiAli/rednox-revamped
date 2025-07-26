@@ -3,12 +3,189 @@
         "label": "Sprache ändern",
         "locale": "{locale, select, de {🇩🇪 Deutsch} en {🇺🇸 English} ja {🇯🇵 日本語} other {Unbekannt}}"
     },
+    "Navbar": {
+        "title": "Rednox",
+        "scheduleButton": "Pilotprojekt planen",
+        "menu": {
+            "home": "Startseite",
+            "solutions": {
+                "title": "Lösungen",
+                "link1": {
+                    "title": "Hochleistungsmotoren",
+                    "description": "Überwachung und Kontrolle von Emissionen von Hochleistungsmotoren."
+                },
+                "link2": {
+                    "title": "Stromaggregate & Primärstrom",
+                    "description": "Überwachung und Kontrolle von Emissionen von Stromaggregaten und Primärstrom."
+                },
+                "link3": {
+                    "title": "AgriNOx",
+                    "description": "Überwachung und Kontrolle von Emissionen von landwirtschaftlichen Geräten."
+                }
+            },
+            "press-release": {
+                "title": "Presse",
+                "link1": "Pressemitteilung",
+                "link2": "In den Nachrichten",
+                "link3": "Publikationen"
+            },
+            "contact": "Kontakt",
+            "technology": "Technologie",
+            "about": {
+                "title": "Über uns",
+                "link1": "Über Rednox",
+                "link2": "Team",
+                "link3": "Investoren"
+            }
+        }
+    },
     "Footer": {
         "caption": "Bei RedNOx ist es unser Ziel, effektive, nachhaltige und dauerhafte Lösungen für landwirtschaftliche Herausforderungen zu entwickeln. Wir haben kostengünstige Feldsensoren für Treibhausgasemissionen aus dem Boden in landwirtschaftlichen Umgebungen entwickelt und/oder haben einen Fahrplan, um diese zu demonstrieren."
     },
     "HomePage": {
         "title": "Rednox",
         "heroHeadline": "Hochempfindliche Emissionssensoren für",
-        "heroDescription": "NOx und N₂O schneller als die Regulierungskurve senken, den Kraftstoffverbrauch drastisch reduzieren und dies mit nachvollziehbaren Daten beweisen."
+        "heroDescription": "NOx und N₂O schneller als die Regulierungskurve senken, den Kraftstoffverbrauch drastisch reduzieren und dies mit nachvollziehbaren Daten beweisen.",
+        "keyValueGrid": {
+            "hde": "RedNOx™ HDE & Genset Sensor",
+            "agrinox": "AgriNOx™ N₂O Sensor",
+            "metrics": {
+                "detectionFloor": "Nachweisgrenze",
+                "accuracy": "Genauigkeit",
+                "t90": "T90 Ansprechzeit",
+                "output": "Ausgabe",
+                "operatingTemp": "Betriebstemperatur",
+                "ingress": "Eindringschutz",
+                "lifetime": "Lebensdauer"
+            }
+        },
+        "whyYouShouldCare": {
+            "headline": "Warum Sie sich interessieren sollten",
+            "subheader": "Schützen Sie die Umwelt",
+            "description": "NOx verursacht Smog und sauren Regen; N₂O hat das 298-fache GWP von CO₂. Ein ppm, das Sie heute eliminieren, verhindert morgen sowohl eine Luftqualitätsstrafe als auch eine Treibhausgasstrafe.",
+            "downloadButton": "Datenblatt herunterladen",
+            "scheduleButton": "Pilotprojekt planen"
+        },
+        "solutionsSection": {
+            "headline": "Lösungen",
+            "subheader": "Präzisionsüberwachung für jede Emissionsherausforderung",
+            "exploreButton": "Lösungen erkunden",
+            "solutions": {
+                "hde": {
+                    "title": "Hochleistungsmotoren",
+                    "description": "OEMs stehen vor dem U.S. EPA & CARB NOx-Grenzwert von 0,02 g/hp-hr für 2027, während Kunden < 1 Gallone/Stunde Kraftstoffverbrauch fordern. Aktuelle elektrochemische Sensoren erreichen ihren Tiefpunkt bei ~50 ppm."
+                },
+                "genset": {
+                    "title": "Stromaggregate & Primärstrom",
+                    "description": "RedNOx-Sensoren bieten eine kontinuierliche, genaue NOx-Messung für stationäre Motoren, ermöglichen 24/7-Konformität, senken die Kraftstoffkosten und gewährleisten eine proaktive Wartung durch Ferntelemetrie und Selbstdiagnose."
+                },
+                "agrinox": {
+                    "title": "AgriNOx – Präzise N₂O-Überwachung",
+                    "description": "AgriNOx bietet Echtzeit- und In-situ-N₂O-Messungen in Boden- und Plume-Emissionen und hilft Landwirten, den Stickstoffverbrauch zu optimieren, Treibhausgasbeiträge zu reduzieren und Kohlenstoffgutschriften durch kontinuierliche Überwachung und Analyse zu generieren."
+                }
+            }
+        },
+        "PressReleaseSection": {
+            "title": "Presse",
+            "readMoreButton": "Mehr erfahren"
+        }
+    },
+    "HeavyDutyEngines": {
+        "title": "Hochleistungsmotoren",
+        "description": "RedNOx bietet fortschrittliche Sensorlösungen für Hochleistungsmotoren, die entwickelt wurden, um die strengen Anforderungen kommender Vorschriften wie der 2027 U.S. EPA & CARB zu erfüllen.",
+        "downloadButton": "Datenblatt herunterladen",
+        "scheduleButton": "Pilotprojekt planen",
+        "problemSection": {
+            "headline": "Das Problem",
+            "subheader": "OEMs stehen vor dem U.S. EPA & CARB NOx-Grenzwert von 0,02 g/hp-hr für 2027, während Kunden < 1 Gallone/Stunde Kraftstoffverbrauch fordern. Aktuelle elektrochemische Sensoren erreichen ihren Tiefpunkt bei ~50 ppm."
+        },
+        "ourFixSection": {
+            "headline": "Unsere Lösung",
+            "fixes": {
+                "1": {
+                    "title": "1 – 20 ppm Detektion mit ±10 % Fehler",
+                    "description": "Dies hält Sie innerhalb der Garantiefristen."
+                },
+                "2": {
+                    "title": "Plug-and-Play ECU-Schnittstelle.",
+                    "description": "Ein Kabelbaum, zwei CAN-Frames pro Sekunde."
+                },
+                "3": {
+                    "title": "Heizungsoptimierter Keramikstapel",
+                    "description": "Erreicht die Temperatur in < 30 s – erfüllt den Kaltstart-FTP."
+                },
+                "4": {
+                    "title": "Cloud API & Dashboard",
+                    "description": "Regeneration oder Harnstoffdosierung nur bei Bedarf auslösen, wodurch bis zu 5 % DEF eingespart werden."
+                }
+            }
+        },
+        "useCaseFlowSection": {
+            "headline": "Anwendungsfall-Ablauf",
+            "list": {
+                "1": "Sensor wird in die Nachbehandlungs-Gleitverbindung geschraubt.",
+                "2": "Daten fließen über J1939 zur ECU (Closed-Loop) und über LTE zur RedNOx Cloud.",
+                "3": "Flottenmanager sieht pro LKW die NOx-Intensität und die Kraftstoff-/NH₃-Kompromisskurven."
+            }
+        }
+    },
+    "Gensets": {
+        "title": "Stromaggregate & Primärstrom",
+        "description": "Für stationäre Motoren sind kontinuierliche Konformität und Betriebseffizienz von größter Bedeutung. RedNOx bietet fortschrittliche Sensorlösungen für Stromaggregate und Primärstrom, die entwickelt wurden, um genaue Echtzeit-NOx-Emissionsdaten zu liefern. Unsere Sensoren helfen, kostspielige Abschaltungen unter den Tier 4 Final-Vorschriften zu vermeiden, indem sie eine Detektion im <10 ppm Bereich ermöglichen. Mit Plug-and-Play-Integration in SCADA-Panels über Modbus-TCP und Ferntelemetrie für proaktive Selbstdiagnose stellt RedNOx sicher, dass Ihr Betrieb auch an abgelegenen Standorten konform und optimiert bleibt.",
+        "downloadButton": "Datenblatt herunterladen",
+        "list": {
+            "1": "24/7 Compliance-Audits",
+            "2": "Abgelegene Standorte",
+            "3": "Kraftstoffkosten betragen > 70 % der Betriebskosten"
+        },
+        "featureHighLight": {
+            "title": "Feature-Highlight",
+            "1": {
+                "title": "< 10 ppm Bereich",
+                "description": "Vermeidet Abschaltungen unter den Tier 4 Final-Vorschriften."
+            },
+            "2": {
+                "title": "Modbus-TCP",
+                "description": "Passt direkt in die meisten SCADA-Panels."
+            },
+            "3": {
+                "title": "Selbstdiagnose (Heizwiderstand, λ-Drift) wird vorgelagert gestreamt; planen Sie den Service, bevor die Leuchte angeht.",
+                "description": ""
+            }
+        },
+        "keySpecifications": {
+            "title": "Schlüsselspezifikationen"
+        }
+    },
+    "AgriNOx": {
+        "title": "AgriNOx – Präzise N₂O-Überwachung",
+        "description": "Präzise N₂O-Überwachung für landwirtschaftliche Geräte, um die Einhaltung der Tier 4 Final-Vorschriften zu gewährleisten und die Kraftstoffkosten zu senken.",
+        "downloadButton": "Datenblatt herunterladen",
+        "valuePropositionSection": {
+            "title": "Wertversprechen",
+            "list": {
+                "1": {
+                    "title": "Echtzeit-In-situ N₂O ppm → kg N Verlust/ha Algorithmus.",
+                    "description": ""
+                },
+                "2": {
+                    "title": "Wandelt Stickstoffeinsparungen in CARB LCFS oder freiwillige Kohlenstoffgutschriften um.",
+                    "description": ""
+                },
+                "3": {
+                    "title": "Integration mit GPS-fähigen Streuern",
+                    "description": "variable Mengenrezepte basierend auf Live-Bodenausgasung."
+                },
+                "4": {
+                    "title": "Jahresabonnement (SaaS)",
+                    "description": "Analysen, Benchmarking und automatisierte Einreichung im Kreditregister."
+                }
+            }
+        },
+        "workflowSection": {
+            "1": "Sonde und LoRa-Gateway in < 30 Minuten installieren.",
+            "2": "Betrieb nutzt Live N₂O + Wetter, um Seitenstreifen zu optimieren.",
+            "3": "Verifizierte Gutschrift wird automatisch bei der Ernte generiert."
+        }
     }
 }

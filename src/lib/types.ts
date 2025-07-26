@@ -1,3 +1,7 @@
+import { useTranslations } from 'next-intl';
+
+export type Translations = ReturnType<typeof useTranslations<'HomePage'>>;
+
 export interface TeamMember {
     id: number
     name: string

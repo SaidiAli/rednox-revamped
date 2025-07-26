@@ -15,26 +15,13 @@ import {
     navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
 import { useRouter } from "next/navigation";
+import { useTranslations } from "next-intl";
 
 export default function Navbar() {
     const [isScrolled, setIsScrolled] = useState(false)
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-    const [mounted, setMounted] = useState(false)
     const router = useRouter()
-
-    useEffect(() => {
-        setMounted(true)
-        const handleScroll = () => {
-            if (window.scrollY > 10) {
-                setIsScrolled(true)
-            } else {
-                setIsScrolled(false)
-            }
-        }
-
-        window.addEventListener("scroll", handleScroll)
-        return () => window.removeEventListener("scroll", handleScroll)
-    }, [])
+    const t = useTranslations("Navbar")
 
     return (
         <header
@@ -46,51 +33,13 @@ export default function Navbar() {
                         <Image src="/logo.png" alt="" width={100} height={100} />
                     </Link>
                     <NavMenu />
-                    {/* <nav className="hidden md:flex gap-4">
-                        <Link
-                            href="#features"
-                            className="text-sm font-medium text-primaryForeground transition-colors hover:text-primary"
-                        >
-                            Solutions
-                        </Link>
-                        <Link
-                            href="/technology"
-                            className="text-sm font-medium text-primaryForeground transition-colors hover:text-primary"
-                        >
-                            Technology
-                        </Link>
-                        <Link
-                            href="/about"
-                            className="text-sm font-medium text-primaryForeground transition-colors hover:text-primary"
-                        >
-                            About
-                        </Link>
-                        <Link
-                            href="/press-release"
-                            className="text-sm font-medium text-primaryForeground transition-colors hover:text-primary"
-                        >
-                            Press Release
-                        </Link>
-                        <Link
-                            href="/in-the-news"
-                            className="text-sm font-medium text-primaryForeground transition-colors hover:text-primary"
-                        >
-                            In the news
-                        </Link>
-                        <Link
-                            href="/contact"
-                            className="text-sm font-medium text-primaryForeground transition-colors hover:text-primary"
-                        >
-                            Contact
-                        </Link>
-                    </nav> */}
                 </div>
                 <div className="hidden md:flex gap-4 items-center">
                     <div className="hidden md:block">
                         <LocaleSwitcher />
                     </div>
                     <Button onClick={() => router.push('/contact')} className="rounded-full bg-gradient-to-r from-primary to-[#F24229] text-primaryForeground cursor-pointer">
-                        Schedule a pilot
+                        {t("scheduleButton")}
                         <ChevronRight className="ml-1 size-4" />
                     </Button>
                 </div>
@@ -136,11 +85,12 @@ export default function Navbar() {
 }
 
 export function NavMenu() {
+    const t = useTranslations("Navbar")
     return (
         <NavigationMenu viewport={false}>
             <NavigationMenuList>
                 <NavigationMenuItem>
-                    <NavigationMenuTrigger>Solutions</NavigationMenuTrigger>
+                    <NavigationMenuTrigger>{t("menu.solutions.title")}</NavigationMenuTrigger>
                     <NavigationMenuContent className="">
                         <ul className="grid gap-2 md:w-[800px] grid-cols-3 p-4">
                             <li className="">
@@ -148,10 +98,10 @@ export function NavMenu() {
                                     <a className="from-muted/50 to-muted flex h-full w-full flex-col justify-end rounded-md bg-linear-to-b no-underline outline-hidden select-none focus:shadow-md"
                                         href="/heavy-duty-engines">
                                         <div className="mt-2 mb-2 text-lg font-medium">
-                                            Heavy-Duty Engines
+                                            {t("menu.solutions.link1.title")}
                                         </div>
                                         <p className="text-muted-foreground text-sm leading-tight">
-                                            Monitor and control emissions from heavy-duty engines.
+                                            {t("menu.solutions.link1.description")}
                                         </p>
                                     </a>
                                 </NavigationMenuLink>
@@ -161,10 +111,10 @@ export function NavMenu() {
                                     <a className="from-muted/50 to-muted flex h-full w-full flex-col justify-end rounded-md bg-linear-to-b no-underline outline-hidden select-none focus:shadow-md"
                                         href="/gensets">
                                         <div className="mt-2 mb-2 text-lg font-medium">
-                                            Gensets & Prime Power
+                                            {t("menu.solutions.link2.title")}
                                         </div>
                                         <p className="text-muted-foreground text-sm leading-tight">
-                                            Monitor and control emissions from gensets and prime power.
+                                            {t("menu.solutions.link2.description")}
                                         </p>
                                     </a>
                                 </NavigationMenuLink>
@@ -174,10 +124,10 @@ export function NavMenu() {
                                     <a className="from-muted/50 to-muted flex h-full w-full flex-col justify-end rounded-md bg-linear-to-b no-underline outline-hidden select-none focus:shadow-md"
                                         href="/agrinox">
                                         <div className="mt-2 mb-2 text-lg font-medium">
-                                            AgriNOx
+                                            {t("menu.solutions.link3.title")}
                                         </div>
                                         <p className="text-muted-foreground text-sm leading-tight">
-                                            Monitor and control emissions from agricultural equipment.
+                                            {t("menu.solutions.link3.description")}
                                         </p>
                                     </a>
                                 </NavigationMenuLink>
@@ -187,44 +137,44 @@ export function NavMenu() {
                 </NavigationMenuItem>
                 <NavigationMenuItem>
                     <NavigationMenuLink asChild className={`hover:underline ${navigationMenuTriggerStyle()}`}>
-                        <Link href="/technology">Technology</Link>
+                        <Link href="/technology">{t("menu.technology")}</Link>
                     </NavigationMenuLink>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                    <NavigationMenuTrigger>About</NavigationMenuTrigger>
+                    <NavigationMenuTrigger>{t("menu.about.title")}</NavigationMenuTrigger>
                     <NavigationMenuContent className="">
                         <div className="min-w-[200px]">
                             <NavigationMenuLink asChild className={""}>
-                                <Link href="/about">About Rednox</Link>
+                                <Link href="/about">{t("menu.about.link1")}</Link>
                             </NavigationMenuLink>
                             <NavigationMenuLink asChild className={""}>
-                                <Link href="/about">Team</Link>
+                                <Link href="/about">{t("menu.about.link2")}</Link>
                             </NavigationMenuLink>
                             <NavigationMenuLink asChild className={""}>
-                                <Link href="/about">Investors</Link>
+                                <Link href="/about">{t("menu.about.link3")}</Link>
                             </NavigationMenuLink>
                         </div>
                     </NavigationMenuContent>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                    <NavigationMenuTrigger>Press Release</NavigationMenuTrigger>
+                    <NavigationMenuTrigger>{t("menu.press-release.title")}</NavigationMenuTrigger>
                     <NavigationMenuContent className="">
                         <div className="min-w-[200px]">
                             <NavigationMenuLink asChild className={""}>
-                                <Link href="/press-release">Press Release</Link>
+                                <Link href="/press-release">{t("menu.press-release.link1")}</Link>
                             </NavigationMenuLink>
                             <NavigationMenuLink asChild className={""}>
-                                <Link href="/in-the-news">In the news</Link>
+                                <Link href="/in-the-news">{t("menu.press-release.link2")}</Link>
                             </NavigationMenuLink>
                             <NavigationMenuLink asChild className={""}>
-                                <Link href="/publications">Publications</Link>
+                                <Link href="/publications">{t("menu.press-release.link3")}</Link>
                             </NavigationMenuLink>
                         </div>
                     </NavigationMenuContent>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
                     <NavigationMenuLink asChild className={`hover:underline ${navigationMenuTriggerStyle()}`}>
-                        <Link href="/contact">Contact</Link>
+                        <Link href="/contact">{t("menu.contact")}</Link>
                     </NavigationMenuLink>
                 </NavigationMenuItem>
             </NavigationMenuList>

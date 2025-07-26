@@ -7,7 +7,6 @@ import { features } from "@/lib/data";
 import { ContainerTextFlip } from "./ui/text-flip";
 import { useTranslations } from "next-intl";
 
-
 export default function HeroSection() {
     const t = useTranslations("HomePage")
     const flipWords = ["Agriculture", "HDE", "Gensets"]
@@ -33,11 +32,11 @@ export default function HeroSection() {
                                             <Zap className="h-4 w-4 text-white" />
                                         </div>
                                         <h3 className="-tracking-4 pt-0.5 font-sans text-xl/[1.375rem] font-semibold text-balance md:text-2xl/[1.875rem] text-white">
-                                            RedNOx™ HDE & Genset Sensor
+                                            {t("keyValueGrid.hde")}
                                         </h3>
                                     </div>
                                     <div className="space-y-3 text-white">
-                                        {features.hde.map((feature, index) => (
+                                        {features(t).hde.map((feature, index) => (
                                             <div key={index} className="flex items-center justify-between gap-4">
                                                 <div className="flex items-center gap-2">
                                                     <Check className="h-4 w-4 flex-shrink-0 text-white bg-primary rounded-full p-1" />
@@ -61,11 +60,11 @@ export default function HeroSection() {
                                             <Zap className="h-4 w-4 text-white" />
                                         </div>
                                         <h3 className="-tracking-4 pt-0.5 font-sans text-xl/[1.375rem] font-semibold text-balance md:text-2xl/[1.875rem] text-white">
-                                            AgriNOx™ N₂O Sensor
+                                            {t("keyValueGrid.agrinox")}
                                         </h3>
                                     </div>
                                     <div className="space-y-3 text-white">
-                                        {features.afgrinox.map((feature, index) => (
+                                        {features(t).afgrinox.map((feature, index) => (
                                             <div key={index} className="flex items-center justify-between gap-4">
                                                 <div className="flex items-center gap-2">
                                                     <Check className="h-4 w-4 flex-shrink-0 text-white bg-primary rounded-full p-1" />

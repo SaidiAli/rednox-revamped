@@ -95,7 +95,7 @@ export function NavMenu() {
                         <ul className="grid gap-2 md:w-[800px] grid-cols-3 p-4">
                             <li className="">
                                 <NavigationMenuLink asChild>
-                                    <a className="from-muted/50 to-muted flex h-full w-full flex-col justify-end rounded-md bg-linear-to-b no-underline outline-hidden select-none focus:shadow-md"
+                                    <Link className="from-muted/50 to-muted flex h-full w-full flex-col justify-end rounded-md bg-linear-to-b no-underline outline-hidden select-none focus:shadow-md"
                                         href="/heavy-duty-engines">
                                         <div className="mt-2 mb-2 text-lg font-medium">
                                             {t("menu.solutions.link1.title")}
@@ -103,12 +103,12 @@ export function NavMenu() {
                                         <p className="text-muted-foreground text-sm leading-tight">
                                             {t("menu.solutions.link1.description")}
                                         </p>
-                                    </a>
+                                    </Link>
                                 </NavigationMenuLink>
                             </li>
                             <li className="">
                                 <NavigationMenuLink asChild>
-                                    <a className="from-muted/50 to-muted flex h-full w-full flex-col justify-end rounded-md bg-linear-to-b no-underline outline-hidden select-none focus:shadow-md"
+                                    <Link className="from-muted/50 to-muted flex h-full w-full flex-col justify-end rounded-md bg-linear-to-b no-underline outline-hidden select-none focus:shadow-md"
                                         href="/gensets">
                                         <div className="mt-2 mb-2 text-lg font-medium">
                                             {t("menu.solutions.link2.title")}
@@ -116,12 +116,12 @@ export function NavMenu() {
                                         <p className="text-muted-foreground text-sm leading-tight">
                                             {t("menu.solutions.link2.description")}
                                         </p>
-                                    </a>
+                                    </Link>
                                 </NavigationMenuLink>
                             </li>
                             <li className="">
                                 <NavigationMenuLink asChild>
-                                    <a className="from-muted/50 to-muted flex h-full w-full flex-col justify-end rounded-md bg-linear-to-b no-underline outline-hidden select-none focus:shadow-md"
+                                    <Link className="from-muted/50 to-muted flex h-full w-full flex-col justify-end rounded-md bg-linear-to-b no-underline outline-hidden select-none focus:shadow-md"
                                         href="/agrinox">
                                         <div className="mt-2 mb-2 text-lg font-medium">
                                             {t("menu.solutions.link3.title")}
@@ -129,7 +129,7 @@ export function NavMenu() {
                                         <p className="text-muted-foreground text-sm leading-tight">
                                             {t("menu.solutions.link3.description")}
                                         </p>
-                                    </a>
+                                    </Link>
                                 </NavigationMenuLink>
                             </li>
                         </ul>

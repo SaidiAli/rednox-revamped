@@ -85,7 +85,7 @@ export const founders: TeamMember[] = [
         id: 3,
         name: "Darby Makel, PhD",
         position: "Co-Founder & Chief Engineer",
-        image: "/team/makel.png",
+        image: "/team/markel.png",
         alt: "darby makel founder rednox inc",
         bio: "A world expert in sensor technology. He is a systems engineering expert with Makel Engineering.",
     }

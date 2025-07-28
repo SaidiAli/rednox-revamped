@@ -1,6 +1,8 @@
 import { useTranslations } from 'next-intl';
 
-export type Translations = ReturnType<typeof useTranslations<'HomePage'>>;
+export type HomePageTranslations = ReturnType<typeof useTranslations<'HomePage'>>;
+export type TechnologyTranslations = ReturnType<typeof useTranslations<'Technology'>>;
+export type AboutTranslations = ReturnType<typeof useTranslations<'AboutRednox'>>;
 
 export interface TeamMember {
     id: number

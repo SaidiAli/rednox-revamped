@@ -187,5 +187,118 @@
             "2": "Betrieb nutzt Live N₂O + Wetter, um Seitenstreifen zu optimieren.",
             "3": "Verifizierte Gutschrift wird automatisch bei der Ernte generiert."
         }
+    },
+    "Technology": {
+        "title": "Die Wissenschaft hinter den RedNox-Produkten",
+        "subTitle": "Erfahren Sie mehr über die ausgeklügelte Technik und das robuste Design, die es unseren Sensoren ermöglichen, beispiellose Sub-ppm-Erkenntnisse und dauerhafte Leistung in verschiedenen Anwendungen zu liefern",
+        "specifications": {
+            "title": "Hochleistungssensoren",
+            "table": {
+                "tableHead": {
+                    "coreInnovation": "Kerninnovation",
+                    "howItWorks": "Funktionsweise",
+                    "whyItMatters": "Warum es wichtig ist"
+                },
+                "tableBody": {
+                    "1": {
+                        "coreInnovation": "Mischpotential-Keramikstapel — NOx",
+                        "howItWorks": "Ein 250 μm YSZ-Elektrolyt ist zwischen Referenz- und Sensorelektroden eingebettet. Bei ~700 °C etablieren konkurrierende elektrokatalytische Reaktionen ein Mischpotential, das linear zum partiellen Druck von NO + NO₂ proportional ist. Der mehrschichtige Stapel wird siebgedruckt, bei 1.300 °C mitgebrannt und zur Sub-ppm-Linearität lasergetrimmt.",
+                        "whyItMatters": "Die Festkörperkonstruktion ist unempfindlich gegenüber Schwefel, Ölaerosolen und Temperaturschocks und liefert eine Feldlebensdauer von >10.000 h, während sie ältere amperometrische Zellen übertrifft, die nahe 50 ppm an ihre Grenzen stoßen."
+                    },
+                    "2": {
+                        "coreInnovation": "Integrierter Katalysator & Schnellaufheizung",
+                        "howItWorks": "Eine nano-entwickelte Katalysatorschicht beschleunigt das NO↔NO₂-Redoxpaar und unterdrückt gleichzeitig die Kohlenwasserstoff-Übersprechungen. Ein spiralförmiger Heizer, der unter dem Sensorpad geätzt ist, erreicht 650 °C in <30 s mit einer Leistungsaufnahme von <8 W.",
+                        "whyItMatters": "Schnelle Aufheizung erfasst Kaltstartspitzen – entscheidend für 2027 HD-FTP – und der geringe Stromverbrauch bedeutet, dass der Sensor direkt vom ECU-Kabelbaum betrieben wird."
+                    },
+                    "3": {
+                        "coreInnovation": "On-Chip Temperatur- & Cross-Gas-Kompensation",
+                        "howItWorks": "Zwei RTDs, die in die Keramik eingebettet sind, speisen einen 32-Bit-MCU, der alle 50 ms ein Polynom 4. Ordnung anwendet. Zusatzkanäle messen O₂ und H₂, um Matrixeffekte in Echtzeit zu korrigieren.",
+                        "whyItMatters": "Hält eine Genauigkeit von ±10% von –40 °C bis +125 °C Gastemperaturen und über 0–20% O₂ aufrecht, wodurch Feldrekalibrierungszyklen entfallen."
+                    },
+                    "4": {
+                        "coreInnovation": "Werkskalibrierung & Digitaler Fingerabdruck",
+                        "howItWorks": "Jeder Chip wird gegen NIST-rückführbare 0, 5, 10 ppm NOx-Mischungen kalibriert. Kalibrierkurven und Heizkennlinien werden im OTP-Speicher gespeichert und in einem QR-Code auf dem Gehäuse codiert.",
+                        "whyItMatters": "Die End-to-End-Rückverfolgbarkeit ermöglicht es OEMs und Flotten, jeden Sensor bis zu seinen Rohdaten zu überprüfen, was die ISO 9001- und regulatorische Berichterstattung vereinfacht."
+                    },
+                    "5": {
+                        "coreInnovation": "NDIR-Modul — AgriNOx (N₂O)",
+                        "howItWorks": "AgriNOx verwendet einen Zweistrahl-NDIR-Aufbau: einen schmalbandigen MEMS-IR-Emitter bei 4,5 μm, einen langlebigen optischen Pfad und ein Paar Thermosäulendetektoren (Probe & Referenz). Die Differentialspektroskopie eliminiert Feuchtigkeits-, CO₂- und NH₃-Interferenzen, während eine Mikropumpe einen kontinuierlichen Bodengasstrom ansaugt.",
+                        "whyItMatters": "Liefert < 100 ppb Detektion mit <3 s Ansprechzeit direkt in Bodenfahnen, was eine Echtzeit-Stickstoffnutzungseffizienz-Kartierung ermöglicht. Der geringe Stromverbrauch (<2 W) und LoRaWAN ermöglichen es einer kleinen Solarzelle, die Sonde die ganze Saison über zu betreiben."
+                    }
+                }
+            }
+        }
+    },
+    "AboutRednox": {
+        "title": "Über RedNOx",
+        "headline": "NOx-, CO2- und N2O-Emissionen jetzt reduzieren",
+        "subheader": "RedNOx ist ein Unternehmen, das GHG-Emissionssensoren entwickelt. Es kombiniert fortschrittliche Keramiktechnik mit hochpräzisen Instrumenten, um eine selektive und empfindliche NOx-, CO2- und N2O-Messplattform zu schaffen. Es hat in Zusammenarbeit mit führenden Automobil- und Agrarunternehmen mehrere Verifizierungsprogramme gestartet.",
+        "whyRednox": {
+            "title": "Warum RedNOx",
+            "headline": "Bahnbrechende NOx-Technologie",
+            "subheader": "Unsere Plattform kann NOx- und N2O-Treibhausgase im Parts-per-Billion-Bereich messen. Unser Ziel ist es, Sensorplattformen für saubere Energie und alternative Kraftstoffmotoren weltweit so schnell wie möglich bereitzustellen. Wir entwickeln diese Sensoren für den Einsatz in verschiedenen Mobilitätsbereichen. Unsere LoNOxTM Hochtemperaturkeramik- und N2O-Technologien können Emissionen potenziell auf die von der EPA und CARB festgelegten Werte reduzieren und gleichzeitig die Kosten für Motorenhersteller und Landwirte senken."
+        },
+        "founders": {
+            "title": "Gründer",
+            "solomon": {
+                "bio": "Geboren in Uganda und aufgewachsen in Kenia als Kriegsflüchtling. Er war Mitbegründer von SpiroSure, das 2020 für 100 Millionen Dollar an ein multinationales Atemwegsunternehmen verkauft wurde."
+            },
+            "dutta": {
+                "bio": "Ein weltweit anerkannter Experte für Sensortechnologie. Er entwickelte die Konzepte für die RedNOx-Technologie in seinem Labor an der Ohio State University."
+            },
+            "markel": {
+                "bio": "Ein weltweit anerkannter Experte für Sensortechnologie. Er ist ein Systemtechnikexperte bei Makel Engineering."
+            }
+        }
+    },
+    "PressRelease": {
+        "title": "Pressemitteilung"
+    },
+    "InTheNews": {
+        "title": "In den Nachrichten"
+    },
+    "Publications": {
+        "title": "Veröffentlichungen"
+    },
+    "Contact": {
+        "title": "Kontakt",
+        "form": {
+            "title": "Senden Sie uns eine Nachricht",
+            "subTitle": "Füllen Sie das untenstehende Formular aus, um mit uns in Kontakt zu treten.",
+            "subjectSelect": {
+                "label": "Betreff",
+                "placeholder": "Wählen Sie einen Betreff",
+                "options": {
+                    "1": "Allgemeine Anfrage",
+                    "2": "Partnerschaft",
+                    "3": "Investor",
+                    "4": "Sonstiges"
+                }
+            },
+            "name": {
+                "label": "Name",
+                "placeholder": "Geben Sie Ihren vollständigen Namen ein"
+            },
+            "email": {
+                "label": "E-Mail",
+                "placeholder": "Geben Sie Ihre E-Mail-Adresse ein"
+            },
+            "company": {
+                "label": "Unternehmen",
+                "placeholder": "Geben Sie den Firmennamen ein"
+            },
+            "message": {
+                "label": "Nachricht",
+                "placeholder": "Erzählen Sie uns mehr über Ihre Anfrage"
+            },
+            "submit": "Nachricht senden"
+        },
+        "locations": {
+            "title": "Unsere Standorte",
+            "parking": {
+                "title": "Parkmöglichkeiten in der Nähe",
+                "subTitle": "Zweistündiges Straßenparken in der Moraine Street und Thornton Avenue"
+            }
+        }
     }
 }

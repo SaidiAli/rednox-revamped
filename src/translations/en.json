@@ -35,7 +35,7 @@
                 "title": "About",
                 "link1": "About Rednox",
                 "link2": "Team",
-                "link3": "Investor"
+                "link3": "Investors"
             }
         }
     },
@@ -187,6 +187,119 @@
             "1": "Install probe & LoRa gateway in < 30 min.",
             "2": "Farm leverages live N₂O + weather to trim side-dress passes.",
             "3": "Verified credit statement auto-generated at harvest."
+        }
+    },
+    "Technology": {
+        "title": "The Science behind RedNox Product",
+        "subTitle": "Learn about the sophisticated engineering and robust design that allows our sensors to provide unprecedented sub-ppm insight and enduring performance across diverse applications",
+        "specifications": {
+            "title": "High performance Sensors",
+            "table": {
+                "tableHead": {
+                    "coreInnovation": "Core Innovation",
+                    "howItWorks": "How it works",
+                    "whyItMatters": "Why it Matters"
+                },
+                "tableBody": {
+                    "1": {
+                        "coreInnovation": "Mixed-Potential Ceramic Stack — NOx",
+                        "howItWorks": "A 250 μm YSZ electrolyte is sandwiched between reference and sensing electrodes. At ~700°C, competing electro-catalytic reactions establish a mixed potential linearly proportional to NO + NO₂ partial pressure. The multilayer stack is screen-printed, co-fired at 1,300°C, and laser-trimmed for sub-ppm linearity.",
+                        "whyItMatters": "Solid-state construction shrugs off sulphur, oil aerosols, and thermal shock, delivering >10,000 h field life while outperforming legacy amperometric cells that bottom out near 50 ppm."
+                    },
+                    "2": {
+                        "coreInnovation": "Integrated Catalyst & Rapid-Warm Heater",
+                        "howItWorks": "A nano-engineered catalyst layer accelerates the NO↔NO₂ redox pair while suppressing hydrocarbon cross-talk. A spiral heater etched under the sensing pad reaches 650°C in <30 s with <8 W draw.",
+                        "whyItMatters": "Fast light-off captures cold-start spikes—critical for 2027 HD-FTP—and the low power budget means the sensor runs straight off the ECU harness."
+                    },
+                    "3": {
+                        "coreInnovation": "On-Chip Temperature & Cross-Gas Compensation",
+                        "howItWorks": "Dual RTDs embedded in the ceramic feed a 32-bit MCU that applies a 4th-order temperature polynomial every 50 ms. Auxiliary channels sample O₂ and H₂ to correct matrix effects in real time.",
+                        "whyItMatters": "Maintains ±10% accuracy from –40°C to +125°C gas temps and across 0–20% O₂, eliminating field recalibration cycles."
+                    },
+                    "4": {
+                        "coreInnovation": "Factory Calibration & Digital Fingerprint",
+                        "howItWorks": "Each die is calibrated against NIST-traceable 0, 5, 10 ppm NOx blends. Calibration curves and heater signatures are stored in OTP memory and encoded in a QR on the shell.",
+                        "whyItMatters": "End-to-end traceability lets OEMs and fleets audit any sensor back to its raw data, simplifying ISO 9001 and regulatory reporting."
+                    },
+                    "5": {
+                        "coreInnovation": "NDIR Module — AgriNOx (N₂O)",
+                        "howItWorks": "AgriNOx employs a dual-beam nondispersive IR setup: a narrowband MEMS IR emitter at 4.5 μm, a long-life optical path, and a pair of thermopile detectors (sample & reference). Differential spectroscopy cancels humidity, CO₂, and NH₃ interference, while a micro-pump pulls a continuous soil-gas stream.",
+                        "whyItMatters": "Delivers < 100 ppb detection with <3 s response directly in soil plumes, enabling real-time nitrogen-use-efficiency mapping. Low-power (<2 W) operation plus LoRaWAN lets a small solar cell run the probe all season."
+                    }
+                }
+            }
+        }
+    },
+    "AboutRednox": {
+        "title": "About RedNOx",
+        "headline": "Reducing NOx, CO2 and N2O Emissions now",
+        "subheader": "RedNOx is a company that creates GHG emissions sensors. It combines advanced ceramic engineering with high-precision instrumentation to make selective and sensitive NOx, CO2 and N2O measurement platform. It has started several verification programs in collaboration with top automotive and agriculture companies.",
+        "whyRednox": {
+            "title": "Why RedNOx",
+            "headline": "Breakthrough NOx Technology",
+            "subheader": "Our platform can measure NOx and N2O greenhouse gases at the parts-per-billion level. Our goal is to provide sensor platforms to clean energy and alternative fuel engines around the world as quickly as possible. We are developing these sensors for use in various mobility areas. Our LoNOxTM high-temperature ceramics and N2O technologies can potentially reduce emissions to levels set by the EPA and CARB, while also lowering costs for engine manufacturers and farmers."
+        },
+        "founders": {
+            "title": "Founders",
+            "solomon": {
+                "bio": "Born in Uganda and grew up in Kenya as a war refugee. He co-founded SpiroSure, which had a $100 million exit to a multinational respiratory company in 2020."
+            },
+            "dutta": {
+                "bio": "A world expert in sensor technology. He developed concepts for RedNOx technology in his lab at The Ohio State University."
+            },
+            "markel": {
+                "bio": "A world expert in sensor technology. He is a systems engineering expert with Makel Engineering."
+            }
+        }
+    },
+    "PressRelease": {
+        "title": "Press Release"
+    },
+    "InTheNews": {
+        "title": "In the News"
+    },
+    "Publications": {
+        "title": "Publications"
+    },
+    "Contact": {
+        "title": "Contact",
+        "form": {
+            "title": "Send us a message",
+            "subTitle": "Fill out the form below to get in touch with us.",
+            "subjectSelect": {
+                "label": "Subject",
+                "placeholder": "Select a subject",
+                "options": {
+                    "1": "General Inquiry",
+                    "2": "Partnering",
+                    "3": "Investor",
+                    "4": "Other"
+                }
+            },
+            "name": {
+                "label": "Name",
+                "placeholder": "Enter your full name"
+            },
+            "email": {
+                "label": "Email",
+                "placeholder": "Enter your email address"
+            },
+            "company": {
+                "label": "Company",
+                "placeholder": "Enter company name"
+            },
+            "message": {
+                "label": "Message",
+                "placeholder": "Tell us more about your inquiry"
+            },
+            "submit": "Send Message"
+        },
+        "locations": {
+            "title": "Our Locations",
+            "parking": {
+                "title": "Nearby Parking",
+                "subTitle": "Two-hour street parking on Moraine Street and Thornton Avenue"
+            }
         }
     }
 }

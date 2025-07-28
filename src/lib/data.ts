@@ -1,6 +1,6 @@
-import { NewsData, PressData, PublicationData, TeamMember, Translations } from "./types"
+import { NewsData, PressData, PublicationData, TeamMember, HomePageTranslations, AboutTranslations } from "./types"
 
-export const features = (t: Translations) => ({
+export const features = (t: HomePageTranslations) => ({
     hde: [
         {
             key: t("keyValueGrid.metrics.detectionFloor"),
@@ -63,33 +63,35 @@ export const features = (t: Translations) => ({
     ]
 })
 
-export const founders: TeamMember[] = [
-    {
-        id: 1,
-        name: "Solomon Ssenyange, PhD",
-        position: "Co-Founder & CEO",
-        image: "/team/solomon-team.png",
-        alt: "solomon ssenyange founder rednox inc",
-        bio: "Born in Uganda and grew up in Kenya as a war refugee. He co-founded SpiroSure, which had a $100 million exit to a multinational respiratory company in 2020.",
-        email: "solomon@rednoxinc.com"
-    },
-    {
-        id: 2,
-        name: "Prabir Dutta, PhD",
-        position: "Co-Founder & Technical Advisor",
-        image: "/team/dutta.jpeg",
-        alt: "prabir dutta founder rednox inc",
-        bio: "A world expert in sensor technology. He developed concepts for RedNOx technology in his lab at The Ohio State University.",
-    },
-    {
-        id: 3,
-        name: "Darby Makel, PhD",
-        position: "Co-Founder & Chief Engineer",
-        image: "/team/markel.png",
-        alt: "darby makel founder rednox inc",
-        bio: "A world expert in sensor technology. He is a systems engineering expert with Makel Engineering.",
-    }
-]
+export const founders = (t: AboutTranslations): TeamMember[] => (
+    [
+        {
+            id: 1,
+            name: "Solomon Ssenyange, PhD",
+            position: "Co-Founder & CEO",
+            image: "/team/solomon-team.png",
+            alt: "solomon ssenyange founder rednox inc",
+            bio: t("founders.solomon.bio"),
+            email: "solomon@rednoxinc.com"
+        },
+        {
+            id: 2,
+            name: "Prabir Dutta, PhD",
+            position: "Co-Founder & Technical Advisor",
+            image: "/team/dutta.jpeg",
+            alt: "prabir dutta founder rednox inc",
+            bio: t("founders.dutta.bio"),
+        },
+        {
+            id: 3,
+            name: "Darby Makel, PhD",
+            position: "Co-Founder & Chief Engineer",
+            image: "/team/markel.png",
+            alt: "darby makel founder rednox inc",
+            bio: t("founders.markel.bio"),
+        }
+    ]
+)
 
 export const advisors: TeamMember[] = [
     {

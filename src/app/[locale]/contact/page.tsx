@@ -15,8 +15,10 @@ import Navbar from "@/components/Navbar"
 import { TitleHighlight } from "@/components/title-highlight"
 import Footer from "@/components/Footer"
 import Map from "@/components/map"
+import { useTranslations } from "next-intl";
 
 export default function ContactPage() {
+    const t = useTranslations("Contact");
     const [isSubmitting, setIsSubmitting] = useState(false)
     const [formData, setFormData] = useState({
         name: "",
@@ -73,7 +75,7 @@ export default function ContactPage() {
                 <Navbar />
 
                 <div className="container mx-auto h-[20rem] flex flex-col justify-center">
-                    <TitleHighlight title="Contact" />
+                    <TitleHighlight title={t("title")} />
                 </div>
 
                 {/* Contact Section */}
@@ -88,24 +90,24 @@ export default function ContactPage() {
                             >
                                 <Card className="border-none backdrop-blur">
                                     <CardHeader>
-                                        <CardTitle className="text-2xl font-bold">Send us a message</CardTitle>
+                                        <CardTitle className="text-2xl font-bold">{t("form.title")}</CardTitle>
                                         <p className="text-muted-foreground">
-                                            Fill out the form below and we&apos;ll get back to you as soon as possible.
+                                            {t("form.subTitle")}
                                         </p>
                                     </CardHeader>
                                     <CardContent>
                                         <form onSubmit={handleSubmit} className="space-y-6">
                                         <div className="space-y-2">
-                                                <Label htmlFor="subject">Subject *</Label>
+                                                <Label htmlFor="subject">{t("form.subjectSelect.label")}</Label>
                                                 <Select value={formData.subject} onValueChange={handleSelectChange} required>
                                                     <SelectTrigger className="w-full border-moody">
-                                                        <SelectValue placeholder="Select a subject" />
+                                                        <SelectValue placeholder={t("form.subjectSelect.placeholder")} />
                                                     </SelectTrigger>
                                                     <SelectContent className="bg-white">
-                                                        <SelectItem className="text-black hover:bg-gray-100" value="general">General Inquiry</SelectItem>
-                                                        <SelectItem className="text-black hover:bg-gray-100" value="careers">Careers</SelectItem>
-                                                        <SelectItem className="text-black hover:bg-gray-100" value="investors">Investors</SelectItem>
-                                                        <SelectItem className="text-black hover:bg-gray-100" value="partnering">Partnering</SelectItem>
+                                                        <SelectItem className="text-black hover:bg-gray-100" value="general">{t("form.subjectSelect.options.1")}</SelectItem>
+                                                        <SelectItem className="text-black hover:bg-gray-100" value="careers">{t("form.subjectSelect.options.2")}</SelectItem>
+                                                        <SelectItem className="text-black hover:bg-gray-100" value="investors">{t("form.subjectSelect.options.3")}</SelectItem>
+                                                        <SelectItem className="text-black hover:bg-gray-100" value="partnering">{t("form.subjectSelect.options.4")}</SelectItem>
                                                         <SelectItem className="text-black hover:bg-gray-100" value="other">Other</SelectItem>
                                                     </SelectContent>
                                                 </Select>
@@ -113,51 +115,51 @@ export default function ContactPage() {
                                             <div className="grid sm:grid-cols-2 gap-4">
 
                                                 <div className="space-y-2">
-                                                    <Label htmlFor="name">Name *</Label>
+                                                    <Label htmlFor="name">{t("form.name.label")}</Label>
                                                     <Input
                                                         id="name"
                                                         name="name"
                                                         value={formData.name}
                                                         onChange={handleInputChange}
-                                                        placeholder="Your full name"
+                                                        placeholder={t("form.name.placeholder")}
                                                         className="border-moody"
                                                         required
                                                     />
                                                 </div>
                                                 <div className="space-y-2">
-                                                    <Label htmlFor="email">Email *</Label>
+                                                    <Label htmlFor="email">{t("form.email.label")}</Label>
                                                     <Input
                                                         id="email"
                                                         name="email"
                                                         type="email"
                                                         value={formData.email}
                                                         onChange={handleInputChange}
-                                                        placeholder="your@email.com"
+                                                        placeholder={t("form.email.placeholder")}
                                                         className="border-moody"
                                                         required
                                                     />
                                                 </div>
                                             </div>
                                             <div className="space-y-2">
-                                                <Label htmlFor="company">Company</Label>
+                                                <Label htmlFor="company">{t("form.company.label")}</Label>
                                                 <Input
                                                     id="company"
                                                     name="company"
                                                     value={formData.company}
                                                     onChange={handleInputChange}
-                                                    placeholder="Your company name"
+                                                    placeholder={t("form.company.placeholder")}
                                                     className="border-moody"
                                                 />
                                             </div>
 
                                             <div className="space-y-2">
-                                                <Label htmlFor="message">Message *</Label>
+                                                <Label htmlFor="message">{t("form.message.label")}</Label>
                                                 <Textarea
                                                     id="message"
                                                     name="message"
                                                     value={formData.message}
                                                     onChange={handleInputChange}
-                                                    placeholder="Tell us more about your inquiry..."
+                                                    placeholder={t("form.message.placeholder")}
                                                     rows={6}
                                                     className="border-moody focus:border-moody"
                                                     required
@@ -168,7 +170,7 @@ export default function ContactPage() {
                                                     "Sending..."
                                                 ) : (
                                                     <>
-                                                        Send Message
+                                                        {t("form.submit")}
                                                         <Send className="ml-2 size-4" />
                                                     </>
                                                 )}
@@ -190,7 +192,7 @@ export default function ContactPage() {
 
                                 {/* Locations */}
                                 <div className="space-y-6">
-                                    <h3 className="text-2xl font-bold">Our Locations</h3>
+                                    <h3 className="text-2xl font-bold">{t("locations.title")}</h3>
                                     <div className="space-y-4">
                                         {locations.map((location, i) => (
                                             <motion.div
@@ -239,12 +241,12 @@ export default function ContactPage() {
                                 {/* Quick Contact Info */}
                                 <Card className="border-none backdrop-blur">
                                     <CardContent className="p-6">
-                                        <h4 className="text-lg font-semibold mb-4">Nearby Parking</h4>
+                                        <h4 className="text-lg font-semibold mb-4">{t("locations.parking.title")}</h4>
                                         <div className="space-y-3 text-sm">
                                             <div className="flex items-center gap-3">
                                                 <Car className="size-4 text-primary" />
                                                 <div>
-                                                    <p className="font-medium">Two-hour street parking on Moraine Street and Thornton Avenue</p>
+                                                    <p className="font-medium">{t("locations.parking.subTitle")}</p>
                                                 </div>
                                             </div>
                                         </div>

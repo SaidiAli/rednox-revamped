@@ -45,7 +45,7 @@
     "HomePage": {
         "title": "Rednox",
         "heroHeadline": "Ultra-Sensitive Emissions Sensors for",
-        "heroDescription": "Cut NOx & N₂O faster than the regulation curve, slash fuel burn, and prove it with traceable data",
+        "heroDescription": "Cut emissions, reduce compliance costs, and unlock operational savings—faster than regulatory deadlines",
         "keyValueGrid": {
             "hde": "RedNOx™ HDE & Genset Sensor",
             "agrinox": "AgriNOx™ N₂O Sensor",
@@ -73,15 +73,15 @@
             "solutions": {
                 "hde": {
                     "title": "Heavy-Duty Engines",
-                    "description": "OEMs face the 2027 U.S. EPA & CARB 0.02 g/hp-hr NOx limit while customers demand < 1 gallon/h fuel-penalties. Current electrochemical sensors bottom out at ~50 ppm."
+                    "description": "Reduce SCR-related costs by 10–20% through early NOx detection. Avoid non-compliance penalties up to $50,000/engine."
                 },
                 "genset": {
                     "title": "Gensets & Prime Power",
-                    "description": "RedNOx sensors provide continuous, accurate NOx measurement for stationary engines, enabling 24/7 compliance, reducing fuel costs, and ensuring proactive maintenance through remote telemetry and self-diagnostics"
+                    "description": "Reduce fuel consumption by up to 8% and extend maintenance intervals by 15–30% via load-based NOx tuning."
                 },
                 "agrinox": {
                     "title": "AgriNOx – Precision N₂O Monitoring",
-                    "description": "AgriNOx provides real-time, in-situ N₂O measurement in soil and plume emissions, helping farmers optimize nitrogen usage, reduce greenhouse gas contributions, and generate carbon credits through continuous monitoring and analytics."
+                    "description": "Earn $20–$50/acre in voluntary carbon markets by validating nitrogen efficiency and reducing N₂O emissions."
                 }
             }
         },

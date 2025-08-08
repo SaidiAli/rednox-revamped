@@ -45,7 +45,7 @@
     "HomePage": {
         "title": "Rednox",
         "heroHeadline": "Hochempfindliche Emissionssensoren für",
-        "heroDescription": "NOx und N₂O schneller als die Regulierungskurve senken, den Kraftstoffverbrauch drastisch reduzieren und dies mit nachvollziehbaren Daten beweisen.",
+        "heroDescription": "Emissionen senken, Compliance-Kosten reduzieren und betriebliche Einsparungen freisetzen – schneller als regulatorische Fristen.",
         "keyValueGrid": {
             "hde": "RedNOx™ HDE & Genset Sensor",
             "agrinox": "AgriNOx™ N₂O Sensor",
@@ -73,15 +73,15 @@
             "solutions": {
                 "hde": {
                     "title": "Hochleistungsmotoren",
-                    "description": "OEMs stehen vor dem U.S. EPA & CARB NOx-Grenzwert von 0,02 g/hp-hr für 2027, während Kunden < 1 Gallone/Stunde Kraftstoffverbrauch fordern. Aktuelle elektrochemische Sensoren erreichen ihren Tiefpunkt bei ~50 ppm."
+                    "description": "Reduzieren Sie die SCR-bezogenen Kosten um 10–20 % durch frühzeitige NOx-Erkennung. Vermeiden Sie Nichteinhaltungsstrafen von bis zu 50.000 US-Dollar pro Motor."
                 },
                 "genset": {
                     "title": "Stromaggregate & Primärstrom",
-                    "description": "RedNOx-Sensoren bieten eine kontinuierliche, genaue NOx-Messung für stationäre Motoren, ermöglichen 24/7-Konformität, senken die Kraftstoffkosten und gewährleisten eine proaktive Wartung durch Ferntelemetrie und Selbstdiagnose."
+                    "description": "Reduzieren Sie den Kraftstoffverbrauch um bis zu 8 % und verlängern Sie die Wartungsintervalle um 15–30 % durch lastbasierte NOx-Abstimmung."
                 },
                 "agrinox": {
                     "title": "AgriNOx – Präzise N₂O-Überwachung",
-                    "description": "AgriNOx bietet Echtzeit- und In-situ-N₂O-Messungen in Boden- und Plume-Emissionen und hilft Landwirten, den Stickstoffverbrauch zu optimieren, Treibhausgasbeiträge zu reduzieren und Kohlenstoffgutschriften durch kontinuierliche Überwachung und Analyse zu generieren."
+                    "description": "Validieren Sie die Stickstoffeffizienz und reduzieren Sie N₂O-Emissionen, um 20–50 US-Dollar pro Acre auf freiwilligen Kohlenstoffmärkten zu verdienen."
                 }
             }
         },

@@ -90,7 +90,7 @@ export function NavMenu() {
         <NavigationMenu viewport={false}>
             <NavigationMenuList>
                 <NavigationMenuItem>
-                    <NavigationMenuTrigger>{t("menu.solutions.title")}</NavigationMenuTrigger>
+                    <NavigationMenuTrigger className="">{t("menu.solutions.title")}</NavigationMenuTrigger>
                     <NavigationMenuContent className="">
                         <ul className="grid gap-2 md:w-[800px] grid-cols-3 p-4">
                             <li className="">

@@ -148,10 +148,10 @@ export function NavMenu() {
                                 <Link href="/about">{t("menu.about.link1")}</Link>
                             </NavigationMenuLink>
                             <NavigationMenuLink asChild className={""}>
-                                <Link href="/about">{t("menu.about.link2")}</Link>
+                                <Link href="/leadership">{t("menu.about.link2")}</Link>
                             </NavigationMenuLink>
                             <NavigationMenuLink asChild className={""}>
-                                <Link href="/about">{t("menu.about.link3")}</Link>
+                                <Link href="/investors">{t("menu.about.link3")}</Link>
                             </NavigationMenuLink>
                         </div>
                     </NavigationMenuContent>

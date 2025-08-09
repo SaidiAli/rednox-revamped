@@ -25,7 +25,7 @@ export default function Component({ id, image, name, position, email, bio }: { i
             <div className="p-0">
                 <div className="flex flex-row gap-4 w-full">
                     <div className="relative">
-                        <Image src={image} width={100} height={100} alt={name} className="object-cover" />
+                        <Image src={image} width={150} height={150} alt={name} className="object-cover" />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
                     </div>
                     <div className="flex flex-col w-full items-start mb-2">

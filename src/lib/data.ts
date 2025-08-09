@@ -120,6 +120,33 @@ export const advisors: TeamMember[] = [
     }
 ]
 
+export const investors: TeamMember[] = [
+    {
+        id: 6,
+        name: "Wayne Embree",
+        position: "Investor",
+        image: "/team/wayne.jpeg",
+        alt: "wayne embree rednox",
+        bio: "Wayne is an experienced seed-stage investor with a track record of fueling startups with guidance and venture capital. He’s been involved in over 200 investments, including sitting on over 50 boards and taking more than 60 businesses through exits. Throughout his career, he has maintained his passion and enthusiasm for helping entrepreneurs change the world.",
+    },
+    {
+        id: 7,
+        name: "Jonathan Hakakian",
+        position: "Investor",
+        image: "/team/jonathan.jpeg",
+        alt: "jonathan hakakian rednox",
+        bio: "Jonathan is Managing Director of SoundBoard Venture Fund, formerly SoundBoard Angel Fund which he co-founded in 2012 to build a community of experienced entrepreneurs to formally invest in early-stage companies outside the major city centers.",
+    },
+    {
+        id: 8,
+        name: "Noboru Yamamura",
+        position: "Investor",
+        image: "/team/noboru.png",
+        alt: "noboru yamamura rednox",
+        bio: "A visionary leader guiding the 111-year-old glass manufacturing company, Noboru Yamamura upholds the foundational philosophy and 'Yamamura Spirit' inherited from predecessors. Under his leadership, the company emphasizes monozukuri (the art of manufacturing) to meet customer expectations and aims to remain indispensable for the next century. Committed to societal prosperity, he drives innovation and sustainability while honoring the company&rsquo;s legacy.",
+    }
+]
+
 export const newsData: NewsData[] = [
     {
         id: 1,

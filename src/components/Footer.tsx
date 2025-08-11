@@ -16,8 +16,8 @@ export default function Footer({ className }: { className?: string }) {
                         </p>
                         
                         <div className="flex gap-4 mt-8">
-                            <Image src="/untitled-1.png" alt="" width={100} height={100} />
-                            <Image src="/untitled-2.png" alt="" width={100} height={100} />
+                            <Image src="https://res.cloudinary.com/dvixlnczm/image/upload/v1754921168/Untitled-2_w5mou1.png" alt="" width={100} height={100} />
+                            <Image src="https://res.cloudinary.com/dvixlnczm/image/upload/v1754921168/Untitled-1_zftd0j.png" alt="" width={100} height={100} />
                         </div>
                     </div>
                     <div className="flex flex-row justify-center gap-16 basis-2/3">

@@ -9,6 +9,7 @@ import Image from "next/image"
 export function BenefitsTabs() {
     return (
         <section className="container mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-white capitalize text-center mb-16">A product line-up <span className="text-primary">Adapted to Your Needs</span></h2>
             <div className="flex flex-col gap-6">
                 <Tabs defaultValue="oem" className="">
                     <div className="flex flex-row justify-center">

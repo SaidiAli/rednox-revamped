@@ -1,8 +1,6 @@
 "use client"
 
 import Image from "next/image"
-import { Button } from "./ui/button"
-import { ChevronRight, Download } from "lucide-react"
 import SectionTitle from "./ui/SectionTitle"
 import { useTranslations } from "next-intl"
 
@@ -22,13 +20,13 @@ export default function WhyCareSection() {
             <div className="relative">
                 <div className="relative aspect-[4/3] lg:aspect-[3/2]">
                     <Image
-                        src="/why.jpg"
+                        src="/agrinox_farmer.jpg"
                         alt=""
                         fill
                         className="object-cover object-center rounded-tr-lg rounded-br-lg"
                         priority
                     />
-                    <div className="absolute inset-0 bg-gradient-to-r from-background via-background/20 to-transparent rounded-tr-lg rounded-br-lg" />
+                    {/* <div className="absolute inset-0 bg-gradient-to-r from-background via-background/20 to-transparent rounded-tr-lg rounded-br-lg" /> */}
                 </div>
             </div>
         </div>

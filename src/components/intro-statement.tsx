@@ -51,7 +51,7 @@ export default function IntroStatement() {
           className="mb-8"
           variants={itemVariants}
         >
-          <Image src="/lonox.png" alt="Hero Image" width={800} height={800} className="rounded-2xl" />
+          <Image src="https://res.cloudinary.com/dvixlnczm/image/upload/v1754920885/lonox_gjfb4q.png" alt="Hero Image" width={800} height={800} className="rounded-2xl" />
         </motion.div>
 
         <motion.div variants={itemVariants}>

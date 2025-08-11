@@ -1,18 +1,66 @@
+import { easeInOut, motion } from "framer-motion";
 import { BackgroundBeams } from "./Background-beams";
+
+// Define the animation variants for the container
+const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+        opacity: 1,
+        transition: {
+            staggerChildren: 0.3, // Delay between each child's animation
+        },
+    },
+};
+
+// Define the animation variants for the children
+const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+        opacity: 1,
+        y: 0,
+        transition: {
+            duration: 0.6, // Duration of each child's animation
+            ease: easeInOut,
+        },
+    },
+};
+
+const staggerButtonVariants = {
+    hidden: { opacity: 0, x: -20 },
+    visible: {
+        opacity: 1,
+        x: 0,
+        transition: {
+            duration: 0.6,
+            ease: easeInOut,
+        },
+    },
+};
 
 export default function PageHero({ title, subTitle }: { title: string; subTitle: string }) {
     return (
         <div className="w-full overflow-hidden">
             <div className="h-full py-20 w-full rounded-md bg-background relative flex flex-col items-center justify-center antialiased">
-                <div className="max-w-7xl mx-auto p-4">
-                    <h1 className="relative z-10 text-lg md:text-4xl bg-clip-text text-white text-center font-sans font-bold">
+                <motion.div
+                    className="max-w-7xl mx-auto p-4"
+                    variants={containerVariants}
+                    initial="hidden"
+                    animate="visible"
+                >
+                    <motion.h1
+                        className="relative z-10 text-lg md:text-4xl bg-clip-text text-white text-center font-sans font-bold"
+                        variants={itemVariants}
+                    >
                         {title}
-                    </h1>
-                    <p className="text-white max-w-lg mx-auto my-2 text-base mt-6 text-center relative z-10">
-                        {subTitle}
-                    </p>
-                </div>
+                    </motion.h1>
 
+                    <motion.p
+                        className="text-white max-w-lg mx-auto my-2 text-base mt-6 text-center relative z-10"
+                        variants={itemVariants}
+                    >
+                        {subTitle}
+                    </motion.p>
+                </motion.div>
                 <BackgroundBeams />
             </div>
         </div>

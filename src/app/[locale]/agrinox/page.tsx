@@ -14,7 +14,7 @@ export default function Agrinox() {
     return (
         <div className="min-h-screen">
             <Navbar />
-            <SolutionHero title={t("title")} image="/image004.png" description={t("description")} />
+            <SolutionHero title={t("title")} image="/1.jpeg" description={t("description")} />
 
             <div className="container mx-auto py-20">
                 <div className="flex flex-col justify-start gap-4">

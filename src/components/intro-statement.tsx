@@ -58,7 +58,6 @@ export default function IntroStatement() {
           <h4 className="text-white text-2xl font-bold mb-4">Trusted by Our Partners</h4>
           <div className="flex flex-row gap-4 justify-center items-center">
             <Image src="/cummins.png" alt="" width={150} height={150} />
-            {/* <Image src="/usda-no-bg.png" alt="" width={100} height={100} /> */}
           </div>
         </motion.div>
       </motion.div>

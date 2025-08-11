@@ -9,6 +9,7 @@ import SolutionsSection from "@/components/SolutionsSection"
 import PressReleases from "@/components/PressReleases"
 import SensorSpecifications from "@/components/sensor-specifications"
 import Image from "next/image"
+import { BenefitsTabs } from "@/components/benefits-tabs"
 
 export default function LandingPage() {
   return (
@@ -20,6 +21,8 @@ export default function LandingPage() {
         <SensorSpecifications />
         <WhyCareSection />
         <SolutionsSection />
+        {/* Benefits for customers */}
+        <BenefitsTabs />
         {/* <CTASection /> */}
         <PressReleases />
       </main>
@@ -30,11 +33,19 @@ export default function LandingPage() {
 
 function IntroStatement() {
   return (
-    <section className="py-20 bg-primary">
+    <section className="py-20 bg-rBlue">
       <div className="flex flex-col items-center justify-center gap-8">
-        <p className="text-white max-w-4xl mx-auto my-2 text-xl text-center relative z-10">RedNOx develops ultra-sensitive gas sensors for heavy-duty engines, generators, and agriculture—delivering real-time NOx and N₂O data to help customers comply with EPA/CARB standards and improve profitability.</p>
+        <p className="text-white max-w-4xl mx-auto my-2 text-xl text-center relative z-10"><span className="font-bold text-primary">RedNOx</span> develops ultra-sensitive gas sensors for heavy-duty engines, generators, and agriculture—delivering real-time NOx and N₂O data to help customers comply with EPA/CARB standards and improve profitability.</p>
+        <div className="mb-8">
+          <Image src="/lonox.png" alt="Hero Image" width={800} height={800} className="rounded-2xl" />
+        </div>
+
         <div>
-          <Image src="/lonox.png" alt="Hero Image" width={1000} height={1000} className="rounded-2xl" />
+          <h4 className="text-white text-2xl font-bold mb-4">Trusted by Our Partners</h4>
+          <div className="flex flex-row gap-4 justify-center items-center">
+            <Image src="/cummins.png" alt="" width={150} height={150} />
+            {/* <Image src="/usda-no-bg.png" alt="" width={100} height={100} /> */}
+          </div>
         </div>
       </div>
     </section>

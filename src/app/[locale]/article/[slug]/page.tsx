@@ -3,7 +3,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import { motion } from "framer-motion"
-import { ArrowLeft, Calendar, Clock, User, Share2, BookOpen } from "lucide-react"
+import { ArrowLeft, Calendar, Clock, User, Share2, BookOpen, Download } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { useParams, useRouter } from "next/navigation"
@@ -71,7 +71,7 @@ export default function BlogPostPage() {
                                     <Clock className="size-4" />
                                     <span>{currentPost.readTime}</span>
                                 </div>
-                                <Button variant="outline" size="sm" className="rounded-full bg-transparent">
+                                <Button className="rounded-full bg-transparent">
                                     <Share2 className="size-4 mr-2" />
                                     Share
                                 </Button>
@@ -104,12 +104,32 @@ export default function BlogPostPage() {
                                 dangerouslySetInnerHTML={{ __html: currentPost.content }}
                             />
 
-                            
+
                         </div>
                     </div>
+
+
                 </section>
+
+                {currentPost.downloadLink && currentPost.downloadCTATitle && <DownloadCTA title={currentPost.downloadCTATitle} link={currentPost.downloadLink} />}
             </div>
             <Footer />
         </main>
+    )
+}
+
+
+function DownloadCTA({ title, link }: { title: string, link: string }) {
+    return (
+        <section className="w-full py-12 md:py-20">
+            <div className="container px-4 md:px-6">
+                <div className="max-w-3xl mx-auto">
+                    <div className="flex flex-row justify-between items-center gap-4 bg-primary p-16 rounded-xl">
+                        <p className="text-2xl font-bold">{title}</p>
+                        <Button className="bg-rBlue hover:bg-rBlue/80 cursor-pointer">Download press release<Download className="size-4" /></Button>
+                    </div>
+                </div>
+            </div>
+        </section>
     )
 }

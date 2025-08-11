@@ -60,9 +60,9 @@
             }
         },
         "whyYouShouldCare": {
-            "headline": "Why you should care",
-            "subheader": "Save the environment",
-            "description": "NOx drives smog and acid rain; N₂O has 298× the GWP of CO₂. One ppm you eliminate today stops both an air-quality fine and a greenhouse-gas penalty tomorrow.",
+            "headline": "Why it matters",
+            "subheader": "Slash Fuel Costs, Avoid Fines, and Cut Greenhouse Gas Emissions",
+            "description": "Eliminating even one ppm of NOx today prevents both an air-quality fine and a greenhouse-gas penalty tomorrow. By cutting NOx emissions, which drive smog and acid rain, and reducing N₂O, which has a global warming potential 298 times that of CO₂, you can slash fuel costs, avoid fines, and cut greenhouse gas emissions.",
             "downloadButton": "Download spec sheet",
             "scheduleButton": "Schedule a pilot"
         },

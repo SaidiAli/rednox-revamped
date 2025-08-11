@@ -11,7 +11,7 @@ export default function PressReleases() {
             <div className="container px-4 md:px-6 flex flex-col gap-6 items-center">
                 <SectionTitle title={t("PressReleaseSection.title")} />
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    {pressData.map((press, index) => (
+                    {pressData.slice(0, 2).map((press, index) => (
                         <PressReleaseCard slug={press.slug} key={index} title={press.title} description={press.excerpt} image={press.image || "https://placehold.co/600x400"} />
                     ))}
                 </div>

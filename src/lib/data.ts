@@ -180,6 +180,14 @@ export const pressData: PressData[] = [
         date: "2024-10-31",
         slug: "rednox-awarded-usda-nifa-sbir-phase-ii-grant-to-drive-innovation-in-agricultural-emissions-reduction",
         image: "/us.jpg"
+    },
+    {
+        id: 3,
+        title: "Strategic Business Partnership Between Nihon Yamamura Glass Co., Ltd. and RedNOx",
+        excerpt: "Advancing New Product Development in Mobility and Agriculture Sectors Through Integration of Next-Generation NOx Sensor Technology and Ceramic Manufacturing Expertise",
+        date: "2025-05-23",
+        slug: "strategic-business-partnership-between-nihon-yamamura-glass-co-ltd-and-rednox",
+        image: "/nihon.jpg"
     }
 ]
 
@@ -209,6 +217,8 @@ export interface BlogPost {
     readTime: string;
     category: string;
     content: string;
+    downloadCTATitle?: string;
+    downloadLink?: string;
 }
 
 export const blogPosts: Record<string, BlogPost> = {
@@ -242,5 +252,87 @@ export const blogPosts: Record<string, BlogPost> = {
     <p>We are thrilled to announce that RedNOx has been awarded a USDA NIFA SBIR Phase II grant of $650,000 as part of a $26.8 million investment to support groundbreaking, small business-led innovations in agriculture. This funding will enable us to advance our N₂O and NOx sensing technologies, specifically aimed at reducing emissions of nitrous oxide and NOx from both synthetic and microbial fertilizers.</p>
     <p>This Phase II award underscores the importance of cutting-edge research in addressing critical environmental challenges and brings our technology closer to commercialization. With USDA NIFA’s support, RedNOx will continue its mission to enhance agricultural productivity, benefit local communities, and contribute to a cleaner, healthier environment.</p>
   `,
+    },
+    "strategic-business-partnership-between-nihon-yamamura-glass-co-ltd-and-rednox": {
+        title: "Strategic Business Partnership Between Nihon Yamamura Glass Co., Ltd. and RedNOx",
+        excerpt:
+            "Advancing New Product Development in Mobility and Agriculture Sectors Through Integration of Next-Generation NOx Sensor Technology and Ceramic Manufacturing Expertise",
+        date: "2025-05-23",
+        readTime: "5 min read",
+        category: "Press Release",
+        image: "/nihon.jpg",
+        downloadLink: "https://www.nifa.org/",
+        downloadCTATitle: "Nihon Yamamura Press Release",
+        content: `
+
+    <p><strong>Nihon Yamamura Glass Co., Ltd.</strong> (Headquarters: Amagasaki City, Hyogo Prefecture; President & CEO: Noboru Yamamura; hereinafter "NYG") is pleased to announce the conclusion of a strategic business partnership with <strong>RedNOx Inc.</strong>, a Silicon Valley-based sensor technology startup (Headquarters: Fremont, California, USA; hereinafter "RedNOx").</p>
+
+    <h2>Partnership Overview</h2>
+    <p>This partnership is being implemented in conjunction with NYG's participation in RedNOx's $2 million seed investment round, which was oversubscribed. The round also includes participation from Rev1 Ventures (lead investor) and Soundboard Ventures, supporting the commercialization of RedNOx's innovative sensor technologies.</p>
+
+    <h2>RedNOx's Innovative Technology Portfolio</h2>
+    <p>RedNOx Inc., founded by Dr. Solomon Ssenyange and based in Fremont, California, is a pioneering Silicon Valley startup in its initial commercial phase, specializing in innovative sensor platforms for greenhouse gases including NOx, N2O, and CO2. The company has established significant partnerships with industry leaders, including a Memorandum of Understanding (MOU) with Cummins Inc. for the development and commercialization of highly sensitive NOx sensors tailored for heavy-duty engine production. RedNOx possesses the following cutting-edge technologies:</p>
+
+    <h3>1. LoNOx Ultra-Sensitive NOx Sensor</h3>
+    <ul>
+        <li>Achieves measurement of extremely low NOx concentrations below 1ppm with unprecedented accuracy.</li>
+        <li>Specifically engineered to be less susceptible to interference by ammonia, addressing a critical issue prevalent with current market NOx sensors.</li>
+        <li>Used in heavy duty engine aftertreatment systems across multiple applications.</li>
+        <li>Established customer base including major heavy equipment manufacturer Cummins Inc., with engines used in trucks, buses, industrial and marine applications.</li>
+        <li>Receiving significant attention for usage in diesel generators used as backup electricity generators for data centers and hospitals.</li>
+        <li>Supports legacy OEM manufacturers in meeting stringent future emission requirements.</li>
+    </ul>
+
+    <h3>2. AgriNOx System</h3>
+    <ul>
+        <li>Advanced agricultural IoT system for precise quantification of N2O emissions from fertilizers.</li>
+        <li>Recently awarded a USDA NIFA SBIR Phase II grant of $650,000 as part of a $26.8 million investment to support groundbreaking agricultural innovations.</li>
+        <li>Features patent-protected electrochemical total NOx sensor and optical N2O sensor designed to meet sub-ppm measurement specifications set forth by regulators.</li>
+        <li>Enables farmers to optimize fertilizer management while minimizing greenhouse gas emissions.</li>
+        <li>Contributes to fertilizer manufacturers' development of low-GHG emission products.</li>
+        <li>Provides additional revenue streams for farmers through NOx credit sales. <span class="note">*Note: N2O has 298 times the greenhouse effect of CO2</span></li>
+    </ul>
+
+    <h2>Partnership Objectives and NYG's Manufacturing Excellence</h2>
+    <p>Nihon Yamamura Glass Co., Ltd., established in 1914, stands as Japan's leading glass bottle manufacturer with over 110 years of industry expertise and the largest market share in Japan. The company operates four glass bottle production plants with a combined production capacity exceeding 350,000 tons annually, representing the largest scale in Japan. NYG's diverse portfolio extends beyond traditional glass manufacturing to include powdered glass, glass paste, sealing glass, solar panels, batteries, ceramic condensers, LED packages, and advanced materials for automotive and industrial applications.</p>
+    <p>Through this strategic partnership, RedNOx's breakthrough sensor technology will be integrated with NYG's long-cultivated ceramic manufacturing expertise and proprietary New Glass sealant technologies. This collaboration will accelerate the development and market introduction of next-generation environmental monitoring products specifically designed for the mobility and agriculture sectors, combining Silicon Valley innovation with Japanese precision manufacturing excellence.</p>
+
+    <h2>Future Development</h2>
+    <p>Both companies will collaborate toward the early market introduction of products that contribute to environmental impact reduction, working together to create new value for the realization of a sustainable society.</p>
+
+    <h2>Contact Information for Inquiries</h2>
+    <p><strong>Nihon Yamamura Glass Co., Ltd. Public Relations & IR Department</strong><br>
+    TEL: +81-6-6487-0001<br>
+    Email: <a href="mailto:ir@yamamura-glass.co.jp">ir@yamamura-glass.co.jp</a></p>
+
+    <h2>About RedNOx Inc.</h2>
+    <p>RedNOx Inc. is a Silicon Valley-based startup founded by Dr. Solomon Ssenyange and headquartered in Fremont, California. The company specializes in developing innovative sensor platforms for greenhouse gases and environmental monitoring solutions. RedNOx has established partnerships with major industry players including Cummins Inc. and has received significant government funding, including USDA SBIR grants totaling $650,000. As a pioneer in environmental measurement technology, RedNOx is committed to leading the charge towards low to zero-emissions engines, factories, and farmlands, contributing to the realization of a sustainable society.</p>
+
+    <h2>About Nihon Yamamura Glass Co., Ltd.</h2>
+    <p>Founded in 1914 and headquartered in Amagasaki, Hyogo Prefecture, Nihon Yamamura Glass Co., Ltd. is Japan's premier glass bottle manufacturer with over 110 years of industry leadership. The company holds the largest market share for glass bottles in Japan and operates four production plants with a combined annual capacity exceeding 350,000 tons. NYG's business portfolio encompasses four main divisions: Glass Bottle Company, Plastics Company, New Glass Company, and Engineering Company, along with comprehensive logistics services. The company's advanced technologies include precision ceramic manufacturing, New Glass sealant technologies, and specialized materials for automotive, electronics, and industrial applications. With international operations spanning China, Thailand, Taiwan, Indonesia, and the Philippines, NYG continues to drive innovation in sustainable packaging solutions and advanced materials technology.</p>`,
     }
 }
+
+ export const _investors = [
+        {
+            name: "Rev1ventures",
+            image: "/investors/1.png",
+            bio: "Rev1 Ventures is a venture capital firm based in Columbus, Ohio. It focuses on investing in early-stage, scalable, and tech-enabled businesses in various sectors, including advanced materials and alternative energy. As a venture development studio, it helps entrepreneurs and corporations accelerate innovation.",
+            position: "Venture Capital Firm",
+            email: "info@rev1ventures.com"
+        },
+        {
+            name: "Soundboard Venture Fund",
+            image: "/investors/2.png",
+            bio: "SoundBoard Venture Fund is an early-stage venture capital firm based in Montclair, New Jersey. It uses a collaborative approach, leveraging the diverse perspectives of its investors to evaluate and make investment decisions. The firm focuses on scalable, tech-enabled businesses and places a strong emphasis on assessing the leadership team of the companies they invest in.",
+            position: "Venture Capital Firm",
+            email: "info@soundboardventurefund.com"
+        },
+        {
+            name: "Nihon Yamamura Glass Co., Ltd.",
+            image: "/investors/3.png",
+            bio: "Nihon Yamamura Glass Co., Ltd. is a Japanese company that manufactures and sells glass bottles, plastic containers, and powdered glass. Founded in 1914, the company also operates in the logistics and 'new glass' sectors. It is a strategic partner for RedNOx, with pilot lines in Yokohama, Japan.",
+            position: "Venture Capital Firm",
+            email: "info@soundboardventurefund.com"
+        }
+    ]

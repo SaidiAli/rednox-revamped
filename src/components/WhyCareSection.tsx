@@ -14,19 +14,15 @@ export default function WhyCareSection() {
                 <div className="flex flex-col justify-between items-start gap-8">
                     <div>
                         <SectionTitle title={t("whyYouShouldCare.headline")} />
-                        <p className="text-lg md:text-4xl font-bold mb-4 text-white">{t("whyYouShouldCare.subheader")}</p>
+                        <p className="text-lg md:text-4xl font-bold mb-8 text-white">{t("whyYouShouldCare.subheader")}</p>
                         <p className="text-left text-base mt-2 text-white">{t("whyYouShouldCare.description")}</p>
-                    </div>
-                    <div className="flex w-full gap-4">
-                        <Button className="bg-primary text-white w-full">{t("whyYouShouldCare.scheduleButton")}<ChevronRight className="ml-1 size-4" /></Button>
-                        <Button className="bg-primary text-white w-full">{t("whyYouShouldCare.downloadButton")}<Download className="ml-1 size-4" /></Button>
                     </div>
                 </div>
             </div>
             <div className="relative">
                 <div className="relative aspect-[4/3] lg:aspect-[3/2]">
                     <Image
-                        src="/image003.png"
+                        src="/why.jpg"
                         alt=""
                         fill
                         className="object-cover object-center rounded-tr-lg rounded-br-lg"

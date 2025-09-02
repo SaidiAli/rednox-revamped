@@ -26,7 +26,6 @@ export default function WhyCareSection() {
                         className="object-cover object-center rounded-tr-lg rounded-br-lg"
                         priority
                     />
-                    {/* <div className="absolute inset-0 bg-gradient-to-r from-background via-background/20 to-transparent rounded-tr-lg rounded-br-lg" /> */}
                 </div>
             </div>
         </div>

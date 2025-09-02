@@ -12,7 +12,7 @@ export default function NewsAndPressLayout({ children }: { children: React.React
     return (
         <div className="flex min-h-[100dvh] flex-col">
             <Navbar />
-            <main className="flex-1">
+            <main className="flex-1 pb-20">
                 <div className="container mx-auto h-[20rem] flex flex-col justify-center">
                     <TitleHighlight title={title?.split("-").map((word) => word.charAt(0).toUpperCase() + word.slice(1)).join(" ") || ""} />
                 </div>

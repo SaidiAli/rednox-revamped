@@ -37,7 +37,7 @@ export default function SolutionsSection() {
                 >
                     <SolutionCard title={t("solutionsSection.solutions.hde.title")} image="/thumbnails/1.png" link="/heavy-duty-engines" description={t("solutionsSection.solutions.hde.description")} />
                     <SolutionCard title={t("solutionsSection.solutions.genset.title")} image="/thumbnails/2.png" link="/gensets" description={t("solutionsSection.solutions.genset.description")} />
-                    <SolutionCard title={t("solutionsSection.solutions.agrinox.title")} image="/thumbnails/3.png" link="/agrinox" description={t("solutionsSection.solutions.agrinox.description")} />
+                    <SolutionCard title={t("solutionsSection.solutions.agrinox.title")} image="/agrinox_farmer.jpg" link="/agrinox" description={t("solutionsSection.solutions.agrinox.description")} />
                 </motion.div>
             </div>
         </section>

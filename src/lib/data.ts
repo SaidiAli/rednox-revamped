@@ -71,7 +71,7 @@ export const founders = (t: AboutTranslations): TeamMember[] => (
             position: "Co-Founder & CEO",
             image: "/team/solomon-team.png",
             alt: "solomon ssenyange founder rednox inc",
-            bio: t("founders.solomon.bio"),
+            bio: t("management.members.solomon.bio"),
             email: "solomon@rednoxinc.com"
         },
         {
@@ -80,7 +80,7 @@ export const founders = (t: AboutTranslations): TeamMember[] => (
             position: "Co-Founder & Technical Advisor",
             image: "/team/dutta.jpeg",
             alt: "prabir dutta founder rednox inc",
-            bio: t("founders.dutta.bio"),
+            bio: t("management.members.dutta.bio"),
         },
         {
             id: 3,
@@ -88,19 +88,19 @@ export const founders = (t: AboutTranslations): TeamMember[] => (
             position: "Co-Founder & Chief Engineer",
             image: "/team/markel.png",
             alt: "darby makel founder rednox inc",
-            bio: t("founders.markel.bio"),
+            bio: t("management.members.markel.bio"),
         }
     ]
 )
 
-export const advisors: TeamMember[] = [
+export const advisors = (t: AboutTranslations): TeamMember[] => [
     {
         id: 4,
         name: "Peter Swaniker",
         position: "Advisor",
         image: "/team/peter.png",
         alt: "peter swaniker rednox",
-        bio: "An experienced entrepreneur in the tech industry. He has over 25 years of experience architecting and building software systems and is an expert in customer-centric solutions",
+        bio: t("advisors.members.peter.bio"),
     },
     {
         id: 5,
@@ -108,7 +108,7 @@ export const advisors: TeamMember[] = [
         position: "Advisor",
         image: "/team/matt.png",
         alt: "matt meisner rednox",
-        bio: "A founding team member of Farmers Business Network, which grew into a $4B company. He led the company's data science, new technology evaluation, and investment efforts",
+        bio: t("advisors.members.matt.bio"),
     },
     {
         id: 3,
@@ -116,34 +116,26 @@ export const advisors: TeamMember[] = [
         position: "Advisor",
         image: "/team/kurt.png",
         alt: "kurt tsuo rednox",
-        bio: "Grew FBN's crop input business to $70M/yr revenue as GM. He co-founded Graphyte for carbon removal via biomass and is the COO at ProducePay, a fintech for produce farmers.",
+        bio: t("advisors.members.kurt.bio"),
     }
 ]
 
-export const investors: TeamMember[] = [
+export const investors = (t: AboutTranslations): TeamMember[] => [
     {
         id: 6,
         name: "Wayne Embree",
         position: "Investor",
         image: "/team/wayne.jpeg",
         alt: "wayne embree rednox",
-        bio: "Wayne is an experienced seed-stage investor with a track record of fueling startups with guidance and venture capital. He’s been involved in over 200 investments, including sitting on over 50 boards and taking more than 60 businesses through exits. Throughout his career, he has maintained his passion and enthusiasm for helping entrepreneurs change the world.",
-    },
-    {
-        id: 7,
-        name: "Jonathan Hakakian",
-        position: "Investor",
-        image: "/team/jonathan.jpeg",
-        alt: "jonathan hakakian rednox",
-        bio: "Jonathan is Managing Director of SoundBoard Venture Fund, formerly SoundBoard Angel Fund which he co-founded in 2012 to build a community of experienced entrepreneurs to formally invest in early-stage companies outside the major city centers.",
+        bio: t("investors.members.wayne.bio"),
     },
     {
         id: 8,
-        name: "Noboru Yamamura",
+        name: "Nihon Yamamura Glass Co., Ltd.",
         position: "Investor",
-        image: "/team/noboru.png",
-        alt: "noboru yamamura rednox",
-        bio: "A visionary leader guiding the 111-year-old glass manufacturing company, Noboru Yamamura upholds the foundational philosophy and 'Yamamura Spirit' inherited from predecessors. Under his leadership, the company emphasizes monozukuri (the art of manufacturing) to meet customer expectations and aims to remain indispensable for the next century. Committed to societal prosperity, he drives innovation and sustainability while honoring the company&rsquo;s legacy.",
+        image: "/investors/3.png",
+        alt: "nihon yamamura glass co ltd rednox",
+        bio: t("investors.members.noboru.bio"),
     }
 ]
 

@@ -301,5 +301,47 @@
                 "subTitle": "Two-hour street parking on Moraine Street and Thornton Avenue"
             }
         }
+    },
+    "Leadership": {
+        "title": "Leadership",
+        "management": {
+            "title": "Management",
+            "members": {
+                "solomon": {
+                    "bio": "Born in Uganda and grew up in Kenya as a war refugee. He co-founded SpiroSure, which had a $100 million exit to a multinational respiratory company in 2020."
+                },
+                "dutta": {
+                    "bio": "A world expert in sensor technology. He developed concepts for RedNOx technology in his lab at The Ohio State University."
+                },
+                "markel": {
+                    "bio": "A world expert in sensor technology. He is a systems engineering expert with Makel Engineering."
+                }
+            }
+        },
+        "advisors": {
+            "title": "Advisors",
+            "members": {
+                "peter": {
+                    "bio": "An experienced entrepreneur in the tech industry. He has over 25 years of experience architecting and building software systems and is an expert in customer-centric solutions"
+                },
+                "matt": {
+                    "bio": "A founding team member of Farmers Business Network, which grew into a $4B company. He led the company's data science, new technology evaluation, and investment efforts"
+                },
+                "kurt": {
+                    "bio": "Grew FBN's crop input business to $70M/yr revenue as GM. He co-founded Graphyte for carbon removal via biomass and is the COO at ProducePay, a fintech for produce farmers."
+                }
+            }
+        },
+        "investors": {
+            "title": "Investors",
+            "members": {
+                "wayne": {
+                    "bio": "Wayne is an experienced seed-stage investor with a track record of fueling startups with guidance and venture capital. He's been involved in over 200 investments, including sitting on over 50 boards and taking more than 60 businesses through exits. Throughout his career, he has maintained his passion and enthusiasm for helping entrepreneurs change the world."
+                },
+                "noboru": {
+                    "bio": ""
+                }
+            }
+        }
     }
 }

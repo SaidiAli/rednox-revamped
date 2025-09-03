@@ -26,15 +26,16 @@ export default function LeadershipPage() {
                     <div className="container mx-auto">
 
                         <div className="mb-8">
-                            <h3 className="text-left text-4xl font-bold mb-16">Board of Directors</h3>
+                            <h3 className="text-left text-4xl font-bold mb-16">Management</h3>
                             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-h-[300px] h-[300px]">
                                 {founders(t).map((member) => (
                                     <Team key={member.id} id={member.id} name={member.name} email={member.email} bio={member.bio} position={member.position} image={member.image} />
                                 ))}
                             </div>
 
+                            <h3 className="text-left text-4xl font-bold mb-16">Board of Directors</h3>
                             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-h-[300px] h-[300px]">
-                                {investors.map((member) => (
+                                {[...founders(t), ...investors(t)].map((member) => (
                                     <Team key={member.id} id={member.id} name={member.name} email={member.email} bio={member.bio} position={member.position} image={member.image} />
                                 ))}
                             </div>
@@ -43,7 +44,7 @@ export default function LeadershipPage() {
                         <div className="mb-8">
                             <h3 className="text-left text-4xl font-bold mb-16">Advisors</h3>
                             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-h-[300px] h-[300px]">
-                                {advisors.map((member) => (
+                                {advisors(t).map((member) => (
                                     <Team key={member.id} id={member.id} name={member.name} email={member.email} bio={member.bio} position={member.position} image={member.image} />
                                 ))}
                             </div>

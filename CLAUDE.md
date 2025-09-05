@@ -1,0 +1,1 @@
+- Always design web layouts using a mobile-first approach

@@ -1,11 +1,12 @@
 "use client";
 import React from "react";
 import { BackgroundBeams } from "./Background-beams";
-import { ChevronRight, Download } from "lucide-react";
+import { ChevronRight } from "lucide-react";
 import { ContainerTextFlip } from "./ui/text-flip";
 import { useTranslations } from "next-intl";
 import { Button } from "./ui/button";
 import { motion, easeInOut } from "framer-motion";
+import Link from "next/link";
 
 // Define the animation variants for the container
 const containerVariants = {
@@ -71,10 +72,12 @@ export default function HeroSection() {
                     </motion.p>
 
                     <motion.div className="flex gap-4" variants={staggerButtonVariants}>
-                        <Button className="bg-primary text-white w-64 hover:scale-105 transition duration-200 cursor-pointer">
-                            {t("whyYouShouldCare.scheduleButton")}
-                            <ChevronRight className="ml-1 size-4" />
-                        </Button>
+                        <Link href="/contact" className="">
+                            <Button className="rounded-full">
+                                Schedule a pilot
+                                <ChevronRight className="ml-1 size-4" />
+                            </Button>
+                        </Link>
                         {/* <Button className="bg-primary text-white w-64 hover:scale-105 transition duration-200 cursor-pointer">
                             {t("whyYouShouldCare.downloadButton")}
                             <Download className="ml-1 size-4" />

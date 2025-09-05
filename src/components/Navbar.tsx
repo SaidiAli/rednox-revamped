@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "./ui/button";
 import { ChevronRight, Menu, X } from "lucide-react";
 import { motion } from "framer-motion";
@@ -19,68 +19,147 @@ import { useTranslations } from "next-intl";
 
 export default function Navbar() {
     const [isScrolled, setIsScrolled] = useState(false)
-    const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-    const router = useRouter()
-    const t = useTranslations("Navbar")
+    const [isMobile, setIsMobile] = useState(false)
+
+    useEffect(() => {
+        const checkScreenSize = () => {
+            setIsMobile(window.innerWidth < 768)
+        }
+        
+        checkScreenSize()
+        window.addEventListener('resize', checkScreenSize)
+        return () => window.removeEventListener('resize', checkScreenSize)
+    }, [])
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setIsScrolled(window.scrollY > 10)
+        }
+
+        window.addEventListener('scroll', handleScroll)
+        return () => window.removeEventListener('scroll', handleScroll)
+    }, [])
 
     return (
         <header
             className={`sticky top-0 z-50 w-full backdrop-blur-lg transition-all duration-300 ${isScrolled ? "bg-background/80 shadow-sm" : "bg-transparent"}`}
         >
-            <div className="container flex h-20 items-center justify-between">
-                <div className="flex items-center gap-8 font-bold">
-                    <Link href="/" className="flex items-center gap-2 bg-white rounded-2xl p-2">
-                        <Image src="/logo.png" alt="" width={100} height={100} />
-                    </Link>
-                    <NavMenu />
-                </div>
-                <div className="hidden md:flex gap-4 items-center">
-                    <div className="hidden md:block">
-                        <LocaleSwitcher />
-                    </div>
-                    <Button onClick={() => router.push('/contact')} className="rounded-full bg-gradient-to-r from-primary to-[#F24229] text-primaryForeground cursor-pointer">
-                        {t("scheduleButton")}
-                        <ChevronRight className="ml-1 size-4" />
-                    </Button>
-                </div>
-                <div className="flex items-center gap-4 md:hidden">
-                    <Button onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
-                        {mobileMenuOpen ? <X className="size-5" /> : <div className="flex items-center gap-2"><Menu className="size-5" /><p className="text-md">Menu</p></div>}
-                        <span className="sr-only">Toggle menu</span>
-                    </Button>
-                </div>
+            {isMobile ? <MobileNavbar /> : <DesktopNavbar />}
+        </header>
+    )
+}
+
+function DesktopNavbar() {
+    const router = useRouter()
+    const t = useTranslations("Navbar")
+
+    return (
+        <div className="container flex h-20 items-center justify-between">
+            <div className="flex items-center gap-8 font-bold">
+                <Link href="/" className="flex items-center gap-2 bg-white rounded-2xl p-2">
+                    <Image src="/logo.png" alt="" width={100} height={100} />
+                </Link>
+                <NavMenu />
             </div>
-            {/* Mobile menu */}
+            <div className="flex gap-4 items-center">
+                <LocaleSwitcher />
+                <Button onClick={() => router.push('/contact')} className="rounded-full bg-gradient-to-r from-primary to-[#F24229] text-primaryForeground cursor-pointer">
+                    {t("scheduleButton")}
+                    <ChevronRight className="ml-1 size-4" />
+                </Button>
+            </div>
+        </div>
+    )
+}
+
+function MobileNavbar() {
+    const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+    const router = useRouter()
+    const t = useTranslations("Navbar")
+
+    return (
+        <>
+            <div className="container flex h-20 items-center justify-between">
+                <Link href="/" className="flex items-center gap-2 bg-white rounded-2xl p-2">
+                    <Image src="/logo.png" alt="" width={100} height={100} />
+                </Link>
+                <Button onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
+                    {mobileMenuOpen ? <X className="size-5" /> : <div className="flex items-center gap-2"><Menu className="size-5" /><p className="text-md">Menu</p></div>}
+                    <span className="sr-only">Toggle menu</span>
+                </Button>
+            </div>
             {mobileMenuOpen && (
                 <motion.div
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -20 }}
-                    className="md:hidden absolute top-16 inset-x-0 bg-background/95 backdrop-blur-lg border-b"
+                    className="absolute top-16 inset-x-0 bg-background/95 backdrop-blur-lg border-b"
                 >
                     <div className="container py-4 flex flex-col gap-4">
-                        <Link href="#features" className="py-2 text-sm font-medium" onClick={() => setMobileMenuOpen(false)}>
-                            Features
+                        <div className="flex flex-col gap-3">
+                            <h3 className="font-semibold text-base">{t("menu.solutions.title")}</h3>
+                            <div className="flex flex-col gap-2 ml-2">
+                                <Link href="/heavy-duty-engines" className="py-2 text-sm" onClick={() => setMobileMenuOpen(false)}>
+                                    {t("menu.solutions.link1.title")}
+                                </Link>
+                                <Link href="/gensets" className="py-2 text-sm" onClick={() => setMobileMenuOpen(false)}>
+                                    {t("menu.solutions.link2.title")}
+                                </Link>
+                                <Link href="/agrinox" className="py-2 text-sm" onClick={() => setMobileMenuOpen(false)}>
+                                    {t("menu.solutions.link3.title")}
+                                </Link>
+                            </div>
+                        </div>
+                        
+                        <Link href="/technology" className="py-2 text-sm font-medium" onClick={() => setMobileMenuOpen(false)}>
+                            {t("menu.technology")}
                         </Link>
-                        <Link href="#testimonials" className="py-2 text-sm font-medium" onClick={() => setMobileMenuOpen(false)}>
-                            Testimonials
+                        
+                        <div className="flex flex-col gap-3">
+                            <h3 className="font-semibold text-base">{t("menu.about.title")}</h3>
+                            <div className="flex flex-col gap-2 ml-2">
+                                <Link href="/about" className="py-2 text-sm" onClick={() => setMobileMenuOpen(false)}>
+                                    {t("menu.about.link1")}
+                                </Link>
+                                <Link href="/leadership" className="py-2 text-sm" onClick={() => setMobileMenuOpen(false)}>
+                                    {t("menu.about.link2")}
+                                </Link>
+                                <Link href="/investors" className="py-2 text-sm" onClick={() => setMobileMenuOpen(false)}>
+                                    {t("menu.about.link3")}
+                                </Link>
+                            </div>
+                        </div>
+                        
+                        <div className="flex flex-col gap-3">
+                            <h3 className="font-semibold text-base">{t("menu.press-release.title")}</h3>
+                            <div className="flex flex-col gap-2 ml-2">
+                                <Link href="/press-release" className="py-2 text-sm" onClick={() => setMobileMenuOpen(false)}>
+                                    {t("menu.press-release.link1")}
+                                </Link>
+                                <Link href="/in-the-news" className="py-2 text-sm" onClick={() => setMobileMenuOpen(false)}>
+                                    {t("menu.press-release.link2")}
+                                </Link>
+                                <Link href="/publications" className="py-2 text-sm" onClick={() => setMobileMenuOpen(false)}>
+                                    {t("menu.press-release.link3")}
+                                </Link>
+                            </div>
+                        </div>
+                        
+                        <Link href="/contact" className="py-2 text-sm font-medium" onClick={() => setMobileMenuOpen(false)}>
+                            {t("menu.contact")}
                         </Link>
-                        <Link href="#pricing" className="py-2 text-sm font-medium" onClick={() => setMobileMenuOpen(false)}>
-                            Pricing
-                        </Link>
-                        <Link href="#faq" className="py-2 text-sm font-medium" onClick={() => setMobileMenuOpen(false)}>
-                            FAQ
-                        </Link>
-                        <div className="flex flex-col gap-2 pt-2 border-t">
-                            <Button className="rounded-full">
-                                Schedule a pilot
+                        
+                        <div className="flex flex-col gap-3 pt-4 border-t">
+                            <LocaleSwitcher />
+                            <Button onClick={() => { router.push('/contact'); setMobileMenuOpen(false); }} className="rounded-full bg-gradient-to-r from-primary to-[#F24229] text-primaryForeground w-full">
+                                {t("scheduleButton")}
                                 <ChevronRight className="ml-1 size-4" />
                             </Button>
                         </div>
                     </div>
                 </motion.div>
             )}
-        </header>
+        </>
     )
 }
 

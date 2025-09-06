@@ -48,7 +48,7 @@ export default function HeroSection() {
     const t = useTranslations("HomePage")
     const flipWords = ["Agriculture", "HDE", "Gensets"]
     return (
-        <section className="w-full overflow-hidden h-[100vh]">
+        <section className="w-full overflow-hidden h-[60vh] md:h-[100vh]">
 
             <div className="h-full py-20 w-full rounded-md bg-background relative flex flex-col items-center justify-center antialiased">
                 <motion.div
@@ -58,14 +58,14 @@ export default function HeroSection() {
                     animate="visible"
                 >
                     <motion.h1
-                        className="relative z-10 text-lg md:text-7xl bg-clip-text text-white text-center font-sans font-bold mb-8"
+                        className="relative z-10 text-4xl md:text-6xl lg:text-7xl bg-clip-text text-white text-center font-sans font-bold mb-8"
                         variants={itemVariants}
                     >
                         {t("heroHeadline")} <ContainerTextFlip words={flipWords} />
                     </motion.h1>
 
                     <motion.p
-                        className="text-white max-w-lg mx-auto my-2 text-xl text-center relative z-10"
+                        className="text-white max-w-lg mx-auto my-2 text-base md:text-2xl lg:text-3xl text-center relative z-10"
                         variants={itemVariants}
                     >
                         {t("heroDescription")}
@@ -78,10 +78,6 @@ export default function HeroSection() {
                                 <ChevronRight className="ml-1 size-4" />
                             </Button>
                         </Link>
-                        {/* <Button className="bg-primary text-white w-64 hover:scale-105 transition duration-200 cursor-pointer">
-                            {t("whyYouShouldCare.downloadButton")}
-                            <Download className="ml-1 size-4" />
-                        </Button> */}
                     </motion.div>
                 </motion.div>
                 <BackgroundBeams />

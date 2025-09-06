@@ -8,15 +8,15 @@ import Image from "next/image"
 
 export function BenefitsTabs() {
     return (
-        <section className="container mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-white capitalize text-center mb-16">A product line-up <span className="text-primary">Adapted to Your Needs</span></h2>
+        <section className="container mx-auto px-4 py-12 md:py-20">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight text-white capitalize text-center mb-8 md:mb-16">A product line-up <span className="text-primary">Adapted to Your Needs</span></h2>
             <div className="flex flex-col gap-6">
                 <Tabs defaultValue="oem" className="">
                     <div className="flex flex-row justify-center">
-                        <TabsList className="flex flex-row gap-4 w-full">
-                            <TabsTrigger className="px-16 py-8 text-xl font-bold" value="oem">OEM Engineers</TabsTrigger>
-                            <TabsTrigger className="px-16 py-8 text-xl font-bold" value="sustainability-manager">Sustainability Manager</TabsTrigger>
-                            <TabsTrigger className="px-16 py-8 text-xl font-bold" value="farmer">Fleet & Farm Managers</TabsTrigger>
+                        <TabsList className="flex flex-col md:flex-row gap-2 md:gap-4 w-full h-auto">
+                            <TabsTrigger className="px-4 md:px-16 py-4 md:py-8 text-sm md:text-xl font-bold" value="oem">OEM Engineers</TabsTrigger>
+                            <TabsTrigger className="px-4 md:px-16 py-4 md:py-8 text-sm md:text-xl font-bold" value="sustainability-manager">Sustainability Manager</TabsTrigger>
+                            <TabsTrigger className="px-4 md:px-16 py-4 md:py-8 text-sm md:text-xl font-bold" value="farmer">Fleet & Farm Managers</TabsTrigger>
                         </TabsList>
                     </div>
                     <TabsContent value="oem">
@@ -37,22 +37,22 @@ export function BenefitsTabs() {
 
 function BenefitsTabContent({ title, descriptionP1, descriptionP2, image, metrics }: { title: string, descriptionP1: string; descriptionP2: string; image: string; metrics: { label: string; value: string }[] }) {
     return (
-        <div className="border-1 border-rBlue p-8">
-            <div className="flex flex-row justify-center gap-8">
-                <div className="w-1/2">
-                    <h2 className="text-2xl font-bold mb-8">{title}</h2>
-                    <p>{descriptionP1}</p>
-                    <p>{descriptionP2}</p>
-                    <div className="flex flex-row justify-center gap-8 mt-16">
+        <div className="border-1 border-rBlue p-4 md:p-8">
+            <div className="flex flex-col md:flex-row justify-center gap-6 md:gap-8">
+                <div className="w-full md:w-1/2">
+                    <h2 className="text-xl md:text-2xl font-bold mb-4 md:mb-8">{title}</h2>
+                    <p className="text-sm md:text-base mb-4">{descriptionP1}</p>
+                    <p className="text-sm md:text-base mb-4">{descriptionP2}</p>
+                    <div className="flex flex-row justify-center gap-4 md:gap-8 mt-6 md:mt-16">
                         {metrics.map((metric, index) => (
                             <div key={index} className="flex flex-col justify-center items-center gap-4">
-                                <p className="text-4xl font-bold text-primary">{metric.value}</p>
-                                <p className="text-base">{metric.label}</p>
+                                <p className="text-2xl md:text-4xl font-bold text-primary">{metric.value}</p>
+                                <p className="text-xs md:text-base text-center">{metric.label}</p>
                             </div>
                         ))}
                     </div>
                 </div>
-                <div className="w-1/2 relative w-[500px">
+                <div className="w-full md:w-1/2 relative h-64 md:h-96">
                     <Image src={image} alt="" fill className="rounded-2xl object-cover" />
                 </div>
             </div>

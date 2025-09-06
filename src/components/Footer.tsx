@@ -5,9 +5,9 @@ import Image from "next/image";
 export default function Footer({ className }: { className?: string }) {
     return (
         <footer className={`w-full bg-rBlue backdrop-blur-sm ${className}`}>
-            <div className="container flex flex-col gap-8 px-4 py-10 md:px-6 lg:py-16">
-                <div className="flex flex-row justify-between items-center">
-                    <div className="space-y-4 basis-1/3">
+            <div className="container flex flex-col gap-6 md:gap-8 px-4 py-8 md:py-10 lg:py-16">
+                <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8 md:gap-0">
+                    <div className="space-y-4 w-full md:basis-1/3">
                         <Link href="/" className="flex items-center gap-2 bg-white w-fit rounded-2xl p-2">
                             <Image src="/logo.png" alt="" width={100} height={100} />
                         </Link>
@@ -15,14 +15,14 @@ export default function Footer({ className }: { className?: string }) {
                             Leading the charge towards low to zero-emissions engines, factories and farmlands
                         </p>
                         
-                        <div className="flex gap-4 mt-8">
-                            <Image src="https://res.cloudinary.com/dvixlnczm/image/upload/v1754921168/Untitled-2_w5mou1.png" alt="" width={100} height={100} />
-                            <Image src="https://res.cloudinary.com/dvixlnczm/image/upload/v1754921168/Untitled-1_zftd0j.png" alt="" width={100} height={100} />
+                        <div className="flex gap-2 md:gap-4 mt-6 md:mt-8">
+                            <Image src="https://res.cloudinary.com/dvixlnczm/image/upload/v1754921168/Untitled-2_w5mou1.png" alt="" width={80} height={80} className="md:w-[100px] md:h-[100px]" />
+                            <Image src="https://res.cloudinary.com/dvixlnczm/image/upload/v1754921168/Untitled-1_zftd0j.png" alt="" width={80} height={80} className="md:w-[100px] md:h-[100px]" />
                         </div>
                     </div>
-                    <div className="flex flex-row justify-center gap-16 basis-2/3">
-                        <div className="flex flex-col gap-4">
-                            <p className="text-white text-sm">Company</p>
+                    <div className="flex flex-col md:flex-row justify-start md:justify-center gap-8 md:gap-16 w-full md:basis-2/3">
+                        <div className="flex flex-col gap-3 md:gap-4">
+                            <p className="text-white text-sm font-semibold">Company</p>
                             <Link href="/technology" className="hover:text-primary transition-colors hover:underline">
                                 Technology
                             </Link>
@@ -36,8 +36,8 @@ export default function Footer({ className }: { className?: string }) {
                                 Contact Us
                             </Link>
                         </div>
-                        <div className="flex flex-col gap-4">
-                            <p className="text-white text-sm">Resources</p>
+                        <div className="flex flex-col gap-3 md:gap-4">
+                            <p className="text-white text-sm font-semibold">Resources</p>
                             <Link href="/privacy-policy" className="hover:text-primary transition-colors hover:underline">
                                 Privacy policy
                             </Link>
@@ -48,14 +48,14 @@ export default function Footer({ className }: { className?: string }) {
                                 Terms of Service
                             </Link>
                         </div>
-                        <div className="flex flex-col gap-4">
-                            <p className="text-white text-sm">Follow Updates on our Socials</p>
+                        <div className="flex flex-col gap-3 md:gap-4">
+                            <p className="text-white text-sm font-semibold">Follow Updates on our Socials</p>
                             <p className="inline-flex group items-center gap-2 hover:text-primary transition-colors"><SocialIcon href="#" icon="mdi:twitter" name="Twitter" className="text-white group-hover:text-primary transition-colors" />Twitter</p>
                             <p className="inline-flex group items-center gap-2 hover:text-primary transition-colors"><SocialIcon href="#" icon="mdi:linkedin" name="LinkedIn" className="text-white group-hover:text-primary transition-colors" />LinkedIn</p>
                         </div>
                     </div>
                 </div>
-                <div className="flex justify-center mt-8">
+                <div className="flex justify-center mt-6 md:mt-8 pt-6 md:pt-8 border-t border-gray-700">
                     <p className="text-xs text-white text-center">
                         &copy; {new Date().getFullYear()} Rednox Inc. All rights reserved.
                     </p>

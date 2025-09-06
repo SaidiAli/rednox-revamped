@@ -19,17 +19,6 @@ import { useTranslations } from "next-intl";
 
 export default function Navbar() {
     const [isScrolled, setIsScrolled] = useState(false)
-    const [isMobile, setIsMobile] = useState(false)
-
-    useEffect(() => {
-        const checkScreenSize = () => {
-            setIsMobile(window.innerWidth < 768)
-        }
-        
-        checkScreenSize()
-        window.addEventListener('resize', checkScreenSize)
-        return () => window.removeEventListener('resize', checkScreenSize)
-    }, [])
 
     useEffect(() => {
         const handleScroll = () => {
@@ -44,7 +33,8 @@ export default function Navbar() {
         <header
             className={`sticky top-0 z-50 w-full backdrop-blur-lg transition-all duration-300 ${isScrolled ? "bg-background/80 shadow-sm" : "bg-transparent"}`}
         >
-            {isMobile ? <MobileNavbar /> : <DesktopNavbar />}
+            <DesktopNavbar />
+            <MobileNavbar />
         </header>
     )
 }
@@ -54,7 +44,7 @@ function DesktopNavbar() {
     const t = useTranslations("Navbar")
 
     return (
-        <div className="container flex h-20 items-center justify-between">
+        <div className="hidden md:flex container h-20 items-center justify-between">
             <div className="flex items-center gap-8 font-bold">
                 <Link href="/" className="flex items-center gap-2 bg-white rounded-2xl p-2">
                     <Image src="/logo.png" alt="" width={100} height={100} />
@@ -78,8 +68,8 @@ function MobileNavbar() {
     const t = useTranslations("Navbar")
 
     return (
-        <>
-            <div className="container flex h-20 items-center justify-between">
+        <div className="md:hidden">
+            <div className="container flex h-20 items-center justify-between p-4">
                 <Link href="/" className="flex items-center gap-2 bg-white rounded-2xl p-2">
                     <Image src="/logo.png" alt="" width={100} height={100} />
                 </Link>
@@ -93,7 +83,7 @@ function MobileNavbar() {
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -20 }}
-                    className="absolute top-16 inset-x-0 bg-background/95 backdrop-blur-lg border-b"
+                    className="absolute top-16 inset-x-0 bg-background/95 backdrop-blur-lg border-b p-4"
                 >
                     <div className="container py-4 flex flex-col gap-4">
                         <div className="flex flex-col gap-3">
@@ -159,7 +149,7 @@ function MobileNavbar() {
                     </div>
                 </motion.div>
             )}
-        </>
+        </div>
     )
 }
 

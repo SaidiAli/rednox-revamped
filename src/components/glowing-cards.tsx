@@ -7,8 +7,8 @@ import { GlowingCard } from "./ui/glowing-card"
 export default function GlowingCards() {
     const t = useTranslations("HomePage")
     return (
-        <div className="w-full flex items-center justify-center gap-8 mt-20">
-            <GlowingCard className="w-[500px]">
+        <div className="w-full flex flex-col md:flex-row items-center justify-center gap-6 md:gap-8 mt-12 md:mt-20">
+            <GlowingCard className="w-full max-w-[500px]">
                 <div className="border-[0.75px] relative flex h-full flex-col justify-between gap-6 overflow-hidden rounded-xl p-6 md:p-6 dark:shadow-[0px_0px_27px_0px_#2D2D2D]">
                     <div className="relative flex flex-1 flex-col justify-between gap-3">
                         <div className="space-y-8">
@@ -36,7 +36,7 @@ export default function GlowingCards() {
                 </div>
             </GlowingCard>
 
-            <GlowingCard className="w-[500px]">
+            <GlowingCard className="w-full max-w-[500px]">
                 <div className="border-[0.75px] relative flex h-full flex-col justify-between gap-6 overflow-hidden rounded-xl p-6 md:p-6 dark:shadow-[0px_0px_27px_0px_#2D2D2D]">
                     <div className="relative flex flex-1 flex-col justify-between gap-3">
                         <div className="space-y-8">

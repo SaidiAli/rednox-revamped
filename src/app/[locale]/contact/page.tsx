@@ -74,14 +74,14 @@ export default function ContactPage() {
             <main className="flex-1">
                 <Navbar />
 
-                <div className="container mx-auto h-[20rem] flex flex-col justify-center">
+                <div className="container mx-auto px-4 h-[16rem] md:h-[20rem] flex flex-col justify-center">
                     <TitleHighlight title={t("title")} />
                 </div>
 
                 {/* Contact Section */}
-                <section className="w-full py-20 md:py-32">
+                <section className="w-full py-12 md:py-20 lg:py-32">
                     <div className="container px-4 md:px-6">
-                        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16">
                             {/* Contact Form */}
                             <motion.div
                                 initial={{ opacity: 0, x: -20 }}
@@ -89,45 +89,45 @@ export default function ContactPage() {
                                 transition={{ duration: 0.5 }}
                             >
                                 <Card className="border-none backdrop-blur">
-                                    <CardHeader>
-                                        <CardTitle className="text-2xl font-bold">{t("form.title")}</CardTitle>
-                                        <p className="text-muted-foreground">
+                                    <CardHeader className="p-4 md:p-6">
+                                        <CardTitle className="text-xl md:text-2xl font-bold text-white">{t("form.title")}</CardTitle>
+                                        <p className="text-white/80 text-sm md:text-base">
                                             {t("form.subTitle")}
                                         </p>
                                     </CardHeader>
-                                    <CardContent>
-                                        <form onSubmit={handleSubmit} className="space-y-6">
+                                    <CardContent className="p-4 md:p-6">
+                                        <form onSubmit={handleSubmit} className="space-y-4 md:space-y-6">
                                         <div className="space-y-2">
-                                                <Label htmlFor="subject">{t("form.subjectSelect.label")}</Label>
+                                                <Label htmlFor="subject" className="text-sm md:text-base">{t("form.subjectSelect.label")}</Label>
                                                 <Select value={formData.subject} onValueChange={handleSelectChange} required>
-                                                    <SelectTrigger className="w-full border-moody">
-                                                        <SelectValue placeholder={t("form.subjectSelect.placeholder")} />
+                                                    <SelectTrigger className="w-full border-moody h-10 md:h-11">
+                                                        <SelectValue placeholder={t("form.subjectSelect.placeholder")} className="text-sm md:text-base" />
                                                     </SelectTrigger>
                                                     <SelectContent className="bg-white">
-                                                        <SelectItem className="text-black hover:bg-gray-100" value="general">{t("form.subjectSelect.options.1")}</SelectItem>
-                                                        <SelectItem className="text-black hover:bg-gray-100" value="careers">{t("form.subjectSelect.options.2")}</SelectItem>
-                                                        <SelectItem className="text-black hover:bg-gray-100" value="investors">{t("form.subjectSelect.options.3")}</SelectItem>
-                                                        <SelectItem className="text-black hover:bg-gray-100" value="partnering">{t("form.subjectSelect.options.4")}</SelectItem>
-                                                        <SelectItem className="text-black hover:bg-gray-100" value="other">Other</SelectItem>
+                                                        <SelectItem className="text-black hover:bg-gray-100 text-sm md:text-base" value="general">{t("form.subjectSelect.options.1")}</SelectItem>
+                                                        <SelectItem className="text-black hover:bg-gray-100 text-sm md:text-base" value="careers">{t("form.subjectSelect.options.2")}</SelectItem>
+                                                        <SelectItem className="text-black hover:bg-gray-100 text-sm md:text-base" value="investors">{t("form.subjectSelect.options.3")}</SelectItem>
+                                                        <SelectItem className="text-black hover:bg-gray-100 text-sm md:text-base" value="partnering">{t("form.subjectSelect.options.4")}</SelectItem>
+                                                        <SelectItem className="text-black hover:bg-gray-100 text-sm md:text-base" value="other">Other</SelectItem>
                                                     </SelectContent>
                                                 </Select>
                                             </div>
-                                            <div className="grid sm:grid-cols-2 gap-4">
+                                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
 
                                                 <div className="space-y-2">
-                                                    <Label htmlFor="name">{t("form.name.label")}</Label>
+                                                    <Label htmlFor="name" className="text-sm md:text-base">{t("form.name.label")}</Label>
                                                     <Input
                                                         id="name"
                                                         name="name"
                                                         value={formData.name}
                                                         onChange={handleInputChange}
                                                         placeholder={t("form.name.placeholder")}
-                                                        className="border-moody"
+                                                        className="border-moody h-10 md:h-11 text-sm md:text-base"
                                                         required
                                                     />
                                                 </div>
                                                 <div className="space-y-2">
-                                                    <Label htmlFor="email">{t("form.email.label")}</Label>
+                                                    <Label htmlFor="email" className="text-sm md:text-base">{t("form.email.label")}</Label>
                                                     <Input
                                                         id="email"
                                                         name="email"
@@ -135,37 +135,37 @@ export default function ContactPage() {
                                                         value={formData.email}
                                                         onChange={handleInputChange}
                                                         placeholder={t("form.email.placeholder")}
-                                                        className="border-moody"
+                                                        className="border-moody h-10 md:h-11 text-sm md:text-base"
                                                         required
                                                     />
                                                 </div>
                                             </div>
                                             <div className="space-y-2">
-                                                <Label htmlFor="company">{t("form.company.label")}</Label>
+                                                <Label htmlFor="company" className="text-sm md:text-base">{t("form.company.label")}</Label>
                                                 <Input
                                                     id="company"
                                                     name="company"
                                                     value={formData.company}
                                                     onChange={handleInputChange}
                                                     placeholder={t("form.company.placeholder")}
-                                                    className="border-moody"
+                                                    className="border-moody h-10 md:h-11 text-sm md:text-base"
                                                 />
                                             </div>
 
                                             <div className="space-y-2">
-                                                <Label htmlFor="message">{t("form.message.label")}</Label>
+                                                <Label htmlFor="message" className="text-sm md:text-base">{t("form.message.label")}</Label>
                                                 <Textarea
                                                     id="message"
                                                     name="message"
                                                     value={formData.message}
                                                     onChange={handleInputChange}
                                                     placeholder={t("form.message.placeholder")}
-                                                    rows={6}
-                                                    className="border-moody focus:border-moody"
+                                                    rows={4}
+                                                    className="border-moody focus:border-moody text-sm md:text-base min-h-[100px] md:min-h-[120px]"
                                                     required
                                                 />
                                             </div>
-                                            <Button type="submit" className="w-full rounded-full bg-gradient-to-r from-primary to-[#F24229] hover:scale-105 transition duration-300 cursor-pointer" disabled={isSubmitting}>
+                                            <Button type="submit" className="w-full h-11 md:h-12 rounded-full bg-gradient-to-r from-primary to-[#F24229] hover:scale-105 transition duration-300 cursor-pointer text-sm md:text-base" disabled={isSubmitting}>
                                                 {isSubmitting ? (
                                                     "Sending..."
                                                 ) : (
@@ -191,9 +191,9 @@ export default function ContactPage() {
                                 <Map />
 
                                 {/* Locations */}
-                                <div className="space-y-6">
-                                    <h3 className="text-2xl font-bold">{t("locations.title")}</h3>
-                                    <div className="space-y-4">
+                                <div className="space-y-4 md:space-y-6">
+                                    <h3 className="text-xl md:text-2xl font-bold text-white">{t("locations.title")}</h3>
+                                    <div className="space-y-3 md:space-y-4">
                                         {locations.map((location, i) => (
                                             <motion.div
                                                 key={i}
@@ -202,21 +202,21 @@ export default function ContactPage() {
                                                 transition={{ duration: 0.3, delay: i * 0.1 }}
                                             >
                                                 <Card className="border-none backdrop-blur">
-                                                    <CardContent className="p-6">
-                                                        <h4 className="text-lg font-semibold mb-4">{location.city}</h4>
-                                                        <div className="space-y-3 text-sm">
+                                                    <CardContent className="p-4 md:p-6">
+                                                        <h4 className="text-base md:text-lg font-semibold mb-3 md:mb-4 text-white">{location.city}</h4>
+                                                        <div className="space-y-3 text-xs md:text-sm">
                                                             <div className="flex items-start gap-3">
                                                                 <MapPin className="size-4 text-primary mt-0.5 flex-shrink-0" />
                                                                 <div>
-                                                                    <p>{location.address}</p>
-                                                                    <p className="text-muted-foreground">{location.zipCode}</p>
+                                                                    <p className="text-white">{location.address}</p>
+                                                                    <p className="text-white/70">{location.zipCode}</p>
                                                                 </div>
                                                             </div>
                                                             <div className="flex items-center gap-3">
                                                                 <Phone className="size-4 text-primary flex-shrink-0" />
                                                                 <a
                                                                     href={`tel:${location.phone}`}
-                                                                    className="text-muted-foreground hover:text-foreground transition-colors"
+                                                                    className="text-white/70 hover:text-white transition-colors"
                                                                 >
                                                                     {location.phone}
                                                                 </a>
@@ -225,7 +225,7 @@ export default function ContactPage() {
                                                                 <Mail className="size-4 text-primary flex-shrink-0" />
                                                                 <a
                                                                     href={`mailto:${location.email}`}
-                                                                    className="text-muted-foreground hover:text-foreground transition-colors"
+                                                                    className="text-white/70 hover:text-white transition-colors break-all"
                                                                 >
                                                                     {location.email}
                                                                 </a>
@@ -240,13 +240,13 @@ export default function ContactPage() {
 
                                 {/* Quick Contact Info */}
                                 <Card className="border-none backdrop-blur">
-                                    <CardContent className="p-6">
-                                        <h4 className="text-lg font-semibold mb-4">{t("locations.parking.title")}</h4>
-                                        <div className="space-y-3 text-sm">
+                                    <CardContent className="p-4 md:p-6">
+                                        <h4 className="text-base md:text-lg font-semibold mb-3 md:mb-4 text-white">{t("locations.parking.title")}</h4>
+                                        <div className="space-y-3 text-xs md:text-sm">
                                             <div className="flex items-center gap-3">
                                                 <Car className="size-4 text-primary" />
                                                 <div>
-                                                    <p className="font-medium">{t("locations.parking.subTitle")}</p>
+                                                    <p className="font-medium text-white">{t("locations.parking.subTitle")}</p>
                                                 </div>
                                             </div>
                                         </div>

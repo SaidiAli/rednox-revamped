@@ -93,7 +93,7 @@
     "HeavyDutyEngines": {
         "title": "Heavy-Duty Engines",
         "description": "RedNOx offers advanced sensor solutions for Heavy-Duty Engines, designed to meet the rigorous demands of upcoming regulations like the 2027 U.S. EPA & CARB",
-        "downloadButton": "Download spec sheet",
+        "downloadButton": "Schedule a pilot",
         "scheduleButton": "Schedule a pilot",
         "problemSection": {
             "headline": "The Problem",
@@ -195,6 +195,7 @@
         "specifications": {
             "title": "High performance Sensors",
             "table": {
+                "swipeToExplore": "Swipe to explore",
                 "tableHead": {
                     "coreInnovation": "Core Innovation",
                     "howItWorks": "How it works",

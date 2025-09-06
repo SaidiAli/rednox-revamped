@@ -194,6 +194,7 @@
         "specifications": {
             "title": "高性能センサー",
             "table": {
+                "swipeToExplore": "Swipe to explore",
                 "tableHead": {
                     "coreInnovation": "コアイノベーション",
                     "howItWorks": "仕組み",

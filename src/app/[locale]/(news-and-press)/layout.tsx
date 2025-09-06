@@ -12,15 +12,15 @@ export default function NewsAndPressLayout({ children }: { children: React.React
     return (
         <div className="flex min-h-[100dvh] flex-col">
             <Navbar />
-            <main className="flex-1 pb-20">
-                <div className="container mx-auto h-[20rem] flex flex-col justify-center">
+            <main className="flex-1 pb-12 md:pb-20">
+                <div className="container mx-auto px-4 h-[16rem] md:h-[20rem] flex flex-col justify-center">
                     <TitleHighlight title={title?.split("-").map((word) => word.charAt(0).toUpperCase() + word.slice(1)).join(" ") || ""} />
                 </div>
-                <div className="container mx-auto grid grid-cols-3 gap-12">
-                    <div className="col-span-1">
+                <div className="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-12">
+                    <div className="order-2 lg:order-1 lg:col-span-1">
                         <Sidebar />
                     </div>
-                    <div className="col-span-2">
+                    <div className="order-1 lg:order-2 lg:col-span-2">
                         {children}
                     </div>
                 </div>

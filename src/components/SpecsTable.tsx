@@ -9,24 +9,24 @@ export default function SpecsTable() {
         if (typeof value === "boolean") {
             return value ? <Check className="h-4 w-4 text-white mx-auto" /> : null
         }
-        return <span className="text-white text-sm">{value}</span>
+        return <span className="text-white text-xs md:text-sm">{value}</span>
     }
 
     return (
         <div className="w-full">
-            <div className="container mx-auto">
-                <Table>
+            <div className="overflow-x-auto">
+                <Table className="min-w-full">
                     <TableHeader>
                         <TableRow className="border-gray-800">
-                            <TableHead className="text-white font-medium text-left w-1/4"></TableHead>
-                            <TableHead className="text-white font-medium text-center text-lg">SPECS</TableHead>
+                            <TableHead className="text-white font-medium text-left w-1/2 md:w-1/3 text-sm md:text-base"></TableHead>
+                            <TableHead className="text-white font-medium text-center text-base md:text-lg px-2">SPECS</TableHead>
                         </TableRow>
                     </TableHeader>
                     <TableBody>
                         {features(t).hde.map((feature, index) => (
                             <TableRow key={index} className="border-gray-800">
-                                <TableCell className="text-white font-medium py-4">{feature.key}</TableCell>
-                                <TableCell className="text-center py-4">{renderCell(feature.value)}</TableCell>
+                                <TableCell className="text-white font-medium py-3 md:py-4 text-sm md:text-base">{feature.key}</TableCell>
+                                <TableCell className="text-center py-3 md:py-4 px-2">{renderCell(feature.value)}</TableCell>
                             </TableRow>
                         ))}
                     </TableBody>

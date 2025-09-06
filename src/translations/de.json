@@ -194,6 +194,7 @@
         "specifications": {
             "title": "Hochleistungssensoren",
             "table": {
+                "swipeToExplore": "Swipe to explore",
                 "tableHead": {
                     "coreInnovation": "Kerninnovation",
                     "howItWorks": "Funktionsweise",

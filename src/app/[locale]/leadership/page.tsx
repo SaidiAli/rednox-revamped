@@ -18,32 +18,34 @@ export default function LeadershipPage() {
 
             <main className="flex-1">
 
-                <div className="container mx-auto h-[20rem] flex flex-col justify-center">
+                <div className="container mx-auto px-4 h-[16rem] md:h-[20rem] flex flex-col justify-center">
                     <TitleHighlight title="Leadership" />
                 </div>
 
-                <section>
-                    <div className="container mx-auto">
+                <section className="pb-12 md:pb-20">
+                    <div className="container mx-auto px-4">
 
-                        <div className="mb-8">
-                            <h3 className="text-left text-4xl font-bold mb-16">Management</h3>
-                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-h-[300px] h-[300px]">
+                        <div className="mb-12 md:mb-16">
+                            <h3 className="text-left text-2xl md:text-3xl lg:text-4xl font-bold mb-8 md:mb-12 text-white">Management</h3>
+                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
                                 {founders(t).map((member) => (
                                     <Team key={member.id} id={member.id} name={member.name} email={member.email} bio={member.bio} position={member.position} image={member.image} />
                                 ))}
                             </div>
+                        </div>
 
-                            <h3 className="text-left text-4xl font-bold mb-16">Board of Directors</h3>
-                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-h-[300px] h-[300px]">
+                        <div className="mb-12 md:mb-16">
+                            <h3 className="text-left text-2xl md:text-3xl lg:text-4xl font-bold mb-8 md:mb-12 text-white">Board of Directors</h3>
+                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
                                 {[...founders(t), ...investors(t)].map((member) => (
                                     <Team key={member.id} id={member.id} name={member.name} email={member.email} bio={member.bio} position={member.position} image={member.image} />
                                 ))}
                             </div>
                         </div>
 
-                        <div className="mb-8">
-                            <h3 className="text-left text-4xl font-bold mb-16">Advisors</h3>
-                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-h-[300px] h-[300px]">
+                        <div className="mb-8 md:mb-12">
+                            <h3 className="text-left text-2xl md:text-3xl lg:text-4xl font-bold mb-8 md:mb-12 text-white">Advisors</h3>
+                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
                                 {advisors(t).map((member) => (
                                     <Team key={member.id} id={member.id} name={member.name} email={member.email} bio={member.bio} position={member.position} image={member.image} />
                                 ))}

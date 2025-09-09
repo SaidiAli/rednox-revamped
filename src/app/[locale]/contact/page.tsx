@@ -3,6 +3,7 @@
 import type React from "react"
 
 import { useState } from "react"
+import { sendContactEmail } from "@/actions/email"
 import { motion } from "framer-motion"
 import { MapPin, Phone, Mail, Clock, Send, Car } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -20,6 +21,7 @@ import { useTranslations } from "next-intl";
 export default function ContactPage() {
     const t = useTranslations("Contact");
     const [isSubmitting, setIsSubmitting] = useState(false)
+    const [submitMessage, setSubmitMessage] = useState("")
     const [formData, setFormData] = useState({
         name: "",
         email: "",
@@ -40,22 +42,30 @@ export default function ContactPage() {
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault()
         setIsSubmitting(true)
+        setSubmitMessage("")
 
-        // Simulate form submission
-        await new Promise((resolve) => setTimeout(resolve, 2000))
-
-        // Reset form
-        setFormData({
-            name: "",
-            email: "",
-            company: "",
-            subject: "",
-            message: "",
-        })
-        setIsSubmitting(false)
-
-        // You would typically show a success message here
-        alert("Thank you for your message! We'll get back to you soon.")
+        try {
+            const result = await sendContactEmail(formData)
+            
+            if (result.success) {
+                setFormData({
+                    name: "",
+                    email: "",
+                    company: "",
+                    subject: "",
+                    message: "",
+                })
+                setSubmitMessage("Thank you for your message! We'll get back to you soon.")
+            } else {
+                setSubmitMessage("There was an error sending your message. Please try again or contact us directly.")
+                console.error("Email sending failed:", result.error)
+            }
+        } catch (error) {
+            setSubmitMessage("There was an error sending your message. Please try again or contact us directly.")
+            console.error("Form submission error:", error)
+        } finally {
+            setIsSubmitting(false)
+        }
     }
 
     const locations = [
@@ -165,6 +175,15 @@ export default function ContactPage() {
                                                     required
                                                 />
                                             </div>
+                                            {submitMessage && (
+                                                <div className={`text-sm md:text-base p-3 rounded-lg ${
+                                                    submitMessage.includes("error") 
+                                                        ? "bg-red-500/20 text-red-200 border border-red-500/30" 
+                                                        : "bg-green-500/20 text-green-200 border border-green-500/30"
+                                                }`}>
+                                                    {submitMessage}
+                                                </div>
+                                            )}
                                             <Button type="submit" className="w-full h-11 md:h-12 rounded-full bg-gradient-to-r from-primary to-[#F24229] hover:scale-105 transition duration-300 cursor-pointer text-sm md:text-base" disabled={isSubmitting}>
                                                 {isSubmitting ? (
                                                     "Sending..."

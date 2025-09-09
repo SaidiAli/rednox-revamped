@@ -45,7 +45,7 @@ export default function Agrinox() {
                 <div className="relative order-1 md:order-2">
                     <div className="relative aspect-[3/2] h-64 md:h-auto">
                         <Image
-                            src="/image003.png"
+                            src="https://res.cloudinary.com/dvixlnczm/image/upload/v1757448486/image004_r5z8qu.png"
                             alt=""
                             fill
                             className="object-cover object-center rounded-lg md:rounded-tr-lg md:rounded-br-lg"

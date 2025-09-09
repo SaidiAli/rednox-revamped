@@ -17,7 +17,7 @@ export default function Technology() {
                 <PageHero title={t("title")} subTitle={t("subTitle")} />
 
                 <div className="container mx-auto px-4 pb-12 md:pb-20">
-                    <Image src="/sensor_unit.png" alt="" width={800} height={800} className="transition duration-300 blur-0 rounded-2xl object-cover object-center mx-auto w-full h-auto max-w-2xl" priority />
+                    <Image src="https://res.cloudinary.com/dvixlnczm/image/upload/v1757450643/Untitled_rg1adf.png" alt="" width={800} height={800} className="transition duration-300 blur-0 rounded-2xl object-cover object-center mx-auto w-full h-auto max-w-2xl" priority />
                 </div>
                 <div className="container mx-auto px-4 flex flex-col items-center">
                     <div className="mb-8 md:mb-12">

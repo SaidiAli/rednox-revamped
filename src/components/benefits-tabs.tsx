@@ -6,6 +6,30 @@ import {
 } from "@/components/ui/tabs"
 import Image from "next/image"
 
+const benefitsTabsData = [
+    {
+        title: "Design for Tomorrow's Regulations, Today.",
+        descriptionP1: "The RedNOx sensor provides the precision and durability you need to meet stringent emissions standards, including the 2027 U.S. EPA & CARB 0.02g/hp−hr NOx limit. With a detection range of 1-20 ppm and an accuracy of ±10%, you can maintain warranty margins and ensure your products are compliant. The plug-and-play ECU interface and J1939 data flow simplify integration into your engine systems. The heater-optimized ceramic stack reaches temperature in less than 30 seconds, allowing you to meet cold-start FTP requirements. Our solid-state construction is resistant to sulfur, oil aerosols, and thermal shock, ensuring a field life of over 10,000 hours. Each sensor is factory-calibrated against NIST-traceable blends, and the data is stored in memory, simplifying ISO 9001 and regulatory reporting",
+        descriptionP2: "",
+        image: "/engineer-on-screen.avif",
+        metrics: [{ label: "NOx", value: "1ppm" }, { label: "Potential DEF Saving", value: "5-10%" }, { label: "Sensor Lifetime", value: ">5,000 hrs" }]
+    },
+    {
+        title: "Optimize Your Fleet for Compliance and Profit.",
+        descriptionP1: "The RedNOx sensor gives you continuous, accurate, real-time measurement of NOx emissions for every truck in your fleet. The cloud dashboard and API allow you to view per-truck NOx intensity, giving you the traceable data you need to prove your environmental leadership and meet regulations. By integrating the sensor into your fleet management system, you can use the data to trigger urea-dosing and regen only when needed, which can save up to 5% on Diesel Exhaust Fluid (DEF). Our remote telemetry features and self-diagnostics help you schedule service before a warning light even appears, ensuring better uptime. This proactive approach helps you avoid costly air-quality fines and greenhouse-gas penalties.",
+        descriptionP2: "",
+        image: "https://res.cloudinary.com/dvixlnczm/image/upload/v1757443328/Gemini_Generated_Image_ynacw1ynacw1ynac_tisycn.png",
+        metrics: [{ label: "Reduced NOx Emissions", value: "<1ppm" }, { label: "Compliance Audits", value: "24/7" }]
+    },
+    {
+        title: "Cut Costs, Boost Uptime, and Simplify Operations.",
+        descriptionP1: "RedNOx sensors help you slash fuel burn and reduce fuel penalties. For heavy-duty engines, the cloud API and dashboard can trigger regen or urea-dosing only when needed, saving up to 5% on Diesel Exhaust Fluid (DEF). Our robust design and remote telemetry features allow for better service and uptime, as you can schedule maintenance before a warning light even appears. For farms, the AgriNOx sensor's real-time N2O data allows for variable-rate prescriptions, which helps improve nitrogen usage and can lead to carbon credits. The simple plug-and-play integration and lack of required recalibration make our sensors easy to use and maintain, saving you time and effort.",
+        descriptionP2: "",
+        image: "/agrinox_farmer.jpg",
+        metrics: [{ label: "NOx Detection Floor", value: "<1ppm" }, { label: "Potential DEF Savings", value: "5%" }, { label: "Sensor Lifetime", value: ">5,000 hrs" }]
+    }
+]
+
 export function BenefitsTabs() {
     return (
         <section className="container mx-auto px-4 py-12 md:py-20">
@@ -20,13 +44,13 @@ export function BenefitsTabs() {
                         </TabsList>
                     </div>
                     <TabsContent value="oem">
-                        <BenefitsTabContent title="Design for Tomorrow's Regulations, Today." descriptionP1="The RedNOx sensor provides the precision and durability you need to meet stringent emissions standards, including the 2027 U.S. EPA & CARB 0.02g/hp−hr NOx limit. With a detection range of 1-20 ppm and an accuracy of ±10%, you can maintain warranty margins and ensure your products are compliant. The plug-and-play ECU interface and J1939 data flow simplify integration into your engine systems. The heater-optimized ceramic stack reaches temperature in less than 30 seconds, allowing you to meet cold-start FTP requirements. Our solid-state construction is resistant to sulfur, oil aerosols, and thermal shock, ensuring a field life of over 10,000 hours. Each sensor is factory-calibrated against NIST-traceable blends, and the data is stored in memory, simplifying ISO 9001 and regulatory reporting" descriptionP2="" image="/engineer-on-screen.avif" metrics={[{ label: "NOx", value: "1ppm" }, { label: "Potential DEF Saving", value: "5-10%" }, { label: "Sensor Lifetime", value: ">5,000 hrs" }]} />
+                        <BenefitsTabContent title={benefitsTabsData[0].title} descriptionP1={benefitsTabsData[0].descriptionP1} descriptionP2={benefitsTabsData[0].descriptionP2} image={benefitsTabsData[0].image} metrics={benefitsTabsData[0].metrics} />
                     </TabsContent>
                     <TabsContent value="sustainability-manager">
-                        <BenefitsTabContent title="Achieve Your Green Goals with Verifiable Data." descriptionP1="Prove your commitment to environmental stewardship with traceable, real-time data from our ultra-sensitive sensors. Our sensors enable you to cut NOx, which drives smog and acid rain, and reduce N2O, which has a global warming potential 298 times that of CO2. By using our cloud dashboard and API, you can precisely manage engine emissions and track your environmental impact. For agriculture, the AgriNOx sensor provides a real-time kg N lost/ha algorithm, helping farmers monitor nitrogen efficiency and earn carbon credits through programs like CARB LCFS. With our technology, you can not only meet but exceed environmental targets and showcase your progress with verifiable data" descriptionP2="" image="/sustainability-manager.jpg" metrics={[{ label: "GWP of N₂O vs. CO₂ ", value: "298x" }, { label: "N₂O Detection Floor", value: "<100ppb" }]} />
+                        <BenefitsTabContent title={benefitsTabsData[1].title} descriptionP1={benefitsTabsData[1].descriptionP1} descriptionP2={benefitsTabsData[1].descriptionP2} image={benefitsTabsData[1].image} metrics={benefitsTabsData[1].metrics} />
                     </TabsContent>
                     <TabsContent value="farmer">
-                        <BenefitsTabContent title="Cut Costs, Boost Uptime, and Simplify Operations." descriptionP1="RedNOx sensors help you slash fuel burn and reduce fuel penalties. For heavy-duty engines, the cloud API and dashboard can trigger regen or urea-dosing only when needed, saving up to 5% on Diesel Exhaust Fluid (DEF). Our robust design and remote telemetry features allow for better service and uptime, as you can schedule maintenance before a warning light even appears. For farms, the AgriNOx sensor's real-time N2O data allows for variable-rate prescriptions, which helps improve nitrogen usage and can lead to carbon credits. The simple plug-and-play integration and lack of required recalibration make our sensors easy to use and maintain, saving you time and effort." descriptionP2="" image="/agrinox_farmer.jpg" metrics={[{ label: "NOx Detection Floor", value: "<1ppm" }, { label: "Potential DEF Savings", value: "5%" }, { label: "Sensor Lifetime", value: ">5,000 hrs" }]} />
+                        <BenefitsTabContent title={benefitsTabsData[2].title} descriptionP1={benefitsTabsData[2].descriptionP1} descriptionP2={benefitsTabsData[2].descriptionP2} image={benefitsTabsData[2].image} metrics={benefitsTabsData[2].metrics} />
                     </TabsContent>
                 </Tabs>
             </div>

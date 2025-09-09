@@ -22,11 +22,11 @@ const benefitsTabsData = [
         metrics: [{ label: "Reduced NOx Emissions", value: "<1ppm" }, { label: "Compliance Audits", value: "24/7" }]
     },
     {
-        title: "Cut Costs, Boost Uptime, and Simplify Operations.",
-        descriptionP1: "RedNOx sensors help you slash fuel burn and reduce fuel penalties. For heavy-duty engines, the cloud API and dashboard can trigger regen or urea-dosing only when needed, saving up to 5% on Diesel Exhaust Fluid (DEF). Our robust design and remote telemetry features allow for better service and uptime, as you can schedule maintenance before a warning light even appears. For farms, the AgriNOx sensor's real-time N2O data allows for variable-rate prescriptions, which helps improve nitrogen usage and can lead to carbon credits. The simple plug-and-play integration and lack of required recalibration make our sensors easy to use and maintain, saving you time and effort.",
+        title: "Maximize Yields and Profits with Smarter Nitrogen Management.",
+        descriptionP1: "With real-time, in-situ N2O data from AgriNOx, you can make smarter decisions about nitrogen application. Our sensors provide a real-time algorithm that translates N2O ppm to kilograms of nitrogen lost per hectare, a key metric for maximizing Nitrogen Use Efficiency (NUE). By knowing exactly when and where nitrogen is being lost, you can decrease overall nitrogen input, saving on fertilizer costs. Our sensors also allow for the timed use of nitrogen inhibitors, further reducing inputs and improving the effectiveness of your nitrogen. This precision agriculture approach not only boosts your bottom line but also transforms nitrogen savings into verifiable carbon credits, proving your farm's sustainability.",
         descriptionP2: "",
         image: "/agrinox_farmer.jpg",
-        metrics: [{ label: "NOx Detection Floor", value: "<1ppm" }, { label: "Potential DEF Savings", value: "5%" }, { label: "Sensor Lifetime", value: ">5,000 hrs" }]
+        metrics: [{ label: "NOx Detection Floor", value: "<1ppb" }, { label: "Potential DEF Savings", value: "5%" }, { label: "Sensor Lifetime", value: ">5,000 hrs" }]
     }
 ]
 
@@ -37,7 +37,7 @@ export function BenefitsTabs() {
             <div className="flex flex-col gap-6">
                 <Tabs defaultValue="oem" className="">
                     <div className="flex flex-row justify-center">
-                        <TabsList className="flex flex-col md:flex-row gap-2 md:gap-4 w-full h-auto">
+                        <TabsList className="flex flex-row gap-2 md:gap-4 w-full h-auto">
                             <TabsTrigger className="px-4 md:px-16 py-4 md:py-8 text-sm md:text-xl font-bold" value="oem">OEMs</TabsTrigger>
                             <TabsTrigger className="px-4 md:px-16 py-4 md:py-8 text-sm md:text-xl font-bold" value="sustainability-manager">Fleet Managers</TabsTrigger>
                             <TabsTrigger className="px-4 md:px-16 py-4 md:py-8 text-sm md:text-xl font-bold" value="farmer">Farm Managers</TabsTrigger>

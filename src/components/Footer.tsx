@@ -26,7 +26,7 @@ export default function Footer({ className }: { className?: string }) {
                             <Link href="/technology" className="hover:text-primary transition-colors hover:underline">
                                 Technology
                             </Link>
-                            <Link href="/solutions" className="hover:text-primary transition-colors hover:underline">
+                            <Link href="/#solutions" className="hover:text-primary transition-colors hover:underline">
                                 Solutions
                             </Link>
                             <Link href="/about" className="hover:text-primary transition-colors hover:underline">

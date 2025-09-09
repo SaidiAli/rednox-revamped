@@ -11,7 +11,7 @@ const benefitsTabsData = [
         title: "Design for Tomorrow's Regulations, Today.",
         descriptionP1: "The RedNOx sensor provides the precision and durability you need to meet stringent emissions standards, including the 2027 U.S. EPA & CARB 0.02g/hp−hr NOx limit. With a detection range of 1-20 ppm and an accuracy of ±10%, you can maintain warranty margins and ensure your products are compliant. The plug-and-play ECU interface and J1939 data flow simplify integration into your engine systems. The heater-optimized ceramic stack reaches temperature in less than 30 seconds, allowing you to meet cold-start FTP requirements. Our solid-state construction is resistant to sulfur, oil aerosols, and thermal shock, ensuring a field life of over 10,000 hours. Each sensor is factory-calibrated against NIST-traceable blends, and the data is stored in memory, simplifying ISO 9001 and regulatory reporting",
         descriptionP2: "",
-        image: "/engineer-on-screen.avif",
+        image: "https://res.cloudinary.com/dvixlnczm/image/upload/v1757448139/engineer-on-screen_csubkw.avif",
         metrics: [{ label: "NOx", value: "1ppm" }, { label: "Potential DEF Saving", value: "5-10%" }, { label: "Sensor Lifetime", value: ">5,000 hrs" }]
     },
     {
@@ -25,7 +25,7 @@ const benefitsTabsData = [
         title: "Maximize Yields and Profits with Smarter Nitrogen Management.",
         descriptionP1: "With real-time, in-situ N2O data from AgriNOx, you can make smarter decisions about nitrogen application. Our sensors provide a real-time algorithm that translates N2O ppm to kilograms of nitrogen lost per hectare, a key metric for maximizing Nitrogen Use Efficiency (NUE). By knowing exactly when and where nitrogen is being lost, you can decrease overall nitrogen input, saving on fertilizer costs. Our sensors also allow for the timed use of nitrogen inhibitors, further reducing inputs and improving the effectiveness of your nitrogen. This precision agriculture approach not only boosts your bottom line but also transforms nitrogen savings into verifiable carbon credits, proving your farm's sustainability.",
         descriptionP2: "",
-        image: "/agrinox_farmer.jpg",
+        image: "https://res.cloudinary.com/dvixlnczm/image/upload/v1757448055/agrinox_farmer_iyqjlo.jpg",
         metrics: [{ label: "NOx Detection Floor", value: "<1ppb" }, { label: "Potential DEF Savings", value: "5%" }, { label: "Sensor Lifetime", value: ">5,000 hrs" }]
     }
 ]

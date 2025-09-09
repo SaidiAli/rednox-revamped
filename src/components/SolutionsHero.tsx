@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button"
-import { Icon } from "@iconify/react/dist/iconify.js"
 import Image from "next/image"
+import Link from "next/link"
 import { useTranslations } from "next-intl"
 
 export default function SolutionHero({ title, description, image }: { title: string, description: string, image: string }) {
@@ -12,9 +12,11 @@ export default function SolutionHero({ title, description, image }: { title: str
                     <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white leading-tight">{title}</h1>
                     <p className="text-left text-sm md:text-base lg:text-lg mt-2 text-white leading-relaxed">{description}</p>
                 </div>
-                <Button className="bg-primary text-white flex items-center justify-center gap-2 w-full md:w-[300px]">
-                    {t("downloadButton")}
-                </Button>
+                <Link href="/contact">
+                    <Button className="bg-primary text-white flex items-center justify-center gap-2 w-full md:w-[300px] cursor-pointer">
+                        {t("downloadButton")}
+                    </Button>
+                </Link>
             </div>
             <div className="relative order-first md:order-last">
                 <div className="relative aspect-[4/3] md:aspect-[3/2] h-[20rem] md:h-[25rem] lg:h-[30rem]">

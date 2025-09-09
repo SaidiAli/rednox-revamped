@@ -14,7 +14,7 @@ export default function HeavyDutyEngine() {
     return (
         <div className="flex min-h-[100dvh] flex-col">
             <Navbar />
-            <SolutionHero title={t("title")} image="/image002.png" description={t("description")} />
+            <SolutionHero title={t("title")} image="https://res.cloudinary.com/dvixlnczm/image/upload/v1757448487/image002_uegzli.png" description={t("description")} />
             <div className="container mx-auto px-4 py-12 md:py-20">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
                     <div className="order-2 md:order-1">

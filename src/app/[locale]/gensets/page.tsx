@@ -13,7 +13,7 @@ export default function Gensets() {
     return (
         <div className="min-h-screen">
             <Navbar />
-            <SolutionHero title={t("title")} image="/image003.png" description={t("description")} />
+            <SolutionHero title={t("title")} image="https://res.cloudinary.com/dvixlnczm/image/upload/v1757448487/image003_cweymn.png" description={t("description")} />
 
             <div className="container mx-auto px-4">
                 <div className="flex flex-col md:flex-row md:items-center md:justify-center gap-4 md:gap-8 py-12 md:py-20 w-full">

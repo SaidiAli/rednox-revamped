@@ -20,7 +20,7 @@ export default function WhyCareSection() {
             <div className="relative">
                 <div className="relative aspect-[4/3] lg:aspect-[3/2]">
                     <Image
-                        src="/agrinox_farmer.jpg"
+                        src="https://res.cloudinary.com/dvixlnczm/image/upload/v1757447857/Gemini_Generated_Image_4zsid14zsid14zsi_kdghbz.png"
                         alt=""
                         fill
                         className="object-cover object-center rounded-tr-lg rounded-br-lg"

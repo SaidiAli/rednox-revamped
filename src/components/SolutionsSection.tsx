@@ -35,9 +35,9 @@ export default function SolutionsSection() {
                     viewport={{ once: true }}
                     className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
                 >
-                    <SolutionCard title={t("solutionsSection.solutions.hde.title")} image="/thumbnails/1.png" link="/heavy-duty-engines" description={t("solutionsSection.solutions.hde.description")} />
-                    <SolutionCard title={t("solutionsSection.solutions.genset.title")} image="/thumbnails/2.png" link="/gensets" description={t("solutionsSection.solutions.genset.description")} />
-                    <SolutionCard title={t("solutionsSection.solutions.agrinox.title")} image="/agrinox_farmer.jpg" link="/agrinox" description={t("solutionsSection.solutions.agrinox.description")} />
+                    <SolutionCard title={t("solutionsSection.solutions.hde.title")} image="https://res.cloudinary.com/dvixlnczm/image/upload/v1757448013/1_oxsh0k.png" link="/heavy-duty-engines" description={t("solutionsSection.solutions.hde.description")} />
+                    <SolutionCard title={t("solutionsSection.solutions.genset.title")} image="https://res.cloudinary.com/dvixlnczm/image/upload/v1757448013/2_lscykr.png" link="/gensets" description={t("solutionsSection.solutions.genset.description")} />
+                    <SolutionCard title={t("solutionsSection.solutions.agrinox.title")} image="https://res.cloudinary.com/dvixlnczm/image/upload/v1757448055/agrinox_farmer_iyqjlo.jpg" link="/agrinox" description={t("solutionsSection.solutions.agrinox.description")} />
                 </motion.div>
             </div>
         </section>

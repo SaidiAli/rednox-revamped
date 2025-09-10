@@ -32,12 +32,12 @@ export default function InvestorsPage() {
                     </div>
                 </section>
 
-                <section className="container mx-auto px-4 pb-12 md:pb-20">
+                {/* <section className="container mx-auto px-4 pb-12 md:pb-20">
                     <div>
                         <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-8 md:mb-16 text-white">Press release</h3>
                         <NewsCard title={nihonPressRealease.title} description={nihonPressRealease.excerpt} image={nihonPressRealease.image!} link={"/article/strategic-business-partnership-between-nihon-yamamura-glass-co-ltd-and-rednox"} />
                     </div>
-                </section>
+                </section> */}
             </main>
 
             <Footer />

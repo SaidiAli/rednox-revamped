@@ -85,7 +85,7 @@ export default function HeavyDutyEngine() {
                         </div>
                     </div>
                     <div className="order-first md:order-last">
-                        <Image src="/sensor_unit.png" alt="" width={800} height={800} className="transition duration-300 blur-0 rounded-2xl object-cover object-center w-full h-auto max-h-80 md:max-h-none" priority />
+                        <Image src="https://res.cloudinary.com/dvixlnczm/image/upload/v1757450643/Untitled_rg1adf.png" alt="" width={800} height={800} className="transition duration-300 blur-0 rounded-2xl object-cover object-center w-full h-auto max-h-80 md:max-h-none" priority />
                     </div>
                 </div>
             </div>

@@ -44,7 +44,7 @@ export default function IntroStatement() {
           className="text-white max-w-4xl mx-auto my-2 text-base md:text-xl text-center relative z-10 px-4"
           variants={itemVariants}
         >
-          <span className="font-bold text-primary">RedNOx</span> develops ultra-sensitive gas sensors for heavy-duty engines, generators, and agriculture—delivering real-time NOx and N₂O data to help customers comply with EPA/CARB standards and improve profitability.
+          <span className="font-bold text-primary">RedNOx</span> develops ultra-sensitive gas sensors for heavy-duty engines, generators, and agriculture—delivering real-time NOₓ and N₂O data to help customers comply with EPA/CARB standards and improve profitability.
         </motion.p>
         
         <motion.div 

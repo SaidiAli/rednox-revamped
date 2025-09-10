@@ -62,7 +62,7 @@
         "whyYouShouldCare": {
             "headline": "Warum Sie sich interessieren sollten",
             "subheader": "Schützen Sie die Umwelt",
-            "description": "NOx verursacht Smog und sauren Regen; N₂O hat das 298-fache GWP von CO₂. Ein ppm, das Sie heute eliminieren, verhindert morgen sowohl eine Luftqualitätsstrafe als auch eine Treibhausgasstrafe.",
+            "description": "NOₓ verursacht Smog und sauren Regen; N₂O hat das 298-fache GWP von CO₂. Ein ppm, das Sie heute eliminieren, verhindert morgen sowohl eine Luftqualitätsstrafe als auch eine Treibhausgasstrafe.",
             "downloadButton": "Datenblatt herunterladen",
             "scheduleButton": "Pilotprojekt planen"
         },
@@ -73,11 +73,11 @@
             "solutions": {
                 "hde": {
                     "title": "Hochleistungsmotoren",
-                    "description": "Reduzieren Sie die SCR-bezogenen Kosten um 10–20 % durch frühzeitige NOx-Erkennung. Vermeiden Sie Nichteinhaltungsstrafen von bis zu 50.000 US-Dollar pro Motor."
+                    "description": "Reduzieren Sie die SCR-bezogenen Kosten um 10–20 % durch frühzeitige NOₓ-Erkennung. Vermeiden Sie Nichteinhaltungsstrafen von bis zu 50.000 US-Dollar pro Motor."
                 },
                 "genset": {
                     "title": "Stromaggregate & Primärstrom",
-                    "description": "Reduzieren Sie den Kraftstoffverbrauch um bis zu 8 % und verlängern Sie die Wartungsintervalle um 15–30 % durch lastbasierte NOx-Abstimmung."
+                    "description": "Reduzieren Sie den Kraftstoffverbrauch um bis zu 8 % und verlängern Sie die Wartungsintervalle um 15–30 % durch lastbasierte NOₓ-Abstimmung."
                 },
                 "agrinox": {
                     "title": "AgriNOx – Präzise N₂O-Überwachung",

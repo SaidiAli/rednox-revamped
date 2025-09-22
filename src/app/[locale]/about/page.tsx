@@ -48,7 +48,7 @@ export default function Agrinox() {
                             src="https://res.cloudinary.com/dvixlnczm/image/upload/v1757448486/image004_r5z8qu.png"
                             alt=""
                             fill
-                            className="object-cover object-center rounded-lg md:rounded-tr-lg md:rounded-br-lg"
+                            className="object-cover object-top rounded-lg md:rounded-tr-lg md:rounded-br-lg"
                             priority
                         />
                         <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-background/60 md:from-background via-background/20 to-transparent rounded-lg md:rounded-tr-lg md:rounded-br-lg" />

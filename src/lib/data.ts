@@ -142,17 +142,39 @@ export const investors = (t: AboutTranslations): TeamMember[] => [
 export const newsData: NewsData[] = [
     {
         id: 1,
-        title: "NIFA Press Release",
-        excerpt: "RedNOx wins NIFA grant for agricultural emissions monitoring",
-        date: "2025-07-22",
-        link: "https://www.nifa.org/"
+        title: "RedNOx Awarded USDA NIFA SBIR Phase II Grant to Drive Innovation in Agricultural Emissions Reduction",
+        excerpt: "We are thrilled to announce that RedNOx has been awarded a USDA NIFA SBIR Phase II grant of $650,000 as part of a $26.8 million investment to support groundbreaking, small business-led innovations in agriculture. This funding will enable us to advance our N₂O and NOx sensing technologies, specifically aimed at reducing emissions of nitrous oxide and NOx from both synthetic and microbial fertilizers.",
+        text: "We are thrilled to announce that RedNOx has been awarded a USDA NIFA SBIR Phase II grant of $650,000 as part of a $26.8 million investment to support groundbreaking, small business-led innovations in agriculture. This funding will enable us to advance our N₂O and NOx sensing technologies, specifically aimed at reducing emissions of nitrous oxide and NOx from both synthetic and microbial fertilizers. This Phase II award underscores the importance of cutting-edge research in addressing critical environmental challenges and brings our technology closer to commercialization. With USDA NIFA’s support, RedNOx will continue its mission to enhance agricultural productivity, benefit local communities, and contribute to a cleaner, healthier environment.",
+        date: "2024-10-31",
+        link: "https://content.govdelivery.com/accounts/USDANIFA/bulletins/3bf56f8"
     },
     {
         id: 2,
-        title: "NIFA Press Release",
-        excerpt: "RedNOx wins NIFA grant for agricultural emissions monitoring",
-        date: "2025-07-22",
-        link: "https://www.nifa.org/"
+        title: "RedNOx Signs MOU with One of the World's Largest Manufacturers of Hydrogen, Diesel, and Natural Gas Engines",
+        excerpt: "RedNOx also Secures a Purchase Order from Cummins Inc. for Next-Generation NOx Sensors.",
+        date: "2023-09-04",
+        link: "https://rednoxinc.com/wp-content/uploads/2023/09/Cummins-Press-Release_August-2023_v2.pdf"
+    },
+    {
+        id: 3,
+        title: "RedNOx Revolution: Unraveling the Next Big Breakthrough in Emissions Reduction - Exclusively on Chemical and Engineering News",
+        excerpt: "RedNOx Revolution: Unraveling the Next Big Breakthrough in Emissions Reduction - Exclusively on Chemical and Engineering News",
+        date: "2023-08-21",
+        link: "https://cen.acs.org/food/agriculture/USDA-funds-food-agriculture-start/101/i29"
+    },
+    {
+        id: 4,
+        title: "RedNOx Awarded SBIR Phase I for its Innovative Greenhouse Gas Measurement Platform",
+        excerpt: "FREMONT, Calif., August 28, 2023 (GLOBE NEWSWIRE) — RedNOx Inc., a trailblazer in environmental solid-state sensing technology, is delighted to announce its recent achievement in securing a Phase I Small Business Innovation Research (SBIR) award for its groundbreaking atmosphere and soil greenhouse gas measurement platform.",
+        date: "2023-08-28",
+        link: "https://rednoxinc.com/wp-content/uploads/2023/08/USDA-Press-Release_August-2023.pdf"
+    },
+    {
+        id: 5,
+        title: "REDNOX CLOSES FINANCING TO CREATE THE NEXT GENERATION NOx SENSORS FOR LOW TO ZERO EMISSIONS APPLICATIONS",
+        excerpt: "RedNOx Inc announced today its launch and the completion of seed financing with Rev1 Ventures Partners.  RedNOx launches with a technology license from OSU to scale solid-state NOx and CO2 sensor technology for clean energy and low to zero emissions vehicles.  RedNOx’s LoNOx sensor technology points to a leap in performance and reliability, with parts-per-billion detection capabilities and long-term durability.",
+        date: "2022-07-01",
+        link: "#"
     }
 ]
 
@@ -305,26 +327,26 @@ export const blogPosts: Record<string, BlogPost> = {
     }
 }
 
- export const _investors = [
-        {
-            name: "Rev1ventures",
-            image: "/investors/1.png",
-            bio: "Rev1 Ventures is a venture capital firm based in Columbus, Ohio. It focuses on investing in early-stage, scalable, and tech-enabled businesses in various sectors, including advanced materials and alternative energy. As a venture development studio, it helps entrepreneurs and corporations accelerate innovation.",
-            position: "Venture Capital Firm",
-            email: "info@rev1ventures.com"
-        },
-        {
-            name: "Soundboard Venture Fund",
-            image: "/investors/2.png",
-            bio: "SoundBoard Venture Fund is an early-stage venture capital firm based in Montclair, New Jersey. It uses a collaborative approach, leveraging the diverse perspectives of its investors to evaluate and make investment decisions. The firm focuses on scalable, tech-enabled businesses and places a strong emphasis on assessing the leadership team of the companies they invest in.",
-            position: "Venture Capital Firm",
-            email: "info@soundboardventurefund.com"
-        },
-        {
-            name: "Nihon Yamamura Glass Co., Ltd.",
-            image: "/investors/3.png",
-            bio: "Nihon Yamamura Glass Co., Ltd. is a Japanese company that manufactures and sells glass bottles, plastic containers, and powdered glass. Founded in 1914, the company also operates in the logistics and 'new glass' sectors. It is a strategic partner for RedNOx, with pilot lines in Yokohama, Japan.",
-            position: "Venture Capital Firm",
-            email: "info@soundboardventurefund.com"
-        }
-    ]
+export const _investors = [
+    {
+        name: "Rev1ventures",
+        image: "/investors/1.png",
+        bio: "Rev1 Ventures is a venture capital firm based in Columbus, Ohio. It focuses on investing in early-stage, scalable, and tech-enabled businesses in various sectors, including advanced materials and alternative energy. As a venture development studio, it helps entrepreneurs and corporations accelerate innovation.",
+        position: "Venture Capital Firm",
+        email: "info@rev1ventures.com"
+    },
+    {
+        name: "Soundboard Venture Fund",
+        image: "/investors/2.png",
+        bio: "SoundBoard Venture Fund is an early-stage venture capital firm based in Montclair, New Jersey. It uses a collaborative approach, leveraging the diverse perspectives of its investors to evaluate and make investment decisions. The firm focuses on scalable, tech-enabled businesses and places a strong emphasis on assessing the leadership team of the companies they invest in.",
+        position: "Venture Capital Firm",
+        email: "info@soundboardventurefund.com"
+    },
+    {
+        name: "Nihon Yamamura Glass Co., Ltd.",
+        image: "/investors/3.png",
+        bio: "Nihon Yamamura Glass Co., Ltd. is a Japanese company that manufactures and sells glass bottles, plastic containers, and powdered glass. Founded in 1914, the company also operates in the logistics and 'new glass' sectors. It is a strategic partner for RedNOx, with pilot lines in Yokohama, Japan.",
+        position: "Venture Capital Firm",
+        email: "info@soundboardventurefund.com"
+    }
+]

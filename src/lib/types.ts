@@ -18,6 +18,7 @@ export interface NewsData {
     id: number;
     title: string;
     excerpt: string;
+    text?: string;
     image?: string;
     date: string;
     link: string;

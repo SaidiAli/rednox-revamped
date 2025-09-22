@@ -22,7 +22,7 @@ function NewsCard({ title, excerpt: description, image, date, link }: NewsData) 
         <div className="group flex flex-row gap-4 items-center bg-moody p-4 rounded-2xl hover:shadow-xl transition duration-300 hover:scale-105 cursor-pointer">
             <Image src={image || "/newspaper.png"} alt="" width={100} height={100} priority className="rounded-2xl p-4" />
             <div className="w-full">
-                <h3 className="text-2xl font-bold mb-4">{title}</h3>
+                <h3 className="text-2xl font-bold mb-4 line-clamp-2">{title}</h3>
                 <p className="text-base text-mute line-clamp-2">{description}</p>
                 <div className="flex justify-between items-center">
                     <p></p>

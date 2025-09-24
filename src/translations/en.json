@@ -272,9 +272,9 @@
                 "placeholder": "Select a subject",
                 "options": {
                     "1": "General Inquiry",
-                    "2": "Partnering",
+                    "2": "Careers",
                     "3": "Investor",
-                    "4": "Other"
+                    "4": "Partnering"
                 }
             },
             "name": {

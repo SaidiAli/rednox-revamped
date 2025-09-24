@@ -85,7 +85,7 @@ export const founders = (t: AboutTranslations): TeamMember[] => (
         {
             id: 3,
             name: "Darby Makel, PhD",
-            position: "Co-Founder & Chief Engineer",
+            position: "Director",
             image: "/team/markel.png",
             alt: "darby makel founder rednox inc",
             bio: t("management.members.markel.bio"),
@@ -124,15 +124,15 @@ export const investors = (t: AboutTranslations): TeamMember[] => [
     {
         id: 6,
         name: "Wayne Embree",
-        position: "Investor",
+        position: "Director",
         image: "/team/wayne.jpeg",
         alt: "wayne embree rednox",
         bio: t("investors.members.wayne.bio"),
     },
     {
         id: 8,
-        name: "Nihon Yamamura Glass Co., Ltd.",
-        position: "Investor",
+        name: "JP Mijares",
+        position: "Director",
         image: "/investors/3.png",
         alt: "nihon yamamura glass co ltd rednox",
         bio: t("investors.members.noboru.bio"),
@@ -208,17 +208,33 @@ export const pressData: PressData[] = [
 export const publicationData: PublicationData[] = [
     {
         id: 1,
-        title: "NIFA Press Release",
-        excerpt: "RedNOx wins NIFA grant for agricultural emissions monitoring",
-        date: "2025-07-22",
-        link: "https://www.nifa.org/"
+        title: "Development of high sensitivity potentiometric NOx sensor and its application to breath analysis",
+        authors: ['Suvra Prakash Mondal a','Prabir K. Dutta a','G.W. Hunter b','B.J. Ward c','D. Laskowski d','R.A. Dweik d'],
+        link: "https://www.sciencedirect.com/science/article/abs/pii/S0925400511005314"
     },
     {
         id: 2,
-        title: "NIFA Press Release",
-        excerpt: "RedNOx wins NIFA grant for agricultural emissions monitoring",
-        date: "2025-07-22",
-        link: "https://www.nifa.org/"
+        title: "High temperature amperometric total NOx sensors with platinum-loaded zeolite Y electrodes",
+        authors: ['Jiun-Chan Yang','Prabir K. Dutta'],
+        link: "https://www.sciencedirect.com/science/article/abs/pii/S0925400506007398",
+    },
+    {
+        id: 2,
+        title: "Strategies for total NOx measurement with minimal CO interference utilizing a microporous zeolitic catalytic filter",
+        authors: ['Nicholas F Szabo','Prabir K. Dutta'],
+        link: "https://www.sciencedirect.com/science/article/abs/pii/S0925400502003222",
+    },
+    {
+        id: 2,
+        title: "Promoting selectivity and sensitivity for a high temperature YSZ-based electrochemical total NOx sensor by using a Pt-loaded zeolite Y filter",
+        authors: ['Jiun-Chan Yang','Prabir K. Dutta'],
+        link: "https://www.sciencedirect.com/science/article/abs/pii/S0925400507000500",
+    },
+    {
+        id: 2,
+        title: "Temperature-controlled CO, CO2 and NOx sensing in a diesel engine exhaust stream",
+        authors: ['Osvaldo L. Figueroa a','Chonghoon Lee a','Sheikh A. Akbar b','Nicholas F. Szabo a','Joseph A. Trimboli a','Prabir K. Dutta c','Naoto Sawaki d','Ahmed A. Soliman e,','Henk Verweij b'],
+        link: "https://www.sciencedirect.com/science/article/abs/pii/S0925400504008871",
     },
 ]
 

@@ -159,7 +159,7 @@
     },
     "AgriNOx": {
         "title": "AgriNOx – Precision N₂O Monitoring",
-        "description": "Precision N₂O monitoring for agricultural equipment, ensuring compliance with Tier 4 Final rules and reducing fuel costs.",
+        "description": "Ultra-sensitive, field-ready N₂O monitoring that helps growers optimize nitrogen inputs, cut input costs, and document measurable sustainability gains. Now in active pilots with a multi-thousand-acre Central Valley grower.",
         "downloadButton": "Download spec sheet",
         "valuePropositionSection": {
             "title": "Value Proposition",
@@ -204,28 +204,28 @@
                 "tableBody": {
                     "1": {
                         "coreInnovation": "Mixed-Potential Ceramic Stack — NOx",
-                        "howItWorks": "A 250 μm YSZ electrolyte is sandwiched between reference and sensing electrodes. At ~700°C, competing electro-catalytic reactions establish a mixed potential linearly proportional to NO + NO₂ partial pressure. The multilayer stack is screen-printed, co-fired at 1,300°C, and laser-trimmed for sub-ppm linearity.",
-                        "whyItMatters": "Solid-state construction shrugs off sulphur, oil aerosols, and thermal shock, delivering >10,000 h field life while outperforming legacy amperometric cells that bottom out near 50 ppm."
+                        "howItWorks": "YSZ stack generates mixed potential proportional to NOx; precision built for sub-ppm response.",
+                        "whyItMatters": "Durable solid-state design resists contaminants and outlasts legacy cells."
                     },
                     "2": {
                         "coreInnovation": "Integrated Catalyst & Rapid-Warm Heater",
-                        "howItWorks": "A nano-engineered catalyst layer accelerates the NO↔NO₂ redox pair while suppressing hydrocarbon cross-talk. A spiral heater etched under the sensing pad reaches 650°C in <30 s with <8 W draw.",
-                        "whyItMatters": "Fast light-off captures cold-start spikes—critical for 2027 HD-FTP—and the low power budget means the sensor runs straight off the ECU harness."
+                        "howItWorks": "Catalyst speeds NOx redox; heater hits 650 °C in seconds with low power.",
+                        "whyItMatters": "Captures cold-start spikes; runs efficiently from ECU power."
                     },
                     "3": {
                         "coreInnovation": "On-Chip Temperature & Cross-Gas Compensation",
-                        "howItWorks": "Dual RTDs embedded in the ceramic feed a 32-bit MCU that applies a 4th-order temperature polynomial every 50 ms. Auxiliary channels sample O₂ and H₂ to correct matrix effects in real time.",
-                        "whyItMatters": "Maintains ±10% accuracy from –40°C to +125°C gas temps and across 0–20% O₂, eliminating field recalibration cycles."
+                        "howItWorks": "Embedded sensors and MCU apply real-time temp and gas corrections.",
+                        "whyItMatters": "Stays accurate across conditions without recalibration."
                     },
                     "4": {
                         "coreInnovation": "Factory Calibration & Digital Fingerprint",
-                        "howItWorks": "Each die is calibrated against NIST-traceable 0, 5, 10 ppm NOx blends. Calibration curves and heater signatures are stored in OTP memory and encoded in a QR on the shell.",
-                        "whyItMatters": "End-to-end traceability lets OEMs and fleets audit any sensor back to its raw data, simplifying ISO 9001 and regulatory reporting."
+                        "howItWorks": "Calibrated to traceable NOx blends; data stored in memory and QR code.",
+                        "whyItMatters": "Enables full traceability and easier compliance reporting."
                     },
                     "5": {
                         "coreInnovation": "NDIR Module — AgriNOx (N₂O)",
-                        "howItWorks": "AgriNOx employs a dual-beam nondispersive IR setup: a narrowband MEMS IR emitter at 4.5 μm, a long-life optical path, and a pair of thermopile detectors (sample & reference). Differential spectroscopy cancels humidity, CO₂, and NH₃ interference, while a micro-pump pulls a continuous soil-gas stream.",
-                        "whyItMatters": "Delivers < 100 ppb detection with <3 s response directly in soil plumes, enabling real-time nitrogen-use-efficiency mapping. Low-power (<2 W) operation plus LoRaWAN lets a small solar cell run the probe all season."
+                        "howItWorks": "Dual-beam IR with interference cancellation and micro-pump sampling.",
+                        "whyItMatters": "Sub-ppb soil N₂O detection in real time with low-power, solar-ready operation."
                     }
                 }
             }

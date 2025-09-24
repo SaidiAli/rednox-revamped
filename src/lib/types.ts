@@ -36,8 +36,7 @@ export interface PressData {
 export interface PublicationData {
     id: number;
     title: string;
-    excerpt: string;
     image?: string;
-    date: string;
+    authors: string[]
     link: string;
 }

@@ -70,8 +70,8 @@ export default function ContactPage() {
 
     const locations = [
         {
-            city: "Fremont",
-            address: "3467 Pinewood Terrace",
+            city: "Vetri Labs",
+            address: "45277 Fremont Blvd #3, Fremont, CA 94538",
             zipCode: "CA 94536",
             phone: "+1 (925) 640 4183",
             email: "solomon@rednoxinc.com",

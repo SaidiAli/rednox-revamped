@@ -1,6 +1,5 @@
 "use client";
 
-import { Box } from "lucide-react";
 import { GlowingEffect } from "@/components/ui/glowing-effect";
 
 export function GlowingCard({ children, className }: { children: React.ReactNode, className?: string }) {

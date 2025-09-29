@@ -25,18 +25,6 @@ const itemVariants = {
     },
 };
 
-const staggerButtonVariants = {
-    hidden: { opacity: 0, x: -20 },
-    visible: {
-        opacity: 1,
-        x: 0,
-        transition: {
-            duration: 0.6,
-            ease: easeInOut,
-        },
-    },
-};
-
 export default function PageHero({ title, subTitle }: { title: string; subTitle: string }) {
     return (
         <div className="w-full overflow-hidden">

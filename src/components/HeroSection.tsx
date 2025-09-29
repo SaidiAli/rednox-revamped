@@ -4,7 +4,6 @@ import { BackgroundBeams } from "./Background-beams";
 import { ChevronRight } from "lucide-react";
 import { ContainerTextFlip } from "./ui/text-flip";
 import { useTranslations } from "next-intl";
-import { Button } from "./ui/button";
 import { motion, easeInOut } from "framer-motion";
 import Link from "next/link";
 

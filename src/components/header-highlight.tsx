@@ -27,17 +27,6 @@ export const HeroHighlight = ({
         },
     };
 
-    function handleMouseMove({
-        currentTarget,
-        clientX,
-        clientY,
-    }: React.MouseEvent<HTMLDivElement>) {
-        if (!currentTarget) return;
-        const { left, top } = currentTarget.getBoundingClientRect();
-
-        mouseX.set(clientX - left);
-        mouseY.set(clientY - top);
-    }
     return (
         <div className={cn("group relative flex h-[20rem] w-full items-center justify-center bg-white dark:bg-black",
             containerClassName,

@@ -17,7 +17,7 @@ export default function News() {
     )
 }
 
-function NewsCard({ title, excerpt: description, image, date, link }: NewsData) {
+function NewsCard({ title, excerpt: description, image, link }: NewsData) {
     return (
         <div className="group flex flex-row gap-4 items-center bg-moody p-4 rounded-2xl hover:shadow-xl transition duration-300 hover:scale-105 cursor-pointer">
             <Image src={image || "/newspaper.png"} alt="" width={100} height={100} priority className="rounded-2xl p-4" />

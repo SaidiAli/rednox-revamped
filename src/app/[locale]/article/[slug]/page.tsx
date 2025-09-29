@@ -124,9 +124,11 @@ function DownloadCTA({ title, link }: { title: string, link: string }) {
         <section className="w-full py-12 md:py-20">
             <div className="container px-4 md:px-6">
                 <div className="max-w-3xl mx-auto">
-                    <div className="flex flex-row justify-between items-center gap-4 bg-primary p-16 rounded-xl">
+                    <div className="flex flex-col md:flex-row justify-between items-center gap-4 bg-primary p-8 md:p-16 rounded-xl">
                         <p className="text-2xl font-bold">{title}</p>
-                        <Button className="bg-rBlue hover:bg-rBlue/80 cursor-pointer">Download press release<Download className="size-4" /></Button>
+                        <a href={link} target="_blank" rel="noopener noreferrer">
+                            <Button className="bg-rBlue hover:bg-rBlue/80 cursor-pointer">Download press release<Download className="size-4" /></Button>
+                        </a>
                     </div>
                 </div>
             </div>

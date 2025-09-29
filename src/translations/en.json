@@ -184,7 +184,7 @@
         },
         "workflowSection": {
             "title": "Pilot Workflow",
-            "1": "Install probe & LoRa gateway in < 30 min.",
+            "1": "Install probe & LoRa gateway in < 10 min.",
             "2": "Farm leverages live N₂O + weather to trim side-dress passes.",
             "3": "Verified credit statement auto-generated at harvest."
         }

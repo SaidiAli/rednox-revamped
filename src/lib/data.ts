@@ -8,11 +8,11 @@ export const features = (t: HomePageTranslations) => ({
         },
         {
             key: t("keyValueGrid.metrics.accuracy"),
-            value: "±10 % @ 1–20 ppm"
+            value: "±10 % @ 0.5-20% ppm"
         },
         {
             key: t("keyValueGrid.metrics.t90"),
-            value: "< 2 seconds"
+            value: "< 5 seconds"
         },
         {
             key: t("keyValueGrid.metrics.output"),
@@ -28,7 +28,7 @@ export const features = (t: HomePageTranslations) => ({
         },
         {
             key: t("keyValueGrid.metrics.lifetime"),
-            value: "> 5,000 h"
+            value: "> 3,000 h"
         }
     ],
     afgrinox: [
@@ -69,7 +69,7 @@ export const founders = (t: AboutTranslations): TeamMember[] => (
             id: 1,
             name: "Solomon Ssenyange, PhD",
             position: "Co-Founder & CEO",
-            image: "/team/solomon-team.png",
+            image: "https://res.cloudinary.com/dvixlnczm/image/upload/v1759086906/solomon-team_qt2hpv.png",
             alt: "solomon ssenyange founder rednox inc",
             bio: t("management.members.solomon.bio"),
             email: "solomon@rednoxinc.com"
@@ -78,7 +78,7 @@ export const founders = (t: AboutTranslations): TeamMember[] => (
             id: 2,
             name: "Prabir Dutta, PhD",
             position: "Co-Founder & Technical Advisor",
-            image: "/team/dutta.jpeg",
+            image: "https://res.cloudinary.com/dvixlnczm/image/upload/v1759086905/dutta_qzvoq3.jpg",
             alt: "prabir dutta founder rednox inc",
             bio: t("management.members.dutta.bio"),
         },
@@ -86,7 +86,7 @@ export const founders = (t: AboutTranslations): TeamMember[] => (
             id: 3,
             name: "Darby Makel, PhD",
             position: "Director",
-            image: "/team/markel.png",
+            image: "https://res.cloudinary.com/dvixlnczm/image/upload/v1759086907/markel_mnttzu.png",
             alt: "darby makel founder rednox inc",
             bio: t("management.members.markel.bio"),
         }
@@ -98,7 +98,7 @@ export const advisors = (t: AboutTranslations): TeamMember[] => [
         id: 4,
         name: "Peter Swaniker",
         position: "Advisor",
-        image: "/team/peter.png",
+        image: "https://res.cloudinary.com/dvixlnczm/image/upload/v1759086907/peter_lmltcg.png",
         alt: "peter swaniker rednox",
         bio: t("advisors.members.peter.bio"),
     },
@@ -106,7 +106,7 @@ export const advisors = (t: AboutTranslations): TeamMember[] => [
         id: 5,
         name: "Matt Meisner, PhD",
         position: "Advisor",
-        image: "/team/matt.png",
+        image: "https://res.cloudinary.com/dvixlnczm/image/upload/v1759086907/matt_n3qw5v.png",
         alt: "matt meisner rednox",
         bio: t("advisors.members.matt.bio"),
     },
@@ -114,7 +114,7 @@ export const advisors = (t: AboutTranslations): TeamMember[] => [
         id: 3,
         name: "Kurt Tsuo",
         position: "Advisor",
-        image: "/team/kurt.png",
+        image: "https://res.cloudinary.com/dvixlnczm/image/upload/v1759086906/kurt_pxxm33.png",
         alt: "kurt tsuo rednox",
         bio: t("advisors.members.kurt.bio"),
     }
@@ -125,7 +125,7 @@ export const investors = (t: AboutTranslations): TeamMember[] => [
         id: 6,
         name: "Wayne Embree",
         position: "Director",
-        image: "/team/wayne.jpeg",
+        image: "https://res.cloudinary.com/dvixlnczm/image/upload/v1759086904/wayne_zaosbe.jpg",
         alt: "wayne embree rednox",
         bio: t("investors.members.wayne.bio"),
     },
@@ -133,8 +133,8 @@ export const investors = (t: AboutTranslations): TeamMember[] => [
         id: 8,
         name: "JP Mijares",
         position: "Director",
-        image: "/investors/3.png",
-        alt: "nihon yamamura glass co ltd rednox",
+        image: "https://res.cloudinary.com/dvixlnczm/image/upload/v1759086878/JPM_pic_xhhzfd.jpg",
+        alt: "jp mijares rednox",
         bio: t("investors.members.noboru.bio"),
     }
 ]
@@ -195,45 +195,45 @@ export const pressData: PressData[] = [
         slug: "rednox-awarded-usda-nifa-sbir-phase-ii-grant-to-drive-innovation-in-agricultural-emissions-reduction",
         image: "/us.jpg"
     },
-    // {
-    //     id: 3,
-    //     title: "Strategic Business Partnership Between Nihon Yamamura Glass Co., Ltd. and RedNOx",
-    //     excerpt: "Advancing New Product Development in Mobility and Agriculture Sectors Through Integration of Next-Generation NOx Sensor Technology and Ceramic Manufacturing Expertise",
-    //     date: "2025-05-23",
-    //     slug: "strategic-business-partnership-between-nihon-yamamura-glass-co-ltd-and-rednox",
-    //     image: "/nihon.jpg"
-    // }
+    {
+        id: 3,
+        title: "RedNOx Partners with Nihon Yamamura Glass, Secures $2M to Revolutionize Emissions Monitoring",
+        excerpt: "We’re excited to announce that RedNOx Inc. has expanded its partnership with Nihon Yamamura Glass (NYG), a leading Japanese ceramics and glass manufacturer.",
+        date: "2025-05-23",
+        slug: "strategic-business-partnership-between-nihon-yamamura-glass-co-ltd-and-rednox",
+        image: "/nihon.jpg"
+    }
 ]
 
 export const publicationData: PublicationData[] = [
     {
         id: 1,
         title: "Development of high sensitivity potentiometric NOx sensor and its application to breath analysis",
-        authors: ['Suvra Prakash Mondal a','Prabir K. Dutta a','G.W. Hunter b','B.J. Ward c','D. Laskowski d','R.A. Dweik d'],
+        authors: ['Suvra Prakash Mondal a', 'Prabir K. Dutta a', 'G.W. Hunter b', 'B.J. Ward c', 'D. Laskowski d', 'R.A. Dweik d'],
         link: "https://www.sciencedirect.com/science/article/abs/pii/S0925400511005314"
     },
     {
         id: 2,
         title: "High temperature amperometric total NOx sensors with platinum-loaded zeolite Y electrodes",
-        authors: ['Jiun-Chan Yang','Prabir K. Dutta'],
+        authors: ['Jiun-Chan Yang', 'Prabir K. Dutta'],
         link: "https://www.sciencedirect.com/science/article/abs/pii/S0925400506007398",
     },
     {
         id: 2,
         title: "Strategies for total NOx measurement with minimal CO interference utilizing a microporous zeolitic catalytic filter",
-        authors: ['Nicholas F Szabo','Prabir K. Dutta'],
+        authors: ['Nicholas F Szabo', 'Prabir K. Dutta'],
         link: "https://www.sciencedirect.com/science/article/abs/pii/S0925400502003222",
     },
     {
         id: 2,
         title: "Promoting selectivity and sensitivity for a high temperature YSZ-based electrochemical total NOx sensor by using a Pt-loaded zeolite Y filter",
-        authors: ['Jiun-Chan Yang','Prabir K. Dutta'],
+        authors: ['Jiun-Chan Yang', 'Prabir K. Dutta'],
         link: "https://www.sciencedirect.com/science/article/abs/pii/S0925400507000500",
     },
     {
         id: 2,
         title: "Temperature-controlled CO, CO2 and NOx sensing in a diesel engine exhaust stream",
-        authors: ['Osvaldo L. Figueroa a','Chonghoon Lee a','Sheikh A. Akbar b','Nicholas F. Szabo a','Joseph A. Trimboli a','Prabir K. Dutta c','Naoto Sawaki d','Ahmed A. Soliman e,','Henk Verweij b'],
+        authors: ['Osvaldo L. Figueroa a', 'Chonghoon Lee a', 'Sheikh A. Akbar b', 'Nicholas F. Szabo a', 'Joseph A. Trimboli a', 'Prabir K. Dutta c', 'Naoto Sawaki d', 'Ahmed A. Soliman e,', 'Henk Verweij b'],
         link: "https://www.sciencedirect.com/science/article/abs/pii/S0925400504008871",
     },
 ]
@@ -284,62 +284,36 @@ export const blogPosts: Record<string, BlogPost> = {
   `,
     },
     "strategic-business-partnership-between-nihon-yamamura-glass-co-ltd-and-rednox": {
-        title: "Strategic Business Partnership Between Nihon Yamamura Glass Co., Ltd. and RedNOx",
+        title: "RedNOx Partners with Nihon Yamamura Glass, Secures $2M to Revolutionize Emissions Monitoring",
         excerpt:
-            "Advancing New Product Development in Mobility and Agriculture Sectors Through Integration of Next-Generation NOx Sensor Technology and Ceramic Manufacturing Expertise",
+            "We’re excited to announce that RedNOx Inc. has expanded its partnership with Nihon Yamamura Glass (NYG), a leading Japanese ceramics and glass manufacturer.",
         date: "2025-05-23",
         readTime: "5 min read",
         category: "Press Release",
         image: "/nihon.jpg",
-        downloadLink: "https://www.nifa.org/",
+        downloadLink: "/nihon-press-release.pdf",
         downloadCTATitle: "Nihon Yamamura Press Release",
         content: `
+        <article>
+            <p><strong>RedNOx Inc.</strong> is pleased to announce an expanded strategic partnership with <strong>Nihon Yamamura Glass (NYG)</strong>. NYG has invested in our oversubscribed <strong>$2M seed round</strong> and will serve as our exclusive manufacturing partner, bringing decades of ceramic and glass sealing expertise to scale our sensor production.</p>
 
-    <p><strong>Nihon Yamamura Glass Co., Ltd.</strong> (Headquarters: Amagasaki City, Hyogo Prefecture; President & CEO: Noboru Yamamura; hereinafter "NYG") is pleased to announce the conclusion of a strategic business partnership with <strong>RedNOx Inc.</strong>, a Silicon Valley-based sensor technology startup (Headquarters: Fremont, California, USA; hereinafter "RedNOx").</p>
+        <div>
+            <strong>What this enables:</strong> faster, higher-quality manufacturing of next-generation NOx and N₂O sensors for mobility and agriculture applications.
+        </div>
 
-    <h2>Partnership Overview</h2>
-    <p>This partnership is being implemented in conjunction with NYG's participation in RedNOx's $2 million seed investment round, which was oversubscribed. The round also includes participation from Rev1 Ventures (lead investor) and Soundboard Ventures, supporting the commercialization of RedNOx's innovative sensor technologies.</p>
+        <h2 style="font-size:1.05rem;margin-top:16px">Technology in focus</h2>
 
-    <h2>RedNOx's Innovative Technology Portfolio</h2>
-    <p>RedNOx Inc., founded by Dr. Solomon Ssenyange and based in Fremont, California, is a pioneering Silicon Valley startup in its initial commercial phase, specializing in innovative sensor platforms for greenhouse gases including NOx, N2O, and CO2. The company has established significant partnerships with industry leaders, including a Memorandum of Understanding (MOU) with Cummins Inc. for the development and commercialization of highly sensitive NOx sensors tailored for heavy-duty engine production. RedNOx possesses the following cutting-edge technologies:</p>
+        <p><strong>LoNOx sensor</strong>: Ultra-sensitive NOx detection across <strong>500 ppb–20 ppm</strong>. Built to resist ammonia interference and suitable for diesel and gasoline engines, it’s especially relevant for low-emission gensets used by data centers and hospitals.</p>
 
-    <h3>1. LoNOx Ultra-Sensitive NOx Sensor</h3>
-    <ul>
-        <li>Achieves measurement of extremely low NOx concentrations below 1ppm with unprecedented accuracy.</li>
-        <li>Specifically engineered to be less susceptible to interference by ammonia, addressing a critical issue prevalent with current market NOx sensors.</li>
-        <li>Used in heavy duty engine aftertreatment systems across multiple applications.</li>
-        <li>Established customer base including major heavy equipment manufacturer Cummins Inc., with engines used in trucks, buses, industrial and marine applications.</li>
-        <li>Receiving significant attention for usage in diesel generators used as backup electricity generators for data centers and hospitals.</li>
-        <li>Supports legacy OEM manufacturers in meeting stringent future emission requirements.</li>
-    </ul>
+        <p><strong>AgriNOx system</strong>: Precision measurement of fertilizer-derived N₂O at <strong>sub-ppm</strong> levels. Supported by a <strong>$650K USDA grant</strong>, pilots in California are helping farmers reduce nitrogen inputs and access carbon credit opportunities.</p>
 
-    <h3>2. AgriNOx System</h3>
-    <ul>
-        <li>Advanced agricultural IoT system for precise quantification of N2O emissions from fertilizers.</li>
-        <li>Recently awarded a USDA NIFA SBIR Phase II grant of $650,000 as part of a $26.8 million investment to support groundbreaking agricultural innovations.</li>
-        <li>Features patent-protected electrochemical total NOx sensor and optical N2O sensor designed to meet sub-ppm measurement specifications set forth by regulators.</li>
-        <li>Enables farmers to optimize fertilizer management while minimizing greenhouse gas emissions.</li>
-        <li>Contributes to fertilizer manufacturers' development of low-GHG emission products.</li>
-        <li>Provides additional revenue streams for farmers through NOx credit sales. <span class="note">*Note: N2O has 298 times the greenhouse effect of CO2</span></li>
-    </ul>
+        <h2 style="font-size:1.05rem;margin-top:14px">Why this matters</h2>
 
-    <h2>Partnership Objectives and NYG's Manufacturing Excellence</h2>
-    <p>Nihon Yamamura Glass Co., Ltd., established in 1914, stands as Japan's leading glass bottle manufacturer with over 110 years of industry expertise and the largest market share in Japan. The company operates four glass bottle production plants with a combined production capacity exceeding 350,000 tons annually, representing the largest scale in Japan. NYG's diverse portfolio extends beyond traditional glass manufacturing to include powdered glass, glass paste, sealing glass, solar panels, batteries, ceramic condensers, LED packages, and advanced materials for automotive and industrial applications.</p>
-    <p>Through this strategic partnership, RedNOx's breakthrough sensor technology will be integrated with NYG's long-cultivated ceramic manufacturing expertise and proprietary New Glass sealant technologies. This collaboration will accelerate the development and market introduction of next-generation environmental monitoring products specifically designed for the mobility and agriculture sectors, combining Silicon Valley innovation with Japanese precision manufacturing excellence.</p>
+        <p>NOx is a harmful air pollutant, and N₂O is nearly <strong>300× more potent than CO₂</strong>. With tighter emissions standards expected from 2027 onward, our combined technology and manufacturing capability will help OEMs and farmers meet regulatory and sustainability goals.</p>
 
-    <h2>Future Development</h2>
-    <p>Both companies will collaborate toward the early market introduction of products that contribute to environmental impact reduction, working together to create new value for the realization of a sustainable society.</p>
-
-    <h2>Contact Information for Inquiries</h2>
-    <p><strong>Nihon Yamamura Glass Co., Ltd. Public Relations & IR Department</strong><br>
-    TEL: +81-6-6487-0001<br>
-    Email: <a href="mailto:ir@yamamura-glass.co.jp">ir@yamamura-glass.co.jp</a></p>
-
-    <h2>About RedNOx Inc.</h2>
-    <p>RedNOx Inc. is a Silicon Valley-based startup founded by Dr. Solomon Ssenyange and headquartered in Fremont, California. The company specializes in developing innovative sensor platforms for greenhouse gases and environmental monitoring solutions. RedNOx has established partnerships with major industry players including Cummins Inc. and has received significant government funding, including USDA SBIR grants totaling $650,000. As a pioneer in environmental measurement technology, RedNOx is committed to leading the charge towards low to zero-emissions engines, factories, and farmlands, contributing to the realization of a sustainable society.</p>
-
-    <h2>About Nihon Yamamura Glass Co., Ltd.</h2>
-    <p>Founded in 1914 and headquartered in Amagasaki, Hyogo Prefecture, Nihon Yamamura Glass Co., Ltd. is Japan's premier glass bottle manufacturer with over 110 years of industry leadership. The company holds the largest market share for glass bottles in Japan and operates four production plants with a combined annual capacity exceeding 350,000 tons. NYG's business portfolio encompasses four main divisions: Glass Bottle Company, Plastics Company, New Glass Company, and Engineering Company, along with comprehensive logistics services. The company's advanced technologies include precision ceramic manufacturing, New Glass sealant technologies, and specialized materials for automotive, electronics, and industrial applications. With international operations spanning China, Thailand, Taiwan, Indonesia, and the Philippines, NYG continues to drive innovation in sustainable packaging solutions and advanced materials technology.</p>`,
+        <p>By pairing Silicon Valley innovation with Japanese manufacturing strength, RedNOx and NYG aim to accelerate commercialization and deliver practical solutions that reduce emissions and create value for industry and agriculture.</p>
+        </article>
+        `,
     }
 }
 

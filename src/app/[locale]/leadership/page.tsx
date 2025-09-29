@@ -11,6 +11,7 @@ import Team from "@/components/team"
 
 export default function LeadershipPage() {
     const t = useTranslations("Leadership");
+    const foundersWithoutDutta = founders(t).filter(member => member.id !== 2)
 
     return (
         <div className="flex min-h-[100dvh] flex-col">
@@ -37,7 +38,7 @@ export default function LeadershipPage() {
                         <div className="mb-12 md:mb-16">
                             <h3 className="text-left text-2xl md:text-3xl lg:text-4xl font-bold mb-8 md:mb-12 text-white">Board of Directors</h3>
                             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
-                                {[...founders(t), ...investors(t)].map((member) => (
+                                {[...foundersWithoutDutta, ...investors(t)].map((member) => (
                                     <Team key={member.id} id={member.id} name={member.name} email={member.email} bio={member.bio} position={member.position} image={member.image} />
                                 ))}
                             </div>
@@ -46,7 +47,7 @@ export default function LeadershipPage() {
                         <div className="mb-8 md:mb-12">
                             <h3 className="text-left text-2xl md:text-3xl lg:text-4xl font-bold mb-8 md:mb-12 text-white">Advisors</h3>
                             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
-                                {advisors(t).map((member) => (
+                                {[...advisors(t), ...founders(t).filter(member => member.id === 2)].map((member) => (
                                     <Team key={member.id} id={member.id} name={member.name} email={member.email} bio={member.bio} position={member.position} image={member.image} />
                                 ))}
                             </div>

@@ -195,14 +195,14 @@ export const pressData: PressData[] = [
         slug: "rednox-awarded-usda-nifa-sbir-phase-ii-grant-to-drive-innovation-in-agricultural-emissions-reduction",
         image: "/us.jpg"
     },
-    {
-        id: 3,
-        title: "RedNOx Partners with Nihon Yamamura Glass, Secures $2M to Revolutionize Emissions Monitoring",
-        excerpt: "We’re excited to announce that RedNOx Inc. has expanded its partnership with Nihon Yamamura Glass (NYG), a leading Japanese ceramics and glass manufacturer.",
-        date: "2025-05-23",
-        slug: "strategic-business-partnership-between-nihon-yamamura-glass-co-ltd-and-rednox",
-        image: "/nihon.jpg"
-    }
+    // {
+    //     id: 3,
+    //     title: "RedNOx Partners with Nihon Yamamura Glass, Secures $2M to Revolutionize Emissions Monitoring",
+    //     excerpt: "We’re excited to announce that RedNOx Inc. has expanded its partnership with Nihon Yamamura Glass (NYG), a leading Japanese ceramics and glass manufacturer.",
+    //     date: "2025-05-23",
+    //     slug: "strategic-business-partnership-between-nihon-yamamura-glass-co-ltd-and-rednox",
+    //     image: "/nihon.jpg"
+    // }
 ]
 
 export const publicationData: PublicationData[] = [

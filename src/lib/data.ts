@@ -72,7 +72,8 @@ export const founders = (t: AboutTranslations): TeamMember[] => (
             image: "https://res.cloudinary.com/dvixlnczm/image/upload/v1759086906/solomon-team_qt2hpv.png",
             alt: "solomon ssenyange founder rednox inc",
             bio: t("management.members.solomon.bio"),
-            email: "solomon@rednoxinc.com"
+            email: "solomon@rednoxinc.com",
+            linkedin: "https://www.linkedin.com/in/sssenyange/"
         },
         {
             id: 2,
@@ -81,6 +82,7 @@ export const founders = (t: AboutTranslations): TeamMember[] => (
             image: "https://res.cloudinary.com/dvixlnczm/image/upload/v1759086905/dutta_qzvoq3.jpg",
             alt: "prabir dutta founder rednox inc",
             bio: t("management.members.dutta.bio"),
+            linkedin: "https://www.linkedin.com/in/prabir-dutta-ba9a9535/"
         },
         {
             id: 3,
@@ -89,6 +91,7 @@ export const founders = (t: AboutTranslations): TeamMember[] => (
             image: "https://res.cloudinary.com/dvixlnczm/image/upload/v1759086907/markel_mnttzu.png",
             alt: "darby makel founder rednox inc",
             bio: t("management.members.markel.bio"),
+            linkedin: "https://www.linkedin.com/in/darby-makel-b1549045/"
         }
     ]
 )
@@ -101,6 +104,7 @@ export const advisors = (t: AboutTranslations): TeamMember[] => [
         image: "https://res.cloudinary.com/dvixlnczm/image/upload/v1759086907/peter_lmltcg.png",
         alt: "peter swaniker rednox",
         bio: t("advisors.members.peter.bio"),
+        linkedin: "https://www.linkedin.com/in/peterswaniker/"
     },
     {
         id: 5,
@@ -109,6 +113,7 @@ export const advisors = (t: AboutTranslations): TeamMember[] => [
         image: "https://res.cloudinary.com/dvixlnczm/image/upload/v1759086907/matt_n3qw5v.png",
         alt: "matt meisner rednox",
         bio: t("advisors.members.matt.bio"),
+        linkedin: "https://www.linkedin.com/in/matt-meisner/"
     },
     {
         id: 3,
@@ -117,6 +122,7 @@ export const advisors = (t: AboutTranslations): TeamMember[] => [
         image: "https://res.cloudinary.com/dvixlnczm/image/upload/v1759086906/kurt_pxxm33.png",
         alt: "kurt tsuo rednox",
         bio: t("advisors.members.kurt.bio"),
+        linkedin: "https://www.linkedin.com/in/kurt-tsuo/"
     }
 ]
 
@@ -128,6 +134,7 @@ export const investors = (t: AboutTranslations): TeamMember[] => [
         image: "https://res.cloudinary.com/dvixlnczm/image/upload/v1759086904/wayne_zaosbe.jpg",
         alt: "wayne embree rednox",
         bio: t("investors.members.wayne.bio"),
+        linkedin: "https://www.linkedin.com/in/wayne-embree-a07125/"
     },
     {
         id: 8,

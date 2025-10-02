@@ -48,11 +48,11 @@ export default function Footer({ className }: { className?: string }) {
                         <div className="flex flex-col gap-3 md:gap-4">
                             <p className="text-white text-sm font-semibold">Follow Updates on our Socials</p>
                             <a href="https://x.com/SSsenyange" className="inline-flex group items-center gap-2 hover:text-primary transition-colors">
-                                <SocialIcon href="#" icon="mdi:twitter" name="Twitter" className="text-white group-hover:text-primary transition-colors" />
+                                <SocialIcon icon="mdi:twitter" name="Twitter" className="text-white group-hover:text-primary transition-colors" />
                                 Twitter
                             </a>
                             <a href="https://www.linkedin.com/in/sssenyange/" className="inline-flex group items-center gap-2 hover:text-primary transition-colors">
-                                <SocialIcon href="#" icon="mdi:linkedin" name="LinkedIn" className="text-white group-hover:text-primary transition-colors" />
+                                <SocialIcon icon="mdi:linkedin" name="LinkedIn" className="text-white group-hover:text-primary transition-colors" />
                                 LinkedIn
                             </a>
                         </div>

@@ -62,7 +62,16 @@ export default function Agrinox() {
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
                     {founders(translateLeadership).map((member) => (
-                        <Team key={member.id} id={member.id} name={member.name} email={member.email} bio={member.bio} position={member.position} image={member.image} />
+                        <Team
+                            key={member.id}
+                            id={member.id}
+                            name={member.name}
+                            email={member.email}
+                            bio={member.bio}
+                            position={member.position}
+                            image={member.image}
+                            linkedin={member.linkedin}
+                        />
                     ))}
                 </div>
             </div>

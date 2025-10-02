@@ -30,7 +30,16 @@ export default function LeadershipPage() {
                             <h3 className="text-left text-2xl md:text-3xl lg:text-4xl font-bold mb-8 md:mb-12 text-white">Management</h3>
                             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
                                 {founders(t).map((member) => (
-                                    <Team key={member.id} id={member.id} name={member.name} email={member.email} bio={member.bio} position={member.position} image={member.image} />
+                                    <Team
+                                        key={member.id}
+                                        id={member.id}
+                                        name={member.name}
+                                        email={member.email}
+                                        bio={member.bio}
+                                        position={member.position}
+                                        image={member.image}
+                                        linkedin={member.linkedin}
+                                    />
                                 ))}
                             </div>
                         </div>
@@ -39,7 +48,16 @@ export default function LeadershipPage() {
                             <h3 className="text-left text-2xl md:text-3xl lg:text-4xl font-bold mb-8 md:mb-12 text-white">Board of Directors</h3>
                             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
                                 {[...foundersWithoutDutta, ...investors(t)].map((member) => (
-                                    <Team key={member.id} id={member.id} name={member.name} email={member.email} bio={member.bio} position={member.position} image={member.image} />
+                                    <Team
+                                        key={member.id}
+                                        id={member.id}
+                                        name={member.name}
+                                        email={member.email}
+                                        bio={member.bio}
+                                        position={member.position}
+                                        image={member.image}
+                                        linkedin={member.linkedin}
+                                    />
                                 ))}
                             </div>
                         </div>
@@ -48,7 +66,16 @@ export default function LeadershipPage() {
                             <h3 className="text-left text-2xl md:text-3xl lg:text-4xl font-bold mb-8 md:mb-12 text-white">Advisors</h3>
                             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
                                 {[...advisors(t), ...founders(t).filter(member => member.id === 2)].map((member) => (
-                                    <Team key={member.id} id={member.id} name={member.name} email={member.email} bio={member.bio} position={member.position} image={member.image} />
+                                    <Team
+                                        key={member.id}
+                                        id={member.id}
+                                        name={member.name}
+                                        email={member.email}
+                                        bio={member.bio}
+                                        position={member.position}
+                                        image={member.image}
+                                        linkedin={member.linkedin}
+                                    />
                                 ))}
                             </div>
                         </div>

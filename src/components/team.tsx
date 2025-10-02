@@ -4,11 +4,29 @@ import { useState } from "react"
 import { Plus } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
 import Image from "next/image"
+import { Icon } from "@iconify/react"
 
-export default function Component({ id, image, name, position, email, bio }: { id: number; image: string; name: string; position: string; email?: string; bio: string }) {
+export default function Component({
+    id,
+    image,
+    name,
+    position,
+    email,
+    bio,
+    linkedin
+}: {
+    id: number;
+    image: string;
+    name: string;
+    position: string;
+    email?: string;
+    bio: string;
+    linkedin?: string;
+}) {
     const [expandedCard, setExpandedCard] = useState<number | null>(null)
 
     const toggleCard = (id: number) => {
+        console.log({ linkedin })
         setExpandedCard(expandedCard === id ? null : id)
     }
 
@@ -16,10 +34,7 @@ export default function Component({ id, image, name, position, email, bio }: { i
         <div
             key={id}
             className="overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-lg border border-slate-700 rounded-lg p-4 md:p-6 bg-slate-800/50 hover:bg-slate-800"
-            onClick={() => {
-                console.log(id)
-                toggleCard(id)
-            }}
+            onClick={() => toggleCard(id)}
         >
             <div className="">
                 <div className="flex flex-row gap-3 md:gap-4 w-full">
@@ -59,6 +74,15 @@ export default function Component({ id, image, name, position, email, bio }: { i
                                             onClick={(e) => e.stopPropagation()}
                                         >
                                             {email}
+                                        </a>
+                                    </div>}
+                                    {linkedin && <div className="mb-3 md:mb-4">
+                                        <a
+                                            href={linkedin}
+                                            className="text-xs md:text-sm text-blue-400 hover:text-blue-300 transition-colors"
+                                            onClick={(e) => e.stopPropagation()}
+                                        >
+                                            <Icon icon="logos:linkedin" />
                                         </a>
                                     </div>}
                                 </div>

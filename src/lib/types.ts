@@ -12,6 +12,7 @@ export interface TeamMember {
     alt: string;
     bio: string
     email?: string
+    linkedin?: string
 }
 
 export interface NewsData {

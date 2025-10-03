@@ -240,7 +240,7 @@ export default function ContactPage() {
                                                                     {location.phone}
                                                                 </a>
                                                             </div>
-                                                            <div className="flex items-center gap-3">
+                                                            {/* <div className="flex items-center gap-3">
                                                                 <Mail className="size-4 text-primary flex-shrink-0" />
                                                                 <a
                                                                     href={`mailto:${location.email}`}
@@ -248,7 +248,7 @@ export default function ContactPage() {
                                                                 >
                                                                     {location.email}
                                                                 </a>
-                                                            </div>
+                                                            </div> */}
                                                         </div>
                                                     </CardContent>
                                                 </Card>

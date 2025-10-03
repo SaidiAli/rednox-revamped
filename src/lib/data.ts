@@ -72,7 +72,7 @@ export const founders = (t: AboutTranslations): TeamMember[] => (
             image: "https://res.cloudinary.com/dvixlnczm/image/upload/v1759086906/solomon-team_qt2hpv.png",
             alt: "solomon ssenyange founder rednox inc",
             bio: t("management.members.solomon.bio"),
-            email: "solomon@rednoxinc.com",
+            // email: "solomon@rednoxinc.com",
             linkedin: "https://www.linkedin.com/in/sssenyange/"
         },
         {

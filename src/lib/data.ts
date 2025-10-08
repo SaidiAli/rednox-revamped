@@ -302,21 +302,21 @@ export const blogPosts: Record<string, BlogPost> = {
         downloadCTATitle: "Nihon Yamamura Press Release",
         content: `
         <article>
-            <p><strong>RedNOx Inc.</strong> is pleased to announce an expanded strategic partnership with <strong>Nihon Yamamura Glass (NYG)</strong>. NYG has invested in our oversubscribed <strong>$2M seed round</strong> and will serve as our exclusive manufacturing partner, bringing decades of ceramic and glass sealing expertise to scale our sensor production.</p>
+            <p>RedNOx Inc. is pleased to announce an expanded strategic partnership with Nihon Yamamura Glass (NYG). NYG has invested in our oversubscribed $2M seed round and will provide us with ceramics and glass sealing expertise to scale our sensor production.</p>
 
         <div>
-            <strong>What this enables:</strong> faster, higher-quality manufacturing of next-generation NOx and N₂O sensors for mobility and agriculture applications.
+            What this enables: faster, higher-quality manufacturing of next-generation NOx and N₂O sensors for mobility and agriculture applications.
         </div>
 
         <h2 style="font-size:1.05rem;margin-top:16px">Technology in focus</h2>
 
-        <p><strong>LoNOx sensor</strong>: Ultra-sensitive NOx detection across <strong>500 ppb–20 ppm</strong>. Built to resist ammonia interference and suitable for diesel and gasoline engines, it’s especially relevant for low-emission gensets used by data centers and hospitals.</p>
+        <p>LoNOx sensor: Ultra-sensitive NOx detection across 500 ppb–20 ppm. Built to resist ammonia interference and suitable for diesel and gasoline engines, it’s especially relevant for low-emission gensets used by data centers and hospitals.</p>
 
-        <p><strong>AgriNOx system</strong>: Precision measurement of fertilizer-derived N₂O at <strong>sub-ppm</strong> levels. Supported by a <strong>$650K USDA grant</strong>, pilots in California are helping farmers reduce nitrogen inputs and access carbon credit opportunities.</p>
+        <p>AgriNOx system: Precision measurement of fertilizer-derived N₂O at sub-ppm levels. Supported by a $650K USDA grant, pilots in California are helping farmers reduce nitrogen inputs and access carbon credit opportunities.</p>
 
         <h2 style="font-size:1.05rem;margin-top:14px">Why this matters</h2>
 
-        <p>NOx is a harmful air pollutant, and N₂O is nearly <strong>300× more potent than CO₂</strong>. With tighter emissions standards expected from 2027 onward, our combined technology and manufacturing capability will help OEMs and farmers meet regulatory and sustainability goals.</p>
+        <p>NOx is a harmful air pollutant, and N₂O is nearly 300× more potent than CO₂. With tighter emissions standards expected from 2027 onward, our combined technology and manufacturing capability will help OEMs and farmers meet regulatory and sustainability goals.</p>
 
         <p>By pairing Silicon Valley innovation with Japanese manufacturing strength, RedNOx and NYG aim to accelerate commercialization and deliver practical solutions that reduce emissions and create value for industry and agriculture.</p>
         </article>

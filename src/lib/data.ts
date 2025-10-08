@@ -318,7 +318,7 @@ export const blogPosts: Record<string, BlogPost> = {
 
         <p>NOx is a harmful air pollutant, and N₂O is nearly 300× more potent than CO₂. With tighter emissions standards expected from 2027 onward, our combined technology and manufacturing capability will help OEMs and farmers meet regulatory and sustainability goals.</p>
 
-        <p>By pairing Silicon Valley innovation with Japanese manufacturing strength, RedNOx and NYG aim to accelerate commercialization and deliver practical solutions that reduce emissions and create value for industry and agriculture.</p>
+        <p>By pairing Silicon Valley innovation with Japanese technical strength, RedNOx and NYG aim to accelerate commercialization and deliver practical solutions that reduce emissions and create value for industry and agriculture.</p>
         </article>
         `,
     }
@@ -342,7 +342,7 @@ export const _investors = [
     {
         name: "Nihon Yamamura Glass Co., Ltd.",
         image: "/investors/3.png",
-        bio: "Nihon Yamamura Glass Co., Ltd. is a Japanese company that manufactures and sells glass bottles, plastic containers, and powdered glass. Founded in 1914, the company also operates in the logistics and 'new glass' sectors. It is a strategic partner for RedNOx, with pilot lines in Yokohama, Japan.",
+        bio: "Nihon Yamamura Glass Co., Ltd. is a Japanese company that manufactures and sells glass bottles, plastic containers, and powdered glass. Founded in 1914, the company also operates in the logistics and 'new glass' sectors. It is a strategic partner for RedNOx in Yokohama, Japan.",
         position: "Venture Capital Firm",
         email: "info@soundboardventurefund.com"
     }

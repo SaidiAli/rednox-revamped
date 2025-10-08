@@ -46,7 +46,7 @@ export default function ContactPage() {
 
         try {
             const result = await sendContactEmail(formData)
-            
+
             if (result.success) {
                 setFormData({
                     name: "",
@@ -107,7 +107,7 @@ export default function ContactPage() {
                                     </CardHeader>
                                     <CardContent className="p-4 md:p-6">
                                         <form onSubmit={handleSubmit} className="space-y-4 md:space-y-6">
-                                        <div className="space-y-2">
+                                            <div className="space-y-2">
                                                 <Label htmlFor="subject" className="text-sm md:text-base">{t("form.subjectSelect.label")}</Label>
                                                 <Select value={formData.subject} onValueChange={handleSelectChange} required>
                                                     <SelectTrigger className="w-full border-moody h-10 md:h-11">
@@ -176,11 +176,10 @@ export default function ContactPage() {
                                                 />
                                             </div>
                                             {submitMessage && (
-                                                <div className={`text-sm md:text-base p-3 rounded-lg ${
-                                                    submitMessage.includes("error") 
-                                                        ? "bg-red-500/20 text-red-200 border border-red-500/30" 
+                                                <div className={`text-sm md:text-base p-3 rounded-lg ${submitMessage.includes("error")
+                                                        ? "bg-red-500/20 text-red-200 border border-red-500/30"
                                                         : "bg-green-500/20 text-green-200 border border-green-500/30"
-                                                }`}>
+                                                    }`}>
                                                     {submitMessage}
                                                 </div>
                                             )}
@@ -240,7 +239,7 @@ export default function ContactPage() {
                                                                     {location.phone}
                                                                 </a>
                                                             </div>
-                                                            {/* <div className="flex items-center gap-3">
+                                                            <div className="flex items-center gap-3">
                                                                 <Mail className="size-4 text-primary flex-shrink-0" />
                                                                 <a
                                                                     href={`mailto:${location.email}`}
@@ -248,8 +247,7 @@ export default function ContactPage() {
                                                                 >
                                                                     {location.email}
                                                                 </a>
-                                                            </div> */}
-                                                        </div>
+                                                            </div>                                                    </div>
                                                     </CardContent>
                                                 </Card>
                                             </motion.div>

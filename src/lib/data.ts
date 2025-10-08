@@ -72,7 +72,7 @@ export const founders = (t: AboutTranslations): TeamMember[] => (
             image: "https://res.cloudinary.com/dvixlnczm/image/upload/v1759086906/solomon-team_qt2hpv.png",
             alt: "solomon ssenyange founder rednox inc",
             bio: t("management.members.solomon.bio"),
-            // email: "solomon@rednoxinc.com",
+            email: "solomon@rednoxinc.com",
             linkedin: "https://www.linkedin.com/in/sssenyange/"
         },
         {
@@ -188,6 +188,14 @@ export const newsData: NewsData[] = [
 export const pressData: PressData[] = [
     {
         id: 1,
+        title: "RedNOx Partners with Nihon Yamamura Glass, Secures $2M to Revolutionize Emissions Monitoring",
+        excerpt: "We’re excited to announce that RedNOx Inc. has expanded its partnership with Nihon Yamamura Glass (NYG), a leading Japanese ceramics and glass manufacturer.",
+        date: "2025-10-08",
+        slug: "strategic-business-partnership-between-nihon-yamamura-glass-co-ltd-and-rednox",
+        image: "/nihon.jpg"
+    },
+    {
+        id: 2,
         title: "RedNOx Awarded SBIR Phase I for its Innovative Greenhouse Gas Measurement Platform",
         excerpt: "FREMONT, Calif., August 28, 2023 (GLOBE NEWSWIRE) -- RedNOx Inc., a trailblazer in environmental solid-state sensing technology, is delighted to announce its recent achievement in securing a Phase I Small Business Innovation Research (SBIR) award for its groundbreaking atmosphere and soil greenhouse gas measurement platform.",
         date: "2023-08-23",
@@ -195,21 +203,13 @@ export const pressData: PressData[] = [
         image: "/usda.jpg"
     },
     {
-        id: 2,
+        id: 3,
         title: "RedNOx Awarded USDA NIFA SBIR Phase II Grant to Drive Innovation in Agricultural Emissions Reduction",
         excerpt: "We are thrilled to announce that RedNOx has been awarded a USDA NIFA SBIR Phase II grant of $650,000 as part of a $26.8 million investment to support groundbreaking, small business-led innovations in agriculture.",
         date: "2024-10-31",
         slug: "rednox-awarded-usda-nifa-sbir-phase-ii-grant-to-drive-innovation-in-agricultural-emissions-reduction",
         image: "/us.jpg"
-    },
-    // {
-    //     id: 3,
-    //     title: "RedNOx Partners with Nihon Yamamura Glass, Secures $2M to Revolutionize Emissions Monitoring",
-    //     excerpt: "We’re excited to announce that RedNOx Inc. has expanded its partnership with Nihon Yamamura Glass (NYG), a leading Japanese ceramics and glass manufacturer.",
-    //     date: "2025-05-23",
-    //     slug: "strategic-business-partnership-between-nihon-yamamura-glass-co-ltd-and-rednox",
-    //     image: "/nihon.jpg"
-    // }
+    }
 ]
 
 export const publicationData: PublicationData[] = [
@@ -294,11 +294,11 @@ export const blogPosts: Record<string, BlogPost> = {
         title: "RedNOx Partners with Nihon Yamamura Glass, Secures $2M to Revolutionize Emissions Monitoring",
         excerpt:
             "We’re excited to announce that RedNOx Inc. has expanded its partnership with Nihon Yamamura Glass (NYG), a leading Japanese ceramics and glass manufacturer.",
-        date: "2025-05-23",
+        date: "2025-10-08",
         readTime: "5 min read",
         category: "Press Release",
         image: "/nihon.jpg",
-        downloadLink: "/nihon-press-release.pdf",
+        downloadLink: "https://www.yamamura.co.jp/cms/wp-content/uploads/2025/10/20251008_CMS0632_473LOWYE-2.pdf",
         downloadCTATitle: "Nihon Yamamura Press Release",
         content: `
         <article>

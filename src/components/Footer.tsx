@@ -35,10 +35,10 @@ export default function Footer({ className }: { className?: string }) {
                         </div>
                         <div className="flex flex-col gap-3 md:gap-4">
                             <p className="text-white text-sm font-semibold">Resources</p>
-                            <Link href="/terms-of-service" className="hover:text-primary transition-colors hover:underline">
+                            <Link href="#" className="hover:text-primary transition-colors hover:underline">
                                 Terms of Service
                             </Link>
-                            <Link href="/privacy-policy" className="hover:text-primary transition-colors hover:underline">
+                            <Link href="#" className="hover:text-primary transition-colors hover:underline">
                                 Privacy policy
                             </Link>
                             <Link href="/contact" className="hover:text-primary transition-colors hover:underline">

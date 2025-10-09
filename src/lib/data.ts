@@ -273,7 +273,7 @@ export const blogPosts: Record<string, BlogPost> = {
     <p>RedNOx's CEO, Dr. Solomon Ssenyange, stated, "Receiving this award reaffirms our dedication to developing solutions that prioritize environmental sustainability and offer economic benefits to agriculture. Our sensor technology not only enhances soil health and food production but also promotes the reduction of carbon and NOx emissions."</p>
     <p>The announcement from RedNOx comes in the wake of the USDA's official press release on the recent Phase I Awards, further details of which can be accessed here. RedNOx extends its gratitude to the USDA and the SBIR/STTR Office for recognizing and supporting initiatives that drive tech innovation in food and agriculture.</p>
     <p>For those with inquiries concerning the award or RedNOx's ambient and soil greenhouse gas measurement platform, you're encouraged to reach out to the company directly or to the SBIR/STTR Office for broader questions regarding the program.</p>
-    <h3>About RedNOx</h3>
+    <p style="font-weight: bold;">About RedNOx</p>
     <p>Headquartered in Fremont, CA, RedNOx Inc. specializes in developing state-of-the-art sensing solutions for a variety of applications. Committed to both innovation and sustainability, RedNOx is redefining how agriculture interacts with environmental responsibilities. Learn more about their initiatives and advancements at www.rednoxinc.com and stay connected via LinkedIn.</p>
   `,
     },
@@ -308,13 +308,13 @@ export const blogPosts: Record<string, BlogPost> = {
             What this enables: faster, higher-quality manufacturing of next-generation NOx and N₂O sensors for mobility and agriculture applications.
         </div>
 
-        <h2>Technology in focus</h2>
+        <p style="font-weight: bold;">Technology in focus:</p>
 
         <p>LoNOx sensor: Ultra-sensitive NOx detection across 500 ppb–20 ppm. Built to resist ammonia interference and suitable for diesel and gasoline engines, it’s especially relevant for low-emission gensets used by data centers and hospitals.</p>
 
         <p>AgriNOx system: Precision measurement of fertilizer-derived N₂O at sub-ppm levels. Supported by a $650K USDA grant, pilots in California are helping farmers reduce nitrogen inputs and access carbon credit opportunities.</p>
 
-        <h2>Why this matters</h2>
+        <p style="font-weight: bold;">Why this matters:</p>
 
         <p>NOx is a harmful air pollutant, and N₂O is nearly 300× more potent than CO₂. With tighter emissions standards expected from 2027 onward, our combined technology and manufacturing capability will help OEMs and farmers meet regulatory and sustainability goals.</p>
 

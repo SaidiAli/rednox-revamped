@@ -308,13 +308,13 @@ export const blogPosts: Record<string, BlogPost> = {
             What this enables: faster, higher-quality manufacturing of next-generation NOx and N₂O sensors for mobility and agriculture applications.
         </div>
 
-        <h2 style="font-size:1.05rem;margin-top:16px">Technology in focus</h2>
+        <h2>Technology in focus</h2>
 
         <p>LoNOx sensor: Ultra-sensitive NOx detection across 500 ppb–20 ppm. Built to resist ammonia interference and suitable for diesel and gasoline engines, it’s especially relevant for low-emission gensets used by data centers and hospitals.</p>
 
         <p>AgriNOx system: Precision measurement of fertilizer-derived N₂O at sub-ppm levels. Supported by a $650K USDA grant, pilots in California are helping farmers reduce nitrogen inputs and access carbon credit opportunities.</p>
 
-        <h2 style="font-size:1.05rem;margin-top:14px">Why this matters</h2>
+        <h2>Why this matters</h2>
 
         <p>NOx is a harmful air pollutant, and N₂O is nearly 300× more potent than CO₂. With tighter emissions standards expected from 2027 onward, our combined technology and manufacturing capability will help OEMs and farmers meet regulatory and sustainability goals.</p>
 

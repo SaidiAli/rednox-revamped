@@ -20,7 +20,7 @@ export const features = (t: HomePageTranslations) => ({
         },
         {
             key: t("keyValueGrid.metrics.operatingTemp"),
-            value: "–40 … +700 °C "
+            value: "-40 … +700 °C "
         },
         {
             key: t("keyValueGrid.metrics.ingress"),
@@ -38,7 +38,7 @@ export const features = (t: HomePageTranslations) => ({
         },
         {
             key: t("keyValueGrid.metrics.accuracy"),
-            value: "±5 % @ 0.1–5 ppm"
+            value: "±5 % @ 0.1-5 ppm"
         },
         {
             key: t("keyValueGrid.metrics.t90"),
@@ -50,7 +50,7 @@ export const features = (t: HomePageTranslations) => ({
         },
         {
             key: t("keyValueGrid.metrics.operatingTemp"),
-            value: "–10 … +60 °C"
+            value: "-10 … +60 °C"
         },
         {
             key: t("keyValueGrid.metrics.ingress"),
@@ -189,7 +189,7 @@ export const pressData: PressData[] = [
     {
         id: 1,
         title: "RedNOx Partners with Nihon Yamamura Glass, Secures $2M to Revolutionize Emissions Monitoring",
-        excerpt: "We’re excited to announce that RedNOx Inc. has expanded its partnership with Nihon Yamamura Glass (NYG), a leading Japanese ceramics and glass manufacturer.",
+        excerpt: "We're excited to announce that RedNOx Inc. has expanded its partnership with Nihon Yamamura Glass (NYG), a leading Japanese ceramics and glass manufacturer.",
         date: "2025-10-08",
         slug: "strategic-business-partnership-between-nihon-yamamura-glass-co-ltd-and-rednox",
         image: "/nihon.jpg"
@@ -225,19 +225,19 @@ export const publicationData: PublicationData[] = [
         link: "https://www.sciencedirect.com/science/article/abs/pii/S0925400506007398",
     },
     {
-        id: 2,
+        id: 3,
         title: "Strategies for total NOx measurement with minimal CO interference utilizing a microporous zeolitic catalytic filter",
         authors: ['Nicholas F Szabo', 'Prabir K. Dutta'],
         link: "https://www.sciencedirect.com/science/article/abs/pii/S0925400502003222",
     },
     {
-        id: 2,
+        id: 4,
         title: "Promoting selectivity and sensitivity for a high temperature YSZ-based electrochemical total NOx sensor by using a Pt-loaded zeolite Y filter",
         authors: ['Jiun-Chan Yang', 'Prabir K. Dutta'],
         link: "https://www.sciencedirect.com/science/article/abs/pii/S0925400507000500",
     },
     {
-        id: 2,
+        id: 5,
         title: "Temperature-controlled CO, CO2 and NOx sensing in a diesel engine exhaust stream",
         authors: ['Osvaldo L. Figueroa a', 'Chonghoon Lee a', 'Sheikh A. Akbar b', 'Nicholas F. Szabo a', 'Joseph A. Trimboli a', 'Prabir K. Dutta c', 'Naoto Sawaki d', 'Ahmed A. Soliman e,', 'Henk Verweij b'],
         link: "https://www.sciencedirect.com/science/article/abs/pii/S0925400504008871",
@@ -292,7 +292,7 @@ export const blogPosts: Record<string, BlogPost> = {
     "strategic-business-partnership-between-nihon-yamamura-glass-co-ltd-and-rednox": {
         title: "RedNOx Partners with Nihon Yamamura Glass, Secures $2M to Revolutionize Emissions Monitoring",
         excerpt:
-            "We’re excited to announce that RedNOx Inc. has expanded its partnership with Nihon Yamamura Glass (NYG), a leading Japanese ceramics and glass manufacturer.",
+            "We're excited to announce that RedNOx Inc. has expanded its partnership with Nihon Yamamura Glass (NYG), a leading Japanese ceramics and glass manufacturer.",
         date: "2025-10-08",
         readTime: "5 min read",
         category: "Press Release",
@@ -309,13 +309,13 @@ export const blogPosts: Record<string, BlogPost> = {
 
         <p style="font-weight: bold;">Technology in focus:</p>
 
-        <p>LoNOx sensor: Ultra-sensitive NOx detection across 500 ppb–20 ppm. Built to resist ammonia interference and suitable for diesel and gasoline engines, it’s especially relevant for low-emission gensets used by data centers and hospitals.</p>
+        <p>LoNOx sensor: Ultra-sensitive NOx detection across 500 ppb-20 ppm. Built to resist ammonia interference and suitable for diesel and gasoline engines, it’s especially relevant for low-emission gensets used by data centers and hospitals.</p>
 
         <p>AgriNOx system: Precision measurement of fertilizer-derived N₂O at sub-ppm levels. Supported by a $650K USDA grant, pilots in California are helping farmers reduce nitrogen inputs and access carbon credit opportunities.</p>
 
         <p style="font-weight: bold;">Why this matters:</p>
 
-        <p>NOx is a harmful air pollutant, and N₂O is nearly 300× more potent than CO₂. With tighter emissions standards expected from 2027 onward, our combined technology and manufacturing capability will help OEMs and farmers meet regulatory and sustainability goals.</p>
+        <p>NOx is a harmful air pollutant, and N₂O is nearly 300x more potent than CO₂. With tighter emissions standards expected from 2027 onward, our combined technology and manufacturing capability will help OEMs and farmers meet regulatory and sustainability goals.</p>
 
         <p>By pairing Silicon Valley innovation with Japanese technical strength, RedNOx and NYG aim to accelerate commercialization and deliver practical solutions that reduce emissions and create value for industry and agriculture.</p>
         </article>

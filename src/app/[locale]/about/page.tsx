@@ -8,6 +8,12 @@ import SectionTitle from "@/components/ui/SectionTitle";
 import Image from "next/image";
 import { founders } from "@/lib/data";
 import { useTranslations } from "next-intl";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "About Rednox Inc.",
+    description: "Learn about Rednox, our mission to reduce NOx, CO2, and N2O emissions, and the team behind our breakthrough sensor technology for clean energy and agriculture.",
+}
 
 export default function Agrinox() {
     const translateAbout = useTranslations("AboutRednox");

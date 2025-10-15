@@ -47,13 +47,21 @@ export default function Footer({ className }: { className?: string }) {
                         </div>
                         <div className="flex flex-col gap-3 md:gap-4">
                             <p className="text-white text-sm font-semibold">Follow Updates on our Socials</p>
-                            <a href="https://x.com/SSsenyange" className="inline-flex group items-center gap-2 hover:text-primary transition-colors">
+                            <a href="https://x.com/RedNOxInc" target="_blank" className="inline-flex group items-center gap-2 hover:text-primary transition-colors">
                                 <SocialIcon icon="mdi:twitter" name="Twitter" className="text-white group-hover:text-primary transition-colors" />
                                 Twitter
                             </a>
-                            <a href="https://www.linkedin.com/in/sssenyange/" className="inline-flex group items-center gap-2 hover:text-primary transition-colors">
+                            <a href="https://www.linkedin.com/company/rednox-inc/" target="_blank" className="inline-flex group items-center gap-2 hover:text-primary transition-colors">
                                 <SocialIcon icon="mdi:linkedin" name="LinkedIn" className="text-white group-hover:text-primary transition-colors" />
                                 LinkedIn
+                            </a>
+                            <a href="https://www.facebook.com/profile.php?id=61581518734927" target="_blank" className="inline-flex group items-center gap-2 hover:text-primary transition-colors">
+                                <SocialIcon icon="mdi:facebook" name="Facebook" className="text-white group-hover:text-primary transition-colors" />
+                                Facebook
+                            </a>
+                            <a href="https://www.instagram.com/rednox_inc/" target="_blank" className="inline-flex group items-center gap-2 hover:text-primary transition-colors">
+                                <SocialIcon icon="mdi:instagram" name="Instagram" className="text-white group-hover:text-primary transition-colors" />
+                                Instagram
                             </a>
                         </div>
                     </div>

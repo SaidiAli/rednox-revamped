@@ -7,12 +7,6 @@ import Image from "next/image";
 import TechnologySection from "./table";
 import PageHero from "@/components/page-hero";
 import { useTranslations } from "next-intl";
-import { Metadata } from "next";
-
-export const metadata: Metadata = {
-    title: "Sensor Technology",
-    description: "Explore the science behind Rednox's high-performance sensors, from our Mixed-Potential Ceramic Stack for NOx to the NDIR Module for AgriNOx (N2O) detection.",
-}
 
 export default function Technology() {
     const t = useTranslations("Technology");

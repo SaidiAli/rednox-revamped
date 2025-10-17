@@ -1,7 +1,6 @@
-"use client"
+'use client'
 
 import type React from "react"
-
 import { useState } from "react"
 import { sendContactEmail } from "@/actions/email"
 import { motion } from "framer-motion"
@@ -17,12 +16,6 @@ import { TitleHighlight } from "@/components/title-highlight"
 import Footer from "@/components/Footer"
 import Map from "@/components/map"
 import { useTranslations } from "next-intl";
-import { Metadata } from "next";
-
-export const metadata: Metadata = {
-    title: "Contact Us",
-    description: "Get in touch with the Rednox team for inquiries about partnerships, careers, or our emissions sensor technology. Find our location and contact details.",
-}
 
 export default function ContactPage() {
     const t = useTranslations("Contact");

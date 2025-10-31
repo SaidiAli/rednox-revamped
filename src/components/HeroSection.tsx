@@ -45,7 +45,8 @@ const staggerButtonVariants = {
 
 export default function HeroSection() {
     const t = useTranslations("HomePage")
-    const flipWords = ["Agriculture", "HDE", "Gensets"]
+    // const flipWords = ["Agriculture", "HDE", "Gensets"];
+    const flipWords = [t("flipWords.agricultural"), t("flipWords.hde"), t("flipWords.gensets")]
     return (
         <section className="w-full overflow-hidden h-[60vh] md:h-[100vh]">
 
@@ -75,7 +76,7 @@ export default function HeroSection() {
                             href="/contact"
                             className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring bg-primary text-primary-foreground shadow hover:bg-primary/90 h-9 px-4 py-2 relative z-20"
                         >
-                            Schedule a pilot
+                            {t("scheduleButton")}
                             <ChevronRight className="ml-1 size-4" />
                         </Link>
                     </motion.div>

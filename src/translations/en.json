@@ -40,12 +40,37 @@
         }
     },
     "Footer": {
-        "caption": "At RedNOx, our goal is to develop effective, sustainable, and durable solutions to agricultural challenges. We have developed and/or on a roadmap to demonstrate low-cost, in-field sensors for greenhouse gas emissions from soil in agricultural settings."
+        "caption": "Leading the charge towards low to zero-emissions engines, factories and farmlands",
+        "socials": "Follow Updates on our Socials",
+        "links": {
+            "company": {
+                "title": "Company",
+                "link1": "Technology",
+                "link2": "Solutions",
+                "link3": "About Us"
+            },
+            "resourses": {
+                "title": "Resources",
+                "link1": "Terms of Service",
+                "link2": "Privacy Policy",
+                "link3": "Contact Us"
+            }
+        }
     },
     "HomePage": {
         "title": "Rednox",
         "heroHeadline": "Ultra-Sensitive Emissions Sensors for",
         "heroDescription": "Cut emissions, reduce compliance costs, and unlock operational savings—faster than regulatory deadlines",
+        "scheduleButton": "Schedule a pilot",
+        "flipWords": {
+            "agricultural": "Agriculture",
+            "hde": "HDE",
+            "gensets": "Gensets"
+        },
+        "sensorSpecifications": {
+            "title": "Sensor Specifications",
+            "description": "Our dual-sensor platform enables sub-ppm detection of NOx and ppb-level detection of N₂O—enabling earlier intervention, smarter controls, and lower emissions-related costs."
+        },
         "keyValueGrid": {
             "hde": "RedNOx™ HDE & Genset Sensor",
             "agrinox": "AgriNOx™ N₂O Sensor",
@@ -58,6 +83,10 @@
                 "ingress": "Ingress",
                 "lifetime": "Lifetime"
             }
+        },
+        "IntroSection": {
+            "statement": "develops ultra-sensitive gas sensors for heavy-duty engines, generators, and agriculture—delivering real-time NOₓ and N₂O data to help customers comply with EPA/CARB standards and improve profitability.",
+            "trustedBy": "Trusted by Our Partners"
         },
         "whyYouShouldCare": {
             "headline": "Why it matters",
@@ -73,15 +102,36 @@
             "solutions": {
                 "hde": {
                     "title": "Heavy-Duty Engines",
-                    "description": "Reduce SCR-related costs by 10–20% through early NOₓ detection. Avoid non-compliance penalties up to $50,000/engine."
+                    "description": "Reduce SCR-related costs by 10-20% through early NOₓ detection. Avoid non-compliance penalties up to $50,000/engine."
                 },
                 "genset": {
                     "title": "Gensets & Prime Power",
-                    "description": "Reduce fuel consumption by up to 8% and extend maintenance intervals by 15–30% via load-based NOₓ tuning."
+                    "description": "Reduce fuel consumption by up to 8% and extend maintenance intervals by 15-30% via load-based NOₓ tuning."
                 },
                 "agrinox": {
-                    "title": "AgriNOx – Precision N₂O Monitoring",
-                    "description": "Earn $20–$50/acre in voluntary carbon markets by validating nitrogen efficiency and reducing N₂O emissions."
+                    "title": "AgriNOx - Precision N₂O Monitoring",
+                    "description": "Earn $20-$50/acre in voluntary carbon markets by validating nitrogen efficiency and reducing N₂O emissions."
+                }
+            }
+        },
+        "benefitsTabs": {
+            "title1": "A product line-up",
+            "title2": "adapted to Your Needs",
+            "tabs": {
+                "oem": {
+                    "title": "OEMs",
+                    "heading": "Design for Tomorrow's Regulations, Today.",
+                    "description": "The RedNOx sensor provides the precision and durability you need to meet stringent emissions standards, including the 2027 U.S. EPA & CARB 0.02g/hp-hr NOx limit. With a detection range of 1-20 ppm and an accuracy of ±10%, you can maintain warranty margins and ensure your products are compliant. The plug-and-play ECU interface and J1939 data flow simplify integration into your engine systems. The heater-optimized ceramic stack reaches temperature in less than 30 seconds, allowing you to meet cold-start FTP requirements. Our solid-state construction is resistant to sulfur, oil aerosols, and thermal shock, ensuring a field life of over 10,000 hours. Each sensor is factory-calibrated against NIST-traceable blends, and the data is stored in memory, simplifying ISO 9001 and regulatory reporting"
+                },
+                "fleetManager": {
+                    "title": "Fleet Managers",
+                    "heading": "Optimize Your Fleet for Compliance and Profit.",
+                    "description": "The RedNOx sensor gives you continuous, accurate, real-time measurement of NOx emissions for every truck in your fleet. The cloud dashboard and API allow you to view per-truck NOx intensity, giving you the traceable data you need to prove your environmental leadership and meet regulations. By integrating the sensor into your fleet management system, you can use the data to trigger urea-dosing and regen only when needed, which can save up to 5% on Diesel Exhaust Fluid (DEF). Our remote telemetry features and self-diagnostics help you schedule service before a warning light even appears, ensuring better uptime. This proactive approach helps you avoid costly air-quality fines and greenhouse-gas penalties."
+                },
+                "farmManager": {
+                    "title": "Farm Managers",
+                    "heading": "Maximize Yields and Profits with Smarter Nitrogen Management.",
+                    "description": "With real-time, in-situ N2O data from AgriNOx, you can make smarter decisions about nitrogen application. Our sensors provide a real-time algorithm that translates N2O ppm to kilograms of nitrogen lost per hectare, a key metric for maximizing Nitrogen Use Efficiency (NUE). By knowing exactly when and where nitrogen is being lost, you can decrease overall nitrogen input, saving on fertilizer costs. Our sensors also allow for the timed use of nitrogen inhibitors, further reducing inputs and improving the effectiveness of your nitrogen. This precision agriculture approach not only boosts your bottom line but also transforms nitrogen savings into verifiable carbon credits, proving your farm's sustainability."
                 }
             }
         },
@@ -103,7 +153,7 @@
             "headline": "Our Fix",
             "fixes": {
                 "1": {
-                    "title": "1 – 20 ppm detection with ±10 % error",
+                    "title": "1 - 20 ppm detection with ±10 % error",
                     "description": "This keeps you inside warranty margins."
                 },
                 "2": {
@@ -158,7 +208,7 @@
         }
     },
     "AgriNOx": {
-        "title": "AgriNOx – Precision N₂O Monitoring",
+        "title": "AgriNOx - Precision N₂O Monitoring",
         "description": "Ultra-sensitive, field-ready N₂O monitoring that helps growers optimize nitrogen inputs, cut input costs, and document measurable sustainability gains. Now in active pilots with a multi-thousand-acre Central Valley grower.",
         "downloadButton": "Download spec sheet",
         "valuePropositionSection": {
@@ -333,7 +383,7 @@
                 }
             }
         },
-        "investors": {
+        "bod": {
             "title": "Investors",
             "members": {
                 "wayne": {
@@ -344,5 +394,11 @@
                 }
             }
         }
+    },
+    "investors": {
+        "title": "Investors",
+        "rev1": "Rev1 Ventures is a venture capital firm based in Columbus, Ohio. It focuses on investing in early-stage, scalable, and tech-enabled businesses in various sectors, including advanced materials and alternative energy. As a venture development studio, it helps entrepreneurs and corporations accelerate innovation.",
+        "soundboard": "SoundBoard Venture Fund is an early-stage venture capital firm based in Montclair, New Jersey. It uses a collaborative approach, leveraging the diverse perspectives of its investors to evaluate and make investment decisions. The firm focuses on scalable, tech-enabled businesses and places a strong emphasis on assessing the leadership team of the companies they invest in.",
+        "nyg": "Nihon Yamamura Glass Co., Ltd. is a Japanese company that manufactures and sells glass bottles, plastic containers, and powdered glass. Founded in 1914, the company also operates in the logistics and 'new glass' sectors. It is a strategic partner for RedNOx in Yokohama, Japan."
     }
 }

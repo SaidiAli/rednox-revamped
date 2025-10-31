@@ -1,8 +1,11 @@
 import Link from "next/link";
 import SocialIcon from "./ui/social-icon";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 export default function Footer({ className }: { className?: string }) {
+    const t = useTranslations("Footer");
+
     return (
         <footer className={`w-full bg-rBlue backdrop-blur-sm ${className}`}>
             <div className="container flex flex-col gap-6 md:gap-8 px-4 py-8 md:py-10 lg:py-16">
@@ -12,9 +15,9 @@ export default function Footer({ className }: { className?: string }) {
                             <Image src="/logo.png" alt="" width={100} height={100} />
                         </Link>
                         <p className="text-white text-sm">
-                            Leading the charge towards low to zero-emissions engines, factories and farmlands
+                            {t("caption")}
                         </p>
-                        
+
                         <div className="flex gap-2 md:gap-4 mt-6 md:mt-8">
                             <Image src="https://res.cloudinary.com/dvixlnczm/image/upload/v1754921168/Untitled-2_w5mou1.png" alt="" width={80} height={80} className="md:w-[100px] md:h-[100px]" />
                             <Image src="https://res.cloudinary.com/dvixlnczm/image/upload/v1754921168/Untitled-1_zftd0j.png" alt="" width={80} height={80} className="md:w-[100px] md:h-[100px]" />
@@ -22,31 +25,31 @@ export default function Footer({ className }: { className?: string }) {
                     </div>
                     <div className="flex flex-col md:flex-row justify-start md:justify-center gap-8 md:gap-16 w-full md:basis-2/3">
                         <div className="flex flex-col gap-3 md:gap-4">
-                            <p className="text-white text-sm font-semibold">Company</p>
+                            <p className="text-white text-sm font-semibold">{t("links.company.title")}</p>
                             <Link href="/technology" className="hover:text-primary transition-colors hover:underline">
-                                Technology
+                                {t("links.company.link1")}
                             </Link>
                             <Link href="/#solutions" className="hover:text-primary transition-colors hover:underline">
-                                Solutions
+                                {t("links.company.link2")}
                             </Link>
                             <Link href="/about" className="hover:text-primary transition-colors hover:underline">
-                                About Us
+                                {t("links.company.link3")}
                             </Link>
                         </div>
                         <div className="flex flex-col gap-3 md:gap-4">
-                            <p className="text-white text-sm font-semibold">Resources</p>
+                            <p className="text-white text-sm font-semibold">{t("links.resourses.title")}</p>
                             <Link href="#" className="hover:text-primary transition-colors hover:underline">
-                                Terms of Service
+                                {t("links.resourses.link1")}
                             </Link>
                             <Link href="#" className="hover:text-primary transition-colors hover:underline">
-                                Privacy policy
+                                {t("links.resourses.link2")}
                             </Link>
                             <Link href="/contact" className="hover:text-primary transition-colors hover:underline">
-                                Contact Us
+                                {t("links.resourses.link3")}
                             </Link>
                         </div>
                         <div className="flex flex-col gap-3 md:gap-4">
-                            <p className="text-white text-sm font-semibold">Follow Updates on our Socials</p>
+                            <p className="text-white text-sm font-semibold">{t("socials")}</p>
                             <a href="https://x.com/RedNOxInc" target="_blank" className="inline-flex group items-center gap-2 hover:text-primary transition-colors">
                                 <SocialIcon icon="mdi:twitter" name="Twitter" className="text-white group-hover:text-primary transition-colors" />
                                 Twitter

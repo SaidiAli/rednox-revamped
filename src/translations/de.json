@@ -40,12 +40,37 @@
         }
     },
     "Footer": {
-        "caption": "Bei RedNOx ist es unser Ziel, effektive, nachhaltige und dauerhafte Lösungen für landwirtschaftliche Herausforderungen zu entwickeln. Wir haben kostengünstige Feldsensoren für Treibhausgasemissionen aus dem Boden in landwirtschaftlichen Umgebungen entwickelt und/oder haben einen Fahrplan, um diese zu demonstrieren."
+        "caption": "Führend auf dem Weg zu emissionsarmen bis emissionsfreien Motoren, Fabriken und Agrarflächen",
+        "socials": "Folgen Sie uns auf Social Media für Updates",
+        "links": {
+            "company": {
+                "title": "Unternehmen",
+                "link1": "Technologie",
+                "link2": "Lösungen",
+                "link3": "Über uns"
+            },
+            "resourses": {
+                "title": "Ressourcen",
+                "link1": "Nutzungsbedingungen",
+                "link2": "Datenschutzrichtlinie",
+                "link3": "Kontakt"
+            }
+        }
     },
     "HomePage": {
         "title": "Rednox",
         "heroHeadline": "Hochempfindliche Emissionssensoren für",
-        "heroDescription": "Emissionen senken, Compliance-Kosten reduzieren und betriebliche Einsparungen freisetzen – schneller als regulatorische Fristen.",
+        "heroDescription": "Emissionen senken, Compliance-Kosten reduzieren und betriebliche Einsparungen freisetzen - schneller als regulatorische Fristen.",
+        "scheduleButton": "Pilotprojekt planen",
+        "flipWords": {
+            "agricultural": "Landwirtschaft",
+            "hde": "HDE",
+            "gensets": "Stromaggregate"
+        },
+        "sensorSpecifications": {
+            "title": "Sensorspezifikationen",
+            "description": "Unsere Dual-Sensor-Plattform ermöglicht den Nachweis von $NOx$ im Sub-ppm-Bereich und von $N₂O$ im ppb-Bereich, was ein früheres Eingreifen, intelligentere Steuerungen und niedrigere emissionsbedingte Kosten ermöglicht."
+        },
         "keyValueGrid": {
             "hde": "RedNOx™ HDE & Genset Sensor",
             "agrinox": "AgriNOx™ N₂O Sensor",
@@ -58,6 +83,10 @@
                 "ingress": "Eindringschutz",
                 "lifetime": "Lebensdauer"
             }
+        },
+        "IntroSection": {
+            "statement": "entwickelt hochempfindliche Gassensoren für Hochleistungsmotoren, Generatoren und die Landwirtschaft. Diese liefern Echtzeit-Daten zu NOₓ und N₂O und helfen Kunden, die EPA/CARB-Standards einzuhalten und ihre Rentabilität zu steigern.",
+            "trustedBy": "Unsere Partner"
         },
         "whyYouShouldCare": {
             "headline": "Warum Sie sich interessieren sollten",
@@ -73,15 +102,36 @@
             "solutions": {
                 "hde": {
                     "title": "Hochleistungsmotoren",
-                    "description": "Reduzieren Sie die SCR-bezogenen Kosten um 10–20 % durch frühzeitige NOₓ-Erkennung. Vermeiden Sie Nichteinhaltungsstrafen von bis zu 50.000 US-Dollar pro Motor."
+                    "description": "Reduzieren Sie die SCR-bezogenen Kosten um 10-20 % durch frühzeitige NOₓ-Erkennung. Vermeiden Sie Nichteinhaltungsstrafen von bis zu 50.000 US-Dollar pro Motor."
                 },
                 "genset": {
                     "title": "Stromaggregate & Primärstrom",
-                    "description": "Reduzieren Sie den Kraftstoffverbrauch um bis zu 8 % und verlängern Sie die Wartungsintervalle um 15–30 % durch lastbasierte NOₓ-Abstimmung."
+                    "description": "Reduzieren Sie den Kraftstoffverbrauch um bis zu 8 % und verlängern Sie die Wartungsintervalle um 15-30 % durch lastbasierte NOₓ-Abstimmung."
                 },
                 "agrinox": {
-                    "title": "AgriNOx – Präzise N₂O-Überwachung",
-                    "description": "Validieren Sie die Stickstoffeffizienz und reduzieren Sie N₂O-Emissionen, um 20–50 US-Dollar pro Acre auf freiwilligen Kohlenstoffmärkten zu verdienen."
+                    "title": "AgriNOx - Präzise N₂O-Überwachung",
+                    "description": "Validieren Sie die Stickstoffeffizienz und reduzieren Sie N₂O-Emissionen, um 20-50 US-Dollar pro Acre auf freiwilligen Kohlenstoffmärkten zu verdienen."
+                }
+            }
+        },
+        "benefitsTabs": {
+            "title1": "Eine Produktpalette,",
+            "title2": "die Ihren Anforderungen entspricht",
+            "tabs": {
+                "oem": {
+                    "title": "OEMs",
+                    "heading": "Schon heute für die Vorschriften von morgen entwickeln.",
+                    "description": "Der RedNOx-Sensor bietet die Präzision und Langlebigkeit, die Sie zur Einhaltung strenger Emissionsnormen benötigen, einschließlich des U.S. EPA & CARB $NOx$-Grenzwerts von 0,02 g/hp-hr für 2027. Mit einem Erfassungsbereich von 1–20 ppm und einer Genauigkeit von ±10 % können Sie Gewährleistungsmargen aufrechterhalten und die Konformität Ihrer Produkte sicherstellen. Die Plug-and-Play-ECU-Schnittstelle und der J1939-Datenfluss vereinfachen die Integration in Ihre Motorsysteme. Der heizoptimierte Keramikstapel erreicht die Betriebstemperatur in weniger als 30 Sekunden und ermöglicht so die Einhaltung der Cold-Start-FTP-Anforderungen. Unsere Solid-State-Konstruktion ist beständig gegen Schwefel, Ölaerosole und Temperaturschocks und gewährleistet eine Lebensdauer von über 10.000 Betriebsstunden. Jeder Sensor wird werkseitig mit NIST-rückverfolgbaren Mischungen kalibriert und die Daten werden im Speicher abgelegt, was die ISO 9001- und regulatorische Berichterstattung vereinfacht."
+                },
+                "fleetManager": {
+                    "title": "Flottenmanager",
+                    "heading": "Optimieren Sie Ihre Flotte für Compliance und Rentabilität.",
+                    "description": "Der RedNOx-Sensor ermöglicht eine kontinuierliche, genaue Echtzeitmessung der $NOx$-Emissionen für jeden Lkw in Ihrer Flotte. Das Cloud-Dashboard und die API ermöglichen es Ihnen, die $NOx$-Intensität pro Lkw anzuzeigen und liefern Ihnen die rückverfolgbaren Daten, die Sie benötigen, um Ihre Führungsrolle im Umweltschutz zu belegen und Vorschriften einzuhalten. Durch die Integration des Sensors in Ihr Flottenmanagementsystem können Sie die Daten nutzen, um die Harnstoffdosierung und Regeneration nur bei Bedarf auszulösen, was bis zu 5 % an Diesel-Abgasflüssigkeit (DEF) einsparen kann. Unsere Ferndiagnosefunktionen und die Selbstdiagnose helfen Ihnen, Wartungsarbeiten zu planen, bevor eine Warnleuchte aufleuchtet, und sorgen so für eine bessere Betriebszeit. Dieser proaktive Ansatz hilft Ihnen, kostspielige Geldstrafen für Luftqualität und Treibhausgas-Strafen zu vermeiden."
+                },
+                "farmManager": {
+                    "title": "Betriebsleiter",
+                    "heading": "Maximieren Sie Erträge und Gewinne durch intelligenteres Stickstoffmanagement.",
+                    "description": "Mit Echtzeit-In-situ-$N₂O$-Daten von AgriNOx können Sie intelligentere Entscheidungen über die Stickstoffanwendung treffen. Unsere Sensoren bieten einen Echtzeit-Algorithmus, der $N₂O$-ppm in Kilogramm Stickstoffverlust pro Hektar umrechnet – eine Schlüsselmetrik zur Maximierung der Stickstoffnutzungseffizienz (NUE). Indem Sie genau wissen, wann und wo Stickstoff verloren geht, können Sie den Stickstoffeintrag insgesamt reduzieren und Düngemittelkosten sparen. Unsere Sensoren ermöglichen auch den zeitlich abgestimmten Einsatz von Stickstoffinhibitoren, was den Einsatz weiter reduziert und die Wirksamkeit Ihres Stickstoffs verbessert. Dieser Ansatz der Präzisionslandwirtschaft steigert nicht nur Ihren Gewinn, sondern wandelt auch Stickstoffeinsparungen in überprüfbare Kohlenstoffgutschriften (Carbon Credits) um und belegt so die Nachhaltigkeit Ihres Betriebs."
                 }
             }
         },
@@ -158,7 +208,7 @@
         }
     },
     "AgriNOx": {
-        "title": "AgriNOx – Präzise N₂O-Überwachung",
+        "title": "AgriNOx - Präzise N₂O-Überwachung",
         "description": "Präzise N₂O-Überwachung für landwirtschaftliche Geräte, um die Einhaltung der Tier 4 Final-Vorschriften zu gewährleisten und die Kraftstoffkosten zu senken.",
         "downloadButton": "Datenblatt herunterladen",
         "valuePropositionSection": {
@@ -183,6 +233,7 @@
             }
         },
         "workflowSection": {
+            "title": "Pilot-Workflow",
             "1": "Sonde und LoRa-Gateway in < 30 Minuten installieren.",
             "2": "Betrieb nutzt Live N₂O + Wetter, um Seitenstreifen zu optimieren.",
             "3": "Verifizierte Gutschrift wird automatisch bei der Ernte generiert."
@@ -251,6 +302,54 @@
                 "bio": "Ein weltweit anerkannter Experte für Sensortechnologie. Er ist ein Systemtechnikexperte bei Makel Engineering."
             }
         }
+    },
+    "Leadership": {
+        "title": "Führungsteam",
+        "management": {
+            "title": "Management",
+            "members": {
+                "solomon": {
+                    "bio": "Geboren in Uganda und als Kriegsflüchtling in Kenia aufgewachsen. Er war Mitbegründer von SpiroSure, das 2020 für 100 Millionen Dollar an ein multinationales Unternehmen für Atemwegsprodukte verkauft wurde."
+                },
+                "dutta": {
+                    "bio": "Ein weltweit führender Experte für Sensortechnologie. Er entwickelte Konzepte für die RedNOx-Technologie in seinem Labor an der Ohio State University."
+                },
+                "markel": {
+                    "bio": "Ein weltweit führender Experte für Sensortechnologie. Er ist Experte für Systemtechnik bei Makel Engineering."
+                }
+            }
+        },
+        "advisors": {
+            "title": "Beirat",
+            "members": {
+                "peter": {
+                    "bio": "Ein erfahrener Unternehmer in der Tech-Branche. Er verfügt über mehr als 25 Jahre Erfahrung in der Architektur und dem Aufbau von Softwaresystemen und ist Experte für kundenzentrierte Lösungen."
+                },
+                "matt": {
+                    "bio": "Gründungsmitglied des Farmers Business Network, das zu einem 4-Milliarden-Dollar-Unternehmen heranwuchs. Er leitete die Bereiche Data Science, Evaluierung neuer Technologien und Investitionen des Unternehmens."
+                },
+                "kurt": {
+                    "bio": "Baute als GM das Geschäft mit landwirtschaftlichen Betriebsmitteln von FBN auf einen Jahresumsatz von 70 Mio. $ aus. Er war Mitbegründer von Graphyte zur Kohlenstoffentfernung mittels Biomasse und ist COO bei ProducePay, einem Fintech-Unternehmen für Agrarproduzenten."
+                }
+            }
+        },
+        "bod": {
+            "title": "Investoren",
+            "members": {
+                "wayne": {
+                    "bio": "Wayne ist ein erfahrener Seed-Stage-Investor mit einer Erfolgsbilanz bei der Förderung von Start-ups durch Beratung und Risikokapital. Er war an über 200 Investitionen beteiligt, saß in über 50 Aufsichtsräten und begleitete mehr als 60 Unternehmen bei Exits. Während seiner gesamten Laufbahn hat er seine Leidenschaft und Begeisterung dafür bewahrt, Unternehmern dabei zu helfen, die Welt zu verändern."
+                },
+                "noboru": {
+                    "bio": "Kam 1991 zu Nihon Yamamura Glass und hat seitdem in verschiedenen Abteilungen und Geschäftsbereichen in Japan gearbeitet. Zudem verfügt er über fast 10 Jahre Erfahrung durch Einsätze in den Tochtergesellschaften der Yamamura-Gruppe in China und den USA. Erfahren in glasbezogenen technischen Angelegenheiten, Marketing, Finanzen, Recht, Unternehmensführung und internationalem Geschäft."
+                }
+            }
+        }
+    },
+    "investors": {
+        "title": "Investoren",
+        "rev1": "Rev1 Ventures ist eine Risikokapitalgesellschaft mit Sitz in Columbus, Ohio. Sie konzentriert sich auf Investitionen in skalierbare, technologiegestützte Unternehmen in der Frühphase in verschiedenen Sektoren, einschließlich fortschrittlicher Materialien und alternativer Energien. Als „Venture Development Studio“ hilft es Unternehmern und Konzernen, Innovationen zu beschleunigen.",
+        "soundboard": "SoundBoard Venture Fund ist eine Frühphasen-Risikokapitalgesellschaft mit Sitz in Montclair, New Jersey. Sie verfolgt einen kollaborativen Ansatz und nutzt die vielfältigen Perspektiven ihrer Investoren, um Investitionsentscheidungen zu bewerten und zu treffen. Die Firma konzentriert sich auf skalierbare, technologiegestützte Unternehmen und legt großen Wert auf die Beurteilung des Führungsteams der Unternehmen, in die sie investiert.",
+        "nyg": "Nihon Yamamura Glass Co., Ltd. ist ein japanisches Unternehmen, das Glasflaschen, Kunststoffbehälter und Glaspulver herstellt und vertreibt. Das 1914 gegründete Unternehmen ist auch in den Bereichen Logistik und „Neues Glas“ (New Glass) tätig. Es ist ein strategischer Partner für RedNOx in Yokohama, Japan."
     },
     "PressRelease": {
         "title": "Pressemitteilung"

@@ -1,12 +1,14 @@
 import { ArrowRight } from "lucide-react";
 import SectionTitle from "./ui/SectionTitle";
 import Image from "next/image";
-import { pressData } from "@/lib/data";
+import { getPressData } from "@/lib/data";
 import { useTranslations, useLocale } from "next-intl";
 
 export default function PressReleases() {
     const t = useTranslations("HomePage")
     const locale = useLocale()
+    const pressData = getPressData(locale);
+
     return (
         <section id="press-releases" className="w-full py-20 md:py-32">
             <div className="container px-4 md:px-6 flex flex-col gap-6 items-center">

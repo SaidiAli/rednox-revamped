@@ -146,103 +146,302 @@ export const investors = (t: AboutTranslations): TeamMember[] => [
     }
 ]
 
-export const newsData: NewsData[] = [
-    {
-        id: 1,
-        title: "RedNOx Awarded USDA NIFA SBIR Phase II Grant to Drive Innovation in Agricultural Emissions Reduction",
-        excerpt: "We are thrilled to announce that RedNOx has been awarded a USDA NIFA SBIR Phase II grant of $650,000 as part of a $26.8 million investment to support groundbreaking, small business-led innovations in agriculture. This funding will enable us to advance our N₂O and NOx sensing technologies, specifically aimed at reducing emissions of nitrous oxide and NOx from both synthetic and microbial fertilizers.",
-        text: "We are thrilled to announce that RedNOx has been awarded a USDA NIFA SBIR Phase II grant of $650,000 as part of a $26.8 million investment to support groundbreaking, small business-led innovations in agriculture. This funding will enable us to advance our N₂O and NOx sensing technologies, specifically aimed at reducing emissions of nitrous oxide and NOx from both synthetic and microbial fertilizers. This Phase II award underscores the importance of cutting-edge research in addressing critical environmental challenges and brings our technology closer to commercialization. With USDA NIFA’s support, RedNOx will continue its mission to enhance agricultural productivity, benefit local communities, and contribute to a cleaner, healthier environment.",
-        date: "2024-10-31",
-        link: "https://content.govdelivery.com/accounts/USDANIFA/bulletins/3bf56f8"
-    },
-    {
-        id: 2,
-        title: "RedNOx Signs MOU with One of the World's Largest Manufacturers of Hydrogen, Diesel, and Natural Gas Engines",
-        excerpt: "RedNOx also Secures a Purchase Order from Cummins Inc. for Next-Generation NOx Sensors.",
-        date: "2023-09-04",
-        link: "https://rednoxinc.com/wp-content/uploads/2023/09/Cummins-Press-Release_August-2023_v2.pdf"
-    },
-    {
-        id: 3,
-        title: "RedNOx Revolution: Unraveling the Next Big Breakthrough in Emissions Reduction - Exclusively on Chemical and Engineering News",
-        excerpt: "RedNOx Revolution: Unraveling the Next Big Breakthrough in Emissions Reduction - Exclusively on Chemical and Engineering News",
-        date: "2023-08-21",
-        link: "https://cen.acs.org/food/agriculture/USDA-funds-food-agriculture-start/101/i29"
-    },
-    {
-        id: 4,
-        title: "RedNOx Awarded SBIR Phase I for its Innovative Greenhouse Gas Measurement Platform",
-        excerpt: "FREMONT, Calif., August 28, 2023 (GLOBE NEWSWIRE) — RedNOx Inc., a trailblazer in environmental solid-state sensing technology, is delighted to announce its recent achievement in securing a Phase I Small Business Innovation Research (SBIR) award for its groundbreaking atmosphere and soil greenhouse gas measurement platform.",
-        date: "2023-08-28",
-        link: "https://rednoxinc.com/wp-content/uploads/2023/08/USDA-Press-Release_August-2023.pdf"
-    },
-    {
-        id: 5,
-        title: "REDNOX CLOSES FINANCING TO CREATE THE NEXT GENERATION NOx SENSORS FOR LOW TO ZERO EMISSIONS APPLICATIONS",
-        excerpt: "RedNOx Inc announced today its launch and the completion of seed financing with Rev1 Ventures Partners.  RedNOx launches with a technology license from OSU to scale solid-state NOx and CO2 sensor technology for clean energy and low to zero emissions vehicles.  RedNOx’s LoNOx sensor technology points to a leap in performance and reliability, with parts-per-billion detection capabilities and long-term durability.",
-        date: "2022-07-01",
-        link: "#"
-    }
-]
+export const newsData: Record<string, NewsData[]> = {
+    en: [
+        {
+            id: 1,
+            title: "RedNOx Awarded USDA NIFA SBIR Phase II Grant to Drive Innovation in Agricultural Emissions Reduction",
+            excerpt: "We are thrilled to announce that RedNOx has been awarded a USDA NIFA SBIR Phase II grant of $650,000 as part of a $26.8 million investment to support groundbreaking, small business-led innovations in agriculture. This funding will enable us to advance our N₂O and NOx sensing technologies, specifically aimed at reducing emissions of nitrous oxide and NOx from both synthetic and microbial fertilizers.",
+            text: "We are thrilled to announce that RedNOx has been awarded a USDA NIFA SBIR Phase II grant of $650,000 as part of a $26.8 million investment to support groundbreaking, small business-led innovations in agriculture. This funding will enable us to advance our N₂O and NOx sensing technologies, specifically aimed at reducing emissions of nitrous oxide and NOx from both synthetic and microbial fertilizers. This Phase II award underscores the importance of cutting-edge research in addressing critical environmental challenges and brings our technology closer to commercialization. With USDA NIFA's support, RedNOx will continue its mission to enhance agricultural productivity, benefit local communities, and contribute to a cleaner, healthier environment.",
+            date: "2024-10-31",
+            link: "https://content.govdelivery.com/accounts/USDANIFA/bulletins/3bf56f8"
+        },
+        {
+            id: 2,
+            title: "RedNOx Signs MOU with One of the World's Largest Manufacturers of Hydrogen, Diesel, and Natural Gas Engines",
+            excerpt: "RedNOx also Secures a Purchase Order from Cummins Inc. for Next-Generation NOx Sensors.",
+            date: "2023-09-04",
+            link: "https://rednoxinc.com/wp-content/uploads/2023/09/Cummins-Press-Release_August-2023_v2.pdf"
+        },
+        {
+            id: 3,
+            title: "RedNOx Revolution: Unraveling the Next Big Breakthrough in Emissions Reduction - Exclusively on Chemical and Engineering News",
+            excerpt: "RedNOx Revolution: Unraveling the Next Big Breakthrough in Emissions Reduction - Exclusively on Chemical and Engineering News",
+            date: "2023-08-21",
+            link: "https://cen.acs.org/food/agriculture/USDA-funds-food-agriculture-start/101/i29"
+        },
+        {
+            id: 4,
+            title: "RedNOx Awarded SBIR Phase I for its Innovative Greenhouse Gas Measurement Platform",
+            excerpt: "FREMONT, Calif., August 28, 2023 (GLOBE NEWSWIRE) — RedNOx Inc., a trailblazer in environmental solid-state sensing technology, is delighted to announce its recent achievement in securing a Phase I Small Business Innovation Research (SBIR) award for its groundbreaking atmosphere and soil greenhouse gas measurement platform.",
+            date: "2023-08-28",
+            link: "https://rednoxinc.com/wp-content/uploads/2023/08/USDA-Press-Release_August-2023.pdf"
+        },
+        {
+            id: 5,
+            title: "REDNOX CLOSES FINANCING TO CREATE THE NEXT GENERATION NOx SENSORS FOR LOW TO ZERO EMISSIONS APPLICATIONS",
+            excerpt: "RedNOx Inc announced today its launch and the completion of seed financing with Rev1 Ventures Partners.  RedNOx launches with a technology license from OSU to scale solid-state NOx and CO2 sensor technology for clean energy and low to zero emissions vehicles.  RedNOx's LoNOx sensor technology points to a leap in performance and reliability, with parts-per-billion detection capabilities and long-term durability.",
+            date: "2022-07-01",
+            link: "#"
+        }
+    ],
+    de: [
+        {
+            id: 1,
+            title: "RedNOx erhält USDA NIFA SBIR Phase II-Förderung zur Förderung von Innovationen bei der Reduzierung landwirtschaftlicher Emissionen",
+            excerpt: "Wir freuen uns bekannt zu geben, dass RedNOx im Rahmen einer Investition von 26,8 Millionen Dollar zur Unterstützung bahnbrechender, von kleinen Unternehmen geführter Innovationen in der Landwirtschaft eine USDA NIFA SBIR Phase II-Förderung in Höhe von 650.000 Dollar erhalten hat. Diese Finanzierung ermöglicht es uns, unsere N₂O- und NOx-Sensortechnologien weiterzuentwickeln, die speziell auf die Reduzierung von Distickstoffoxid- und NOx-Emissionen aus synthetischen und mikrobiellen Düngemitteln ausgerichtet sind.",
+            text: "Wir freuen uns bekannt zu geben, dass RedNOx im Rahmen einer Investition von 26,8 Millionen Dollar zur Unterstützung bahnbrechender, von kleinen Unternehmen geführter Innovationen in der Landwirtschaft eine USDA NIFA SBIR Phase II-Förderung in Höhe von 650.000 Dollar erhalten hat. Diese Finanzierung ermöglicht es uns, unsere N₂O- und NOx-Sensortechnologien weiterzuentwickeln, die speziell auf die Reduzierung von Distickstoffoxid- und NOx-Emissionen aus synthetischen und mikrobiellen Düngemitteln ausgerichtet sind. Diese Phase II-Auszeichnung unterstreicht die Bedeutung modernster Forschung bei der Bewältigung kritischer Umweltherausforderungen und bringt unsere Technologie der Kommerzialisierung näher. Mit der Unterstützung von USDA NIFA wird RedNOx seine Mission fortsetzen, die landwirtschaftliche Produktivität zu steigern, lokale Gemeinschaften zu unterstützen und zu einer saubereren, gesünderen Umwelt beizutragen.",
+            date: "2024-10-31",
+            link: "https://content.govdelivery.com/accounts/USDANIFA/bulletins/3bf56f8"
+        },
+        {
+            id: 2,
+            title: "RedNOx unterzeichnet Absichtserklärung mit einem der weltweit größten Hersteller von Wasserstoff-, Diesel- und Erdgasmotoren",
+            excerpt: "RedNOx sichert sich auch eine Bestellung von Cummins Inc. für NOx-Sensoren der nächsten Generation.",
+            date: "2023-09-04",
+            link: "https://rednoxinc.com/wp-content/uploads/2023/09/Cummins-Press-Release_August-2023_v2.pdf"
+        },
+        {
+            id: 3,
+            title: "RedNOx Revolution: Der nächste große Durchbruch bei der Emissionsreduzierung - Exklusiv in Chemical and Engineering News",
+            excerpt: "RedNOx Revolution: Der nächste große Durchbruch bei der Emissionsreduzierung - Exklusiv in Chemical and Engineering News",
+            date: "2023-08-21",
+            link: "https://cen.acs.org/food/agriculture/USDA-funds-food-agriculture-start/101/i29"
+        },
+        {
+            id: 4,
+            title: "RedNOx erhält SBIR Phase I für seine innovative Treibhausgas-Messplattform",
+            excerpt: "FREMONT, Kalifornien, 28. August 2023 (GLOBE NEWSWIRE) — RedNOx Inc., ein Vorreiter in der umweltfreundlichen Festkörper-Sensortechnologie, freut sich, die kürzliche Auszeichnung mit einem Phase I Small Business Innovation Research (SBIR)-Award für seine bahnbrechende Atmosphären- und Boden-Treibhausgas-Messplattform bekannt zu geben.",
+            date: "2023-08-28",
+            link: "https://rednoxinc.com/wp-content/uploads/2023/08/USDA-Press-Release_August-2023.pdf"
+        },
+        {
+            id: 5,
+            title: "REDNOX SCHLIESST FINANZIERUNG ZUR ENTWICKLUNG DER NÄCHSTEN GENERATION VON NOx-SENSOREN FÜR NIEDRIG- BIS NULL-EMISSIONS-ANWENDUNGEN AB",
+            excerpt: "RedNOx Inc. gab heute seine Gründung und den Abschluss der Seed-Finanzierung mit Rev1 Ventures Partners bekannt. RedNOx startet mit einer Technologielizenz von OSU zur Skalierung der Festkörper-NOx- und CO2-Sensortechnologie für saubere Energie und Fahrzeuge mit niedrigen bis null Emissionen. Die LoNOx-Sensortechnologie von RedNOx deutet auf einen Leistungs- und Zuverlässigkeitssprung hin, mit Erkennungsfähigkeiten im Teile-pro-Milliarde-Bereich und langfristiger Haltbarkeit.",
+            date: "2022-07-01",
+            link: "#"
+        }
+    ],
+    ja: [
+        {
+            id: 1,
+            title: "RedNOxが農業排出削減のイノベーション推進のためUSDA NIFA SBIRフェーズII助成金を獲得",
+            excerpt: "農業における画期的な中小企業主導のイノベーションを支援する2,680万ドルの投資の一環として、RedNOxが65万ドルのUSDA NIFA SBIRフェーズII助成金を獲得したことを発表できることを嬉しく思います。この資金により、合成および微生物肥料からの亜酸化窒素およびNOx排出の削減を特に目的とした当社のN₂OおよびNOxセンシング技術を進化させることができます。",
+            text: "農業における画期的な中小企業主導のイノベーションを支援する2,680万ドルの投資の一環として、RedNOxが65万ドルのUSDA NIFA SBIRフェーズII助成金を獲得したことを発表できることを嬉しく思います。この資金により、合成および微生物肥料からの亜酸化窒素およびNOx排出の削減を特に目的とした当社のN₂OおよびNOxセンシング技術を進化させることができます。このフェーズII賞は、重要な環境課題への対処における最先端研究の重要性を強調し、当社の技術を商業化に近づけます。USDA NIFAの支援により、RedNOxは農業生産性の向上、地域社会への貢献、よりクリーンで健康的な環境への貢献という使命を継続します。",
+            date: "2024-10-31",
+            link: "https://content.govdelivery.com/accounts/USDANIFA/bulletins/3bf56f8"
+        },
+        {
+            id: 2,
+            title: "RedNOxが世界最大級の水素、ディーゼル、天然ガスエンジンメーカーの1社と覚書を締結",
+            excerpt: "RedNOxはまた、次世代NOxセンサーについてCummins Inc.から発注書を確保しました。",
+            date: "2023-09-04",
+            link: "https://rednoxinc.com/wp-content/uploads/2023/09/Cummins-Press-Release_August-2023_v2.pdf"
+        },
+        {
+            id: 3,
+            title: "RedNOx革命：排出削減における次の大きな突破口を解き明かす - Chemical and Engineering Newsで独占公開",
+            excerpt: "RedNOx革命：排出削減における次の大きな突破口を解き明かす - Chemical and Engineering Newsで独占公開",
+            date: "2023-08-21",
+            link: "https://cen.acs.org/food/agriculture/USDA-funds-food-agriculture-start/101/i29"
+        },
+        {
+            id: 4,
+            title: "RedNOxが画期的な温室効果ガス測定プラットフォームでSBIRフェーズIを受賞",
+            excerpt: "カリフォルニア州フリーモント、2023年8月28日（GLOBE NEWSWIRE）— 環境固体センシング技術のパイオニアであるRedNOx Inc.は、画期的な大気および土壌温室効果ガス測定プラットフォームでフェーズI中小企業技術革新研究（SBIR）賞を獲得したことを発表できることを嬉しく思います。",
+            date: "2023-08-28",
+            link: "https://rednoxinc.com/wp-content/uploads/2023/08/USDA-Press-Release_August-2023.pdf"
+        },
+        {
+            id: 5,
+            title: "REDNOXが低排出から無排出アプリケーション向け次世代NOxセンサー開発のための資金調達を完了",
+            excerpt: "RedNOx Inc.は本日、Rev1 Ventures Partnersとのシード資金調達の完了と立ち上げを発表しました。RedNOxは、クリーンエネルギーおよび低排出から無排出車両向けの固体NOxおよびCO2センサー技術を拡大するためのOSUからの技術ライセンスで開始します。RedNOxのLoNOxセンサー技術は、10億分の1の検出能力と長期耐久性により、性能と信頼性の飛躍を示しています。",
+            date: "2022-07-01",
+            link: "#"
+        }
+    ]
+}
 
-export const pressData: PressData[] = [
-    {
-        id: 1,
-        title: "RedNOx Partners with Nihon Yamamura Glass, Secures $2M to Revolutionize Emissions Monitoring",
-        excerpt: "We're excited to announce that RedNOx Inc. has expanded its partnership with Nihon Yamamura Glass (NYG), a leading Japanese ceramics and glass manufacturer.",
-        date: "2025-10-08",
-        slug: "strategic-business-partnership-between-nihon-yamamura-glass-co-ltd-and-rednox",
-        image: "/nihon.jpg"
-    },
-    {
-        id: 2,
-        title: "RedNOx Awarded USDA NIFA SBIR Phase II Grant to Drive Innovation in Agricultural Emissions Reduction",
-        excerpt: "We are thrilled to announce that RedNOx has been awarded a USDA NIFA SBIR Phase II grant of $650,000 as part of a $26.8 million investment to support groundbreaking, small business-led innovations in agriculture.",
-        date: "2024-10-31",
-        slug: "rednox-awarded-usda-nifa-sbir-phase-ii-grant-to-drive-innovation-in-agricultural-emissions-reduction",
-        image: "/us.jpg"
-    },
-    {
-        id: 3,
-        title: "RedNOx Awarded SBIR Phase I for its Innovative Greenhouse Gas Measurement Platform",
-        excerpt: "FREMONT, Calif., August 28, 2023 (GLOBE NEWSWIRE) -- RedNOx Inc., a trailblazer in environmental solid-state sensing technology, is delighted to announce its recent achievement in securing a Phase I Small Business Innovation Research (SBIR) award for its groundbreaking atmosphere and soil greenhouse gas measurement platform.",
-        date: "2023-08-23",
-        slug: "rednox-awarded-sbir-phase-i-for-its-innovative-greenhouse-gas-measurement-platform",
-        image: "/usda.jpg"
-    }]
+export const pressData: Record<string, PressData[]> = {
+    en: [
+        {
+            id: 1,
+            title: "RedNOx Partners with Nihon Yamamura Glass, Secures $2M to Revolutionize Emissions Monitoring",
+            excerpt: "We're excited to announce that RedNOx Inc. has expanded its partnership with Nihon Yamamura Glass (NYG), a leading Japanese ceramics and glass manufacturer.",
+            date: "2025-10-08",
+            slug: "strategic-business-partnership-between-nihon-yamamura-glass-co-ltd-and-rednox",
+            image: "/nihon.jpg"
+        },
+        {
+            id: 2,
+            title: "RedNOx Awarded USDA NIFA SBIR Phase II Grant to Drive Innovation in Agricultural Emissions Reduction",
+            excerpt: "We are thrilled to announce that RedNOx has been awarded a USDA NIFA SBIR Phase II grant of $650,000 as part of a $26.8 million investment to support groundbreaking, small business-led innovations in agriculture.",
+            date: "2024-10-31",
+            slug: "rednox-awarded-usda-nifa-sbir-phase-ii-grant-to-drive-innovation-in-agricultural-emissions-reduction",
+            image: "/us.jpg"
+        },
+        {
+            id: 3,
+            title: "RedNOx Awarded SBIR Phase I for its Innovative Greenhouse Gas Measurement Platform",
+            excerpt: "FREMONT, Calif., August 28, 2023 (GLOBE NEWSWIRE) -- RedNOx Inc., a trailblazer in environmental solid-state sensing technology, is delighted to announce its recent achievement in securing a Phase I Small Business Innovation Research (SBIR) award for its groundbreaking atmosphere and soil greenhouse gas measurement platform.",
+            date: "2023-08-23",
+            slug: "rednox-awarded-sbir-phase-i-for-its-innovative-greenhouse-gas-measurement-platform",
+            image: "/usda.jpg"
+        }
+    ],
+    de: [
+        {
+            id: 1,
+            title: "RedNOx geht Partnerschaft mit Nihon Yamamura Glass ein und sichert sich 2 Millionen Dollar zur Revolutionierung der Emissionsüberwachung",
+            excerpt: "Wir freuen uns bekannt zu geben, dass RedNOx Inc. seine Partnerschaft mit Nihon Yamamura Glass (NYG), einem führenden japanischen Keramik- und Glashersteller, erweitert hat.",
+            date: "2025-10-08",
+            slug: "strategic-business-partnership-between-nihon-yamamura-glass-co-ltd-and-rednox",
+            image: "/nihon.jpg"
+        },
+        {
+            id: 2,
+            title: "RedNOx erhält USDA NIFA SBIR Phase II-Förderung zur Förderung von Innovationen bei der Reduzierung landwirtschaftlicher Emissionen",
+            excerpt: "Wir freuen uns bekannt zu geben, dass RedNOx im Rahmen einer Investition von 26,8 Millionen Dollar zur Unterstützung bahnbrechender, von kleinen Unternehmen geführter Innovationen in der Landwirtschaft eine USDA NIFA SBIR Phase II-Förderung in Höhe von 650.000 Dollar erhalten hat.",
+            date: "2024-10-31",
+            slug: "rednox-awarded-usda-nifa-sbir-phase-ii-grant-to-drive-innovation-in-agricultural-emissions-reduction",
+            image: "/us.jpg"
+        },
+        {
+            id: 3,
+            title: "RedNOx erhält SBIR Phase I für seine innovative Treibhausgas-Messplattform",
+            excerpt: "FREMONT, Kalifornien, 28. August 2023 (GLOBE NEWSWIRE) -- RedNOx Inc., ein Vorreiter in der umweltfreundlichen Festkörper-Sensortechnologie, freut sich, die kürzliche Auszeichnung mit einem Phase I Small Business Innovation Research (SBIR)-Award für seine bahnbrechende Atmosphären- und Boden-Treibhausgas-Messplattform bekannt zu geben.",
+            date: "2023-08-23",
+            slug: "rednox-awarded-sbir-phase-i-for-its-innovative-greenhouse-gas-measurement-platform",
+            image: "/usda.jpg"
+        }
+    ],
+    ja: [
+        {
+            id: 1,
+            title: "RedNOxが日本山村硝子とパートナーシップを締結、排出監視の革新に200万ドルを確保",
+            excerpt: "RedNOx Inc.が日本の大手セラミックスおよびガラスメーカーである日本山村硝子（NYG）とのパートナーシップを拡大したことを発表できることを嬉しく思います。",
+            date: "2025-10-08",
+            slug: "strategic-business-partnership-between-nihon-yamamura-glass-co-ltd-and-rednox",
+            image: "/nihon.jpg"
+        },
+        {
+            id: 2,
+            title: "RedNOxが農業排出削減のイノベーション推進のためUSDA NIFA SBIRフェーズII助成金を獲得",
+            excerpt: "農業における画期的な中小企業主導のイノベーションを支援する2,680万ドルの投資の一環として、RedNOxが65万ドルのUSDA NIFA SBIRフェーズII助成金を獲得したことを発表できることを嬉しく思います。",
+            date: "2024-10-31",
+            slug: "rednox-awarded-usda-nifa-sbir-phase-ii-grant-to-drive-innovation-in-agricultural-emissions-reduction",
+            image: "/us.jpg"
+        },
+        {
+            id: 3,
+            title: "RedNOxが画期的な温室効果ガス測定プラットフォームでSBIRフェーズIを受賞",
+            excerpt: "カリフォルニア州フリーモント、2023年8月28日（GLOBE NEWSWIRE）-- 環境固体センシング技術のパイオニアであるRedNOx Inc.は、画期的な大気および土壌温室効果ガス測定プラットフォームでフェーズI中小企業技術革新研究（SBIR）賞を獲得したことを発表できることを嬉しく思います。",
+            date: "2023-08-23",
+            slug: "rednox-awarded-sbir-phase-i-for-its-innovative-greenhouse-gas-measurement-platform",
+            image: "/usda.jpg"
+        }
+    ]
+}
 
-export const publicationData: PublicationData[] = [
-    {
-        id: 1,
-        title: "Development of high sensitivity potentiometric NOx sensor and its application to breath analysis",
-        authors: ['Suvra Prakash Mondal a', 'Prabir K. Dutta a', 'G.W. Hunter b', 'B.J. Ward c', 'D. Laskowski d', 'R.A. Dweik d'],
-        link: "https://www.sciencedirect.com/science/article/abs/pii/S0925400511005314"
-    },
-    {
-        id: 2,
-        title: "High temperature amperometric total NOx sensors with platinum-loaded zeolite Y electrodes",
-        authors: ['Jiun-Chan Yang', 'Prabir K. Dutta'],
-        link: "https://www.sciencedirect.com/science/article/abs/pii/S0925400506007398",
-    },
-    {
-        id: 3,
-        title: "Strategies for total NOx measurement with minimal CO interference utilizing a microporous zeolitic catalytic filter",
-        authors: ['Nicholas F Szabo', 'Prabir K. Dutta'],
-        link: "https://www.sciencedirect.com/science/article/abs/pii/S0925400502003222",
-    },
-    {
-        id: 4,
-        title: "Promoting selectivity and sensitivity for a high temperature YSZ-based electrochemical total NOx sensor by using a Pt-loaded zeolite Y filter",
-        authors: ['Jiun-Chan Yang', 'Prabir K. Dutta'],
-        link: "https://www.sciencedirect.com/science/article/abs/pii/S0925400507000500",
-    },
-    {
-        id: 5,
-        title: "Temperature-controlled CO, CO2 and NOx sensing in a diesel engine exhaust stream",
-        authors: ['Osvaldo L. Figueroa a', 'Chonghoon Lee a', 'Sheikh A. Akbar b', 'Nicholas F. Szabo a', 'Joseph A. Trimboli a', 'Prabir K. Dutta c', 'Naoto Sawaki d', 'Ahmed A. Soliman e,', 'Henk Verweij b'],
-        link: "https://www.sciencedirect.com/science/article/abs/pii/S0925400504008871",
-    },
-]
+export const publicationData: Record<string, PublicationData[]> = {
+    en: [
+        {
+            id: 1,
+            title: "Development of high sensitivity potentiometric NOx sensor and its application to breath analysis",
+            authors: ['Suvra Prakash Mondal a', 'Prabir K. Dutta a', 'G.W. Hunter b', 'B.J. Ward c', 'D. Laskowski d', 'R.A. Dweik d'],
+            link: "https://www.sciencedirect.com/science/article/abs/pii/S0925400511005314"
+        },
+        {
+            id: 2,
+            title: "High temperature amperometric total NOx sensors with platinum-loaded zeolite Y electrodes",
+            authors: ['Jiun-Chan Yang', 'Prabir K. Dutta'],
+            link: "https://www.sciencedirect.com/science/article/abs/pii/S0925400506007398",
+        },
+        {
+            id: 3,
+            title: "Strategies for total NOx measurement with minimal CO interference utilizing a microporous zeolitic catalytic filter",
+            authors: ['Nicholas F Szabo', 'Prabir K. Dutta'],
+            link: "https://www.sciencedirect.com/science/article/abs/pii/S0925400502003222",
+        },
+        {
+            id: 4,
+            title: "Promoting selectivity and sensitivity for a high temperature YSZ-based electrochemical total NOx sensor by using a Pt-loaded zeolite Y filter",
+            authors: ['Jiun-Chan Yang', 'Prabir K. Dutta'],
+            link: "https://www.sciencedirect.com/science/article/abs/pii/S0925400507000500",
+        },
+        {
+            id: 5,
+            title: "Temperature-controlled CO, CO2 and NOx sensing in a diesel engine exhaust stream",
+            authors: ['Osvaldo L. Figueroa a', 'Chonghoon Lee a', 'Sheikh A. Akbar b', 'Nicholas F. Szabo a', 'Joseph A. Trimboli a', 'Prabir K. Dutta c', 'Naoto Sawaki d', 'Ahmed A. Soliman e,', 'Henk Verweij b'],
+            link: "https://www.sciencedirect.com/science/article/abs/pii/S0925400504008871",
+        },
+    ],
+    de: [
+        {
+            id: 1,
+            title: "Entwicklung eines hochempfindlichen potentiometrischen NOx-Sensors und seine Anwendung zur Atemanalyse",
+            authors: ['Suvra Prakash Mondal a', 'Prabir K. Dutta a', 'G.W. Hunter b', 'B.J. Ward c', 'D. Laskowski d', 'R.A. Dweik d'],
+            link: "https://www.sciencedirect.com/science/article/abs/pii/S0925400511005314"
+        },
+        {
+            id: 2,
+            title: "Hochtemperatur-amperometrische Gesamt-NOx-Sensoren mit platinbeladenen Zeolith-Y-Elektroden",
+            authors: ['Jiun-Chan Yang', 'Prabir K. Dutta'],
+            link: "https://www.sciencedirect.com/science/article/abs/pii/S0925400506007398",
+        },
+        {
+            id: 3,
+            title: "Strategien zur Gesamt-NOx-Messung mit minimaler CO-Interferenz unter Verwendung eines mikroporösen zeolithischen katalytischen Filters",
+            authors: ['Nicholas F Szabo', 'Prabir K. Dutta'],
+            link: "https://www.sciencedirect.com/science/article/abs/pii/S0925400502003222",
+        },
+        {
+            id: 4,
+            title: "Förderung der Selektivität und Empfindlichkeit eines YSZ-basierten elektrochemischen Hochtemperatur-Gesamt-NOx-Sensors durch Verwendung eines platinbeladenen Zeolith-Y-Filters",
+            authors: ['Jiun-Chan Yang', 'Prabir K. Dutta'],
+            link: "https://www.sciencedirect.com/science/article/abs/pii/S0925400507000500",
+        },
+        {
+            id: 5,
+            title: "Temperaturgesteuerte CO-, CO2- und NOx-Erfassung in einem Dieselmotor-Abgasstrom",
+            authors: ['Osvaldo L. Figueroa a', 'Chonghoon Lee a', 'Sheikh A. Akbar b', 'Nicholas F. Szabo a', 'Joseph A. Trimboli a', 'Prabir K. Dutta c', 'Naoto Sawaki d', 'Ahmed A. Soliman e,', 'Henk Verweij b'],
+            link: "https://www.sciencedirect.com/science/article/abs/pii/S0925400504008871",
+        },
+    ],
+    ja: [
+        {
+            id: 1,
+            title: "高感度ポテンショメトリックNOxセンサーの開発と呼気分析への応用",
+            authors: ['Suvra Prakash Mondal a', 'Prabir K. Dutta a', 'G.W. Hunter b', 'B.J. Ward c', 'D. Laskowski d', 'R.A. Dweik d'],
+            link: "https://www.sciencedirect.com/science/article/abs/pii/S0925400511005314"
+        },
+        {
+            id: 2,
+            title: "白金担持ゼオライトY電極を用いた高温アンペロメトリック全NOxセンサー",
+            authors: ['Jiun-Chan Yang', 'Prabir K. Dutta'],
+            link: "https://www.sciencedirect.com/science/article/abs/pii/S0925400506007398",
+        },
+        {
+            id: 3,
+            title: "微細孔ゼオライト触媒フィルターを用いたCO干渉を最小限に抑えた全NOx測定の戦略",
+            authors: ['Nicholas F Szabo', 'Prabir K. Dutta'],
+            link: "https://www.sciencedirect.com/science/article/abs/pii/S0925400502003222",
+        },
+        {
+            id: 4,
+            title: "白金担持ゼオライトYフィルターを用いた高温YSZベース電気化学全NOxセンサーの選択性と感度の向上",
+            authors: ['Jiun-Chan Yang', 'Prabir K. Dutta'],
+            link: "https://www.sciencedirect.com/science/article/abs/pii/S0925400507000500",
+        },
+        {
+            id: 5,
+            title: "ディーゼルエンジン排気ストリームにおける温度制御CO、CO2およびNOx検出",
+            authors: ['Osvaldo L. Figueroa a', 'Chonghoon Lee a', 'Sheikh A. Akbar b', 'Nicholas F. Szabo a', 'Joseph A. Trimboli a', 'Prabir K. Dutta c', 'Naoto Sawaki d', 'Ahmed A. Soliman e,', 'Henk Verweij b'],
+            link: "https://www.sciencedirect.com/science/article/abs/pii/S0925400504008871",
+        },
+    ]
+}
 
 export interface BlogPost {
     title: string;
@@ -479,6 +678,22 @@ export function getAllBlogSlugs(): string[] {
         Object.keys(localePosts).forEach(slug => slugs.add(slug));
     });
     return Array.from(slugs);
+}
+
+// Helper functions for locale-based news, press, and publication data access
+export function getNewsData(locale: string): NewsData[] {
+    // Get news for specified locale, fallback to English if not available
+    return newsData[locale] || newsData['en'] || [];
+}
+
+export function getPressData(locale: string): PressData[] {
+    // Get press releases for specified locale, fallback to English if not available
+    return pressData[locale] || pressData['en'] || [];
+}
+
+export function getPublicationData(locale: string): PublicationData[] {
+    // Get publications for specified locale, fallback to English if not available
+    return publicationData[locale] || publicationData['en'] || [];
 }
 
 export const _investors = [

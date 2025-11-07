@@ -3,9 +3,13 @@
 import { NewsData } from "@/lib/types";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import Image from "next/image"
-import { newsData } from "@/lib/data";
+import { getNewsData } from "@/lib/data";
+import { useLocale } from "next-intl";
 
 export default function News() {
+    const locale = useLocale();
+    const newsData = getNewsData(locale);
+
     return (
         <div className="flex flex-col gap-4">
             <div className="flex flex-col gap-4">

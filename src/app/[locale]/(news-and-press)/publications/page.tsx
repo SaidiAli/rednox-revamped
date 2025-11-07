@@ -1,11 +1,15 @@
 "use client"
 
-import { publicationData } from "@/lib/data";
+import { getPublicationData } from "@/lib/data";
 import { PublicationData } from "@/lib/types";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import Image from "next/image"
+import { useLocale } from "next-intl";
 
 export default function Publications() {
+    const locale = useLocale();
+    const publicationData = getPublicationData(locale);
+
     return (
         <div className="flex flex-col gap-4">
             <div className="flex flex-col gap-4">

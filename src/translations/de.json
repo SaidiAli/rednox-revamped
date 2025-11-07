@@ -400,5 +400,12 @@
                 "subTitle": "Zweistündiges Straßenparken in der Moraine Street und Thornton Avenue"
             }
         }
+    },
+    "newsAndPress": {
+        "sidebar": {
+            "inTheNews": "In den Nachrichten",
+            "pressRelease": "Pressemitteilungen",
+            "publications": "Publikationen"
+        }
     }
 }

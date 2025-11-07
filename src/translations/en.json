@@ -400,5 +400,12 @@
         "rev1": "Rev1 Ventures is a venture capital firm based in Columbus, Ohio. It focuses on investing in early-stage, scalable, and tech-enabled businesses in various sectors, including advanced materials and alternative energy. As a venture development studio, it helps entrepreneurs and corporations accelerate innovation.",
         "soundboard": "SoundBoard Venture Fund is an early-stage venture capital firm based in Montclair, New Jersey. It uses a collaborative approach, leveraging the diverse perspectives of its investors to evaluate and make investment decisions. The firm focuses on scalable, tech-enabled businesses and places a strong emphasis on assessing the leadership team of the companies they invest in.",
         "nyg": "Nihon Yamamura Glass Co., Ltd. is a Japanese company that manufactures and sells glass bottles, plastic containers, and powdered glass. Founded in 1914, the company also operates in the logistics and 'new glass' sectors. It is a strategic partner for RedNOx in Yokohama, Japan."
+    },
+    "newsAndPress": {
+        "sidebar": {
+            "inTheNews": "In the news",
+            "pressRelease": "Press releases",
+            "publications": "Publications"
+        }
     }
 }

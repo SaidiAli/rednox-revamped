@@ -400,5 +400,12 @@
                 "subTitle": "Moraine StreetとThornton Avenueに2時間駐車可能"
             }
         }
+    },
+    "newsAndPress": {
+        "sidebar": {
+            "inTheNews": "ニュース",
+            "pressRelease": "プレスリリース",
+            "publications": "出版物"
+        }
     }
 }

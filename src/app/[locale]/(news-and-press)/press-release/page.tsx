@@ -1,6 +1,6 @@
 "use client"
 
-import { pressData } from "@/lib/data";
+import { getPressData } from "@/lib/data";
 import { PressData } from "@/lib/types";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import Image from "next/image"
@@ -9,6 +9,7 @@ import { useParams } from "next/navigation";
 export default function PressRelease() {
     const params = useParams()
     const locale = (params.locale as string) || 'en'
+    const pressData = getPressData(locale);
 
     return (
         <div className="flex flex-col gap-4 md:gap-6">

@@ -6,7 +6,7 @@ import { motion } from "framer-motion"
 import { ArrowLeft, Calendar, Clock, User, Share2, Download } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { useParams, useRouter } from "next/navigation"
-import { blogPosts } from "@/lib/data"
+import { getBlogPost } from "@/lib/data"
 import Navbar from "@/components/Navbar"
 import Footer from "@/components/Footer"
 
@@ -14,10 +14,14 @@ export default function BlogPostPage() {
     const params = useParams()
     const router = useRouter()
 
-    const currentPost = blogPosts[params.slug as keyof typeof blogPosts]
-    const date = new Date(currentPost.date)
+    const locale = (params.locale as string) || 'en'
+    const slug = params.slug as string
 
-    if (!currentPost) {
+    // Get article for current locale, fallback to English if not available
+    const currentPost = getBlogPost(locale, slug)
+    const date = currentPost ? new Date(currentPost.date) : null
+
+    if (!currentPost || !date) {
         return (
             <div className="flex min-h-[100dvh] items-center justify-center">
                 <div className="text-center">

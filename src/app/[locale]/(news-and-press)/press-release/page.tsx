@@ -4,20 +4,24 @@ import { pressData } from "@/lib/data";
 import { PressData } from "@/lib/types";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import Image from "next/image"
+import { useParams } from "next/navigation";
 
 export default function PressRelease() {
+    const params = useParams()
+    const locale = (params.locale as string) || 'en'
+
     return (
         <div className="flex flex-col gap-4 md:gap-6">
             <div className="flex flex-col gap-4 md:gap-6 lg:gap-8">
                 {pressData.map((press, index) => (
-                    <PressCard key={index} {...press} />
+                    <PressCard key={index} {...press} locale={locale} />
                 ))}
             </div>
         </div>
     )
 }
 
-function PressCard({ title, excerpt: description, image, slug: link }: PressData) {
+function PressCard({ title, excerpt: description, image, slug: link, locale }: PressData & { locale: string }) {
     return (
         <div className="group flex flex-col md:flex-row gap-4 md:gap-6 items-stretch bg-moody rounded-2xl hover:shadow-xl transition duration-300 hover:scale-[1.02] md:hover:scale-105 cursor-pointer overflow-hidden">
             <div className="w-full md:w-[200px] lg:w-[250px] h-[200px] md:h-[250px] relative flex-shrink-0">
@@ -29,7 +33,7 @@ function PressCard({ title, excerpt: description, image, slug: link }: PressData
                     <p className="text-sm md:text-base text-white/80 line-clamp-3 md:line-clamp-2 leading-relaxed">{description}</p>
                 </div>
                 <div className="flex justify-end items-center mt-4 md:mt-6">
-                    <a href={`/article/${link}`} className="group-hover:text-white text-primary transition duration-300 group-hover:bg-primary p-2 md:p-3 rounded-lg flex items-center gap-2 text-sm md:text-base">
+                    <a href={`/${locale}/article/${link}`} className="group-hover:text-white text-primary transition duration-300 group-hover:bg-primary p-2 md:p-3 rounded-lg flex items-center gap-2 text-sm md:text-base">
                         Read more <Icon icon="lucide:arrow-right" width="20" height="20" className="md:w-6 md:h-6" />
                     </a>
                 </div>

@@ -3,15 +3,24 @@ import { blogPosts } from '@/lib/data';
 
 export default function sitemap(): MetadataRoute.Sitemap {
     const baseUrl = 'https://www.rednoxinc.com';
+    const locales = ['en', 'de', 'ja'];
 
-    // Get all post slugs
-    const postSlugs = Object.keys(blogPosts);
-    const postUrls = postSlugs.map((slug) => ({
-        url: `${baseUrl}/article/${slug}`,
-        lastModified: new Date(blogPosts[slug].date),
-        changeFrequency: 'monthly' as const,
-        priority: 0.8,
-    }));
+    // Generate URLs for all articles in all locales
+    const postUrls: MetadataRoute.Sitemap = [];
+
+    locales.forEach(locale => {
+        const localePosts = blogPosts[locale];
+        if (localePosts) {
+            Object.keys(localePosts).forEach(slug => {
+                postUrls.push({
+                    url: `${baseUrl}/${locale}/article/${slug}`,
+                    lastModified: new Date(localePosts[slug].date),
+                    changeFrequency: 'monthly' as const,
+                    priority: 0.8,
+                });
+            });
+        }
+    });
 
     const staticUrls = [
         {

@@ -257,16 +257,17 @@ export interface BlogPost {
     downloadLink?: string;
 }
 
-export const blogPosts: Record<string, BlogPost> = {
-    "rednox-awarded-sbir-phase-i-for-its-innovative-greenhouse-gas-measurement-platform": {
-        title: "RedNOx Awarded SBIR Phase I for its Innovative Greenhouse Gas Measurement Platform",
-        excerpt:
-            "FREMONT, Calif., August 28, 2023 (GLOBE NEWSWIRE) -- RedNOx Inc., a trailblazer in environmental solid-state sensing technology, is delighted to announce its recent achievement in securing a Phase I Small Business Innovation Research (SBIR) award for its groundbreaking atmosphere and soil greenhouse gas measurement platform.",
-        date: "2023-08-23",
-        image: "/usda.jpg",
-        readTime: "8 min read",
-        category: "Press Release",
-        content: `
+export const blogPosts: Record<string, Record<string, BlogPost>> = {
+    en: {
+        "rednox-awarded-sbir-phase-i-for-its-innovative-greenhouse-gas-measurement-platform": {
+            title: "RedNOx Awarded SBIR Phase I for its Innovative Greenhouse Gas Measurement Platform",
+            excerpt:
+                "FREMONT, Calif., August 28, 2023 (GLOBE NEWSWIRE) -- RedNOx Inc., a trailblazer in environmental solid-state sensing technology, is delighted to announce its recent achievement in securing a Phase I Small Business Innovation Research (SBIR) award for its groundbreaking atmosphere and soil greenhouse gas measurement platform.",
+            date: "2023-08-23",
+            image: "/usda.jpg",
+            readTime: "8 min read",
+            category: "Press Release",
+            content: `
     <p>FREMONT, Calif., August 28, 2023 (GLOBE NEWSWIRE) -- RedNOx Inc., a trailblazer in environmental solid-state sensing technology, is delighted to announce its recent achievement in securing a Phase I Small Business Innovation Research (SBIR) award for its groundbreaking atmosphere and soil greenhouse gas measurement platform.</p>
     <p>RedNOx's unique platform measures nitrous oxide (N2O), nitrogen oxides (NOx), and carbon dioxide (CO2) emissions both in the atmosphere and the soil. For agriculturalists, farmer and energy producer, the platform simplifies the process of monitoring, reporting, and verifying these gas levels, ensuring accurate tracking of net negative carbon and NOx emissions. In the future, its integrated software will aggregate all the data and automatically generate the necessary documentation, enabling agricultural producers, factories and fuel using energy producer to easily engage in both the carbon and NOx credit markets. This advancement could boost farmers' incomes while encouraging sustainable agricultural practices.</p>
     <p>RedNOx's CEO, Dr. Solomon Ssenyange, stated, "Receiving this award reaffirms our dedication to developing solutions that prioritize environmental sustainability and offer economic benefits to agriculture. Our sensor technology not only enhances soil health and food production but also promotes the reduction of carbon and NOx emissions."</p>
@@ -275,31 +276,31 @@ export const blogPosts: Record<string, BlogPost> = {
     <p style="font-weight: bold;">About RedNOx</p>
     <p>Headquartered in Fremont, CA, RedNOx Inc. specializes in developing state-of-the-art sensing solutions for a variety of applications. Committed to both innovation and sustainability, RedNOx is redefining how agriculture interacts with environmental responsibilities. Learn more about their initiatives and advancements at www.rednoxinc.com and stay connected via LinkedIn.</p>
   `,
-    },
-    "rednox-awarded-usda-nifa-sbir-phase-ii-grant-to-drive-innovation-in-agricultural-emissions-reduction": {
-        title: "RedNOx Awarded USDA NIFA SBIR Phase II Grant to Drive Innovation in Agricultural Emissions Reduction",
-        excerpt:
-            "We are thrilled to announce that RedNOx has been awarded a USDA NIFA SBIR Phase II grant of $650,000 as part of a $26.8 million investment to support groundbreaking, small business-led innovations in agriculture.",
-        date: "2024-10-31",
-        readTime: "5 min read",
-        category: "Press Release",
-        image: "/us.jpg",
-        content: `
+        },
+        "rednox-awarded-usda-nifa-sbir-phase-ii-grant-to-drive-innovation-in-agricultural-emissions-reduction": {
+            title: "RedNOx Awarded USDA NIFA SBIR Phase II Grant to Drive Innovation in Agricultural Emissions Reduction",
+            excerpt:
+                "We are thrilled to announce that RedNOx has been awarded a USDA NIFA SBIR Phase II grant of $650,000 as part of a $26.8 million investment to support groundbreaking, small business-led innovations in agriculture.",
+            date: "2024-10-31",
+            readTime: "5 min read",
+            category: "Press Release",
+            image: "/us.jpg",
+            content: `
     <p>We are thrilled to announce that RedNOx has been awarded a USDA NIFA SBIR Phase II grant of $650,000 as part of a $26.8 million investment to support groundbreaking, small business-led innovations in agriculture. This funding will enable us to advance our N₂O and NOx sensing technologies, specifically aimed at reducing emissions of nitrous oxide and NOx from both synthetic and microbial fertilizers.</p>
-    <p>This Phase II award underscores the importance of cutting-edge research in addressing critical environmental challenges and brings our technology closer to commercialization. With USDA NIFA’s support, RedNOx will continue its mission to enhance agricultural productivity, benefit local communities, and contribute to a cleaner, healthier environment.</p>
+    <p>This Phase II award underscores the importance of cutting-edge research in addressing critical environmental challenges and brings our technology closer to commercialization. With USDA NIFA's support, RedNOx will continue its mission to enhance agricultural productivity, benefit local communities, and contribute to a cleaner, healthier environment.</p>
   `,
-    },
-    "strategic-business-partnership-between-nihon-yamamura-glass-co-ltd-and-rednox": {
-        title: "RedNOx Partners with Nihon Yamamura Glass, Secures $2M to Revolutionize Emissions Monitoring",
-        excerpt:
-            "We're excited to announce that RedNOx Inc. has expanded its partnership with Nihon Yamamura Glass (NYG), a leading Japanese ceramics and glass manufacturer.",
-        date: "2025-10-08",
-        readTime: "5 min read",
-        category: "Press Release",
-        image: "/nihon.jpg",
-        downloadLink: "https://www.yamamura.co.jp/cms/wp-content/uploads/2025/10/20251008_CMS0632_473LOWYE-2.pdf",
-        downloadCTATitle: "Nihon Yamamura Press Release",
-        content: `
+        },
+        "strategic-business-partnership-between-nihon-yamamura-glass-co-ltd-and-rednox": {
+            title: "RedNOx Partners with Nihon Yamamura Glass, Secures $2M to Revolutionize Emissions Monitoring",
+            excerpt:
+                "We're excited to announce that RedNOx Inc. has expanded its partnership with Nihon Yamamura Glass (NYG), a leading Japanese ceramics and glass manufacturer.",
+            date: "2025-10-08",
+            readTime: "5 min read",
+            category: "Press Release",
+            image: "/nihon.jpg",
+            downloadLink: "https://www.yamamura.co.jp/cms/wp-content/uploads/2025/10/20251008_CMS0632_473LOWYE-2.pdf",
+            downloadCTATitle: "Nihon Yamamura Press Release",
+            content: `
         <article>
             <p>RedNOx Inc. is pleased to announce an expanded strategic partnership with Nihon Yamamura Glass (NYG). NYG has invested in our oversubscribed $2M seed round and will provide us with ceramics and glass sealing expertise to scale our sensor production.</p>
 
@@ -309,7 +310,7 @@ export const blogPosts: Record<string, BlogPost> = {
 
         <p style="font-weight: bold;">Technology in focus:</p>
 
-        <p>LoNOx sensor: Ultra-sensitive NOx detection across 500 ppb-20 ppm. Built to resist ammonia interference and suitable for diesel and gasoline engines, it’s especially relevant for low-emission gensets used by data centers and hospitals.</p>
+        <p>LoNOx sensor: Ultra-sensitive NOx detection across 500 ppb-20 ppm. Built to resist ammonia interference and suitable for diesel and gasoline engines, it's especially relevant for low-emission gensets used by data centers and hospitals.</p>
 
         <p>AgriNOx system: Precision measurement of fertilizer-derived N₂O at sub-ppm levels. Supported by a $650K USDA grant, pilots in California are helping farmers reduce nitrogen inputs and access carbon credit opportunities.</p>
 
@@ -320,7 +321,118 @@ export const blogPosts: Record<string, BlogPost> = {
         <p>By pairing Silicon Valley innovation with Japanese technical strength, RedNOx and NYG aim to accelerate commercialization and deliver practical solutions that reduce emissions and create value for industry and agriculture.</p>
         </article>
         `,
+        }
+    },
+    de: {
+        "rednox-awarded-sbir-phase-i-for-its-innovative-greenhouse-gas-measurement-platform": {
+            title: "[DE] RedNOx Awarded SBIR Phase I for its Innovative Greenhouse Gas Measurement Platform",
+            excerpt:
+                "[DE] FREMONT, Calif., August 28, 2023 (GLOBE NEWSWIRE) -- RedNOx Inc., a trailblazer in environmental solid-state sensing technology, is delighted to announce its recent achievement in securing a Phase I Small Business Innovation Research (SBIR) award for its groundbreaking atmosphere and soil greenhouse gas measurement platform.",
+            date: "2023-08-23",
+            image: "/usda.jpg",
+            readTime: "8 min read",
+            category: "Press Release",
+            content: `
+    <p>[Add German translation here]</p>
+  `,
+        },
+        "rednox-awarded-usda-nifa-sbir-phase-ii-grant-to-drive-innovation-in-agricultural-emissions-reduction": {
+            title: "[DE] RedNOx Awarded USDA NIFA SBIR Phase II Grant to Drive Innovation in Agricultural Emissions Reduction",
+            excerpt:
+                "[DE] We are thrilled to announce that RedNOx has been awarded a USDA NIFA SBIR Phase II grant of $650,000 as part of a $26.8 million investment to support groundbreaking, small business-led innovations in agriculture.",
+            date: "2024-10-31",
+            readTime: "5 min read",
+            category: "Press Release",
+            image: "/us.jpg",
+            content: `
+    <p>[Add German translation here]</p>
+  `,
+        },
+        "strategic-business-partnership-between-nihon-yamamura-glass-co-ltd-and-rednox": {
+            title: "[DE] RedNOx Partners with Nihon Yamamura Glass, Secures $2M to Revolutionize Emissions Monitoring",
+            excerpt:
+                "[DE] We're excited to announce that RedNOx Inc. has expanded its partnership with Nihon Yamamura Glass (NYG), a leading Japanese ceramics and glass manufacturer.",
+            date: "2025-10-08",
+            readTime: "5 min read",
+            category: "Press Release",
+            image: "/nihon.jpg",
+            downloadLink: "https://www.yamamura.co.jp/cms/wp-content/uploads/2025/10/20251008_CMS0632_473LOWYE-2.pdf",
+            downloadCTATitle: "Nihon Yamamura Press Release",
+            content: `
+        <article>
+            <p>[Add German translation here]</p>
+        </article>
+        `,
+        }
+    },
+    ja: {
+        "rednox-awarded-sbir-phase-i-for-its-innovative-greenhouse-gas-measurement-platform": {
+            title: "[JA] RedNOx Awarded SBIR Phase I for its Innovative Greenhouse Gas Measurement Platform",
+            excerpt:
+                "[JA] FREMONT, Calif., August 28, 2023 (GLOBE NEWSWIRE) -- RedNOx Inc., a trailblazer in environmental solid-state sensing technology, is delighted to announce its recent achievement in securing a Phase I Small Business Innovation Research (SBIR) award for its groundbreaking atmosphere and soil greenhouse gas measurement platform.",
+            date: "2023-08-23",
+            image: "/usda.jpg",
+            readTime: "8 min read",
+            category: "Press Release",
+            content: `
+    <p>[Add Japanese translation here]</p>
+  `,
+        },
+        "rednox-awarded-usda-nifa-sbir-phase-ii-grant-to-drive-innovation-in-agricultural-emissions-reduction": {
+            title: "[JA] RedNOx Awarded USDA NIFA SBIR Phase II Grant to Drive Innovation in Agricultural Emissions Reduction",
+            excerpt:
+                "[JA] We are thrilled to announce that RedNOx has been awarded a USDA NIFA SBIR Phase II grant of $650,000 as part of a $26.8 million investment to support groundbreaking, small business-led innovations in agriculture.",
+            date: "2024-10-31",
+            readTime: "5 min read",
+            category: "Press Release",
+            image: "/us.jpg",
+            content: `
+    <p>[Add Japanese translation here]</p>
+  `,
+        },
+        "strategic-business-partnership-between-nihon-yamamura-glass-co-ltd-and-rednox": {
+            title: "[JA] RedNOx Partners with Nihon Yamamura Glass, Secures $2M to Revolutionize Emissions Monitoring",
+            excerpt:
+                "[JA] We're excited to announce that RedNOx Inc. has expanded its partnership with Nihon Yamamura Glass (NYG), a leading Japanese ceramics and glass manufacturer.",
+            date: "2025-10-08",
+            readTime: "5 min read",
+            category: "Press Release",
+            image: "/nihon.jpg",
+            downloadLink: "https://www.yamamura.co.jp/cms/wp-content/uploads/2025/10/20251008_CMS0632_473LOWYE-2.pdf",
+            downloadCTATitle: "Nihon Yamamura Press Release",
+            content: `
+        <article>
+            <p>[Add Japanese translation here]</p>
+        </article>
+        `,
+        }
     }
+}
+
+// Helper functions for locale-based article access
+export function getBlogPost(locale: string, slug: string): BlogPost | null {
+    // Get article for specified locale, fallback to English if not available
+    return blogPosts[locale]?.[slug] || blogPosts['en']?.[slug] || null;
+}
+
+export function getAllBlogPosts(locale: string): Record<string, BlogPost> {
+    // Get all articles for a specific locale, fallback to English if locale not found
+    return blogPosts[locale] || blogPosts['en'] || {};
+}
+
+export function getBlogPostsArray(locale: string): Array<BlogPost & { slug: string }> {
+    // Get all articles as an array for easier iteration
+    const posts = getAllBlogPosts(locale);
+    return Object.entries(posts).map(([slug, post]) => ({ ...post, slug }));
+}
+
+export function getAllBlogSlugs(): string[] {
+    // Get all unique slugs across all locales
+    const slugs = new Set<string>();
+    Object.values(blogPosts).forEach(localePosts => {
+        Object.keys(localePosts).forEach(slug => slugs.add(slug));
+    });
+    return Array.from(slugs);
 }
 
 export const _investors = [

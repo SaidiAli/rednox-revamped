@@ -10,39 +10,6 @@ import { blogPosts } from "@/lib/data"
 import Navbar from "@/components/Navbar"
 import Footer from "@/components/Footer"
 
-// export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
-//     const post = blogPosts[params.slug as keyof typeof blogPosts]
-
-//     if (!post) {
-//         return {
-//             title: "Post Not Found",
-//             description: "The post you are looking for does not exist.",
-//         }
-//     }
-
-//     return {
-//         title: post.title,
-//         description: post.excerpt,
-//         openGraph: {
-//             title: post.title,
-//             description: post.excerpt,
-//             type: 'article',
-//             publishedTime: post.date,
-//             images: post.image ? [
-//                 {
-//                     url: post.image,
-//                 }
-//             ] : [],
-//         },
-//         twitter: {
-//             card: 'summary_large_image',
-//             title: post.title,
-//             description: post.excerpt,
-//             images: post.image ? [post.image] : [],
-//         }
-//     }
-// }
-
 export default function BlogPostPage() {
     const params = useParams()
     const router = useRouter()

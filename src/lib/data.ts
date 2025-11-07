@@ -325,84 +325,130 @@ export const blogPosts: Record<string, Record<string, BlogPost>> = {
     },
     de: {
         "rednox-awarded-sbir-phase-i-for-its-innovative-greenhouse-gas-measurement-platform": {
-            title: "[DE] RedNOx Awarded SBIR Phase I for its Innovative Greenhouse Gas Measurement Platform",
+            title: "RedNOx erhält SBIR Phase I für seine innovative Treibhausgas-Messplattform",
             excerpt:
-                "[DE] FREMONT, Calif., August 28, 2023 (GLOBE NEWSWIRE) -- RedNOx Inc., a trailblazer in environmental solid-state sensing technology, is delighted to announce its recent achievement in securing a Phase I Small Business Innovation Research (SBIR) award for its groundbreaking atmosphere and soil greenhouse gas measurement platform.",
+                "FREMONT, Kalifornien, 28. August 2023 (GLOBE NEWSWIRE) -- RedNOx Inc., ein Vorreiter in der umweltfreundlichen Festkörper-Sensortechnologie, freut sich, die kürzliche Auszeichnung mit einem Phase I Small Business Innovation Research (SBIR)-Award für seine bahnbrechende Atmosphären- und Boden-Treibhausgas-Messplattform bekannt zu geben.",
             date: "2023-08-23",
             image: "/usda.jpg",
             readTime: "8 min read",
-            category: "Press Release",
+            category: "Pressemitteilung",
             content: `
-    <p>[Add German translation here]</p>
+    <p>FREMONT, Kalifornien, 28. August 2023 (GLOBE NEWSWIRE) -- RedNOx Inc., ein Vorreiter in der umweltfreundlichen Festkörper-Sensortechnologie, freut sich, die kürzliche Auszeichnung mit einem Phase I Small Business Innovation Research (SBIR)-Award für seine bahnbrechende Atmosphären- und Boden-Treibhausgas-Messplattform bekannt zu geben.</p>
+    <p>Die einzigartige Plattform von RedNOx misst Distickstoffoxid (N2O), Stickoxide (NOx) und Kohlendioxid (CO2)-Emissionen sowohl in der Atmosphäre als auch im Boden. Für Landwirte, Farmer und Energieproduzenten vereinfacht die Plattform den Prozess der Überwachung, Berichterstattung und Verifizierung dieser Gaswerte und gewährleistet eine genaue Verfolgung der Netto-Negativ-Kohlenstoff- und NOx-Emissionen. In Zukunft wird die integrierte Software alle Daten aggregieren und automatisch die erforderliche Dokumentation erstellen, wodurch landwirtschaftliche Produzenten, Fabriken und kraftstoffnutzende Energieproduzenten einfach an Kohlenstoff- und NOx-Kreditmärkten teilnehmen können. Dieser Fortschritt könnte das Einkommen der Landwirte steigern und gleichzeitig nachhaltige landwirtschaftliche Praktiken fördern.</p>
+    <p>Dr. Solomon Ssenyange, CEO von RedNOx, erklärte: "Diese Auszeichnung bestätigt unser Engagement für die Entwicklung von Lösungen, die Umweltnachhaltigkeit priorisieren und wirtschaftliche Vorteile für die Landwirtschaft bieten. Unsere Sensortechnologie verbessert nicht nur die Bodengesundheit und Lebensmittelproduktion, sondern fördert auch die Reduzierung von Kohlenstoff- und NOx-Emissionen."</p>
+    <p>Die Ankündigung von RedNOx folgt auf die offizielle Pressemitteilung des USDA zu den kürzlichen Phase I Awards, weitere Details dazu finden Sie hier. RedNOx dankt dem USDA und dem SBIR/STTR Office für die Anerkennung und Unterstützung von Initiativen, die technologische Innovation in Lebensmitteln und Landwirtschaft vorantreiben.</p>
+    <p>Für Anfragen bezüglich der Auszeichnung oder der Atmosphären- und Boden-Treibhausgas-Messplattform von RedNOx wenden Sie sich bitte direkt an das Unternehmen oder an das SBIR/STTR Office für allgemeinere Fragen zum Programm.</p>
+    <p style="font-weight: bold;">Über RedNOx</p>
+    <p>Mit Hauptsitz in Fremont, Kalifornien, spezialisiert sich RedNOx Inc. auf die Entwicklung modernster Sensorlösungen für eine Vielzahl von Anwendungen. RedNOx ist der Innovation und Nachhaltigkeit verpflichtet und definiert neu, wie die Landwirtschaft mit Umweltverantwortung interagiert. Erfahren Sie mehr über ihre Initiativen und Fortschritte auf www.rednoxinc.com und bleiben Sie über LinkedIn in Verbindung.</p>
   `,
         },
         "rednox-awarded-usda-nifa-sbir-phase-ii-grant-to-drive-innovation-in-agricultural-emissions-reduction": {
-            title: "[DE] RedNOx Awarded USDA NIFA SBIR Phase II Grant to Drive Innovation in Agricultural Emissions Reduction",
+            title: "RedNOx erhält USDA NIFA SBIR Phase II-Förderung zur Förderung von Innovationen bei der Reduzierung landwirtschaftlicher Emissionen",
             excerpt:
-                "[DE] We are thrilled to announce that RedNOx has been awarded a USDA NIFA SBIR Phase II grant of $650,000 as part of a $26.8 million investment to support groundbreaking, small business-led innovations in agriculture.",
+                "Wir freuen uns bekannt zu geben, dass RedNOx im Rahmen einer Investition von 26,8 Millionen Dollar zur Unterstützung bahnbrechender, von kleinen Unternehmen geführter Innovationen in der Landwirtschaft eine USDA NIFA SBIR Phase II-Förderung in Höhe von 650.000 Dollar erhalten hat.",
             date: "2024-10-31",
             readTime: "5 min read",
-            category: "Press Release",
+            category: "Pressemitteilung",
             image: "/us.jpg",
             content: `
-    <p>[Add German translation here]</p>
+    <p>Wir freuen uns bekannt zu geben, dass RedNOx im Rahmen einer Investition von 26,8 Millionen Dollar zur Unterstützung bahnbrechender, von kleinen Unternehmen geführter Innovationen in der Landwirtschaft eine USDA NIFA SBIR Phase II-Förderung in Höhe von 650.000 Dollar erhalten hat. Diese Finanzierung ermöglicht es uns, unsere N₂O- und NOx-Sensortechnologien weiterzuentwickeln, die speziell auf die Reduzierung von Distickstoffoxid- und NOx-Emissionen aus synthetischen und mikrobiellen Düngemitteln ausgerichtet sind.</p>
+    <p>Diese Phase II-Auszeichnung unterstreicht die Bedeutung modernster Forschung bei der Bewältigung kritischer Umweltherausforderungen und bringt unsere Technologie der Kommerzialisierung näher. Mit der Unterstützung von USDA NIFA wird RedNOx seine Mission fortsetzen, die landwirtschaftliche Produktivität zu steigern, lokale Gemeinschaften zu unterstützen und zu einer saubereren, gesünderen Umwelt beizutragen.</p>
   `,
         },
         "strategic-business-partnership-between-nihon-yamamura-glass-co-ltd-and-rednox": {
-            title: "[DE] RedNOx Partners with Nihon Yamamura Glass, Secures $2M to Revolutionize Emissions Monitoring",
+            title: "RedNOx geht Partnerschaft mit Nihon Yamamura Glass ein und sichert sich 2 Millionen Dollar zur Revolutionierung der Emissionsüberwachung",
             excerpt:
-                "[DE] We're excited to announce that RedNOx Inc. has expanded its partnership with Nihon Yamamura Glass (NYG), a leading Japanese ceramics and glass manufacturer.",
+                "Wir freuen uns bekannt zu geben, dass RedNOx Inc. seine Partnerschaft mit Nihon Yamamura Glass (NYG), einem führenden japanischen Keramik- und Glashersteller, erweitert hat.",
             date: "2025-10-08",
             readTime: "5 min read",
-            category: "Press Release",
+            category: "Pressemitteilung",
             image: "/nihon.jpg",
             downloadLink: "https://www.yamamura.co.jp/cms/wp-content/uploads/2025/10/20251008_CMS0632_473LOWYE-2.pdf",
-            downloadCTATitle: "Nihon Yamamura Press Release",
+            downloadCTATitle: "Nihon Yamamura Pressemitteilung",
             content: `
         <article>
-            <p>[Add German translation here]</p>
+            <p>RedNOx Inc. freut sich, eine erweiterte strategische Partnerschaft mit Nihon Yamamura Glass (NYG) bekannt zu geben. NYG hat in unsere überzeichnete Seed-Runde von 2 Millionen Dollar investiert und wird uns mit Keramik- und Glasversiegelungsexpertise zur Skalierung unserer Sensorproduktion versorgen.</p>
+
+        <div>
+            Was dies ermöglicht: Schnellere, qualitativ hochwertigere Herstellung von NOx- und N₂O-Sensoren der nächsten Generation für Mobilitäts- und Landwirtschaftsanwendungen.
+        </div>
+
+        <p style="font-weight: bold;">Technologie im Fokus:</p>
+
+        <p>LoNOx-Sensor: Ultrasensitive NOx-Detektion über 500 ppb-20 ppm. Entwickelt, um Ammoniakinterferenzen zu widerstehen und für Diesel- und Benzinmotoren geeignet, ist er besonders relevant für emissionsarme Generatoren, die von Rechenzentren und Krankenhäusern verwendet werden.</p>
+
+        <p>AgriNOx-System: Präzisionsmessung von düngemittelbedingtem N₂O auf Sub-ppm-Niveau. Unterstützt durch eine 650.000-Dollar-Förderung des USDA helfen Pilotprojekte in Kalifornien Landwirten, Stickstoffeinsätze zu reduzieren und Zugang zu Kohlenstoffkreditmöglichkeiten zu erhalten.</p>
+
+        <p style="font-weight: bold;">Warum dies wichtig ist:</p>
+
+        <p>NOx ist ein schädlicher Luftschadstoff, und N₂O ist fast 300-mal potenter als CO₂. Mit strengeren Emissionsstandards, die ab 2027 erwartet werden, wird unsere kombinierte Technologie- und Fertigungsfähigkeit OEMs und Landwirten helfen, regulatorische und Nachhaltigkeitsziele zu erreichen.</p>
+
+        <p>Durch die Kombination von Silicon Valley-Innovation mit japanischer technischer Stärke wollen RedNOx und NYG die Kommerzialisierung beschleunigen und praktische Lösungen liefern, die Emissionen reduzieren und Mehrwert für Industrie und Landwirtschaft schaffen.</p>
         </article>
         `,
         }
     },
     ja: {
         "rednox-awarded-sbir-phase-i-for-its-innovative-greenhouse-gas-measurement-platform": {
-            title: "[JA] RedNOx Awarded SBIR Phase I for its Innovative Greenhouse Gas Measurement Platform",
+            title: "RedNOxが画期的な温室効果ガス測定プラットフォームでSBIRフェーズIを受賞",
             excerpt:
-                "[JA] FREMONT, Calif., August 28, 2023 (GLOBE NEWSWIRE) -- RedNOx Inc., a trailblazer in environmental solid-state sensing technology, is delighted to announce its recent achievement in securing a Phase I Small Business Innovation Research (SBIR) award for its groundbreaking atmosphere and soil greenhouse gas measurement platform.",
+                "カリフォルニア州フリーモント、2023年8月28日（GLOBE NEWSWIRE）— 環境固体センシング技術のパイオニアであるRedNOx Inc.は、画期的な大気および土壌温室効果ガス測定プラットフォームでフェーズI中小企業技術革新研究（SBIR）賞を獲得したことを発表できることを嬉しく思います。",
             date: "2023-08-23",
             image: "/usda.jpg",
             readTime: "8 min read",
-            category: "Press Release",
+            category: "プレスリリース",
             content: `
-    <p>[Add Japanese translation here]</p>
+    <p>カリフォルニア州フリーモント、2023年8月28日（GLOBE NEWSWIRE）— 環境固体センシング技術のパイオニアであるRedNOx Inc.は、画期的な大気および土壌温室効果ガス測定プラットフォームでフェーズI中小企業技術革新研究（SBIR）賞を獲得したことを発表できることを嬉しく思います。</p>
+    <p>RedNOxのユニークなプラットフォームは、大気と土壌の両方で亜酸化窒素（N2O）、窒素酸化物（NOx）、二酸化炭素（CO2）の排出量を測定します。農業従事者、農家、エネルギー生産者にとって、このプラットフォームはこれらのガスレベルの監視、報告、検証のプロセスを簡素化し、正味マイナス炭素およびNOx排出量の正確な追跡を保証します。将来的には、統合ソフトウェアがすべてのデータを集約し、必要な文書を自動的に生成することで、農業生産者、工場、燃料を使用するエネルギー生産者が炭素およびNOxクレジット市場に簡単に参加できるようになります。この進歩により、持続可能な農業慣行を奨励しながら、農家の収入を増やすことができます。</p>
+    <p>RedNOxのCEOであるSolomon Ssenyange博士は次のように述べています。「この賞は、環境の持続可能性を優先し、農業に経済的利益を提供するソリューションの開発への私たちの献身を再確認するものです。当社のセンサー技術は、土壌の健康と食料生産を向上させるだけでなく、炭素およびNOx排出量の削減も促進します。」</p>
+    <p>RedNOxの発表は、最近のフェーズI賞に関するUSDAの公式プレスリリースに続くものです。詳細についてはこちらをご覧ください。RedNOxは、食品と農業における技術革新を推進する取り組みを認識し、支援してくれたUSDAとSBIR/STTRオフィスに感謝の意を表します。</p>
+    <p>この賞またはRedNOxの大気および土壌温室効果ガス測定プラットフォームに関するお問い合わせは、会社に直接お問い合わせいただくか、プログラムに関する一般的な質問についてはSBIR/STTRオフィスにお問い合わせください。</p>
+    <p style="font-weight: bold;">RedNOxについて</p>
+    <p>カリフォルニア州フリーモントに本社を置くRedNOx Inc.は、さまざまなアプリケーション向けの最先端センシングソリューションの開発を専門としています。革新と持続可能性にコミットしているRedNOxは、農業が環境責任とどのように相互作用するかを再定義しています。www.rednoxinc.comで彼らの取り組みと進歩について詳しく学び、LinkedInでつながりを保ちましょう。</p>
   `,
         },
         "rednox-awarded-usda-nifa-sbir-phase-ii-grant-to-drive-innovation-in-agricultural-emissions-reduction": {
-            title: "[JA] RedNOx Awarded USDA NIFA SBIR Phase II Grant to Drive Innovation in Agricultural Emissions Reduction",
+            title: "RedNOxが農業排出削減のイノベーション推進のためUSDA NIFA SBIRフェーズII助成金を獲得",
             excerpt:
-                "[JA] We are thrilled to announce that RedNOx has been awarded a USDA NIFA SBIR Phase II grant of $650,000 as part of a $26.8 million investment to support groundbreaking, small business-led innovations in agriculture.",
+                "農業における画期的な中小企業主導のイノベーションを支援する2,680万ドルの投資の一環として、RedNOxが65万ドルのUSDA NIFA SBIRフェーズII助成金を獲得したことを発表できることを嬉しく思います。",
             date: "2024-10-31",
             readTime: "5 min read",
-            category: "Press Release",
+            category: "プレスリリース",
             image: "/us.jpg",
             content: `
-    <p>[Add Japanese translation here]</p>
+    <p>農業における画期的な中小企業主導のイノベーションを支援する2,680万ドルの投資の一環として、RedNOxが65万ドルのUSDA NIFA SBIRフェーズII助成金を獲得したことを発表できることを嬉しく思います。この資金により、合成および微生物肥料からの亜酸化窒素およびNOx排出の削減を特に目的とした当社のN₂OおよびNOxセンシング技術を進化させることができます。</p>
+    <p>このフェーズII賞は、重要な環境課題への対処における最先端研究の重要性を強調し、当社の技術を商業化に近づけます。USDA NIFAの支援により、RedNOxは農業生産性の向上、地域社会への貢献、よりクリーンで健康的な環境への貢献という使命を継続します。</p>
   `,
         },
         "strategic-business-partnership-between-nihon-yamamura-glass-co-ltd-and-rednox": {
-            title: "[JA] RedNOx Partners with Nihon Yamamura Glass, Secures $2M to Revolutionize Emissions Monitoring",
+            title: "RedNOxが日本山村硝子とパートナーシップを締結、排出監視の革新に200万ドルを確保",
             excerpt:
-                "[JA] We're excited to announce that RedNOx Inc. has expanded its partnership with Nihon Yamamura Glass (NYG), a leading Japanese ceramics and glass manufacturer.",
+                "RedNOx Inc.が日本の大手セラミックスおよびガラスメーカーである日本山村硝子（NYG）とのパートナーシップを拡大したことを発表できることを嬉しく思います。",
             date: "2025-10-08",
             readTime: "5 min read",
-            category: "Press Release",
+            category: "プレスリリース",
             image: "/nihon.jpg",
             downloadLink: "https://www.yamamura.co.jp/cms/wp-content/uploads/2025/10/20251008_CMS0632_473LOWYE-2.pdf",
-            downloadCTATitle: "Nihon Yamamura Press Release",
+            downloadCTATitle: "日本山村硝子プレスリリース",
             content: `
         <article>
-            <p>[Add Japanese translation here]</p>
+            <p>RedNOx Inc.は、日本山村硝子（NYG）との戦略的パートナーシップの拡大を発表できることを嬉しく思います。NYGは当社のオーバーサブスクライブされた200万ドルのシードラウンドに投資し、センサー生産の拡大のためにセラミックスおよびガラスシーリングの専門知識を提供します。</p>
+
+        <div>
+            これにより実現すること：モビリティおよび農業アプリケーション向けの次世代NOxおよびN₂Oセンサーのより迅速で高品質な製造。
+        </div>
+
+        <p style="font-weight: bold;">注目の技術：</p>
+
+        <p>LoNOxセンサー：500 ppb-20 ppmの範囲で超高感度NOx検出。アンモニア干渉に耐性があり、ディーゼルおよびガソリンエンジンに適しており、データセンターや病院で使用される低排出発電機に特に関連性があります。</p>
+
+        <p>AgriNOxシステム：サブppmレベルでの肥料由来N₂Oの精密測定。65万ドルのUSDA助成金に支援され、カリフォルニアでのパイロットプロジェクトは、農家が窒素投入量を削減し、炭素クレジットの機会にアクセスするのを支援しています。</p>
+
+        <p style="font-weight: bold;">これが重要な理由：</p>
+
+        <p>NOxは有害な大気汚染物質であり、N₂OはCO₂の約300倍強力です。2027年以降に予想されるより厳しい排出基準により、当社の統合された技術および製造能力は、OEMおよび農家が規制および持続可能性目標を達成するのに役立ちます。</p>
+
+        <p>シリコンバレーのイノベーションと日本の技術力を組み合わせることで、RedNOxとNYGは商業化を加速し、排出を削減し、産業および農業に価値を創造する実用的なソリューションを提供することを目指しています。</p>
         </article>
         `,
         }

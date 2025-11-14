@@ -1,4 +1,4 @@
-import { NewsData, PressData, PublicationData, TeamMember, HomePageTranslations, AboutTranslations } from "./types"
+import { NewsData, PressData, PublicationData, TeamMember, HomePageTranslations, AboutTranslations, BlogPost } from "./types"
 
 export const features = (t: HomePageTranslations) => ({
     hde: [
@@ -154,35 +154,40 @@ export const newsData: Record<string, NewsData[]> = {
             excerpt: "We are thrilled to announce that RedNOx has been awarded a USDA NIFA SBIR Phase II grant of $650,000 as part of a $26.8 million investment to support groundbreaking, small business-led innovations in agriculture. This funding will enable us to advance our N₂O and NOx sensing technologies, specifically aimed at reducing emissions of nitrous oxide and NOx from both synthetic and microbial fertilizers.",
             text: "We are thrilled to announce that RedNOx has been awarded a USDA NIFA SBIR Phase II grant of $650,000 as part of a $26.8 million investment to support groundbreaking, small business-led innovations in agriculture. This funding will enable us to advance our N₂O and NOx sensing technologies, specifically aimed at reducing emissions of nitrous oxide and NOx from both synthetic and microbial fertilizers. This Phase II award underscores the importance of cutting-edge research in addressing critical environmental challenges and brings our technology closer to commercialization. With USDA NIFA's support, RedNOx will continue its mission to enhance agricultural productivity, benefit local communities, and contribute to a cleaner, healthier environment.",
             date: "2024-10-31",
-            link: "https://content.govdelivery.com/accounts/USDANIFA/bulletins/3bf56f8"
+            link: "https://content.govdelivery.com/accounts/USDANIFA/bulletins/3bf56f8",
+            slug: "rednox-awarded-usda-nifa-sbir-phase-2"
         },
         {
             id: 2,
             title: "RedNOx Signs MOU with One of the World's Largest Manufacturers of Hydrogen, Diesel, and Natural Gas Engines",
             excerpt: "RedNOx also Secures a Purchase Order from Cummins Inc. for Next-Generation NOx Sensors.",
             date: "2023-09-04",
-            link: "https://rednoxinc.com/wp-content/uploads/2023/09/Cummins-Press-Release_August-2023_v2.pdf"
+            link: "https://rednoxinc.com/wp-content/uploads/2023/09/Cummins-Press-Release_August-2023_v2.pdf",
+            slug: "rednox-signs-mou-with-cummins"
         },
         {
             id: 3,
             title: "RedNOx Revolution: Unraveling the Next Big Breakthrough in Emissions Reduction - Exclusively on Chemical and Engineering News",
             excerpt: "RedNOx Revolution: Unraveling the Next Big Breakthrough in Emissions Reduction - Exclusively on Chemical and Engineering News",
             date: "2023-08-21",
-            link: "https://cen.acs.org/food/agriculture/USDA-funds-food-agriculture-start/101/i29"
+            link: "https://cen.acs.org/food/agriculture/USDA-funds-food-agriculture-start/101/i29",
+            slug: "rednox-revolution-unraveling-the-next-big-breakthrough-in=emission-reduction"
         },
         {
             id: 4,
             title: "RedNOx Awarded SBIR Phase I for its Innovative Greenhouse Gas Measurement Platform",
             excerpt: "FREMONT, Calif., August 28, 2023 (GLOBE NEWSWIRE) — RedNOx Inc., a trailblazer in environmental solid-state sensing technology, is delighted to announce its recent achievement in securing a Phase I Small Business Innovation Research (SBIR) award for its groundbreaking atmosphere and soil greenhouse gas measurement platform.",
             date: "2023-08-28",
-            link: "https://rednoxinc.com/wp-content/uploads/2023/08/USDA-Press-Release_August-2023.pdf"
+            link: "https://rednoxinc.com/wp-content/uploads/2023/08/USDA-Press-Release_August-2023.pdf",
+            slug: "rednox-awarded-sbir-phase-1"
         },
         {
             id: 5,
             title: "REDNOX CLOSES FINANCING TO CREATE THE NEXT GENERATION NOx SENSORS FOR LOW TO ZERO EMISSIONS APPLICATIONS",
             excerpt: "RedNOx Inc announced today its launch and the completion of seed financing with Rev1 Ventures Partners.  RedNOx launches with a technology license from OSU to scale solid-state NOx and CO2 sensor technology for clean energy and low to zero emissions vehicles.  RedNOx's LoNOx sensor technology points to a leap in performance and reliability, with parts-per-billion detection capabilities and long-term durability.",
             date: "2022-07-01",
-            link: "#"
+            link: "#",
+            slug: "rednox-closes-financing-to-create-the-next-generation-nox-sensors"
         }
     ],
     de: [
@@ -192,35 +197,40 @@ export const newsData: Record<string, NewsData[]> = {
             excerpt: "Wir freuen uns bekannt zu geben, dass RedNOx im Rahmen einer Investition von 26,8 Millionen Dollar zur Unterstützung bahnbrechender, von kleinen Unternehmen geführter Innovationen in der Landwirtschaft eine USDA NIFA SBIR Phase II-Förderung in Höhe von 650.000 Dollar erhalten hat. Diese Finanzierung ermöglicht es uns, unsere N₂O- und NOx-Sensortechnologien weiterzuentwickeln, die speziell auf die Reduzierung von Distickstoffoxid- und NOx-Emissionen aus synthetischen und mikrobiellen Düngemitteln ausgerichtet sind.",
             text: "Wir freuen uns bekannt zu geben, dass RedNOx im Rahmen einer Investition von 26,8 Millionen Dollar zur Unterstützung bahnbrechender, von kleinen Unternehmen geführter Innovationen in der Landwirtschaft eine USDA NIFA SBIR Phase II-Förderung in Höhe von 650.000 Dollar erhalten hat. Diese Finanzierung ermöglicht es uns, unsere N₂O- und NOx-Sensortechnologien weiterzuentwickeln, die speziell auf die Reduzierung von Distickstoffoxid- und NOx-Emissionen aus synthetischen und mikrobiellen Düngemitteln ausgerichtet sind. Diese Phase II-Auszeichnung unterstreicht die Bedeutung modernster Forschung bei der Bewältigung kritischer Umweltherausforderungen und bringt unsere Technologie der Kommerzialisierung näher. Mit der Unterstützung von USDA NIFA wird RedNOx seine Mission fortsetzen, die landwirtschaftliche Produktivität zu steigern, lokale Gemeinschaften zu unterstützen und zu einer saubereren, gesünderen Umwelt beizutragen.",
             date: "2024-10-31",
-            link: "https://content.govdelivery.com/accounts/USDANIFA/bulletins/3bf56f8"
+            link: "https://content.govdelivery.com/accounts/USDANIFA/bulletins/3bf56f8",
+            slug: "rednox-awarded-usda-nifa-sbir-phase-2"
         },
         {
             id: 2,
             title: "RedNOx unterzeichnet Absichtserklärung mit einem der weltweit größten Hersteller von Wasserstoff-, Diesel- und Erdgasmotoren",
             excerpt: "RedNOx sichert sich auch eine Bestellung von Cummins Inc. für NOx-Sensoren der nächsten Generation.",
             date: "2023-09-04",
-            link: "https://rednoxinc.com/wp-content/uploads/2023/09/Cummins-Press-Release_August-2023_v2.pdf"
+            link: "https://rednoxinc.com/wp-content/uploads/2023/09/Cummins-Press-Release_August-2023_v2.pdf",
+            slug: "rednox-signs-mou-with-cummins"
         },
         {
             id: 3,
             title: "RedNOx Revolution: Der nächste große Durchbruch bei der Emissionsreduzierung - Exklusiv in Chemical and Engineering News",
             excerpt: "RedNOx Revolution: Der nächste große Durchbruch bei der Emissionsreduzierung - Exklusiv in Chemical and Engineering News",
             date: "2023-08-21",
-            link: "https://cen.acs.org/food/agriculture/USDA-funds-food-agriculture-start/101/i29"
+            link: "https://cen.acs.org/food/agriculture/USDA-funds-food-agriculture-start/101/i29",
+            slug: "rednox-revolution-unraveling-the-next-big-breakthrough-in=emission-reduction"
         },
         {
             id: 4,
             title: "RedNOx erhält SBIR Phase I für seine innovative Treibhausgas-Messplattform",
             excerpt: "FREMONT, Kalifornien, 28. August 2023 (GLOBE NEWSWIRE) — RedNOx Inc., ein Vorreiter in der umweltfreundlichen Festkörper-Sensortechnologie, freut sich, die kürzliche Auszeichnung mit einem Phase I Small Business Innovation Research (SBIR)-Award für seine bahnbrechende Atmosphären- und Boden-Treibhausgas-Messplattform bekannt zu geben.",
             date: "2023-08-28",
-            link: "https://rednoxinc.com/wp-content/uploads/2023/08/USDA-Press-Release_August-2023.pdf"
+            link: "https://rednoxinc.com/wp-content/uploads/2023/08/USDA-Press-Release_August-2023.pdf",
+            slug: "rednox-awarded-sbir-phase-1"
         },
         {
             id: 5,
             title: "REDNOX SCHLIESST FINANZIERUNG ZUR ENTWICKLUNG DER NÄCHSTEN GENERATION VON NOx-SENSOREN FÜR NIEDRIG- BIS NULL-EMISSIONS-ANWENDUNGEN AB",
             excerpt: "RedNOx Inc. gab heute seine Gründung und den Abschluss der Seed-Finanzierung mit Rev1 Ventures Partners bekannt. RedNOx startet mit einer Technologielizenz von OSU zur Skalierung der Festkörper-NOx- und CO2-Sensortechnologie für saubere Energie und Fahrzeuge mit niedrigen bis null Emissionen. Die LoNOx-Sensortechnologie von RedNOx deutet auf einen Leistungs- und Zuverlässigkeitssprung hin, mit Erkennungsfähigkeiten im Teile-pro-Milliarde-Bereich und langfristiger Haltbarkeit.",
             date: "2022-07-01",
-            link: "#"
+            link: "#",
+            slug: "rednox-closes-financing-to-create-the-next-generation-nox-sensors"
         }
     ],
     ja: [
@@ -230,37 +240,121 @@ export const newsData: Record<string, NewsData[]> = {
             excerpt: "農業における画期的な中小企業主導のイノベーションを支援する2,680万ドルの投資の一環として、RedNOxが65万ドルのUSDA NIFA SBIRフェーズII助成金を獲得したことを発表できることを嬉しく思います。この資金により、合成および微生物肥料からの亜酸化窒素およびNOx排出の削減を特に目的とした当社のN₂OおよびNOxセンシング技術を進化させることができます。",
             text: "農業における画期的な中小企業主導のイノベーションを支援する2,680万ドルの投資の一環として、RedNOxが65万ドルのUSDA NIFA SBIRフェーズII助成金を獲得したことを発表できることを嬉しく思います。この資金により、合成および微生物肥料からの亜酸化窒素およびNOx排出の削減を特に目的とした当社のN₂OおよびNOxセンシング技術を進化させることができます。このフェーズII賞は、重要な環境課題への対処における最先端研究の重要性を強調し、当社の技術を商業化に近づけます。USDA NIFAの支援により、RedNOxは農業生産性の向上、地域社会への貢献、よりクリーンで健康的な環境への貢献という使命を継続します。",
             date: "2024-10-31",
-            link: "https://content.govdelivery.com/accounts/USDANIFA/bulletins/3bf56f8"
+            link: "https://content.govdelivery.com/accounts/USDANIFA/bulletins/3bf56f8",
+            slug: "rednox-awarded-usda-nifa-sbir-phase-2"
         },
         {
             id: 2,
             title: "RedNOxが世界最大級の水素、ディーゼル、天然ガスエンジンメーカーの1社と覚書を締結",
             excerpt: "RedNOxはまた、次世代NOxセンサーについてCummins Inc.から発注書を確保しました。",
             date: "2023-09-04",
-            link: "https://rednoxinc.com/wp-content/uploads/2023/09/Cummins-Press-Release_August-2023_v2.pdf"
+            link: "https://rednoxinc.com/wp-content/uploads/2023/09/Cummins-Press-Release_August-2023_v2.pdf",
+            slug: "rednox-signs-mou-with-cummins"
         },
         {
             id: 3,
-            title: "RedNOx革命：排出削減における次の大きな突破口を解き明かす - Chemical and Engineering Newsで独占公開",
-            excerpt: "RedNOx革命：排出削減における次の大きな突破口を解き明かす - Chemical and Engineering Newsで独占公開",
+            title: "RedNOx革命: 排出削減における次の大きな突破口を解き明かす - Chemical and Engineering Newsで独占公開",
+            excerpt: "RedNOx革命: 排出削減における次の大きな突破口を解き明かす - Chemical and Engineering Newsで独占公開",
             date: "2023-08-21",
-            link: "https://cen.acs.org/food/agriculture/USDA-funds-food-agriculture-start/101/i29"
+            link: "https://cen.acs.org/food/agriculture/USDA-funds-food-agriculture-start/101/i29",
+            slug: "rednox-revolution-unraveling-the-next-big-breakthrough-in=emission-reduction"
         },
         {
             id: 4,
             title: "RedNOxが画期的な温室効果ガス測定プラットフォームでSBIRフェーズIを受賞",
-            excerpt: "カリフォルニア州フリーモント、2023年8月28日（GLOBE NEWSWIRE）— 環境固体センシング技術のパイオニアであるRedNOx Inc.は、画期的な大気および土壌温室効果ガス測定プラットフォームでフェーズI中小企業技術革新研究（SBIR）賞を獲得したことを発表できることを嬉しく思います。",
+            excerpt: "カリフォルニア州フリーモント、2023年8月28日 (GLOBE NEWSWIRE) — 環境固体センシング技術のパイオニアであるRedNOx Inc.は、画期的な大気および土壌温室効果ガス測定プラットフォームでフェーズI中小企業技術革新研究 (SBIR) 賞を獲得したことを発表できることを嬉しく思います。",
             date: "2023-08-28",
-            link: "https://rednoxinc.com/wp-content/uploads/2023/08/USDA-Press-Release_August-2023.pdf"
+            link: "https://rednoxinc.com/wp-content/uploads/2023/08/USDA-Press-Release_August-2023.pdf",
+            slug: "rednox-awarded-sbir-phase-1"
         },
         {
             id: 5,
             title: "REDNOXが低排出から無排出アプリケーション向け次世代NOxセンサー開発のための資金調達を完了",
             excerpt: "RedNOx Inc.は本日、Rev1 Ventures Partnersとのシード資金調達の完了と立ち上げを発表しました。RedNOxは、クリーンエネルギーおよび低排出から無排出車両向けの固体NOxおよびCO2センサー技術を拡大するためのOSUからの技術ライセンスで開始します。RedNOxのLoNOxセンサー技術は、10億分の1の検出能力と長期耐久性により、性能と信頼性の飛躍を示しています。",
             date: "2022-07-01",
-            link: "#"
+            link: "#",
+            slug: "rednox-closes-financing-to-create-the-next-generation-nox-sensors"
         }
     ]
+}
+
+export const newsArticles = {
+    en: {
+        "rednox-awarded-usda-nifa-sbir-phase-2": {
+            title: "RedNOx Awarded USDA NIFA SBIR Phase II Grant to Drive Innovation in Agricultural Emissions Reduction",
+            excerpt: "We are thrilled to announce that RedNOx has been awarded a USDA NIFA SBIR Phase II grant of $650,000 as part of a $26.8 million investment to support groundbreaking, small business-led innovations in agriculture. This funding will enable us to advance our N₂O and NOx sensing technologies, specifically aimed at reducing emissions of nitrous oxide and NOx from both synthetic and microbial fertilizers.",
+            text: "We are thrilled to announce that RedNOx has been awarded a USDA NIFA SBIR Phase II grant of $650,000 as part of a $26.8 million investment to support groundbreaking, small business-led innovations in agriculture. This funding will enable us to advance our N₂O and NOx sensing technologies, specifically aimed at reducing emissions of nitrous oxide and NOx from both synthetic and microbial fertilizers. This Phase II award underscores the importance of cutting-edge research in addressing critical environmental challenges and brings our technology closer to commercialization. With USDA NIFA's support, RedNOx will continue its mission to enhance agricultural productivity, benefit local communities, and contribute to a cleaner, healthier environment.",
+            date: "2024-10-31",
+            readTime: "2 mins",
+            image: "",
+            category: "New release",
+            downloadLink: "",
+            content: `
+            <p>We are thrilled to announce that RedNOx has been awarded a USDA NIFA SBIR Phase II grant of $650,000 as part of a $26.8 million investment to support groundbreaking, small business-led innovations in agriculture. This funding will enable us to advance our N₂O and NOx sensing technologies, specifically aimed at reducing emissions of nitrous oxide and NOx from both synthetic and microbial fertilizers.
+            This Phase II award underscores the importance of cutting-edge research in addressing critical environmental challenges and brings our technology closer to commercialization. With USDA NIFA’s support, RedNOx will continue its mission to enhance agricultural productivity, benefit local communities, and contribute to a cleaner, healthier environment.</p>
+            `
+        },
+        "rednox-signs-mou-with-cummins": {
+            title: "RedNOx Signs MOU with One of the World's Largest Manufacturers of Hydrogen, Diesel, and Natural Gas Engines",
+            excerpt: "RedNOx also Secures a Purchase Order from Cummins Inc. for Next-Generation NOx Sensors.",
+            date: "2023-09-04",
+            downloadLink: "https://rednoxinc.com/wp-content/uploads/2023/09/Cummins-Press-Release_August-2023_v2.pdf",
+            readTime: "6 mins",
+            image: "",
+            category: "News Release",
+            content: `
+<p><strong>FREMONT, Calif., September 4, 2023 (PRWeb)</strong> -- RedNOx Inc. (“RedNOx”) is proud to announce a significant step in its collaboration with Cummins Inc. The Fremont, CA-based sensor start-up has signed a Memorandum of Understanding (MOU) for the development and commercialization of highly sensitive (parts-per-billion) NO sensors tailored for heavy-duty engine production. Cummins' engines are used in a wide range of applications, from trucks and buses to industrial and marine purposes. RedNOx’s NOx&nbsp;sensors are specifically engineered to be less susceptible to interference by ammonia, an issue prevalent with current on-market NOx&nbsp;sensors.</p>
+
+<p>Dr. Solomon Ssenyange, CEO of RedNOx, commented:</p>
+<blockquote>
+  <p>"We're at the forefront of NOx detection technology. This collaboration and the subsequent purchase order from Cummins Inc. for our NOx&nbsp;sensor used in exhaust gas monitoring and control are testaments to the innovation and reliability of our products."</p>
+</blockquote>
+
+<p>The MOU expands upon Cummins' initial evaluation of RedNOx's NOx&nbsp;sensor technology and their trust in its performance based on benchtop-gas tests. This agreement sets the stage for deeper collaboration between both companies.</p>
+
+<p>If technical and business talks go well, Cummins and RedNOx aim to integrate RedNOx's advanced sensors into various products within Cummins family of products.</p>
+
+<p>“This is an exciting opportunity to collaborate with a global market leader,” added Dr. Ssenyange. “While we have several milestones to achieve until we reach a product launch, this MOU demonstrates a meaningful step forward on both sides,” added Dr. Ssenyange.</p>
+            `
+        },
+        "rednox-revolution-unraveling-the-next-big-breakthrough-in=emission-reduction": {
+            title: "RedNOx Revolution: Unraveling the Next Big Breakthrough in Emissions Reduction - Exclusively on Chemical and Engineering News",
+            excerpt: "RedNOx Revolution: Unraveling the Next Big Breakthrough in Emissions Reduction - Exclusively on Chemical and Engineering News",
+            date: "2023-08-21",
+            link: "https://cen.acs.org/food/agriculture/USDA-funds-food-agriculture-start/101/i29",
+        },
+        "rednox-awarded-sbir-phase-1": {
+            title: "RedNOx Awarded SBIR Phase I for its Innovative Greenhouse Gas Measurement Platform",
+            excerpt: "FREMONT, Calif., August 28, 2023 (GLOBE NEWSWIRE) — RedNOx Inc., a trailblazer in environmental solid-state sensing technology, is delighted to announce its recent achievement in securing a Phase I Small Business Innovation Research (SBIR) award for its groundbreaking atmosphere and soil greenhouse gas measurement platform.",
+            date: "2023-08-28",
+            downloadLink: "https://rednoxinc.com/wp-content/uploads/2023/08/USDA-Press-Release_August-2023.pdf",
+            readTime: "5 mins",
+            category: "News Release",
+            content: `
+<p><strong>FREMONT, Calif., August 28, 2023 (GLOBE NEWSWIRE)</strong> -- RedNOx Inc., a trailblazer in environmental solid-state sensing technology, is delighted to announce its recent achievement in securing a Phase I Small Business Innovation Research (SBIR) award for its groundbreaking atmosphere and soil greenhouse gas measurement platform.</p>
+
+<p>RedNOx's unique platform measures nitrous oxide (N2O), nitrogen oxides (NOx), and carbon dioxide (CO2) emissions both in the atmosphere and the soil. For agriculturalists, farmer and energy producer, the platform simplifies the process of monitoring, reporting, and verifying these gas levels, ensuring accurate tracking of net negative carbon and NOx emissions. In the future, its integrated software will aggregate all the data and automatically generate the necessary documentation, enabling agricultural producers, factories and fuel using energy producer to easily engage in both the carbon and NOx&nbsp;credit markets. This advancement could boost farmers' incomes while encouraging sustainable agricultural practices.</p>
+
+<p>RedNOx's CEO, Dr. Solomon Ssenyange, stated:</p>
+<blockquote>
+  <p>"Receiving this award reaffirms our dedication to developing solutions that prioritize environmental sustainability and offer economic benefits to agriculture. Our sensor technology not only enhances soil health and food production but also promotes the reduction of carbon and NOx&nbsp;emissions."</p>
+</blockquote>
+
+<p>The announcement from RedNOx comes in the wake of the USDA's official press release on the recent Phase I Awards, further details of which can be accessed <a href="#">here</a>. RedNOx extends its gratitude to the USDA and the SBIR/STTR Office for recognizing and supporting initiatives that drive tech innovation in food and agriculture.</p>
+
+<p>For those with inquiries concerning the award or RedNOx's ambient and soil greenhouse gas measurement platform, you're encouraged to reach out to the company directly or to the SBIR/STTR Office for broader questions regarding the program.</p>
+            `
+        },
+        "rednox-closes-financing-to-create-the-next-generation-nox-sensors": {
+            title: "REDNOX CLOSES FINANCING TO CREATE THE NEXT GENERATION NOx SENSORS FOR LOW TO ZERO EMISSIONS APPLICATIONS",
+            excerpt: "RedNOx Inc announced today its launch and the completion of seed financing with Rev1 Ventures Partners.  RedNOx launches with a technology license from OSU to scale solid-state NOx and CO2 sensor technology for clean energy and low to zero emissions vehicles.  RedNOx's LoNOx sensor technology points to a leap in performance and reliability, with parts-per-billion detection capabilities and long-term durability.",
+            date: "2022-07-01",
+            readTime: "5 mins",
+            category: "News release",
+            content: `
+            <p>RedNOx Inc announced today its launch and the completion of seed financing with Rev1 Ventures Partners.  RedNOx launches with a technology license from OSU to scale solid-state NOx and CO2 sensor technology for clean energy and low to zero emissions vehicles.  RedNOx's LoNOx sensor technology points to a leap in performance and reliability, with parts-per-billion detection capabilities and long-term durability.</p>`
+        }
+    }
 }
 
 export const pressData: Record<string, PressData[]> = {
@@ -320,7 +414,7 @@ export const pressData: Record<string, PressData[]> = {
         {
             id: 1,
             title: "RedNOxが日本山村硝子とパートナーシップを締結、排出監視の革新に200万ドルを確保",
-            excerpt: "RedNOx Inc.が日本の大手セラミックスおよびガラスメーカーである日本山村硝子（NYG）とのパートナーシップを拡大したことを発表できることを嬉しく思います。",
+            excerpt: "RedNOx Inc.が日本の大手セラミックスおよびガラスメーカーである日本山村硝子 (NYG) とのパートナーシップを拡大したことを発表できることを嬉しく思います。",
             date: "2025-10-08",
             slug: "strategic-business-partnership-between-nihon-yamamura-glass-co-ltd-and-rednox",
             image: "/nihon.jpg"
@@ -336,7 +430,7 @@ export const pressData: Record<string, PressData[]> = {
         {
             id: 3,
             title: "RedNOxが画期的な温室効果ガス測定プラットフォームでSBIRフェーズIを受賞",
-            excerpt: "カリフォルニア州フリーモント、2023年8月28日（GLOBE NEWSWIRE）-- 環境固体センシング技術のパイオニアであるRedNOx Inc.は、画期的な大気および土壌温室効果ガス測定プラットフォームでフェーズI中小企業技術革新研究（SBIR）賞を獲得したことを発表できることを嬉しく思います。",
+            excerpt: "カリフォルニア州フリーモント、2023年8月28日 (GLOBE NEWSWIRE) -- 環境固体センシング技術のパイオニアであるRedNOx Inc.は、画期的な大気および土壌温室効果ガス測定プラットフォームでフェーズI中小企業技術革新研究 (SBIR) 賞を獲得したことを発表できることを嬉しく思います。",
             date: "2023-08-23",
             slug: "rednox-awarded-sbir-phase-i-for-its-innovative-greenhouse-gas-measurement-platform",
             image: "/usda.jpg"
@@ -441,19 +535,6 @@ export const publicationData: Record<string, PublicationData[]> = {
             link: "https://www.sciencedirect.com/science/article/abs/pii/S0925400504008871",
         },
     ]
-}
-
-export interface BlogPost {
-    title: string;
-    excerpt: string;
-    author?: string;
-    date: string;
-    image?: string;
-    readTime: string;
-    category: string;
-    content: string;
-    downloadCTATitle?: string;
-    downloadLink?: string;
 }
 
 export const blogPosts: Record<string, Record<string, BlogPost>> = {
@@ -591,14 +672,14 @@ export const blogPosts: Record<string, Record<string, BlogPost>> = {
         "rednox-awarded-sbir-phase-i-for-its-innovative-greenhouse-gas-measurement-platform": {
             title: "RedNOxが画期的な温室効果ガス測定プラットフォームでSBIRフェーズIを受賞",
             excerpt:
-                "カリフォルニア州フリーモント、2023年8月28日（GLOBE NEWSWIRE）— 環境固体センシング技術のパイオニアであるRedNOx Inc.は、画期的な大気および土壌温室効果ガス測定プラットフォームでフェーズI中小企業技術革新研究（SBIR）賞を獲得したことを発表できることを嬉しく思います。",
+                "カリフォルニア州フリーモント、2023年8月28日 (GLOBE NEWSWIRE) — 環境固体センシング技術のパイオニアであるRedNOx Inc.は、画期的な大気および土壌温室効果ガス測定プラットフォームでフェーズI中小企業技術革新研究 (SBIR) 賞を獲得したことを発表できることを嬉しく思います。",
             date: "2023-08-23",
             image: "/usda.jpg",
             readTime: "8 min read",
             category: "プレスリリース",
             content: `
-    <p>カリフォルニア州フリーモント、2023年8月28日（GLOBE NEWSWIRE）— 環境固体センシング技術のパイオニアであるRedNOx Inc.は、画期的な大気および土壌温室効果ガス測定プラットフォームでフェーズI中小企業技術革新研究（SBIR）賞を獲得したことを発表できることを嬉しく思います。</p>
-    <p>RedNOxのユニークなプラットフォームは、大気と土壌の両方で亜酸化窒素（N2O）、窒素酸化物（NOx）、二酸化炭素（CO2）の排出量を測定します。農業従事者、農家、エネルギー生産者にとって、このプラットフォームはこれらのガスレベルの監視、報告、検証のプロセスを簡素化し、正味マイナス炭素およびNOx排出量の正確な追跡を保証します。将来的には、統合ソフトウェアがすべてのデータを集約し、必要な文書を自動的に生成することで、農業生産者、工場、燃料を使用するエネルギー生産者が炭素およびNOxクレジット市場に簡単に参加できるようになります。この進歩により、持続可能な農業慣行を奨励しながら、農家の収入を増やすことができます。</p>
+    <p>カリフォルニア州フリーモント、2023年8月28日 (GLOBE NEWSWIRE) — 環境固体センシング技術のパイオニアであるRedNOx Inc.は、画期的な大気および土壌温室効果ガス測定プラットフォームでフェーズI中小企業技術革新研究 (SBIR) 賞を獲得したことを発表できることを嬉しく思います。</p>
+    <p>RedNOxのユニークなプラットフォームは、大気と土壌の両方で亜酸化窒素 (N2O)、窒素酸化物 (NOx)、二酸化炭素 (CO2) の排出量を測定します。農業従事者、農家、エネルギー生産者にとって、このプラットフォームはこれらのガスレベルの監視、報告、検証のプロセスを簡素化し、正味マイナス炭素およびNOx排出量の正確な追跡を保証します。将来的には、統合ソフトウェアがすべてのデータを集約し、必要な文書を自動的に生成することで、農業生産者、工場、燃料を使用するエネルギー生産者が炭素およびNOxクレジット市場に簡単に参加できるようになります。この進歩により、持続可能な農業慣行を奨励しながら、農家の収入を増やすことができます。</p>
     <p>RedNOxのCEOであるSolomon Ssenyange博士は次のように述べています。「この賞は、環境の持続可能性を優先し、農業に経済的利益を提供するソリューションの開発への私たちの献身を再確認するものです。当社のセンサー技術は、土壌の健康と食料生産を向上させるだけでなく、炭素およびNOx排出量の削減も促進します。」</p>
     <p>RedNOxの発表は、最近のフェーズI賞に関するUSDAの公式プレスリリースに続くものです。詳細についてはこちらをご覧ください。RedNOxは、食品と農業における技術革新を推進する取り組みを認識し、支援してくれたUSDAとSBIR/STTRオフィスに感謝の意を表します。</p>
     <p>この賞またはRedNOxの大気および土壌温室効果ガス測定プラットフォームに関するお問い合わせは、会社に直接お問い合わせいただくか、プログラムに関する一般的な質問についてはSBIR/STTRオフィスにお問い合わせください。</p>
@@ -622,7 +703,7 @@ export const blogPosts: Record<string, Record<string, BlogPost>> = {
         "strategic-business-partnership-between-nihon-yamamura-glass-co-ltd-and-rednox": {
             title: "RedNOxが日本山村硝子とパートナーシップを締結、排出監視の革新に200万ドルを確保",
             excerpt:
-                "RedNOx Inc.が日本の大手セラミックスおよびガラスメーカーである日本山村硝子（NYG）とのパートナーシップを拡大したことを発表できることを嬉しく思います。",
+                "RedNOx Inc.が日本の大手セラミックスおよびガラスメーカーである日本山村硝子 (NYG) とのパートナーシップを拡大したことを発表できることを嬉しく思います。",
             date: "2025-10-08",
             readTime: "5 min read",
             category: "プレスリリース",
@@ -631,17 +712,17 @@ export const blogPosts: Record<string, Record<string, BlogPost>> = {
             downloadCTATitle: "日本山村硝子プレスリリース",
             content: `
         <article>
-            <p>RedNOx Inc.は、日本山村硝子（NYG）との戦略的パートナーシップの拡大を発表できることを嬉しく思います。NYGは当社のオーバーサブスクライブされた200万ドルのシードラウンドに投資し、センサー生産の拡大のためにセラミックスおよびガラスシーリングの専門知識を提供します。</p>
+            <p>RedNOx Inc.は、日本山村硝子 (NYG) との戦略的パートナーシップの拡大を発表できることを嬉しく思います。NYGは当社のオーバーサブスクライブされた200万ドルのシードラウンドに投資し、センサー生産の拡大のためにセラミックスおよびガラスシーリングの専門知識を提供します。</p>
 
         <div>
-            これにより実現すること：モビリティおよび農業アプリケーション向けの次世代NOxおよびN₂Oセンサーのより迅速で高品質な製造。
+            これにより実現すること:モビリティおよび農業アプリケーション向けの次世代NOxおよびN₂Oセンサーのより迅速で高品質な製造。
         </div>
 
         <p style="font-weight: bold;">注目の技術：</p>
 
-        <p>LoNOxセンサー：500 ppb-20 ppmの範囲で超高感度NOx検出。アンモニア干渉に耐性があり、ディーゼルおよびガソリンエンジンに適しており、データセンターや病院で使用される低排出発電機に特に関連性があります。</p>
+        <p>LoNOxセンサー:500 ppb-20 ppmの範囲で超高感度NOx検出。アンモニア干渉に耐性があり、ディーゼルおよびガソリンエンジンに適しており、データセンターや病院で使用される低排出発電機に特に関連性があります。</p>
 
-        <p>AgriNOxシステム：サブppmレベルでの肥料由来N₂Oの精密測定。65万ドルのUSDA助成金に支援され、カリフォルニアでのパイロットプロジェクトは、農家が窒素投入量を削減し、炭素クレジットの機会にアクセスするのを支援しています。</p>
+        <p>AgriNOxシステム:サブppmレベルでの肥料由来N₂Oの精密測定。65万ドルのUSDA助成金に支援され、カリフォルニアでのパイロットプロジェクトは、農家が窒素投入量を削減し、炭素クレジットの機会にアクセスするのを支援しています。</p>
 
         <p style="font-weight: bold;">これが重要な理由：</p>
 
@@ -652,48 +733,6 @@ export const blogPosts: Record<string, Record<string, BlogPost>> = {
         `,
         }
     }
-}
-
-// Helper functions for locale-based article access
-export function getBlogPost(locale: string, slug: string): BlogPost | null {
-    // Get article for specified locale, fallback to English if not available
-    return blogPosts[locale]?.[slug] || blogPosts['en']?.[slug] || null;
-}
-
-export function getAllBlogPosts(locale: string): Record<string, BlogPost> {
-    // Get all articles for a specific locale, fallback to English if locale not found
-    return blogPosts[locale] || blogPosts['en'] || {};
-}
-
-export function getBlogPostsArray(locale: string): Array<BlogPost & { slug: string }> {
-    // Get all articles as an array for easier iteration
-    const posts = getAllBlogPosts(locale);
-    return Object.entries(posts).map(([slug, post]) => ({ ...post, slug }));
-}
-
-export function getAllBlogSlugs(): string[] {
-    // Get all unique slugs across all locales
-    const slugs = new Set<string>();
-    Object.values(blogPosts).forEach(localePosts => {
-        Object.keys(localePosts).forEach(slug => slugs.add(slug));
-    });
-    return Array.from(slugs);
-}
-
-// Helper functions for locale-based news, press, and publication data access
-export function getNewsData(locale: string): NewsData[] {
-    // Get news for specified locale, fallback to English if not available
-    return newsData[locale] || newsData['en'] || [];
-}
-
-export function getPressData(locale: string): PressData[] {
-    // Get press releases for specified locale, fallback to English if not available
-    return pressData[locale] || pressData['en'] || [];
-}
-
-export function getPublicationData(locale: string): PublicationData[] {
-    // Get publications for specified locale, fallback to English if not available
-    return publicationData[locale] || publicationData['en'] || [];
 }
 
 export const _investors = [
@@ -719,3 +758,36 @@ export const _investors = [
         email: "info@soundboardventurefund.com"
     }
 ]
+
+export function getBlogPost(locale: string, slug: string): BlogPost | null {
+    return blogPosts[locale]?.[slug] || blogPosts['en']?.[slug] || null;
+}
+
+export function getAllBlogPosts(locale: string): Record<string, BlogPost> {
+    return blogPosts[locale] || blogPosts['en'] || {};
+}
+
+export function getBlogPostsArray(locale: string): Array<BlogPost & { slug: string }> {
+    const posts = getAllBlogPosts(locale);
+    return Object.entries(posts).map(([slug, post]) => ({ ...post, slug }));
+}
+
+export function getAllBlogSlugs(): string[] {
+    const slugs = new Set<string>();
+    Object.values(blogPosts).forEach(localePosts => {
+        Object.keys(localePosts).forEach(slug => slugs.add(slug));
+    });
+    return Array.from(slugs);
+}
+
+export function getNewsData(locale: string): NewsData[] {
+    return newsData[locale] || newsData['en'] || [];
+}
+
+export function getPressData(locale: string): PressData[] {
+    return pressData[locale] || pressData['en'] || [];
+}
+
+export function getPublicationData(locale: string): PublicationData[] {
+    return publicationData[locale] || publicationData['en'] || [];
+}

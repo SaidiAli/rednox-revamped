@@ -23,6 +23,7 @@ export interface NewsData {
     image?: string;
     date: string;
     link: string;
+    slug: string;
 }
 
 export interface PressData {
@@ -40,4 +41,17 @@ export interface PublicationData {
     image?: string;
     authors: string[]
     link: string;
+}
+
+export interface BlogPost {
+    title: string;
+    excerpt: string;
+    author?: string;
+    date: string;
+    image?: string;
+    readTime: string;
+    category: string;
+    content: string;
+    downloadCTATitle?: string;
+    downloadLink?: string;
 }

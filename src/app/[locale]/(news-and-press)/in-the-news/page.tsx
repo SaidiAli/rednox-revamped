@@ -21,7 +21,7 @@ export default function News() {
     )
 }
 
-function NewsCard({ title, excerpt: description, image, link }: NewsData) {
+function NewsCard({ title, excerpt: description, image, slug }: NewsData) {
     return (
         <div className="group flex flex-row gap-4 items-center bg-moody p-4 rounded-2xl hover:shadow-xl transition duration-300 hover:scale-105 cursor-pointer">
             <Image src={image || "/newspaper.png"} alt="" width={100} height={100} priority className="rounded-2xl p-4" />
@@ -30,7 +30,7 @@ function NewsCard({ title, excerpt: description, image, link }: NewsData) {
                 <p className="text-base text-mute line-clamp-2">{description}</p>
                 <div className="flex justify-between items-center">
                     <p></p>
-                    <a href={link} className="group-hover:text-white text-primary transition duration-300 group-hover:bg-primary p-2 rounded-lg flex items-center gap-2">Read more <Icon icon="lucide:arrow-right" width="24" height="24" /></a>
+                    <a href={`/article/${slug}`} className="group-hover:text-white text-primary transition duration-300 group-hover:bg-primary p-2 rounded-lg flex items-center gap-2">Read more <Icon icon="lucide:arrow-right" width="24" height="24" /></a>
                 </div>
             </div>
         </div>

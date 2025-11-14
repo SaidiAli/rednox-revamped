@@ -96,14 +96,14 @@ export default function BlogPostPage() {
                 </section>
 
                 {/* Article Content */}
-                <section className="w-full pb-20 md:pb-32">
-                    <div className="container px-4 md:px-6">
-                        <div className="max-w-3xl mx-auto">
+                <section className="w-full pb-12">
+                    <div className="container px-4 md:p-0">
+                        <div className="max-w-4xl mx-auto">
                             <motion.div
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.5, delay: 0.2 }}
-                                className="prose prose-lg max-w-none text-white"
+                                className="prose prose-lg max-w-none text-white p-0"
                                 dangerouslySetInnerHTML={{ __html: currentPost.content }}
                             />
 

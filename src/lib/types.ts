@@ -54,4 +54,5 @@ export interface BlogPost {
     content: string;
     downloadCTATitle?: string;
     downloadLink?: string;
+    isNewsArticle?: boolean;
 }

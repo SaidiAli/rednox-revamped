@@ -171,7 +171,7 @@ export const newsData: Record<string, NewsData[]> = {
             excerpt: "RedNOx Revolution: Unraveling the Next Big Breakthrough in Emissions Reduction - Exclusively on Chemical and Engineering News",
             date: "2023-08-21",
             link: "https://cen.acs.org/food/agriculture/USDA-funds-food-agriculture-start/101/i29",
-            slug: "rednox-revolution-unraveling-the-next-big-breakthrough-in=emission-reduction"
+            slug: "rednox-revolution-unraveling-the-next-big-breakthrough-in-emission-reduction"
         },
         {
             id: 4,
@@ -214,7 +214,7 @@ export const newsData: Record<string, NewsData[]> = {
             excerpt: "RedNOx Revolution: Der nächste große Durchbruch bei der Emissionsreduzierung - Exklusiv in Chemical and Engineering News",
             date: "2023-08-21",
             link: "https://cen.acs.org/food/agriculture/USDA-funds-food-agriculture-start/101/i29",
-            slug: "rednox-revolution-unraveling-the-next-big-breakthrough-in=emission-reduction"
+            slug: "rednox-revolution-unraveling-the-next-big-breakthrough-in-emission-reduction"
         },
         {
             id: 4,
@@ -257,7 +257,7 @@ export const newsData: Record<string, NewsData[]> = {
             excerpt: "RedNOx革命: 排出削減における次の大きな突破口を解き明かす - Chemical and Engineering Newsで独占公開",
             date: "2023-08-21",
             link: "https://cen.acs.org/food/agriculture/USDA-funds-food-agriculture-start/101/i29",
-            slug: "rednox-revolution-unraveling-the-next-big-breakthrough-in=emission-reduction"
+            slug: "rednox-revolution-unraveling-the-next-big-breakthrough-in-emission-reduction"
         },
         {
             id: 4,
@@ -278,17 +278,17 @@ export const newsData: Record<string, NewsData[]> = {
     ]
 }
 
-export const newsArticles = {
+export const newsArticles: Record<string, Record<string, BlogPost>> = {
     en: {
         "rednox-awarded-usda-nifa-sbir-phase-2": {
             title: "RedNOx Awarded USDA NIFA SBIR Phase II Grant to Drive Innovation in Agricultural Emissions Reduction",
             excerpt: "We are thrilled to announce that RedNOx has been awarded a USDA NIFA SBIR Phase II grant of $650,000 as part of a $26.8 million investment to support groundbreaking, small business-led innovations in agriculture. This funding will enable us to advance our N₂O and NOx sensing technologies, specifically aimed at reducing emissions of nitrous oxide and NOx from both synthetic and microbial fertilizers.",
-            text: "We are thrilled to announce that RedNOx has been awarded a USDA NIFA SBIR Phase II grant of $650,000 as part of a $26.8 million investment to support groundbreaking, small business-led innovations in agriculture. This funding will enable us to advance our N₂O and NOx sensing technologies, specifically aimed at reducing emissions of nitrous oxide and NOx from both synthetic and microbial fertilizers. This Phase II award underscores the importance of cutting-edge research in addressing critical environmental challenges and brings our technology closer to commercialization. With USDA NIFA's support, RedNOx will continue its mission to enhance agricultural productivity, benefit local communities, and contribute to a cleaner, healthier environment.",
             date: "2024-10-31",
             readTime: "2 mins",
-            image: "",
+            image: "/usda.jpg",
             category: "New release",
-            downloadLink: "",
+            downloadLink: "https://content.govdelivery.com/accounts/USDANIFA/bulletins/3bf56f8",
+            downloadCTATitle: "NIFA Press Release",
             content: `
             <p>We are thrilled to announce that RedNOx has been awarded a USDA NIFA SBIR Phase II grant of $650,000 as part of a $26.8 million investment to support groundbreaking, small business-led innovations in agriculture. This funding will enable us to advance our N₂O and NOx sensing technologies, specifically aimed at reducing emissions of nitrous oxide and NOx from both synthetic and microbial fertilizers.
             This Phase II award underscores the importance of cutting-edge research in addressing critical environmental challenges and brings our technology closer to commercialization. With USDA NIFA’s support, RedNOx will continue its mission to enhance agricultural productivity, benefit local communities, and contribute to a cleaner, healthier environment.</p>
@@ -298,17 +298,16 @@ export const newsArticles = {
             title: "RedNOx Signs MOU with One of the World's Largest Manufacturers of Hydrogen, Diesel, and Natural Gas Engines",
             excerpt: "RedNOx also Secures a Purchase Order from Cummins Inc. for Next-Generation NOx Sensors.",
             date: "2023-09-04",
-            downloadLink: "https://rednoxinc.com/wp-content/uploads/2023/09/Cummins-Press-Release_August-2023_v2.pdf",
+            downloadLink: "/Cummins-Press-Release_August-2023_v2.pdf",
+            downloadCTATitle: "Cummins Press Release",
             readTime: "6 mins",
             image: "",
             category: "News Release",
             content: `
-<p><strong>FREMONT, Calif., September 4, 2023 (PRWeb)</strong> -- RedNOx Inc. (“RedNOx”) is proud to announce a significant step in its collaboration with Cummins Inc. The Fremont, CA-based sensor start-up has signed a Memorandum of Understanding (MOU) for the development and commercialization of highly sensitive (parts-per-billion) NO sensors tailored for heavy-duty engine production. Cummins' engines are used in a wide range of applications, from trucks and buses to industrial and marine purposes. RedNOx’s NOx&nbsp;sensors are specifically engineered to be less susceptible to interference by ammonia, an issue prevalent with current on-market NOx&nbsp;sensors.</p>
+<p>FREMONT, Calif., September 4, 2023 (PRWeb) -- RedNOx Inc. (“RedNOx”) is proud to announce a significant step in its collaboration with Cummins Inc. The Fremont, CA-based sensor start-up has signed a Memorandum of Understanding (MOU) for the development and commercialization of highly sensitive (parts-per-billion) NO sensors tailored for heavy-duty engine production. Cummins' engines are used in a wide range of applications, from trucks and buses to industrial and marine purposes. RedNOx’s NOx&nbsp;sensors are specifically engineered to be less susceptible to interference by ammonia, an issue prevalent with current on-market NOx&nbsp;sensors.</p>
 
 <p>Dr. Solomon Ssenyange, CEO of RedNOx, commented:</p>
-<blockquote>
   <p>"We're at the forefront of NOx detection technology. This collaboration and the subsequent purchase order from Cummins Inc. for our NOx&nbsp;sensor used in exhaust gas monitoring and control are testaments to the innovation and reliability of our products."</p>
-</blockquote>
 
 <p>The MOU expands upon Cummins' initial evaluation of RedNOx's NOx&nbsp;sensor technology and their trust in its performance based on benchtop-gas tests. This agreement sets the stage for deeper collaboration between both companies.</p>
 
@@ -317,28 +316,34 @@ export const newsArticles = {
 <p>“This is an exciting opportunity to collaborate with a global market leader,” added Dr. Ssenyange. “While we have several milestones to achieve until we reach a product launch, this MOU demonstrates a meaningful step forward on both sides,” added Dr. Ssenyange.</p>
             `
         },
-        "rednox-revolution-unraveling-the-next-big-breakthrough-in=emission-reduction": {
+        "rednox-revolution-unraveling-the-next-big-breakthrough-in-emission-reduction": {
             title: "RedNOx Revolution: Unraveling the Next Big Breakthrough in Emissions Reduction - Exclusively on Chemical and Engineering News",
             excerpt: "RedNOx Revolution: Unraveling the Next Big Breakthrough in Emissions Reduction - Exclusively on Chemical and Engineering News",
             date: "2023-08-21",
-            link: "https://cen.acs.org/food/agriculture/USDA-funds-food-agriculture-start/101/i29",
+            downloadLink: "https://cen.acs.org/food/agriculture/USDA-funds-food-agriculture-start/101/i29",
+            downloadCTATitle: "Read Article",
+            isNewsArticle: true,
+            readTime: "2 mins",
+            image: "",
+            category: "News Release",
+            content: ``
         },
         "rednox-awarded-sbir-phase-1": {
             title: "RedNOx Awarded SBIR Phase I for its Innovative Greenhouse Gas Measurement Platform",
             excerpt: "FREMONT, Calif., August 28, 2023 (GLOBE NEWSWIRE) — RedNOx Inc., a trailblazer in environmental solid-state sensing technology, is delighted to announce its recent achievement in securing a Phase I Small Business Innovation Research (SBIR) award for its groundbreaking atmosphere and soil greenhouse gas measurement platform.",
             date: "2023-08-28",
-            downloadLink: "https://rednoxinc.com/wp-content/uploads/2023/08/USDA-Press-Release_August-2023.pdf",
+            downloadLink: "/USDA-Press-Release_August-2023.pdf",
+            downloadCTATitle: "USDA Press Release",
+            image: "/usda.jpg",
             readTime: "5 mins",
             category: "News Release",
             content: `
-<p><strong>FREMONT, Calif., August 28, 2023 (GLOBE NEWSWIRE)</strong> -- RedNOx Inc., a trailblazer in environmental solid-state sensing technology, is delighted to announce its recent achievement in securing a Phase I Small Business Innovation Research (SBIR) award for its groundbreaking atmosphere and soil greenhouse gas measurement platform.</p>
+<p>FREMONT, Calif., August 28, 2023 (GLOBE NEWSWIRE) -- RedNOx Inc., a trailblazer in environmental solid-state sensing technology, is delighted to announce its recent achievement in securing a Phase I Small Business Innovation Research (SBIR) award for its groundbreaking atmosphere and soil greenhouse gas measurement platform.</p>
 
 <p>RedNOx's unique platform measures nitrous oxide (N2O), nitrogen oxides (NOx), and carbon dioxide (CO2) emissions both in the atmosphere and the soil. For agriculturalists, farmer and energy producer, the platform simplifies the process of monitoring, reporting, and verifying these gas levels, ensuring accurate tracking of net negative carbon and NOx emissions. In the future, its integrated software will aggregate all the data and automatically generate the necessary documentation, enabling agricultural producers, factories and fuel using energy producer to easily engage in both the carbon and NOx&nbsp;credit markets. This advancement could boost farmers' incomes while encouraging sustainable agricultural practices.</p>
 
 <p>RedNOx's CEO, Dr. Solomon Ssenyange, stated:</p>
-<blockquote>
   <p>"Receiving this award reaffirms our dedication to developing solutions that prioritize environmental sustainability and offer economic benefits to agriculture. Our sensor technology not only enhances soil health and food production but also promotes the reduction of carbon and NOx&nbsp;emissions."</p>
-</blockquote>
 
 <p>The announcement from RedNOx comes in the wake of the USDA's official press release on the recent Phase I Awards, further details of which can be accessed <a href="#">here</a>. RedNOx extends its gratitude to the USDA and the SBIR/STTR Office for recognizing and supporting initiatives that drive tech innovation in food and agriculture.</p>
 
@@ -760,7 +765,7 @@ export const _investors = [
 ]
 
 export function getBlogPost(locale: string, slug: string): BlogPost | null {
-    return blogPosts[locale]?.[slug] || blogPosts['en']?.[slug] || null;
+    return blogPosts[locale]?.[slug] || blogPosts['en']?.[slug] || newsArticles[locale]?.[slug] || newsArticles['en']?.[slug] || null;
 }
 
 export function getAllBlogPosts(locale: string): Record<string, BlogPost> {

@@ -114,7 +114,13 @@ export default function BlogPostPage() {
 
                 </section>
 
-                {currentPost.downloadLink && currentPost.downloadCTATitle && <DownloadCTA title={currentPost.downloadCTATitle} link={currentPost.downloadLink} />}
+                {currentPost.downloadLink && currentPost.downloadCTATitle && (
+                    currentPost.isNewsArticle ? (
+                        <NewsArticleCTA title={currentPost.downloadCTATitle} link={currentPost.downloadLink} />
+                    ) : (
+                        <DownloadCTA title={currentPost.downloadCTATitle} link={currentPost.downloadLink} />
+                    )
+                )}
             </div>
             <Footer />
         </main>
@@ -126,11 +132,28 @@ function DownloadCTA({ title, link }: { title: string, link: string }) {
     return (
         <section className="w-full py-12 md:py-20">
             <div className="container px-4 md:px-6">
-                <div className="max-w-3xl mx-auto">
+                <div className="max-w-4xl mx-auto">
                     <div className="flex flex-col md:flex-row justify-between items-center gap-4 bg-primary p-8 md:p-16 rounded-xl">
                         <p className="text-2xl font-bold">{title}</p>
                         <a href={link} target="_blank" rel="noopener noreferrer">
                             <Button className="bg-rBlue hover:bg-rBlue/80 cursor-pointer">Download press release<Download className="size-4" /></Button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    )
+}
+
+function NewsArticleCTA({ title, link }: { title: string, link: string }) {
+    return (
+        <section className="w-full py-12 md:py-20">
+            <div className="container px-4 md:px-6">
+                <div className="max-w-4xl mx-auto">
+                    <div className="flex flex-col md:flex-row justify-between items-center gap-4 bg-primary p-8 md:p-16 rounded-xl">
+                        <p className="text-2xl font-bold">{title}</p>
+                        <a href={link} target="_blank" rel="noopener noreferrer">
+                            <Button className="bg-rBlue hover:bg-rBlue/80 cursor-pointer">Read full article</Button>
                         </a>
                     </div>
                 </div>

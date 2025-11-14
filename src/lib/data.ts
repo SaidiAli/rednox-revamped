@@ -291,7 +291,7 @@ export const newsArticles: Record<string, Record<string, BlogPost>> = {
             downloadCTATitle: "NIFA Press Release",
             content: `
             <p>We are thrilled to announce that RedNOx has been awarded a USDA NIFA SBIR Phase II grant of $650,000 as part of a $26.8 million investment to support groundbreaking, small business-led innovations in agriculture. This funding will enable us to advance our N₂O and NOx sensing technologies, specifically aimed at reducing emissions of nitrous oxide and NOx from both synthetic and microbial fertilizers.
-            This Phase II award underscores the importance of cutting-edge research in addressing critical environmental challenges and brings our technology closer to commercialization. With USDA NIFA’s support, RedNOx will continue its mission to enhance agricultural productivity, benefit local communities, and contribute to a cleaner, healthier environment.</p>
+            This Phase II award underscores the importance of cutting-edge research in addressing critical environmental challenges and brings our technology closer to commercialization. With USDA NIFA's support, RedNOx will continue its mission to enhance agricultural productivity, benefit local communities, and contribute to a cleaner, healthier environment.</p>
             `
         },
         "rednox-signs-mou-with-cummins": {
@@ -304,7 +304,7 @@ export const newsArticles: Record<string, Record<string, BlogPost>> = {
             image: "",
             category: "News Release",
             content: `
-<p>FREMONT, Calif., September 4, 2023 (PRWeb) -- RedNOx Inc. (“RedNOx”) is proud to announce a significant step in its collaboration with Cummins Inc. The Fremont, CA-based sensor start-up has signed a Memorandum of Understanding (MOU) for the development and commercialization of highly sensitive (parts-per-billion) NO sensors tailored for heavy-duty engine production. Cummins' engines are used in a wide range of applications, from trucks and buses to industrial and marine purposes. RedNOx’s NOx&nbsp;sensors are specifically engineered to be less susceptible to interference by ammonia, an issue prevalent with current on-market NOx&nbsp;sensors.</p>
+<p>FREMONT, Calif., September 4, 2023 (PRWeb) -- RedNOx Inc. ("RedNOx") is proud to announce a significant step in its collaboration with Cummins Inc. The Fremont, CA-based sensor start-up has signed a Memorandum of Understanding (MOU) for the development and commercialization of highly sensitive (parts-per-billion) NO sensors tailored for heavy-duty engine production. Cummins' engines are used in a wide range of applications, from trucks and buses to industrial and marine purposes. RedNOx's NOx&nbsp;sensors are specifically engineered to be less susceptible to interference by ammonia, an issue prevalent with current on-market NOx&nbsp;sensors.</p>
 
 <p>Dr. Solomon Ssenyange, CEO of RedNOx, commented:</p>
   <p>"We're at the forefront of NOx detection technology. This collaboration and the subsequent purchase order from Cummins Inc. for our NOx&nbsp;sensor used in exhaust gas monitoring and control are testaments to the innovation and reliability of our products."</p>
@@ -313,7 +313,7 @@ export const newsArticles: Record<string, Record<string, BlogPost>> = {
 
 <p>If technical and business talks go well, Cummins and RedNOx aim to integrate RedNOx's advanced sensors into various products within Cummins family of products.</p>
 
-<p>“This is an exciting opportunity to collaborate with a global market leader,” added Dr. Ssenyange. “While we have several milestones to achieve until we reach a product launch, this MOU demonstrates a meaningful step forward on both sides,” added Dr. Ssenyange.</p>
+<p>"This is an exciting opportunity to collaborate with a global market leader," added Dr. Ssenyange. "While we have several milestones to achieve until we reach a product launch, this MOU demonstrates a meaningful step forward on both sides," added Dr. Ssenyange.</p>
             `
         },
         "rednox-revolution-unraveling-the-next-big-breakthrough-in-emission-reduction": {
@@ -358,6 +358,168 @@ export const newsArticles: Record<string, Record<string, BlogPost>> = {
             category: "News release",
             content: `
             <p>RedNOx Inc announced today its launch and the completion of seed financing with Rev1 Ventures Partners.  RedNOx launches with a technology license from OSU to scale solid-state NOx and CO2 sensor technology for clean energy and low to zero emissions vehicles.  RedNOx's LoNOx sensor technology points to a leap in performance and reliability, with parts-per-billion detection capabilities and long-term durability.</p>`
+        }
+    },
+    de: {
+        "rednox-awarded-usda-nifa-sbir-phase-2": {
+            title: "RedNOx erhält USDA NIFA SBIR Phase II-Förderung zur Förderung von Innovationen bei der Reduzierung landwirtschaftlicher Emissionen",
+            excerpt: "Wir freuen uns bekannt zu geben, dass RedNOx im Rahmen einer Investition von 26,8 Millionen Dollar zur Unterstützung bahnbrechender, von kleinen Unternehmen geführter Innovationen in der Landwirtschaft eine USDA NIFA SBIR Phase II-Förderung in Höhe von 650.000 Dollar erhalten hat. Diese Finanzierung ermöglicht es uns, unsere N₂O- und NOx-Sensortechnologien weiterzuentwickeln, die speziell auf die Reduzierung von Distickstoffoxid- und NOx-Emissionen aus synthetischen und mikrobiellen Düngemitteln ausgerichtet sind.",
+            date: "2024-10-31",
+            readTime: "2 mins",
+            image: "/usda.jpg",
+            category: "Neue Veröffentlichung",
+            downloadLink: "https://content.govdelivery.com/accounts/USDANIFA/bulletins/3bf56f8",
+            downloadCTATitle: "NIFA Pressemitteilung",
+            content: `
+            <p>Wir freuen uns bekannt zu geben, dass RedNOx im Rahmen einer Investition von 26,8 Millionen Dollar zur Unterstützung bahnbrechender, von kleinen Unternehmen geführter Innovationen in der Landwirtschaft eine USDA NIFA SBIR Phase II-Förderung in Höhe von 650.000 Dollar erhalten hat. Diese Finanzierung ermöglicht es uns, unsere N₂O- und NOx-Sensortechnologien weiterzuentwickeln, die speziell auf die Reduzierung von Distickstoffoxid- und NOx-Emissionen aus synthetischen und mikrobiellen Düngemitteln ausgerichtet sind.
+            Diese Phase II-Auszeichnung unterstreicht die Bedeutung modernster Forschung bei der Bewältigung kritischer Umweltherausforderungen und bringt unsere Technologie der Kommerzialisierung näher. Mit der Unterstützung von USDA NIFA wird RedNOx seine Mission fortsetzen, die landwirtschaftliche Produktivität zu steigern, lokale Gemeinschaften zu unterstützen und zu einer saubereren, gesünderen Umwelt beizutragen.</p>
+            `
+        },
+        "rednox-signs-mou-with-cummins": {
+            title: "RedNOx unterzeichnet Absichtserklärung mit einem der weltweit größten Hersteller von Wasserstoff-, Diesel- und Erdgasmotoren",
+            excerpt: "RedNOx sichert sich auch eine Bestellung von Cummins Inc. für NOx-Sensoren der nächsten Generation.",
+            date: "2023-09-04",
+            downloadLink: "/Cummins-Press-Release_August-2023_v2.pdf",
+            downloadCTATitle: "Cummins Pressemitteilung",
+            readTime: "6 mins",
+            image: "",
+            category: "Pressemitteilung",
+            content: `
+<p>FREMONT, Kalifornien, 4. September 2023 (PRWeb) -- RedNOx Inc. ("RedNOx") freut sich, einen bedeutenden Schritt in seiner Zusammenarbeit mit Cummins Inc. bekannt zu geben. Das in Fremont, Kalifornien ansässige Sensor-Start-up hat eine Absichtserklärung (MOU) für die Entwicklung und Kommerzialisierung hochempfindlicher (Teile pro Milliarde) NO-Sensoren unterzeichnet, die für die Produktion von Schwerlastmotoren maßgeschneidert sind. Die Motoren von Cummins werden in einer Vielzahl von Anwendungen eingesetzt, von Lastwagen und Bussen bis hin zu industriellen und maritimen Zwecken. Die NOx&nbsp;-Sensoren von RedNOx sind speziell entwickelt, um weniger anfällig für Interferenzen durch Ammoniak zu sein, ein Problem, das bei den derzeit auf dem Markt befindlichen NOx&nbsp;-Sensoren vorherrscht.</p>
+
+<p>Dr. Solomon Ssenyange, CEO von RedNOx, kommentierte:</p>
+  <p>"Wir stehen an der Spitze der NOx-Detektionstechnologie. Diese Zusammenarbeit und die anschließende Bestellung von Cummins Inc. für unseren NOx&nbsp;-Sensor, der zur Überwachung und Kontrolle von Abgasen verwendet wird, sind Zeugnisse für die Innovation und Zuverlässigkeit unserer Produkte."</p>
+
+<p>Die Absichtserklärung baut auf der ersten Bewertung der NOx&nbsp;-Sensortechnologie von RedNOx durch Cummins und ihrem Vertrauen in ihre Leistung auf der Grundlage von Labortests auf. Diese Vereinbarung bildet die Grundlage für eine tiefere Zusammenarbeit zwischen beiden Unternehmen.</p>
+
+<p>Wenn die technischen und geschäftlichen Gespräche gut verlaufen, wollen Cummins und RedNOx die fortschrittlichen Sensoren von RedNOx in verschiedene Produkte innerhalb der Cummins-Produktfamilie integrieren.</p>
+
+<p>"Dies ist eine aufregende Gelegenheit, mit einem globalen Marktführer zusammenzuarbeiten", fügte Dr. Ssenyange hinzu. "Während wir mehrere Meilensteine erreichen müssen, bis wir eine Produkteinführung erreichen, demonstriert diese Absichtserklärung einen bedeutenden Schritt nach vorne auf beiden Seiten", fügte Dr. Ssenyange hinzu.</p>
+            `
+        },
+        "rednox-revolution-unraveling-the-next-big-breakthrough-in-emission-reduction": {
+            title: "RedNOx Revolution: Der nächste große Durchbruch bei der Emissionsreduzierung - Exklusiv in Chemical and Engineering News",
+            excerpt: "RedNOx Revolution: Der nächste große Durchbruch bei der Emissionsreduzierung - Exklusiv in Chemical and Engineering News",
+            date: "2023-08-21",
+            downloadLink: "https://cen.acs.org/food/agriculture/USDA-funds-food-agriculture-start/101/i29",
+            downloadCTATitle: "Artikel lesen",
+            isNewsArticle: true,
+            readTime: "2 mins",
+            image: "",
+            category: "Pressemitteilung",
+            content: ``
+        },
+        "rednox-awarded-sbir-phase-1": {
+            title: "RedNOx erhält SBIR Phase I für seine innovative Treibhausgas-Messplattform",
+            excerpt: "FREMONT, Kalifornien, 28. August 2023 (GLOBE NEWSWIRE) — RedNOx Inc., ein Vorreiter in der umweltfreundlichen Festkörper-Sensortechnologie, freut sich, die kürzliche Auszeichnung mit einem Phase I Small Business Innovation Research (SBIR)-Award für seine bahnbrechende Atmosphären- und Boden-Treibhausgas-Messplattform bekannt zu geben.",
+            date: "2023-08-28",
+            downloadLink: "/USDA-Press-Release_August-2023.pdf",
+            downloadCTATitle: "USDA Pressemitteilung",
+            image: "/usda.jpg",
+            readTime: "5 mins",
+            category: "Pressemitteilung",
+            content: `
+<p>FREMONT, Kalifornien, 28. August 2023 (GLOBE NEWSWIRE) -- RedNOx Inc., ein Vorreiter in der umweltfreundlichen Festkörper-Sensortechnologie, freut sich, die kürzliche Auszeichnung mit einem Phase I Small Business Innovation Research (SBIR)-Award für seine bahnbrechende Atmosphären- und Boden-Treibhausgas-Messplattform bekannt zu geben.</p>
+
+<p>Die einzigartige Plattform von RedNOx misst Distickstoffoxid (N2O), Stickoxide (NOx) und Kohlendioxid (CO2)-Emissionen sowohl in der Atmosphäre als auch im Boden. Für Landwirte, Farmer und Energieproduzenten vereinfacht die Plattform den Prozess der Überwachung, Berichterstattung und Verifizierung dieser Gaswerte und gewährleistet eine genaue Verfolgung der Netto-Negativ-Kohlenstoff- und NOx-Emissionen. In Zukunft wird die integrierte Software alle Daten aggregieren und automatisch die erforderliche Dokumentation erstellen, wodurch landwirtschaftliche Produzenten, Fabriken und kraftstoffnutzende Energieproduzenten einfach an Kohlenstoff- und NOx&nbsp;-Kreditmärkten teilnehmen können. Dieser Fortschritt könnte das Einkommen der Landwirte steigern und gleichzeitig nachhaltige landwirtschaftliche Praktiken fördern.</p>
+
+<p>Dr. Solomon Ssenyange, CEO von RedNOx, erklärte:</p>
+  <p>"Diese Auszeichnung bestätigt unser Engagement für die Entwicklung von Lösungen, die Umweltnachhaltigkeit priorisieren und wirtschaftliche Vorteile für die Landwirtschaft bieten. Unsere Sensortechnologie verbessert nicht nur die Bodengesundheit und Lebensmittelproduktion, sondern fördert auch die Reduzierung von Kohlenstoff- und NOx&nbsp;-Emissionen."</p>
+
+<p>Die Ankündigung von RedNOx folgt auf die offizielle Pressemitteilung des USDA zu den kürzlichen Phase I Awards, weitere Details dazu finden Sie <a href="#">hier</a>. RedNOx dankt dem USDA und dem SBIR/STTR Office für die Anerkennung und Unterstützung von Initiativen, die technologische Innovation in Lebensmitteln und Landwirtschaft vorantreiben.</p>
+
+<p>Für Anfragen bezüglich der Auszeichnung oder der Atmosphären- und Boden-Treibhausgas-Messplattform von RedNOx wenden Sie sich bitte direkt an das Unternehmen oder an das SBIR/STTR Office für allgemeinere Fragen zum Programm.</p>
+            `
+        },
+        "rednox-closes-financing-to-create-the-next-generation-nox-sensors": {
+            title: "REDNOX SCHLIESST FINANZIERUNG ZUR ENTWICKLUNG DER NÄCHSTEN GENERATION VON NOx-SENSOREN FÜR NIEDRIG- BIS NULL-EMISSIONS-ANWENDUNGEN AB",
+            excerpt: "RedNOx Inc. gab heute seine Gründung und den Abschluss der Seed-Finanzierung mit Rev1 Ventures Partners bekannt. RedNOx startet mit einer Technologielizenz von OSU zur Skalierung der Festkörper-NOx- und CO2-Sensortechnologie für saubere Energie und Fahrzeuge mit niedrigen bis null Emissionen. Die LoNOx-Sensortechnologie von RedNOx deutet auf einen Leistungs- und Zuverlässigkeitssprung hin, mit Erkennungsfähigkeiten im Teile-pro-Milliarde-Bereich und langfristiger Haltbarkeit.",
+            date: "2022-07-01",
+            readTime: "5 mins",
+            category: "Pressemitteilung",
+            content: `
+            <p>RedNOx Inc. gab heute seine Gründung und den Abschluss der Seed-Finanzierung mit Rev1 Ventures Partners bekannt. RedNOx startet mit einer Technologielizenz von OSU zur Skalierung der Festkörper-NOx- und CO2-Sensortechnologie für saubere Energie und Fahrzeuge mit niedrigen bis null Emissionen. Die LoNOx-Sensortechnologie von RedNOx deutet auf einen Leistungs- und Zuverlässigkeitssprung hin, mit Erkennungsfähigkeiten im Teile-pro-Milliarde-Bereich und langfristiger Haltbarkeit.</p>`
+        }
+    },
+    ja: {
+        "rednox-awarded-usda-nifa-sbir-phase-2": {
+            title: "RedNOxが農業排出削減のイノベーション推進のためUSDA NIFA SBIRフェーズII助成金を獲得",
+            excerpt: "農業における画期的な中小企業主導のイノベーションを支援する2,680万ドルの投資の一環として、RedNOxが65万ドルのUSDA NIFA SBIRフェーズII助成金を獲得したことを発表できることを嬉しく思います。この資金により、合成および微生物肥料からの亜酸化窒素およびNOx排出の削減を特に目的とした当社のN₂OおよびNOxセンシング技術を進化させることができます。",
+            date: "2024-10-31",
+            readTime: "2 mins",
+            image: "/usda.jpg",
+            category: "新リリース",
+            downloadLink: "https://content.govdelivery.com/accounts/USDANIFA/bulletins/3bf56f8",
+            downloadCTATitle: "NIFAプレスリリース",
+            content: `
+            <p>農業における画期的な中小企業主導のイノベーションを支援する2,680万ドルの投資の一環として、RedNOxが65万ドルのUSDA NIFA SBIRフェーズII助成金を獲得したことを発表できることを嬉しく思います。この資金により、合成および微生物肥料からの亜酸化窒素およびNOx排出の削減を特に目的とした当社のN₂OおよびNOxセンシング技術を進化させることができます。
+            このフェーズII賞は、重要な環境課題への対処における最先端研究の重要性を強調し、当社の技術を商業化に近づけます。USDA NIFAの支援により、RedNOxは農業生産性の向上、地域社会への貢献、よりクリーンで健康的な環境への貢献という使命を継続します。</p>
+            `
+        },
+        "rednox-signs-mou-with-cummins": {
+            title: "RedNOxが世界最大級の水素、ディーゼル、天然ガスエンジンメーカーの1社と覚書を締結",
+            excerpt: "RedNOxはまた、次世代NOxセンサーについてCummins Inc.から発注書を確保しました。",
+            date: "2023-09-04",
+            downloadLink: "/Cummins-Press-Release_August-2023_v2.pdf",
+            downloadCTATitle: "Cumminsプレスリリース",
+            readTime: "6 mins",
+            image: "",
+            category: "プレスリリース",
+            content: `
+<p>カリフォルニア州フリーモント、2023年9月4日 (PRWeb) -- RedNOx Inc. ("RedNOx") は、Cummins Inc.との協力における重要な一歩を発表できることを誇りに思います。カリフォルニア州フリーモントに拠点を置くセンサースタートアップは、重負荷エンジン生産に特化した高感度（10億分の1）NOセンサーの開発と商業化のための覚書（MOU）に署名しました。Cumminsのエンジンは、トラックやバスから産業および海洋用途まで、幅広い用途で使用されています。RedNOxのNOx&nbsp;センサーは、現在市場に出回っているNOx&nbsp;センサーで一般的な問題であるアンモニアによる干渉を受けにくいように特別に設計されています。</p>
+
+<p>RedNOxのCEOであるSolomon Ssenyange博士はコメントしました：</p>
+  <p>「私たちはNOx検出技術の最前線にいます。この協力と、排気ガス監視および制御に使用される当社のNOx&nbsp;センサーについてのCummins Inc.からの発注書は、当社製品の革新性と信頼性の証です。」</p>
+
+<p>この覚書は、RedNOxのNOx&nbsp;センサー技術に対するCumminsの最初の評価と、ベンチトップガステストに基づくその性能への信頼を拡大するものです。この契約は、両社間のより深い協力の舞台を整えます。</p>
+
+<p>技術的およびビジネス上の交渉がうまくいけば、CumminsとRedNOxは、RedNOxの先進的なセンサーをCummins製品ファミリーのさまざまな製品に統合することを目指しています。</p>
+
+<p>「これはグローバル市場のリーダーと協力するエキサイティングな機会です」と、Ssenyange博士は付け加えました。「製品発売まで達成すべき複数のマイルストーンがありますが、この覚書は双方にとって意味のある前進を示しています」と、Ssenyange博士は付け加えました。</p>
+            `
+        },
+        "rednox-revolution-unraveling-the-next-big-breakthrough-in-emission-reduction": {
+            title: "RedNOx革命: 排出削減における次の大きな突破口を解き明かす - Chemical and Engineering Newsで独占公開",
+            excerpt: "RedNOx革命: 排出削減における次の大きな突破口を解き明かす - Chemical and Engineering Newsで独占公開",
+            date: "2023-08-21",
+            downloadLink: "https://cen.acs.org/food/agriculture/USDA-funds-food-agriculture-start/101/i29",
+            downloadCTATitle: "記事を読む",
+            isNewsArticle: true,
+            readTime: "2 mins",
+            image: "",
+            category: "プレスリリース",
+            content: ``
+        },
+        "rednox-awarded-sbir-phase-1": {
+            title: "RedNOxが画期的な温室効果ガス測定プラットフォームでSBIRフェーズIを受賞",
+            excerpt: "カリフォルニア州フリーモント、2023年8月28日 (GLOBE NEWSWIRE) — 環境固体センシング技術のパイオニアであるRedNOx Inc.は、画期的な大気および土壌温室効果ガス測定プラットフォームでフェーズI中小企業技術革新研究 (SBIR) 賞を獲得したことを発表できることを嬉しく思います。",
+            date: "2023-08-28",
+            downloadLink: "/USDA-Press-Release_August-2023.pdf",
+            downloadCTATitle: "USDAプレスリリース",
+            image: "/usda.jpg",
+            readTime: "5 mins",
+            category: "プレスリリース",
+            content: `
+<p>カリフォルニア州フリーモント、2023年8月28日 (GLOBE NEWSWIRE) -- 環境固体センシング技術のパイオニアであるRedNOx Inc.は、画期的な大気および土壌温室効果ガス測定プラットフォームでフェーズI中小企業技術革新研究 (SBIR) 賞を獲得したことを発表できることを嬉しく思います。</p>
+
+<p>RedNOxのユニークなプラットフォームは、大気と土壌の両方で亜酸化窒素 (N2O)、窒素酸化物 (NOx)、二酸化炭素 (CO2) の排出量を測定します。農業従事者、農家、エネルギー生産者にとって、このプラットフォームはこれらのガスレベルの監視、報告、検証のプロセスを簡素化し、正味マイナス炭素およびNOx排出量の正確な追跡を保証します。将来的には、統合ソフトウェアがすべてのデータを集約し、必要な文書を自動的に生成することで、農業生産者、工場、燃料を使用するエネルギー生産者が炭素およびNOx&nbsp;クレジット市場に簡単に参加できるようになります。この進歩により、持続可能な農業慣行を奨励しながら、農家の収入を増やすことができます。</p>
+
+<p>RedNOxのCEOであるSolomon Ssenyange博士は次のように述べています：</p>
+  <p>「この賞は、環境の持続可能性を優先し、農業に経済的利益を提供するソリューションの開発への私たちの献身を再確認するものです。当社のセンサー技術は、土壌の健康と食料生産を向上させるだけでなく、炭素およびNOx&nbsp;排出量の削減も促進します。」</p>
+
+<p>RedNOxの発表は、最近のフェーズI賞に関するUSDAの公式プレスリリースに続くものです。詳細については<a href="#">こちら</a>をご覧ください。RedNOxは、食品と農業における技術革新を推進する取り組みを認識し、支援してくれたUSDAとSBIR/STTRオフィスに感謝の意を表します。</p>
+
+<p>この賞またはRedNOxの大気および土壌温室効果ガス測定プラットフォームに関するお問い合わせは、会社に直接お問い合わせいただくか、プログラムに関する一般的な質問についてはSBIR/STTRオフィスにお問い合わせください。</p>
+            `
+        },
+        "rednox-closes-financing-to-create-the-next-generation-nox-sensors": {
+            title: "REDNOXが低排出から無排出アプリケーション向け次世代NOxセンサー開発のための資金調達を完了",
+            excerpt: "RedNOx Inc.は本日、Rev1 Ventures Partnersとのシード資金調達の完了と立ち上げを発表しました。RedNOxは、クリーンエネルギーおよび低排出から無排出車両向けの固体NOxおよびCO2センサー技術を拡大するためのOSUからの技術ライセンスで開始します。RedNOxのLoNOxセンサー技術は、10億分の1の検出能力と長期耐久性により、性能と信頼性の飛躍を示しています。",
+            date: "2022-07-01",
+            readTime: "5 mins",
+            category: "プレスリリース",
+            content: `
+            <p>RedNOx Inc.は本日、Rev1 Ventures Partnersとのシード資金調達の完了と立ち上げを発表しました。RedNOxは、クリーンエネルギーおよび低排出から無排出車両向けの固体NOxおよびCO2センサー技術を拡大するためのOSUからの技術ライセンスで開始します。RedNOxのLoNOxセンサー技術は、10億分の1の検出能力と長期耐久性により、性能と信頼性の飛躍を示しています。</p>`
         }
     }
 }

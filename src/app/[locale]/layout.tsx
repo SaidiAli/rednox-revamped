@@ -6,6 +6,7 @@ import { hasLocale, NextIntlClientProvider } from "next-intl"
 import { routing } from '@/i18n/routing';
 import { notFound } from "next/navigation"
 import { cn } from "@/lib/utils"
+import { Analytics } from "@vercel/analytics/next"
 
 const nunito = Nunito_Sans({ subsets: ["latin"], variable: "--font-nunito" })
 const exo = Exo({ subsets: ["latin"], variable: "--font-exo" })
@@ -59,6 +60,7 @@ export default async function RootLayout({
         <NextIntlClientProvider>
           {children}
         </NextIntlClientProvider>
+        <Analytics />
       </body>
     </html>
   )

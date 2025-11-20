@@ -50,10 +50,10 @@
                 "link3": "About Us"
             },
             "resourses": {
-                "title": "Resources",
-                "link1": "Terms of Service",
-                "link2": "Privacy Policy",
-                "link3": "Contact Us"
+                "title": "News & Publications",
+                "link1": "Press Release",
+                "link2": "In the news",
+                "link3": "Publications"
             }
         }
     },

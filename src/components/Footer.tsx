@@ -38,13 +38,13 @@ export default function Footer({ className }: { className?: string }) {
                         </div>
                         <div className="flex flex-col gap-3 md:gap-4">
                             <p className="text-white text-sm font-semibold">{t("links.resourses.title")}</p>
-                            <Link href="#" className="hover:text-primary transition-colors hover:underline">
+                            <Link href="/press-release" className="hover:text-primary transition-colors hover:underline">
                                 {t("links.resourses.link1")}
                             </Link>
-                            <Link href="#" className="hover:text-primary transition-colors hover:underline">
+                            <Link href="/in-the-news" className="hover:text-primary transition-colors hover:underline">
                                 {t("links.resourses.link2")}
                             </Link>
-                            <Link href="/contact" className="hover:text-primary transition-colors hover:underline">
+                            <Link href="/publications" className="hover:text-primary transition-colors hover:underline">
                                 {t("links.resourses.link3")}
                             </Link>
                         </div>

@@ -133,7 +133,7 @@ export const investors = (t: AboutTranslations): TeamMember[] => [
         position: "Director",
         image: "https://res.cloudinary.com/dvixlnczm/image/upload/v1759086904/wayne_zaosbe.jpg",
         alt: "wayne embree rednox",
-        bio: t("investors.members.wayne.bio"),
+        bio: t("bod.members.wayne.bio"),
         linkedin: "https://www.linkedin.com/in/wayne-embree-a07125/"
     },
     {
@@ -142,7 +142,7 @@ export const investors = (t: AboutTranslations): TeamMember[] => [
         position: "Director",
         image: "https://res.cloudinary.com/dvixlnczm/image/upload/v1759086878/JPM_pic_xhhzfd.jpg",
         alt: "jp mijares rednox",
-        bio: t("investors.members.noboru.bio"),
+        bio: t("bod.members.noboru.bio"),
     }
 ]
 

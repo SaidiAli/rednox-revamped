@@ -149,6 +149,14 @@ export const investors = (t: AboutTranslations): TeamMember[] => [
 export const newsData: Record<string, NewsData[]> = {
     en: [
         {
+            id: 6,
+            title: "Europe's New Soil Monitoring Law: A Milestone for Soil Health and Food Security",
+            excerpt: "Europe has just crossed an important milestone for climate and food security. On 23 October 2025, the European Parliament approved the Soil Monitoring and Resilience Directive – the EU’s first law dedicated to soil health.",
+            date: "2025-12-11",
+            link: "https://ai4soilhealth.eu",
+            slug: "europe-soil-monitoring-law-milestone"
+        },
+        {
             id: 1,
             title: "RedNOx Awarded USDA NIFA SBIR Phase II Grant to Drive Innovation in Agricultural Emissions Reduction",
             excerpt: "We are thrilled to announce that RedNOx has been awarded a USDA NIFA SBIR Phase II grant of $650,000 as part of a $26.8 million investment to support groundbreaking, small business-led innovations in agriculture. This funding will enable us to advance our N₂O and NOx sensing technologies, specifically aimed at reducing emissions of nitrous oxide and NOx from both synthetic and microbial fertilizers.",
@@ -192,6 +200,14 @@ export const newsData: Record<string, NewsData[]> = {
     ],
     de: [
         {
+            id: 6,
+            title: "Europas neues Bodenüberwachungsgesetz: Ein Meilenstein für Bodengesundheit und Ernährungssicherheit",
+            excerpt: "Europa hat gerade einen wichtigen Meilenstein für Klima und Ernährungssicherheit erreicht. Am 23. Oktober 2025 hat das Europäische Parlament die Richtlinie zur Bodenüberwachung und Resilienz verabschiedet – das erste EU-Gesetz, das sich der Bodengesundheit widmet.",
+            date: "2025-12-11",
+            link: "https://ai4soilhealth.eu",
+            slug: "europe-soil-monitoring-law-milestone"
+        },
+        {
             id: 1,
             title: "RedNOx erhält USDA NIFA SBIR Phase II-Förderung zur Förderung von Innovationen bei der Reduzierung landwirtschaftlicher Emissionen",
             excerpt: "Wir freuen uns bekannt zu geben, dass RedNOx im Rahmen einer Investition von 26,8 Millionen Dollar zur Unterstützung bahnbrechender, von kleinen Unternehmen geführter Innovationen in der Landwirtschaft eine USDA NIFA SBIR Phase II-Förderung in Höhe von 650.000 Dollar erhalten hat. Diese Finanzierung ermöglicht es uns, unsere N₂O- und NOx-Sensortechnologien weiterzuentwickeln, die speziell auf die Reduzierung von Distickstoffoxid- und NOx-Emissionen aus synthetischen und mikrobiellen Düngemitteln ausgerichtet sind.",
@@ -234,6 +250,14 @@ export const newsData: Record<string, NewsData[]> = {
         }
     ],
     ja: [
+        {
+            id: 6,
+            title: "欧州の新しい土壌監視法：土壌の健康と食料安全保障のためのマイルストーン",
+            excerpt: "欧州は、気候と食料安全保障のための重要なマイルストーンを達成しました。2025年10月23日、欧州議会は土壌監視およびレジリエンス指令を承認しました。これは、土壌の健康に特化したEU初の法律です。",
+            date: "2025-12-11",
+            link: "https://ai4soilhealth.eu",
+            slug: "europe-soil-monitoring-law-milestone"
+        },
         {
             id: 1,
             title: "RedNOxが農業排出削減のイノベーション推進のためUSDA NIFA SBIRフェーズII助成金を獲得",
@@ -706,6 +730,36 @@ export const publicationData: Record<string, PublicationData[]> = {
 
 export const blogPosts: Record<string, Record<string, BlogPost>> = {
     en: {
+        "europe-soil-monitoring-law-milestone": {
+            title: "Europe's New Soil Monitoring Law: A Milestone for Soil Health and Food Security",
+            excerpt: "Europe has just crossed an important milestone for climate and food security. On 23 October 2025, the European Parliament approved the Soil Monitoring and Resilience Directive – the EU’s first law dedicated to soil health.",
+            date: "2025-12-11",
+            readTime: "3 min read",
+            category: "News Release",
+            image: "/soil-health-law.png",
+            downloadLink: "https://ai4soilhealth.eu/europe-adopts-its-first-soil-health-law/",
+            downloadCTATitle: "Learn More",
+            content: `
+            <p>Europe has just crossed an important milestone for climate and food security.</p>
+            <p>On 23 October 2025, the European Parliament approved the Soil Monitoring and Resilience Directive – the EU’s first law dedicated to soil health. The law enters into force on 15 December 2025 and requires Member States to regularly monitor and assess soil health across all land uses, including agricultural soils.</p>
+            <p>In practice, the Soil Monitoring Law means:</p>
+            <ul class="list-disc pl-6 mb-4">
+                <li>Every Member State must define soil districts and soil units and build national monitoring networks.</li>
+                <li>Soil health has to be tracked across multiple degradation aspects – including excess nutrient (nitrogen) loads.</li>
+                <li>Governments must turn this data into actionable support for farmers and land managers, not just compliance reports.</li>
+            </ul>
+            <p>At RedNOx, we are aligning our AgriNOx platform with this new framework.</p>
+            <p>AgriNOx combines ultra-sensitive (ppb) N₂O and NO real-time sub-surface sensing with a data and analytics layer to help:</p>
+            <ul class="list-disc pl-6 mb-4">
+                <li>Quantify nitrogen losses from fertiliser use at the plot and soil-unit level.</li>
+                <li>Translate those measurements into soil-health and nitrogen-efficiency indicators that Member States can use in their monitoring and reporting.</li>
+                <li>Give farmers and advisors decision support on how to cut nitrogen waste and greenhouse gas emissions while maintaining yields.</li>
+            </ul>
+            <p>Our goal is simple: help turn this law from a policy milestone into measurable improvements in soil health, nitrogen efficiency, and farm profitability.</p>
+            <p><a href="https://ai4soilhealth.eu" target="_blank" class="text-primary hover:underline">ai4soilhealth.eu</a><br/>
+            <a href="https://lnkd.in/gynKggte" target="_blank" class="text-primary hover:underline">LinkedIn Post</a></p>
+            `
+        },
         "rednox-awarded-sbir-phase-i-for-its-innovative-greenhouse-gas-measurement-platform": {
             title: "RedNOx Awarded SBIR Phase I for its Innovative Greenhouse Gas Measurement Platform",
             excerpt:
@@ -771,6 +825,36 @@ export const blogPosts: Record<string, Record<string, BlogPost>> = {
         }
     },
     de: {
+        "europe-soil-monitoring-law-milestone": {
+            title: "Europas neues Bodenüberwachungsgesetz: Ein Meilenstein für Bodengesundheit und Ernährungssicherheit",
+            excerpt: "Europa hat gerade einen wichtigen Meilenstein für Klima und Ernährungssicherheit erreicht. Am 23. Oktober 2025 hat das Europäische Parlament die Richtlinie zur Bodenüberwachung und Resilienz verabschiedet – das erste EU-Gesetz, das sich der Bodengesundheit widmet.",
+            date: "2025-12-11",
+            readTime: "3 min read",
+            category: "Pressemitteilung",
+            image: "/soil-health-law.png",
+            downloadLink: "https://ai4soilhealth.eu",
+            downloadCTATitle: "Mehr erfahren",
+            content: `
+            <p>Europa hat gerade einen wichtigen Meilenstein für Klima und Ernährungssicherheit erreicht.</p>
+            <p>Am 23. Oktober 2025 hat das Europäische Parlament die Richtlinie zur Bodenüberwachung und Resilienz verabschiedet – das erste EU-Gesetz, das sich der Bodengesundheit widmet. Das Gesetz tritt am 15. Dezember 2025 in Kraft und verpflichtet die Mitgliedstaaten, die Bodengesundheit bei allen Landnutzungsarten, einschließlich landwirtschaftlicher Böden, regelmäßig zu überwachen und zu bewerten.</p>
+            <p>In der Praxis bedeutet das Bodenüberwachungsgesetz:</p>
+            <ul class="list-disc pl-6 mb-4">
+                <li>Jeder Mitgliedstaat muss Bodendistrikte und Bodeneinheiten definieren und nationale Überwachungsnetzwerke aufbauen.</li>
+                <li>Die Bodengesundheit muss über mehrere Degradationsaspekte hinweg verfolgt werden – einschließlich überschüssiger Nährstoffbelastungen (Stickstoff).</li>
+                <li>Regierungen müssen diese Daten in handlungsfähige Unterstützung für Landwirte und Landmanager umwandeln, nicht nur in Compliance-Berichte.</li>
+            </ul>
+            <p>Bei RedNOx richten wir unsere AgriNOx-Plattform auf diesen neuen Rahmen aus.</p>
+            <p>AgriNOx kombiniert ultraempfindliche (ppb) N₂O- und NO-Echtzeit-Untergrundsensorik mit einer Daten- und Analyseschicht, um zu helfen:</p>
+            <ul class="list-disc pl-6 mb-4">
+                <li>Stickstoffverluste durch Düngemittelverwendung auf Parzellen- und Bodeneinheitsebene zu quantifizieren.</li>
+                <li>Diese Messungen in Bodengesundheits- und Stickstoffeffizienzindikatoren zu übersetzen, die Mitgliedstaaten für ihre Überwachung und Berichterstattung nutzen können.</li>
+                <li>Landwirten und Beratern Entscheidungshilfen zu geben, um Stickstoffabfälle und Treibhausgasemissionen zu reduzieren und gleichzeitig die Erträge zu erhalten.</li>
+            </ul>
+            <p>Unser Ziel ist einfach: Helfen Sie dabei, dieses Gesetz von einem politischen Meilenstein in messbare Verbesserungen der Bodengesundheit, der Stickstoffeffizienz und der Rentabilität der landwirtschaftlichen Betriebe zu verwandeln.</p>
+            <p><a href="https://ai4soilhealth.eu" target="_blank" class="text-primary hover:underline">ai4soilhealth.eu</a><br/>
+            <a href="https://lnkd.in/gynKggte" target="_blank" class="text-primary hover:underline">LinkedIn Beitrag</a></p>
+            `
+        },
         "rednox-awarded-sbir-phase-i-for-its-innovative-greenhouse-gas-measurement-platform": {
             title: "RedNOx erhält SBIR Phase I für seine innovative Treibhausgas-Messplattform",
             excerpt:
@@ -836,6 +920,36 @@ export const blogPosts: Record<string, Record<string, BlogPost>> = {
         }
     },
     ja: {
+        "europe-soil-monitoring-law-milestone": {
+            title: "欧州の新しい土壌監視法：土壌の健康と食料安全保障のためのマイルストーン",
+            excerpt: "欧州は、気候と食料安全保障のための重要なマイルストーンを達成しました。2025年10月23日、欧州議会は土壌監視およびレジリエンス指令を承認しました。これは、土壌の健康に特化したEU初の法律です。",
+            date: "2025-12-11",
+            readTime: "3 min read",
+            category: "プレスリリース",
+            image: "/soil-health-law.png",
+            downloadLink: "https://ai4soilhealth.eu",
+            downloadCTATitle: "詳細を見る",
+            content: `
+            <p>欧州は、気候と食料安全保障のための重要なマイルストーンを達成しました。</p>
+            <p>2025年10月23日、欧州議会は土壌監視およびレジリエンス指令を承認しました。これは、土壌の健康に特化したEU初の法律です。この法律は2025年12月15日に施行され、加盟国に対し、農地を含むすべての土地利用における土壌の健康状態を定期的に監視・評価することを義務付けています。</p>
+            <p>実際には、土壌監視法は以下のことを意味します。</p>
+            <ul class="list-disc pl-6 mb-4">
+                <li>すべての加盟国は、土壌地区と土壌単位を定義し、国レベルの監視ネットワークを構築する必要があります。</li>
+                <li>土壌の健康状態は、過剰な栄養素（窒素）負荷を含む複数の劣化の側面全体で追跡されなければなりません。</li>
+                <li>政府は、このデータを単なるコンプライアンス報告書ではなく、農家や土地管理者への実用的な支援に変える必要があります。</li>
+            </ul>
+            <p>RedNOxでは、AgriNOxプラットフォームをこの新しい枠組みに合わせて調整しています。</p>
+            <p>AgriNOxは、超高感度（ppb）のN₂OおよびNOリアルタイム地下センシングとデータおよび分析レイヤーを組み合わせて、以下を支援します。</p>
+            <ul class="list-disc pl-6 mb-4">
+                <li>区画および土壌単位レベルでの肥料使用による窒素損失を定量化します。</li>
+                <li>これらの測定値を、加盟国が監視と報告に使用できる土壌の健康指標と窒素効率指標に変換します。</li>
+                <li>収量を維持しながら窒素廃棄物と温室効果ガス排出を削減する方法について、農家とアドバイザーに意思決定支援を提供します。</li>
+            </ul>
+            <p>私たちの目標はシンプルです。この法律を政策のマイルストーンから、土壌の健康、窒素効率、および農業収益性の測定可能な改善に変える手助けをすることです。</p>
+            <p><a href="https://ai4soilhealth.eu" target="_blank" class="text-primary hover:underline">ai4soilhealth.eu</a><br/>
+            <a href="https://lnkd.in/gynKggte" target="_blank" class="text-primary hover:underline">LinkedIn投稿</a></p>
+            `
+        },
         "rednox-awarded-sbir-phase-i-for-its-innovative-greenhouse-gas-measurement-platform": {
             title: "RedNOxが画期的な温室効果ガス測定プラットフォームでSBIRフェーズIを受賞",
             excerpt:

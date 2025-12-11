@@ -1,9 +1,11 @@
 "use client"
 
+import { useState } from "react"
+
 import Link from "next/link"
 import Image from "next/image"
 import { motion } from "framer-motion"
-import { ArrowLeft, Calendar, Clock, User, Share2, Download } from "lucide-react"
+import { ArrowLeft, Calendar, Clock, User, Share2, Download, Check } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { useParams, useRouter } from "next/navigation"
 import { getBlogPost } from "@/lib/data"
@@ -13,6 +15,7 @@ import Footer from "@/components/Footer"
 export default function BlogPostPage() {
     const params = useParams()
     const router = useRouter()
+    const [isCopied, setIsCopied] = useState(false)
 
     const locale = (params.locale as string) || 'en'
     const slug = params.slug as string
@@ -74,9 +77,16 @@ export default function BlogPostPage() {
                                     <Clock className="size-4" />
                                     <span>{currentPost.readTime}</span>
                                 </div>
-                                <Button className="rounded-full bg-transparent">
-                                    <Share2 className="size-4 mr-2" />
-                                    Share
+                                <Button
+                                    className="rounded-full bg-transparent"
+                                    onClick={() => {
+                                        navigator.clipboard.writeText(window.location.href)
+                                        setIsCopied(true)
+                                        setTimeout(() => setIsCopied(false), 2000)
+                                    }}
+                                >
+                                    {isCopied ? <Check className="size-4 mr-2" /> : <Share2 className="size-4 mr-2" />}
+                                    {isCopied ? "Copied!" : "Share"}
                                 </Button>
                             </div>
 
